@@ -1,0 +1,221 @@
+{
+  "teams": [
+    {
+      "name": "Francia",
+      "pts": 16,
+      "pj": 4,
+      "g": 3,
+      "e": 0,
+      "p": 1,
+      "pf": 163,
+      "pc": 93,
+      "bp": 4,
+      "bf": 0
+    },
+    {
+      "name": "Escocia",
+      "pts": 16,
+      "pj": 4,
+      "g": 3,
+      "e": 0,
+      "p": 1,
+      "pf": 130,
+      "pc": 104,
+      "bp": 4,
+      "bf": 0
+    },
+    {
+      "name": "Irlanda",
+      "pts": 14,
+      "pj": 4,
+      "g": 3,
+      "e": 0,
+      "p": 1,
+      "pf": 102,
+      "pc": 86,
+      "bp": 2,
+      "bf": 0
+    },
+    {
+      "name": "Italia",
+      "pts": 9,
+      "pj": 4,
+      "g": 2,
+      "e": 0,
+      "p": 2,
+      "pf": 64,
+      "pc": 104,
+      "bp": 1,
+      "bf": 0
+    },
+    {
+      "name": "Inglaterra",
+      "pts": 6,
+      "pj": 4,
+      "g": 1,
+      "e": 0,
+      "p": 3,
+      "pf": 102,
+      "pc": 112,
+      "bp": 2,
+      "bf": 0
+    },
+    {
+      "name": "Gales",
+      "pts": 1,
+      "pj": 4,
+      "g": 0,
+      "e": 0,
+      "p": 4,
+      "pf": 59,
+      "pc": 151,
+      "bp": 0,
+      "bf": 1
+    }
+  ],
+  "matches": {
+    "1": {
+      "label": "Fecha 1 — 5/7 febrero",
+      "matches": [
+        {
+          "home": "Francia",
+          "hs": 36,
+          "away": "Irlanda",
+          "as": 14,
+          "played": true,
+          "venue": "Stade de France, París"
+        },
+        {
+          "home": "Italia",
+          "hs": 18,
+          "away": "Escocia",
+          "as": 15,
+          "played": true,
+          "venue": "Estadio Olímpico, Roma"
+        },
+        {
+          "home": "Inglaterra",
+          "hs": 48,
+          "away": "Gales",
+          "as": 7,
+          "played": true,
+          "venue": "Twickenham, Londres"
+        }
+      ]
+    },
+    "2": {
+      "label": "Fecha 2 — 8/9 febrero",
+      "matches": [
+        {
+          "home": "Irlanda",
+          "hs": 20,
+          "away": "Italia",
+          "as": 13,
+          "played": true,
+          "venue": "Aviva Stadium, Dublín"
+        },
+        {
+          "home": "Escocia",
+          "hs": 31,
+          "away": "Inglaterra",
+          "as": 20,
+          "played": true,
+          "venue": "Murrayfield, Edimburgo"
+        },
+        {
+          "home": "Gales",
+          "hs": 12,
+          "away": "Francia",
+          "as": 54,
+          "played": true,
+          "venue": "Principality, Cardiff"
+        }
+      ]
+    },
+    "3": {
+      "label": "Fecha 3 — 21/22 febrero",
+      "matches": [
+        {
+          "home": "Irlanda",
+          "hs": 42,
+          "away": "Inglaterra",
+          "as": 21,
+          "played": true,
+          "venue": "Allianz Arena, Twickenham"
+        },
+        {
+          "home": "Gales",
+          "hs": 23,
+          "away": "Escocia",
+          "as": 26,
+          "played": true,
+          "venue": "Principality, Cardiff"
+        },
+        {
+          "home": "Francia",
+          "hs": 33,
+          "away": "Italia",
+          "as": 8,
+          "played": true,
+          "venue": "Stade Pierre Mauroy, Lille"
+        }
+      ]
+    },
+    "4": {
+      "label": "Fecha 4 — 6/7 marzo",
+      "matches": [
+        {
+          "home": "Irlanda",
+          "hs": 27,
+          "away": "Gales",
+          "as": 17,
+          "played": true,
+          "venue": "Aviva Stadium, Dublín"
+        },
+        {
+          "home": "Escocia",
+          "hs": 50,
+          "away": "Francia",
+          "as": 40,
+          "played": true,
+          "venue": "Murrayfield, Edimburgo"
+        },
+        {
+          "home": "Italia",
+          "hs": 23,
+          "away": "Inglaterra",
+          "as": 18,
+          "played": true,
+          "venue": "Estadio Olímpico, Roma"
+        }
+      ]
+    },
+    "5": {
+      "label": "Fecha 5 — 14 marzo",
+      "matches": [
+        {
+          "home": "Irlanda",
+          "away": "Escocia",
+          "played": false,
+          "venue": "Aviva Stadium, Dublín",
+          "time": "11:10"
+        },
+        {
+          "home": "Gales",
+          "away": "Italia",
+          "played": false,
+          "venue": "Principality, Cardiff",
+          "time": "13:40"
+        },
+        {
+          "home": "Francia",
+          "away": "Inglaterra",
+          "played": false,
+          "venue": "Stade de France, París",
+          "time": "17:10"
+        }
+      ]
+    }
+  },
+  "lastUpdate": "manual"
+}
