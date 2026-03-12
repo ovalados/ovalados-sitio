@@ -1,0 +1,1229 @@
+{
+  "teams": [
+    {
+      "name": "Liceo Naval",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "C.U. de Quilmes",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Argentino",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Don Bosco",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "San Martin",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Monte Grande",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Mariano Moreno",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Manuel Belgrano",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Delta",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Vicentinos",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Liceo Militar",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "San Patricio",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Italiano",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Banco Nacion",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    }
+  ],
+  "matches": {
+    "1": {
+      "date": "14/03/2026",
+      "ms": [
+        {
+          "home": "Liceo Naval",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "Monte Grande",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "Banco Nacion",
+          "away": "Italiano",
+          "played": false
+        }
+      ]
+    },
+    "2": {
+      "date": "21/03/2026",
+      "ms": [
+        {
+          "home": "Italiano",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "Banco Nacion",
+          "away": "San Patricio",
+          "played": false
+        }
+      ]
+    },
+    "3": {
+      "date": "28/03/2026",
+      "ms": [
+        {
+          "home": "San Patricio",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "Italiano",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "San Martin",
+          "played": false
+        },
+        {
+          "home": "Banco Nacion",
+          "away": "Liceo Militar",
+          "played": false
+        }
+      ]
+    },
+    "4": {
+      "date": "11/04/2026",
+      "ms": [
+        {
+          "home": "Liceo Militar",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "San Patricio",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "Italiano",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "San Martin",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "Banco Nacion",
+          "away": "Vicentinos",
+          "played": false
+        }
+      ]
+    },
+    "5": {
+      "date": "18/04/2026",
+      "ms": [
+        {
+          "home": "Vicentinos",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "Liceo Militar",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "San Patricio",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "Italiano",
+          "away": "San Martin",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "Banco Nacion",
+          "away": "Delta",
+          "played": false
+        }
+      ]
+    },
+    "6": {
+      "date": "25/04/2026",
+      "ms": [
+        {
+          "home": "Delta",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "Vicentinos",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "Liceo Militar",
+          "away": "San Martin",
+          "played": false
+        },
+        {
+          "home": "San Patricio",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "Italiano",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "C.U. de Quilmes",
+          "played": false
+        },
+        {
+          "home": "Banco Nacion",
+          "away": "Manuel Belgrano",
+          "played": false
+        }
+      ]
+    },
+    "7": {
+      "date": "09/05/2026",
+      "ms": [
+        {
+          "home": "Manuel Belgrano",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "Delta",
+          "away": "San Martin",
+          "played": false
+        },
+        {
+          "home": "Vicentinos",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "Liceo Militar",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "San Patricio",
+          "away": "C.U. de Quilmes",
+          "played": false
+        },
+        {
+          "home": "Italiano",
+          "away": "Liceo Naval",
+          "played": false
+        },
+        {
+          "home": "Banco Nacion",
+          "away": "Mariano Moreno",
+          "played": false
+        }
+      ]
+    },
+    "8": {
+      "date": "16/05/2026",
+      "ms": [
+        {
+          "home": "Mariano Moreno",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "Delta",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "San Patricio",
+          "away": "Italiano",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Banco Nacion",
+          "played": false
+        }
+      ]
+    },
+    "9": {
+      "date": "23/05/2026",
+      "ms": [
+        {
+          "home": "Monte Grande",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano",
+          "away": "C.U. de Quilmes",
+          "played": false
+        },
+        {
+          "home": "Delta",
+          "away": "Liceo Naval",
+          "played": false
+        },
+        {
+          "home": "Vicentinos",
+          "away": "Italiano",
+          "played": false
+        },
+        {
+          "home": "Liceo Militar",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Banco Nacion",
+          "played": false
+        }
+      ]
+    },
+    "10": {
+      "date": "06/06/2026",
+      "ms": [
+        {
+          "home": "San Martin",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "Monte Grande",
+          "away": "C.U. de Quilmes",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno",
+          "away": "Liceo Naval",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano",
+          "away": "Italiano",
+          "played": false
+        },
+        {
+          "home": "Delta",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "Vicentinos",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "Banco Nacion",
+          "played": false
+        }
+      ]
+    },
+    "11": {
+      "date": "13/06/2026",
+      "ms": [
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Italiano",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "Monte Grande",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Banco Nacion",
+          "played": false
+        }
+      ]
+    },
+    "12": {
+      "date": "20/06/2026",
+      "ms": [
+        {
+          "home": "San Patricio",
+          "away": "Banco Nacion",
+          "played": false
+        },
+        {
+          "home": "Liceo Militar",
+          "away": "Italiano",
+          "played": false
+        },
+        {
+          "home": "Vicentinos",
+          "away": "Liceo Naval",
+          "played": false
+        },
+        {
+          "home": "Delta",
+          "away": "C.U. de Quilmes",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "Monte Grande",
+          "away": "San Martin",
+          "played": false
+        }
+      ]
+    },
+    "13": {
+      "date": "04/07/2026",
+      "ms": [
+        {
+          "home": "Italiano",
+          "away": "Banco Nacion",
+          "played": false
+        },
+        {
+          "home": "San Patricio",
+          "away": "Liceo Naval",
+          "played": false
+        },
+        {
+          "home": "Liceo Militar",
+          "away": "C.U. de Quilmes",
+          "played": false
+        },
+        {
+          "home": "Vicentinos",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "Delta",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano",
+          "away": "San Martin",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno",
+          "away": "Monte Grande",
+          "played": false
+        }
+      ]
+    },
+    "14": {
+      "date": "11/07/2026",
+      "ms": [
+        {
+          "home": "Banco Nacion",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "Italiano",
+          "away": "San Patricio",
+          "played": false
+        }
+      ]
+    },
+    "15": {
+      "date": "18/07/2026",
+      "ms": [
+        {
+          "home": "Liceo Militar",
+          "away": "Banco Nacion",
+          "played": false
+        },
+        {
+          "home": "Vicentinos",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "Delta",
+          "away": "Liceo Naval",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "San Patricio",
+          "away": "Liceo Militar",
+          "played": false
+        }
+      ]
+    },
+    "16": {
+      "date": "01/08/2026",
+      "ms": [
+        {
+          "home": "Banco Nacion",
+          "away": "San Martin",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "Italiano",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "San Patricio",
+          "away": "Liceo Militar",
+          "played": false
+        }
+      ]
+    },
+    "17": {
+      "date": "15/08/2026",
+      "ms": [
+        {
+          "home": "Liceo Militar",
+          "away": "Banco Nacion",
+          "played": false
+        },
+        {
+          "home": "Vicentinos",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "Delta",
+          "away": "Italiano",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano",
+          "away": "Liceo Naval",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno",
+          "away": "C.U. de Quilmes",
+          "played": false
+        },
+        {
+          "home": "Monte Grande",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Don Bosco",
+          "played": false
+        }
+      ]
+    },
+    "18": {
+      "date": "22/08/2026",
+      "ms": [
+        {
+          "home": "Banco Nacion",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "San Martin",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "Italiano",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "San Patricio",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "Liceo Militar",
+          "away": "Vicentinos",
+          "played": false
+        }
+      ]
+    },
+    "19": {
+      "date": "29/08/2026",
+      "ms": [
+        {
+          "home": "Vicentinos",
+          "away": "Banco Nacion",
+          "played": false
+        },
+        {
+          "home": "Delta",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno",
+          "away": "Italiano",
+          "played": false
+        },
+        {
+          "home": "Monte Grande",
+          "away": "Liceo Naval",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "C.U. de Quilmes",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "Argentino",
+          "played": false
+        }
+      ]
+    },
+    "20": {
+      "date": "05/09/2026",
+      "ms": [
+        {
+          "home": "Banco Nacion",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "San Martin",
+          "played": false
+        },
+        {
+          "home": "Italiano",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "San Patricio",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "Liceo Militar",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "Vicentinos",
+          "away": "Delta",
+          "played": false
+        }
+      ]
+    },
+    "21": {
+      "date": "12/09/2026",
+      "ms": [
+        {
+          "home": "Delta",
+          "away": "Banco Nacion",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "Monte Grande",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Italiano",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "Liceo Naval",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "C.U. de Quilmes",
+          "played": false
+        }
+      ]
+    },
+    "22": {
+      "date": "26/09/2026",
+      "ms": [
+        {
+          "home": "Manuel Belgrano",
+          "away": "Banco Nacion",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "Monte Grande",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "Italiano",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Liceo Naval",
+          "played": false
+        }
+      ]
+    },
+    "23": {
+      "date": "03/10/2026",
+      "ms": [
+        {
+          "home": "Mariano Moreno",
+          "away": "Banco Nacion",
+          "played": false
+        },
+        {
+          "home": "Monte Grande",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Italiano",
+          "played": false
+        }
+      ]
+    },
+    "24": {
+      "date": "10/10/2026",
+      "ms": [
+        {
+          "home": "San Patricio",
+          "away": "Argentino",
+          "played": false
+        },
+        {
+          "home": "Liceo Militar",
+          "away": "Don Bosco",
+          "played": false
+        },
+        {
+          "home": "Vicentinos",
+          "away": "San Martin",
+          "played": false
+        },
+        {
+          "home": "Delta",
+          "away": "Monte Grande",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano",
+          "away": "Mariano Moreno",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "Liceo Naval",
+          "played": false
+        },
+        {
+          "home": "Banco Nacion",
+          "away": "Italiano",
+          "played": false
+        }
+      ]
+    },
+    "25": {
+      "date": "17/10/2026",
+      "ms": [
+        {
+          "home": "San Albano",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "San Andres",
+          "played": false
+        }
+      ]
+    },
+    "26": {
+      "date": "24/10/2026",
+      "ms": [
+        {
+          "home": "Mariano Moreno",
+          "away": "Banco Nacion",
+          "played": false
+        },
+        {
+          "home": "Monte Grande",
+          "away": "Manuel Belgrano",
+          "played": false
+        },
+        {
+          "home": "San Martin",
+          "away": "Delta",
+          "played": false
+        },
+        {
+          "home": "Don Bosco",
+          "away": "Vicentinos",
+          "played": false
+        },
+        {
+          "home": "Argentino",
+          "away": "Liceo Militar",
+          "played": false
+        },
+        {
+          "home": "C.U. de Quilmes",
+          "away": "San Patricio",
+          "played": false
+        },
+        {
+          "home": "Liceo Naval",
+          "away": "Italiano",
+          "played": false
+        }
+      ]
+    }
+  },
+  "lastUpdate": "manual"
+}

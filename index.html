@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ovalados — Rugby Argentina 2026</title>
+<meta name="description" content="Resultados, tablas y fixture del rugby argentino. URBA Top 14, Super Rugby Américas, Seis Naciones y Los Pumas. La información más completa en español.">
+<link rel="canonical" href="https://ovalados.com/">
+<meta property="og:title" content="Ovalados — Rugby Argentina 2026">
+<meta property="og:description" content="Resultados, tablas y fixture del rugby argentino. URBA Top 14, Super Rugby Américas, Seis Naciones y Los Pumas.">
+<meta property="og:image" content="https://ovalados.com/img/og-default.jpg">
+<meta property="og:url" content="https://ovalados.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="eObn6uPNHec1448XkrJbqhSoKF69bKaJayuLrdOZAj0" />
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=21">
+<style>
+  /* ── INDEX-ONLY STYLES ─────────────────────────── */
+  .home { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+
+  /* Hero */
+  .hero { text-align: center; margin-bottom: 3rem; }
+  .hero-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem; letter-spacing: 8px;
+    color: var(--green); text-shadow: 0 0 40px rgba(0,184,92,0.3);
+    line-height: 1;
+  }
+  .hero-sub {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--muted); margin-top: 0.5rem;
+  }
+
+  /* Latest results strip */
+  .home-section { margin-bottom: 2.5rem; }
+  .home-section-header {
+    display: flex; align-items: baseline; gap: 12px;
+    margin-bottom: 1rem; padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+  }
+  .home-section-header.green { border-bottom-color: var(--green); }
+  .home-section-header.gold  { border-bottom-color: var(--gold); }
+  .home-section-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem; letter-spacing: 3px;
+  }
+  .home-section-label.green { color: var(--green); }
+  .home-section-label.gold  { color: var(--gold); }
+  .home-section-sub {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .home-section-link {
+    margin-left: auto;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.82rem; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--green); border: 1px solid rgba(0,184,92,0.3);
+    padding: 4px 10px; border-radius: 4px; transition: all 0.15s;
+  }
+  .home-section-link:hover { background: rgba(0,184,92,0.1); border-color: var(--green); }
+  .home-section-link.gold { color: var(--gold); border-color: rgba(245,197,24,0.3); }
+  .home-section-link.gold:hover { background: rgba(245,197,24,0.08); border-color: var(--gold); }
+
+  /* Compact result row */
+  .results-list { display: flex; flex-direction: column; gap: 6px; }
+  .result-row {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 6px; padding: 0.7rem 1rem;
+    display: grid; grid-template-columns: 1fr auto 1fr auto;
+    align-items: center; gap: 0.5rem;
+    transition: border-color 0.15s;
+  }
+  .result-row:hover { border-color: rgba(0,184,92,0.4); }
+  .result-row.gold-hover:hover { border-color: rgba(245,197,24,0.4); }
+  .result-home { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.95rem; text-align: right; }
+  .result-away { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.95rem; }
+  .result-score {
+    font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem;
+    color: var(--green); text-align: center; min-width: 70px;
+  }
+  .result-score.gold { color: var(--gold); }
+  .result-score.upcoming { font-size: 0.85rem; color: var(--muted); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; }
+  .result-date { font-size: 0.72rem; color: var(--muted); white-space: nowrap; }
+
+  /* Group sections */
+  .group { margin-bottom: 2.5rem; }
+  .group-header {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 1rem; padding-bottom: 10px;
+    border-bottom: 2px solid var(--border);
+  }
+  .group-header.urba { border-bottom-color: var(--green); }
+  .group-header.intl  { border-bottom-color: var(--gold); }
+  .group-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 3px; }
+  .group-label.urba { color: var(--green); }
+  .group-label.intl  { color: var(--gold); }
+  .group-sub { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+
+  /* Category cards */
+  .categories { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 1rem; }
+  .cat-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 1.2rem 1.4rem; display: flex; align-items: center; justify-content: space-between;
+    transition: all 0.2s; border-left: 4px solid transparent;
+  }
+  .cat-card:hover { border-color: var(--green); transform: translateX(4px); background: rgba(0,184,92,0.06); }
+  .cat-card.intl:hover { border-color: var(--gold); background: rgba(245,197,24,0.05); }
+  .cat-card.highlight { background: rgba(0,184,92,0.06); border-color: rgba(0,184,92,0.4); border-left-color: var(--green); }
+  .cat-card.highlight .cat-name { color: var(--green); }
+  .cat-card.intl.highlight { background: rgba(245,197,24,0.06); border-color: rgba(245,197,24,0.4); border-left-color: var(--gold); }
+  .cat-card.intl.highlight .cat-name { color: var(--gold); }
+  .cat-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.15rem; letter-spacing: 1px; color: var(--text); }
+  .cat-detail { font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
+  .cat-arrow { font-size: 1.2rem; color: var(--muted); transition: color 0.2s; }
+  .cat-card:hover .cat-arrow { color: var(--green); }
+  .cat-card.intl:hover .cat-arrow { color: var(--gold); }
+
+  /* utils */
+  .utils { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+
+  @media(max-width: 600px) {
+    .hero-brand { font-size: 3.5rem; }
+    .categories { grid-template-columns: 1fr; }
+    .utils { grid-template-columns: 1fr; }
+    .result-row { grid-template-columns: 1fr auto 1fr; }
+    .result-date { display: none; }
+
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">OVALADOS</a>
+</header>
+
+<div class="home">
+  <div class="hero">
+    <div class="hero-brand">OVALADOS</div>
+    <div class="hero-sub">Tu portal de rugby argentino · Temporada 2026</div>
+  </div>
+
+  <!-- ÚLTIMOS RESULTADOS: SUPER RUGBY -->
+  <div class="home-section">
+    <div class="home-section-header gold">
+      <span class="home-section-label gold">🌎 Últimos Resultados</span>
+      <span id="sr-ultimos-label" class="home-section-sub">Super Rugby Américas · Fecha 3</span>
+      <a href="super-rugby.html" class="home-section-link gold">Ver todo →</a>
+    </div>
+    <div class="results-list" id="sr-ultimos"></div>
+  </div>
+
+  <!-- PRÓXIMOS: SUPER RUGBY -->
+  <div class="home-section">
+    <div class="home-section-header gold">
+      <span class="home-section-label gold">📅 Próxima Fecha</span>
+      <span id="sr-proximos-label" class="home-section-sub">Super Rugby Américas · Fecha 4</span>
+      <a href="super-rugby.html" class="home-section-link gold">Fixture →</a>
+    </div>
+    <div class="results-list" id="sr-proximos"></div>
+  </div>
+
+  <!-- TORNEOS: URBA -->
+  <div class="group">
+    <div class="group-header urba">
+      <span class="group-label urba">URBA</span>
+      <span class="group-sub">Unión de Rugby de Buenos Aires · División Superior 2026</span>
+    </div>
+    <div class="categories">
+      <a href="top14.html" class="cat-card highlight">
+        <div class="cat-card-left">
+          <div class="cat-name">🏆 TOP 14</div>
+          <div class="cat-detail">14 equipos · 26 fechas · 14 mar – 17 oct</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="primera-a.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Primera A</div>
+          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="primera-b.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Primera B</div>
+          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="primera-c.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Primera C</div>
+          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="segunda.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Segunda División</div>
+          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="tercera.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Tercera División</div>
+          <div class="cat-detail">11 equipos · 22 fechas · Play Off oct</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- TORNEOS: DIVISIONES INTERMEDIAS URBA -->
+  <div class="group">
+    <div class="group-header urba">
+      <span class="group-label urba">INTERMEDIAS</span>
+      <span class="group-sub">Divisiones intermedias URBA Top 14 · 2026</span>
+    </div>
+    <div class="categories">
+      <a href="intermedia.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Intermedia</div>
+          <div class="cat-detail">14 equipos · 26 fechas · fixture Top 14</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="preintermedia-a.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Preintermedia A</div>
+          <div class="cat-detail">14 equipos · 26 fechas · fixture Top 14</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="preintermedia-b.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Preintermedia B</div>
+          <div class="cat-detail">14 equipos · 26 fechas · fixture Top 14</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="preintermedia-c.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Preintermedia C</div>
+          <div class="cat-detail">14 equipos · 26 fechas · fixture Top 14</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="preintermedia-d.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Preintermedia D</div>
+          <div class="cat-detail">14 equipos · 26 fechas · fixture Top 14</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- TORNEOS: INTERNACIONAL -->
+  <div class="group">
+    <div class="group-header intl">
+      <span class="group-label intl">INTERNACIONAL</span>
+      <span class="group-sub">Competencias regionales e internacionales 2026</span>
+    </div>
+    <div class="categories">
+      <a href="super-rugby.html" class="cat-card intl highlight">
+        <div class="cat-card-left">
+          <div class="cat-name">🌎 Súper Rugby Américas</div>
+          <div class="cat-detail">8 franquicias · ARG · URU · PAR · BRA · CHI</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="pumas.html" class="cat-card intl">
+        <div class="cat-card-left">
+          <div class="cat-name">🇦🇷 Los Pumas 2026</div>
+          <div class="cat-detail">Nations Championship · Tests · Jul–Nov</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="seis-naciones.html" class="cat-card intl">
+        <div class="cat-card-left">
+          <div class="cat-name">🏆 Seis Naciones 2026</div>
+          <div class="cat-detail">Francia líder · Fecha 4 este fin de semana</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+    </div>
+  </div>
+
+</div><!-- /home -->
+
+<script src="data.js"></script>
+<script>
+// ── BUSCADOR DE EQUIPOS URBA ─────────────────────────────
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Ovalados",
+  "url": "https://ovalados.com",
+  "description": "Portal de rugby argentino. Tablas, fixture y resultados del URBA Top 14, Super Rugby Américas, Seis Naciones y Los Pumas.",
+  "inLanguage": "es-AR"
+}
+</script>
+</body>
+</html>

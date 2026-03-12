@@ -1,0 +1,830 @@
+{
+  "teams": [
+    {
+      "name": "Almafuerte",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Tiro F de Baradero",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Los Cedros",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Arsenal Zarate",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Banco Hipotecario",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Pac General Rodriguez",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "G y E de Ituzaingo",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Beromama",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Porteño",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Berisso",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Ciudad de Campana",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    }
+  ],
+  "matches": {
+    "1": {
+      "date": "11/04/2026",
+      "ms": [
+        {
+          "home": "Almafuerte",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Tiro F de Baradero",
+          "away": "Porteño",
+          "played": false
+        },
+        {
+          "home": "Los Cedros",
+          "away": "Beromama",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Pac General Rodriguez",
+          "played": false
+        }
+      ]
+    },
+    "2": {
+      "date": "18/04/2026",
+      "ms": [
+        {
+          "home": "Ciudad de Campana",
+          "away": "Porteño",
+          "played": false
+        },
+        {
+          "home": "Almafuerte",
+          "away": "Beromama",
+          "played": false
+        },
+        {
+          "home": "Tiro F de Baradero",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Los Cedros",
+          "away": "Pac General Rodriguez",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "Banco Hipotecario",
+          "played": false
+        }
+      ]
+    },
+    "3": {
+      "date": "25/04/2026",
+      "ms": [
+        {
+          "home": "Berisso",
+          "away": "Beromama",
+          "played": false
+        },
+        {
+          "home": "Ciudad de Campana",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Almafuerte",
+          "away": "Pac General Rodriguez",
+          "played": false
+        },
+        {
+          "home": "Tiro F de Baradero",
+          "away": "Banco Hipotecario",
+          "played": false
+        },
+        {
+          "home": "Los Cedros",
+          "away": "Arsenal Zarate",
+          "played": false
+        }
+      ]
+    },
+    "4": {
+      "date": "09/05/2026",
+      "ms": [
+        {
+          "home": "Porteño",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Berisso",
+          "away": "Pac General Rodriguez",
+          "played": false
+        },
+        {
+          "home": "Ciudad de Campana",
+          "away": "Banco Hipotecario",
+          "played": false
+        },
+        {
+          "home": "Almafuerte",
+          "away": "Arsenal Zarate",
+          "played": false
+        },
+        {
+          "home": "Tiro F de Baradero",
+          "away": "Los Cedros",
+          "played": false
+        }
+      ]
+    },
+    "5": {
+      "date": "16/05/2026",
+      "ms": [
+        {
+          "home": "Beromama",
+          "away": "Pac General Rodriguez",
+          "played": false
+        },
+        {
+          "home": "Porteño",
+          "away": "Banco Hipotecario",
+          "played": false
+        },
+        {
+          "home": "Berisso",
+          "away": "Arsenal Zarate",
+          "played": false
+        },
+        {
+          "home": "Ciudad de Campana",
+          "away": "Los Cedros",
+          "played": false
+        },
+        {
+          "home": "Almafuerte",
+          "away": "Tiro F de Baradero",
+          "played": false
+        }
+      ]
+    },
+    "6": {
+      "date": "23/05/2026",
+      "ms": [
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Banco Hipotecario",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "Arsenal Zarate",
+          "played": false
+        },
+        {
+          "home": "Porteño",
+          "away": "Los Cedros",
+          "played": false
+        },
+        {
+          "home": "Berisso",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "Ciudad de Campana",
+          "away": "Almafuerte",
+          "played": false
+        }
+      ]
+    },
+    "7": {
+      "date": "06/06/2026",
+      "ms": [
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Banco Hipotecario",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Arsenal Zarate",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "Los Cedros",
+          "played": false
+        },
+        {
+          "home": "Porteño",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Berisso",
+          "away": "Ciudad de Campana",
+          "played": false
+        }
+      ]
+    },
+    "8": {
+      "date": "13/06/2026",
+      "ms": [
+        {
+          "home": "Banco Hipotecario",
+          "away": "Arsenal Zarate",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Los Cedros",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "Porteño",
+          "away": "Berisso",
+          "played": false
+        }
+      ]
+    },
+    "9": {
+      "date": "20/06/2026",
+      "ms": [
+        {
+          "home": "Arsenal Zarate",
+          "away": "Los Cedros",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "Porteño",
+          "played": false
+        }
+      ]
+    },
+    "10": {
+      "date": "04/07/2026",
+      "ms": [
+        {
+          "home": "Los Cedros",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Porteño",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Beromama",
+          "played": false
+        }
+      ]
+    },
+    "11": {
+      "date": "11/07/2026",
+      "ms": [
+        {
+          "home": "Berisso",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Porteño",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "Los Cedros",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Arsenal Zarate",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Banco Hipotecario",
+          "played": false
+        }
+      ]
+    },
+    "12": {
+      "date": "18/07/2026",
+      "ms": [
+        {
+          "home": "Ciudad de Campana",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Porteño",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Los Cedros",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Arsenal Zarate",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Ciudad de Campana",
+          "played": false
+        }
+      ]
+    },
+    "13": {
+      "date": "01/08/2026",
+      "ms": [
+        {
+          "home": "Beromama",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Ciudad de Campana",
+          "away": "Porteño",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Los Cedros",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "Ciudad de Campana",
+          "played": false
+        }
+      ]
+    },
+    "14": {
+      "date": "15/08/2026",
+      "ms": [
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "Los Cedros",
+          "played": false
+        }
+      ]
+    },
+    "15": {
+      "date": "22/08/2026",
+      "ms": [
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "Los Cedros",
+          "away": "Porteño",
+          "played": false
+        }
+      ]
+    },
+    "16": {
+      "date": "29/08/2026",
+      "ms": [
+        {
+          "home": "Banco Hipotecario",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Los Cedros",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "Porteño",
+          "away": "Beromama",
+          "played": false
+        }
+      ]
+    },
+    "17": {
+      "date": "05/09/2026",
+      "ms": [
+        {
+          "home": "Arsenal Zarate",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "Los Cedros",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Porteño",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        }
+      ]
+    },
+    "18": {
+      "date": "12/09/2026",
+      "ms": [
+        {
+          "home": "Los Cedros",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "Porteño",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Pac General Rodriguez",
+          "played": false
+        }
+      ]
+    },
+    "19": {
+      "date": "26/09/2026",
+      "ms": [
+        {
+          "home": "Porteño",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Los Cedros",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Arsenal Zarate",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Beromama",
+          "played": false
+        }
+      ]
+    },
+    "20": {
+      "date": "03/10/2026",
+      "ms": [
+        {
+          "home": "Beromama",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Porteño",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Los Cedros",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "Porteño",
+          "played": false
+        }
+      ]
+    },
+    "21": {
+      "date": "10/10/2026",
+      "ms": [
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Beromama",
+          "away": "Ciudad de Campana",
+          "played": false
+        },
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Almafuerte",
+          "played": false
+        },
+        {
+          "home": "Banco Hipotecario",
+          "away": "Tiro F de Baradero",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "Los Cedros",
+          "played": false
+        }
+      ]
+    },
+    "22": {
+      "date": "17/10/2026",
+      "ms": [
+        {
+          "home": "Pac General Rodriguez",
+          "away": "Banco Hipotecario",
+          "played": false
+        },
+        {
+          "home": "Arsenal Zarate",
+          "away": "Beromama",
+          "played": false
+        },
+        {
+          "home": "Los Cedros",
+          "away": "Porteño",
+          "played": false
+        },
+        {
+          "home": "Tiro F de Baradero",
+          "away": "Berisso",
+          "played": false
+        },
+        {
+          "home": "Almafuerte",
+          "away": "Ciudad de Campana",
+          "played": false
+        }
+      ]
+    }
+  },
+  "lastUpdate": "manual"
+}

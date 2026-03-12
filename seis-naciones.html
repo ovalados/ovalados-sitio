@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seis Naciones 2026 — Fixture y Resultados | Ovalados</title>
+<meta name="description" content="Tabla de posiciones, fixture y resultados del Torneo de las Seis Naciones 2026. Inglaterra, Francia, Irlanda, Gales, Escocia e Italia.">
+<link rel="canonical" href="https://ovalados.com/seis-naciones.html">
+<meta property="og:title" content="Seis Naciones 2026 — Ovalados">
+<meta property="og:description" content="Tabla de posiciones, fixture y resultados del Torneo de las Seis Naciones 2026. Inglaterra, Francia, Irlanda, Gales, Escocia e Italia.">
+<meta property="og:image" content="https://ovalados.com/img/og-seisnaciones.jpg">
+<meta property="og:url" content="https://ovalados.com/seis-naciones.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="eObn6uPNHec1448XkrJbqhSoKF69bKaJayuLrdOZAj0" />
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="css/styles.css?v=21">
+<body>
+<header class="gold-accent">
+  <a href="index.html" class="logo">OVALADOS</a>
+  <nav>
+    <button class="active" onclick="go('posiciones',this)">Posiciones</button>
+    <button onclick="go('partidos',this)">Partidos</button>
+    <button onclick="go('calculadora',this)">Calculadora</button>
+  </nav>
+</header>
+<div class="sub-header">
+  <a href="index.html" class="back-btn">← Torneos</a>
+  <span class="sub-label">🏆 SEIS NACIONES 2026</span>
+  <span id="last-update-sn" style="font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;color:var(--muted);margin-left:auto">Cargando...</span>
+</div>
+<main>
+  <!-- POSICIONES -->
+  <section id="posiciones" class="section active">
+    <div class="page-title">TABLA DE POSICIONES</div>
+    <div class="page-subtitle">Seis Naciones 2026 · 3 fechas jugadas de 5 · Cierra 14 de marzo</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:36px">#</th>
+            <th style="text-align:left">EQUIPO</th>
+            <th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th>
+            <th>PF</th><th>PC</th><th>+/-</th>
+            <th>BP</th><th>BF</th>
+          </tr>
+        </thead>
+        <tbody id="standings-body"></tbody>
+      </table>
+    </div>
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;color:var(--muted);">BP = Bonus ofensivo (4+ tries) · BF = Bonus defensivo (derrota por ≤7 pts)</div>
+  </section>
+
+  <!-- PARTIDOS -->
+  <section id="partidos" class="section">
+    <div class="page-title">FIXTURE Y RESULTADOS</div>
+    <div class="page-subtitle">Seis Naciones 2026 · 5 fechas + Gran Slam en juego</div>
+    <div id="matches-container"></div>
+  </section>
+
+  <!-- CALCULADORA -->
+  <section id="calculadora" class="section">
+    <div class="page-title">CALCULADORA</div>
+    <div class="page-subtitle">Proyectá escenarios y posiciones finales</div>
+    <div class="calc-grid">
+      <div>
+        <div class="calc-panel">
+          <h3>⚙ Sistema de puntos</h3>
+          <div class="points-info" style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;background:var(--dark3);border-radius:6px;padding:1rem;margin-bottom:1.5rem;font-family:'Barlow Condensed',sans-serif">
+            <div class="points-info-item"><div class="points-info-val">4</div><div class="points-info-label">Victoria</div></div>
+            <div class="points-info-item"><div class="points-info-val">2</div><div class="points-info-label">Empate</div></div>
+            <div class="points-info-item"><div class="points-info-val">0</div><div class="points-info-label">Derrota</div></div>
+            <div class="points-info-item"><div class="points-info-val">+1</div><div class="points-info-label">BP (4+ tries)</div></div>
+            <div class="points-info-item"><div class="points-info-val">+1</div><div class="points-info-label">BF (≤7 pts)</div></div>
+            <div class="points-info-item"><div class="points-info-val">5</div><div class="points-info-label">Fechas</div></div>
+          </div>
+          <h3>📅 Simular fechas</h3>
+          <div class="info-banner"><span class="info-icon">ℹ</span><span>Abrí cada fecha y seleccioná resultados. La tabla se actualiza sola.</span></div>
+          <div id="calc-pending"></div>
+          <button class="calc-btn" onclick="renderCalc()">PROYECTAR TABLA</button>
+          <button class="reset-btn" onclick="resetCalc()">↺ Reiniciar simulación</button>
+        </div>
+      </div>
+      <div>
+        <div class="calc-panel">
+          <h3>📊 Tabla proyectada</h3>
+          <div class="proj-note" id="proj-note">Seleccioná resultados para ver la proyección.</div>
+          <div id="calc-body"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script>
+const FLAGS = {
+  "Francia":"🇫🇷","Escocia":"🏴󠁧󠁢󠁳󠁣󠁴󠁿","Irlanda":"🇮🇪","Italia":"🇮🇹","Inglaterra":"🏴󠁧󠁢󠁥󠁮󠁧󠁿","Gales":"🏴󠁧󠁢󠁷󠁬󠁳󠁿"
+};
+
+const teams = [
+  { name:"Francia",    pts:16, pj:4, g:3, e:0, p:1, pf:163, pc:93,  bp:4, bf:0 },
+  { name:"Escocia",    pts:16, pj:4, g:3, e:0, p:1, pf:130, pc:104, bp:4, bf:0 },
+  { name:"Irlanda",    pts:14, pj:4, g:3, e:0, p:1, pf:102, pc:86,  bp:2, bf:0 },
+  { name:"Italia",     pts:9,  pj:4, g:2, e:0, p:2, pf:64,  pc:104, bp:1, bf:0 },
+  { name:"Inglaterra", pts:6,  pj:4, g:1, e:0, p:3, pf:102, pc:112, bp:2, bf:0 },
+  { name:"Gales",      pts:1,  pj:4, g:0, e:0, p:4, pf:59,  pc:151, bp:0, bf:1 },
+];
+
+const rounds = [
+  {
+    label:"Fecha 1 — 5/7 febrero",
+    matches:[
+      { home:"Francia",    hs:36, away:"Irlanda",    as:14, played:true,  venue:"Stade de France, París" },
+      { home:"Italia",     hs:18, away:"Escocia",    as:15, played:true,  venue:"Estadio Olímpico, Roma" },
+      { home:"Inglaterra", hs:48, away:"Gales",      as:7,  played:true,  venue:"Twickenham, Londres" },
+    ]
+  },
+  {
+    label:"Fecha 2 — 8/9 febrero",
+    matches:[
+      { home:"Irlanda",    hs:20, away:"Italia",     as:13, played:true,  venue:"Aviva Stadium, Dublín" },
+      { home:"Escocia",    hs:31, away:"Inglaterra", as:20, played:true,  venue:"Murrayfield, Edimburgo" },
+      { home:"Gales",      hs:12, away:"Francia",    as:54, played:true,  venue:"Principality, Cardiff" },
+    ]
+  },
+  {
+    label:"Fecha 3 — 21/22 febrero",
+    matches:[
+      { home:"Irlanda",    hs:42, away:"Inglaterra", as:21, played:true,  venue:"Allianz Arena, Twickenham" },
+      { home:"Gales",      hs:23, away:"Escocia",    as:26, played:true,  venue:"Principality, Cardiff" },
+      { home:"Francia",    hs:33, away:"Italia",     as:8,  played:true,  venue:"Stade Pierre Mauroy, Lille" },
+    ]
+  },
+  {
+    label:"Fecha 4 — 6/7 marzo",
+    matches:[
+      { home:"Irlanda",    hs:27, away:"Gales",      as:17, played:true, venue:"Aviva Stadium, Dublín" },
+      { home:"Escocia",    hs:50, away:"Francia",    as:40, played:true, venue:"Murrayfield, Edimburgo" },
+      { home:"Italia",     hs:23, away:"Inglaterra", as:18, played:true, venue:"Estadio Olímpico, Roma" },
+    ]
+  },
+  {
+    label:"Fecha 5 — 14 marzo",
+    matches:[
+      { home:"Irlanda",    away:"Escocia",    played:false, venue:"Aviva Stadium, Dublín",    time:"11:10" },
+      { home:"Gales",      away:"Italia",     played:false, venue:"Principality, Cardiff",    time:"13:40" },
+      { home:"Francia",    away:"Inglaterra", played:false, venue:"Stade de France, París",   time:"17:10" },
+    ]
+  },
+];
+
+function renderStandings() {
+  const sorted = [...teams].sort((a,b) => b.pts-a.pts || (b.pf-b.pc)-(a.pf-a.pc));
+  document.getElementById('standings-body').innerHTML = sorted.map((t,i) => {
+    const pos = i+1, diff = t.pf-t.pc;
+    return `<tr class="${pos===1?'leader':''}">
+      <td><span class="pos-num">${pos}</span></td>
+      <td><span class="team-name">${t.name}</span></td>
+      <td class="pts gold">${t.pts}</td><td>${t.pj}</td><td>${t.g}</td><td>${t.e}</td><td>${t.p}</td>
+      <td>${t.pf}</td><td>${t.pc}</td>
+      <td style="color:${diff>0?'var(--green)':diff<0?'#c0392b':'var(--muted)'}">${diff>0?'+':''}${diff}</td>
+      <td style="color:var(--gold)">${t.bp}</td><td>${t.bf}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderMatches() {
+  const container = document.getElementById('matches-container');
+  let html = '';
+  rounds.forEach(rd => {
+    html += `<div class="round-title">${rd.label}</div><div class="matches-grid">`;
+    rd.matches.forEach(m => {
+      const scoreBlock = m.played
+        ? `<div class="match-score gold">${m.hs} — ${m.as}</div>`
+        : `<div class="match-score upcoming">${m.time||'VS'}</div>`;
+      const status = m.played ? 'FINALIZADO' : m.venue;
+      html += `<div class="match-card gold-border">
+        <div class="match-meta">
+          <span>${m.played ? 'Finalizado' : rd.label.split('—')[1]?.trim()||''}</span>
+          <span style="font-size:0.75rem;color:var(--muted)">${m.venue}</span>
+        </div>
+        <div class="match-teams">
+          <div class="match-team home"><div class="name">${m.home}</div></div>
+          ${scoreBlock}
+          <div class="match-team"><div class="name">${m.away}</div></div>
+        </div>
+      </div>`;
+    });
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+
+
+
+// ── CALCULADORA ──────────────────────────────────────────────────────────────
+const pending = [];
+rounds.forEach((rd, ri) => {
+  rd.matches.filter(m => !m.played).forEach((m, mi) => {
+    pending.push({ ...m, rdLabel: rd.label, id: `r${ri}m${mi}` });
+  });
+});
+
+const sim = {}; // id -> { winner: 'h'|'e'|'a', bpH: bool, bpA: bool, bfH: bool, bfA: bool }
+
+function setSim(id, key, val) {
+  if (!sim[id]) sim[id] = {};
+  sim[id][key] = val;
+  // Re-render the row
+  const m = pending.find(m => m.id === id);
+  if (m) {
+    const safeId = s => s.replace(/[^a-zA-Z0-9]/g, '_');
+    const sid = safeId(m.rdLabel);
+    const body = document.getElementById('accord-body-' + sid);
+    const ms = pending.filter(pm => pm.rdLabel === m.rdLabel);
+    if (body) body.innerHTML = ms.map(pm => sim6NRow(pm)).join('');
+    const sc = ms.filter(pm => sim[pm.id]?.winner).length;
+    const hl = document.querySelector('#accord-' + sid + ' .accord-header-left');
+    if (hl) {
+      const ex = hl.querySelector('.accord-badge-sim');
+      if (ex) ex.remove();
+      if (sc > 0) { const b = document.createElement('span'); b.className='accord-badge-sim'; b.textContent=`✓ ${sc}/${ms.length}`; hl.appendChild(b); }
+    }
+  }
+  renderCalcProjected();
+}
+
+const accordOpen6N = {};
+
+function renderCalc() {
+  // Group pending by round label
+  const byRound = {};
+  pending.forEach(m => {
+    if (!byRound[m.rdLabel]) byRound[m.rdLabel] = [];
+    byRound[m.rdLabel].push(m);
+  });
+  const rdLabels = Object.keys(byRound);
+  if (rdLabels.length && !Object.values(accordOpen6N).some(v=>v)) accordOpen6N[rdLabels[0]] = true;
+
+  const container = document.getElementById('calc-pending');
+  if (!container) return;
+
+  const safeId = s => s.replace(/[^a-zA-Z0-9]/g, '_');
+
+  container.innerHTML = rdLabels.map(lbl => {
+    const ms = byRound[lbl];
+    const sid = safeId(lbl);
+    const sc = ms.filter(m => sim[m.id]?.winner).length;
+    const isOpen = accordOpen6N[lbl];
+    return `<div class="accord-item" id="accord-${sid}">
+      <div class="accord-header ${isOpen?'open':''}" onclick="toggle6N('${lbl}','${sid}')">
+        <div class="accord-header-left">
+          <span class="accord-rnd">${lbl}</span>
+          ${sc>0 ? `<span class="accord-badge-sim">✓ ${sc}/${ms.length}</span>` : ''}
+        </div>
+        <span class="accord-arrow">▼</span>
+      </div>
+      <div class="accord-body ${isOpen?'open':''}" id="accord-body-${sid}">
+        ${ms.map(m => sim6NRow(m)).join('')}
+      </div>
+    </div>`;
+  }).join('');
+
+  renderCalcProjected();
+}
+
+function toggle6N(lbl, sid) {
+  accordOpen6N[lbl] = !accordOpen6N[lbl];
+  document.querySelector(`#accord-${sid} .accord-header`).classList.toggle('open', accordOpen6N[lbl]);
+  document.getElementById(`accord-body-${sid}`).classList.toggle('open', accordOpen6N[lbl]);
+}
+
+function sim6NRow(m) {
+  const s = sim[m.id] || {};
+  const w = s.winner;
+  return `<div><div class="sim-row">
+    <div class="sim-row-team">${m.home}</div>
+    <div class="sim-row-btns">
+      <button class="sim-row-btn ${w==='h'?'win':''}" onclick="setSim('${m.id}','winner','h')">L</button>
+      <button class="sim-row-btn ${w==='e'?'draw':''}" onclick="setSim('${m.id}','winner','e')">E</button>
+      <button class="sim-row-btn ${w==='a'?'loss':''}" onclick="setSim('${m.id}','winner','a')">V</button>
+    </div>
+    <div class="sim-row-team right">${m.away}</div>
+  </div>
+  ${w ? `<div class="sim-row-bonus">
+    <label class="sim-bonus-label"><input type="checkbox" ${s.bpH?'checked':''} onchange="setSim('${m.id}','bpH',this.checked)"> BP ${m.home.split(' ')[0]}</label>
+    <label class="sim-bonus-label"><input type="checkbox" ${s.bpA?'checked':''} onchange="setSim('${m.id}','bpA',this.checked)"> BP ${m.away.split(' ')[0]}</label>
+    ${w!=='e' ? `<label class="sim-bonus-label"><input type="checkbox" ${s.bfLoser?'checked':''} onchange="setSim('${m.id}','bfLoser',this.checked)"> BF perdedor</label>` : ''}
+  </div>` : ''}
+  </div>`;
+}
+
+function renderCalcProjected() {
+  const proj = teams.map(t => ({ ...t, gain: 0 }));
+  const get = name => proj.find(t => t.name === name);
+  pending.forEach(m => {
+    const s = sim[m.id];
+    if (!s || !s.winner) return;
+    const home = get(m.home), away = get(m.away);
+    if (!home || !away) return;
+    if (s.winner === 'h') { home.gain += 4; if(s.bfLoser) away.gain += 1; }
+    else if (s.winner === 'a') { away.gain += 4; if(s.bfLoser) home.gain += 1; }
+    else { home.gain += 2; away.gain += 2; }
+    if (s.bpH) home.gain += 1;
+    if (s.bpA) away.gain += 1;
+  });
+  const simCount = pending.filter(m => sim[m.id]?.winner).length;
+  const noteEl = document.getElementById('proj-note');
+  if (noteEl) noteEl.textContent = simCount > 0
+    ? `Simulando ${simCount} partido${simCount>1?'s':''}. Actuales + proyección.`
+    : 'Seleccioná resultados para ver la proyección.';
+
+  const orig = {};
+  [...teams].sort((a,b)=>b.pts-a.pts).forEach((t,i)=>orig[t.name]=i+1);
+  const sorted = [...proj].sort((a,b) => (b.pts+b.gain)-(a.pts+a.gain) || (b.pf-b.pc)-(a.pf-a.pc));
+  const bodyEl = document.getElementById('calc-body');
+  if (!bodyEl) return;
+  bodyEl.innerHTML = sorted.map((t,i) => {
+    const pos = i+1, moved = orig[t.name]-pos;
+    const mi = moved>0 ? `<span class="movement up">▲${moved}</span>`
+              : moved<0 ? `<span class="movement down">▼${Math.abs(moved)}</span>`
+              : `<span class="movement same">—</span>`;
+    return `<div class="proj-row">
+      <div class="proj-pos">${pos}</div>
+      <div class="proj-name">${t.name} ${mi}</div>
+      <div class="proj-pts-current">${t.pts}</div>
+      ${t.gain>0 ? `<div class="proj-pts-gained">+${t.gain}</div>` : '<div></div>'}
+      <div class="proj-pts-total">${t.pts+t.gain}</div>
+    </div>`;
+  }).join('');
+}
+
+function resetCalc() {
+  Object.keys(sim).forEach(k => delete sim[k]);
+  renderCalc();
+}
+
+function go(id, btn) {
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  if(btn) btn.classList.add('active');
+  if(id==='partidos') renderMatches();
+  if(id==='calculadora') renderCalc();
+}
+
+renderStandings();
+
+// ── SYNC DESDE JSON ───────────────────────────────────────
+function syncFromJSON() {
+  fetch('data/seisNaciones.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      if (!data || !data.matches) return;
+
+      // Actualizar rounds con resultados del JSON
+      Object.entries(data.matches).forEach(([rnd, rd]) => {
+        const idx = parseInt(rnd) - 1;
+        if (!rounds[idx]) return;
+        const localMs = rounds[idx].matches || [];
+        const srcMs = rd.matches || rd.ms || [];
+        srcMs.forEach(m => {
+          if (!m.played) return;
+          const local = localMs.find(lm => lm.home === m.home && lm.away === m.away);
+          if (local) { local.hs = m.hs; local.as = m.as; local.played = true; }
+        });
+      });
+
+      // Recalcular posiciones
+      recalcStandings();
+
+      // Re-renderizar
+      renderStandings();
+      if (typeof currentRound !== 'undefined') renderMatches(currentRound);
+
+      // Mostrar última actualización
+      if (data.lastUpdate) {
+        const d = new Date(data.lastUpdate);
+        const label = d.toLocaleString('es-AR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+        const el = document.getElementById('last-update');
+        if (el) el.textContent = '✓ Actualizado: ' + label;
+      }
+    })
+    .catch(e => console.log('JSON sync error:', e));
+}
+
+function recalcStandings() {
+  teams.forEach(t => { t.pts=0; t.pj=0; t.g=0; t.e=0; t.p=0; t.pf=0; t.pc=0; t.bp=0; t.bf=0; t.form=[]; });
+  rounds.forEach(rd => {
+    (rd.matches||[]).filter(m => m.played).forEach(m => {
+      const home = teams.find(t => t.name === m.home);
+      const away = teams.find(t => t.name === m.away);
+      if (!home || !away) return;
+      home.pj++; away.pj++;
+      home.pf += m.hs; home.pc += m.as;
+      away.pf += m.as; away.pc += m.hs;
+      if (m.hs > m.as) {
+        home.g++; home.pts += 4; away.p++;
+        home.form.push('w'); away.form.push('l');
+      } else if (m.hs < m.as) {
+        away.g++; away.pts += 4; home.p++;
+        away.form.push('w'); home.form.push('l');
+      } else {
+        home.e++; away.e++; home.pts += 2; away.pts += 2;
+        home.form.push('d'); away.form.push('d');
+      }
+      if (m.bp_home) { home.pts++; home.bp++; }
+      if (m.bp_away) { away.pts++; away.bp++; }
+      if (m.bf_home) { home.pts++; home.bf++; }
+      if (m.bf_away) { away.pts++; away.bf++; }
+    });
+  });
+  teams.forEach(t => { t.form = t.form.slice(-5); });
+}
+
+syncFromJSON();
+setInterval(syncFromJSON, 10 * 60 * 1000);
+
+
+
+// ── FIREBASE SYNC ─────────────────────────────────────────────────────────────
+const FIREBASE_SN = "https://ovalados-6c645-default-rtdb.firebaseio.com/seisNaciones";
+
+function syncSeisNaciones() {
+  fetch(FIREBASE_SN + ".json")
+    .then(r => r.json())
+    .then(data => {
+      if (!data || !data.matches) return;
+
+      // Actualizar scores en el fixture
+      Object.values(data.matches).forEach(m => {
+        if (!m.played) return;
+        rounds.forEach(rd => {
+          rd.matches.forEach(match => {
+            if (match.home === m.home && match.away === m.away) {
+              match.hs = m.hs;
+              match.as = m.as;
+              match.played = true;
+            }
+          });
+        });
+      });
+
+      // Recalcular tabla desde partidos jugados
+      recalcStandings();
+
+      // Re-renderizar sección activa
+      const active = document.querySelector('main .section.active');
+      if (active) {
+        if (active.id === 'posiciones') renderStandings();
+        if (active.id === 'partidos')   renderMatches();
+        if (active.id === 'calculadora') renderCalc();
+      }
+
+      // Mostrar última actualización
+      if (data.meta && data.meta.lastUpdate) {
+        const d = new Date(data.meta.lastUpdate);
+        const label = d.toLocaleString('es-AR', {day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+        const el = document.getElementById('last-update-sn');
+        if (el) el.textContent = '✓ Actualizado: ' + label;
+      }
+    })
+    .catch(e => console.log('Firebase SN error:', e));
+}
+
+function recalcStandings() {
+  // Reset
+  teams.forEach(t => { t.pts=0; t.pj=0; t.g=0; t.e=0; t.p=0; t.pf=0; t.pc=0; t.bp=0; t.bf=0; });
+  // Recalcular desde partidos jugados
+  rounds.forEach(rd => {
+    rd.matches.filter(m => m.played).forEach(m => {
+      const home = teams.find(t => t.name === m.home);
+      const away = teams.find(t => t.name === m.away);
+      if (!home || !away) return;
+      home.pj++; away.pj++;
+      home.pf += m.hs; home.pc += m.as;
+      away.pf += m.as; away.pc += m.hs;
+      if (m.hs > m.as) {
+        home.g++; home.pts += 4; away.p++;
+      } else if (m.hs < m.as) {
+        away.g++; away.pts += 4; home.p++;
+      } else {
+        home.e++; away.e++; home.pts += 2; away.pts += 2;
+      }
+      // Bonus ofensivo (4+ tries) y defensivo (derrota ≤7) no se pueden calcular sin datos de tries
+      // Se mantienen los bp/bf hardcodeados si no vienen de Firebase
+    });
+  });
+  // Restaurar bonus points desde los valores originales hardcodeados
+  const bpRef = {"Francia":3,"Escocia":3,"Irlanda":1,"Inglaterra":1,"Italia":1,"Gales":0};
+  const bfRef = {"Francia":0,"Escocia":0,"Irlanda":0,"Inglaterra":0,"Italia":0,"Gales":0};
+  teams.forEach(t => {
+    t.bp = bpRef[t.name] || 0;
+    t.bf = bfRef[t.name] || 0;
+    t.pts += t.bp + t.bf;
+  });
+}
+
+// Sincronizar al cargar y cada 5 minutos
+syncSeisNaciones();
+setInterval(syncSeisNaciones, 5 * 60 * 1000);
+
+</script>
+</body>
+</html>

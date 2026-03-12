@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Super Rugby Américas 2026 — Tabla y Resultados | Ovalados</title>
+<meta name="description" content="Tabla de posiciones, fixture y resultados del Super Rugby Américas 2026. Pampas, Dogos XV, Tarucas, Selknam, Capibaras XV, Peñarol, Cobras BR y Yacare XV.">
+<link rel="canonical" href="https://ovalados.com/super-rugby.html">
+<meta property="og:title" content="Super Rugby Américas 2026 — Ovalados">
+<meta property="og:description" content="Tabla de posiciones, fixture y resultados del Super Rugby Américas 2026. Pampas, Dogos XV, Tarucas, Selknam, Capibaras XV, Peñarol, Cobras BR y Yacare XV.">
+<meta property="og:image" content="https://ovalados.com/img/og-superrugby.jpg">
+<meta property="og:url" content="https://ovalados.com/super-rugby.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="eObn6uPNHec1448XkrJbqhSoKF69bKaJayuLrdOZAj0" />
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="css/styles.css?v=21">
+<body>
+<header class="gold-accent">
+  <a href="index.html" class="logo">OVALADOS</a>
+  <nav>
+    <button class="active" onclick="go('posiciones',this)">Posiciones</button>
+    <button onclick="go('partidos',this)">Partidos</button>
+    <button onclick="go('locvis',this)">Local/Visit.</button>
+    <button onclick="go('calculadora',this)">Calculadora</button>
+  </nav>
+</header>
+<div class="sub-header">
+  <a href="index.html" class="back-btn">← Torneos</a>
+  <span class="sub-label">🌎 SÚPER RUGBY AMÉRICAS 2026</span>
+  <span id="last-update" style="font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;color:var(--muted);margin-left:auto">Cargando...</span>
+</div>
+<main>
+
+<section id="posiciones" class="section active">
+  <div class="page-title">POSICIONES</div>
+  <div class="page-subtitle">Súper Rugby Américas 2026 · 8 franquicias · 14 fechas + playoffs</div>
+  <div class="table-wrap"><table>
+    <thead><tr>
+      <th style="width:40px">#</th><th style="text-align:left">EQUIPO</th>
+      <th>PJ</th><th>G</th><th>E</th><th>P</th><th>PF</th><th>PC</th><th>+/-</th><th>BP</th><th>BF</th><th>PTS</th><th>FORMA</th>
+    </tr></thead>
+    <tbody id="standings-body"></tbody>
+  </table></div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-bar" style="background:var(--gold)"></div>Clasifican a Semifinales (1°–4°)</div>
+  </div>
+</section>
+
+<section id="partidos" class="section">
+  <div class="page-title">PARTIDOS</div>
+  <div class="page-subtitle">Fixture completo · Súper Rugby Américas 2026</div>
+  <div class="round-selector" id="round-selector"></div>
+  <div id="matches-container"></div>
+</section>
+
+<section id="locvis" class="section">
+  <div class="page-title">LOCAL / VISITANTE</div>
+  <div class="page-subtitle">Rendimiento según condición de juego · 2026</div>
+  <div class="locvis-grid">
+    <div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2px;color:var(--gold);margin-bottom:0.75rem;text-transform:uppercase">🏠 De Local</div>
+      <div class="table-wrap"><table>
+        <thead><tr><th style="text-align:left;padding-left:12px">Equipo</th><th>PJ</th><th>G</th><th>P</th><th>PF</th><th>PC</th><th>PTS</th></tr></thead>
+        <tbody id="loc-body"></tbody>
+      </table></div>
+    </div>
+    <div>
+      <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2px;color:var(--green);margin-bottom:0.75rem;text-transform:uppercase">✈️ De Visitante</div>
+      <div class="table-wrap"><table>
+        <thead><tr><th style="text-align:left;padding-left:12px">Equipo</th><th>PJ</th><th>G</th><th>P</th><th>PF</th><th>PC</th><th>PTS</th></tr></thead>
+        <tbody id="vis-body"></tbody>
+      </table></div>
+    </div>
+  </div>
+</section>
+
+<section id="calculadora" class="section">
+  <div class="page-title">CALCULADORA</div>
+  <div class="page-subtitle">Proyectá escenarios y posiciones finales</div>
+  <div class="calc-grid">
+    <div><div class="calc-panel">
+      <h3>⚙ Sistema de puntos</h3>
+      <div class="points-info"
+        style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px 10px;text-align:center;background:var(--dark3);border-radius:6px;padding:1rem;margin-bottom:1.5rem;font-family:'Barlow Condensed',sans-serif">
+        <div><div class="points-num">4</div><div class="points-label">Victoria</div></div>
+        <div><div class="points-num">2</div><div class="points-label">Empate</div></div>
+        <div><div class="points-num">0</div><div class="points-label">Derrota</div></div>
+        <div><div class="points-num">+1</div><div class="points-label">Bonus 4+ tries</div></div>
+        <div><div class="points-num">+1</div><div class="points-label">Bonus derrota ≤7</div></div>
+        <div><div class="points-num">14</div><div class="points-label">Fechas totales</div></div>
+      </div>
+      <h3>📅 Simular fechas</h3>
+      <div class="info-box">Abrí cada fecha y seleccioná resultados. La tabla se actualiza sola.</div>
+      <div id="sim-matches"></div>
+      <button class="calc-btn" onclick="renderProjected()">PROYECTAR</button>
+      <button class="reset-btn" onclick="resetCalc()">↺ Reiniciar</button>
+    </div></div>
+    <div><div class="calc-panel">
+      <h3>📊 Tabla proyectada</h3>
+      <div class="proj-note" id="proj-note">Seleccioná resultados para ver la proyección</div>
+      <div id="projected-table"></div>
+    </div></div>
+  </div>
+</section>
+
+</main>
+<script>
+const teams=[
+  {name:"Capibaras XV",pts:10,pj:2,g:2,e:0,p:0,pf:88,pc:19,bp:2,bf:0,form:['w','w']},
+  {name:"Tarucas",pts:9,pj:2,g:2,e:0,p:0,pf:69,pc:31,bp:1,bf:0,form:['w','w']},
+  {name:"Dogos XV",pts:9,pj:2,g:2,e:0,p:0,pf:57,pc:53,bp:1,bf:0,form:['w','w']},
+  {name:"Pampas",pts:6,pj:2,g:1,e:0,p:1,pf:60,pc:49,bp:2,bf:0,form:['w','l']},
+  {name:"Selknam",pts:6,pj:2,g:1,e:0,p:1,pf:75,pc:101,bp:2,bf:0,form:['l','w']},
+  {name:"Yacare XV",pts:1,pj:2,g:0,e:0,p:2,pf:49,pc:64,bp:1,bf:0,form:['l','l']},
+  {name:"Cobras BR",pts:1,pj:2,g:0,e:0,p:2,pf:31,pc:77,bp:1,bf:0,form:['l','l']},
+  {name:"Peñarol",pts:0,pj:2,g:0,e:0,p:2,pf:20,pc:57,bp:0,bf:0,form:['l','l']},
+];
+const matches={
+  1:{date:"20-23/02/2026",ms:[{home:"Tarucas",away:"Selknam",hs:41,as:13,played:true},{home:"Yacare XV",away:"Pampas",hs:17,as:30,played:true},{home:"Capibaras XV",away:"Peñarol",hs:34,as:7,played:true},{home:"Dogos XV",away:"Cobras BR",hs:21,as:19,played:true}]},
+  2:{date:"27/02-01/03/2026",ms:[{home:"Peñarol",away:"Tarucas",hs:18,as:28,played:true},{home:"Selknam",away:"Yacare XV",hs:34,as:32,played:true},{home:"Capibaras XV",away:"Cobras BR",hs:54,as:12,played:true},{home:"Pampas",away:"Dogos XV",hs:34,as:36,played:true}]},
+  3:{date:"06-08/03/2026",ms:[{home:"Pampas",away:"Capibaras XV",played:false},{home:"Tarucas",away:"Dogos XV",played:false},{home:"Peñarol",away:"Selknam",played:false},{home:"Cobras BR",away:"Yacare XV",played:false}]},
+  4:{date:"13-14/03/2026",ms:[{home:"Peñarol",away:"Cobras BR",played:false},{home:"Tarucas",away:"Pampas",played:false},{home:"Yacare XV",away:"Capibaras XV",played:false},{home:"Dogos XV",away:"Selknam",played:false}]},
+  5:{date:"20-22/03/2026",ms:[{home:"Dogos XV",away:"Peñarol",played:false},{home:"Selknam",away:"Capibaras XV",played:false},{home:"Yacare XV",away:"Tarucas",played:false},{home:"Cobras BR",away:"Pampas",played:false}]},
+  6:{date:"27-30/03/2026",ms:[{home:"Tarucas",away:"Cobras BR",played:false},{home:"Peñarol",away:"Yacare XV",played:false},{home:"Selknam",away:"Pampas",played:false},{home:"Dogos XV",away:"Capibaras XV",played:false}]},
+  7:{date:"10-13/04/2026",ms:[{home:"Pampas",away:"Peñarol",played:false},{home:"Yacare XV",away:"Dogos XV",played:false},{home:"Cobras BR",away:"Selknam",played:false},{home:"Capibaras XV",away:"Tarucas",played:false}]},
+  8:{date:"17-20/04/2026",ms:[{home:"Pampas",away:"Yacare XV",played:false},{home:"Cobras BR",away:"Dogos XV",played:false},{home:"Selknam",away:"Tarucas",played:false},{home:"Peñarol",away:"Capibaras XV",played:false}]},
+  9:{date:"24-27/04/2026",ms:[{home:"Dogos XV",away:"Pampas",played:false},{home:"Yacare XV",away:"Selknam",played:false},{home:"Cobras BR",away:"Capibaras XV",played:false},{home:"Tarucas",away:"Peñarol",played:false}]},
+  10:{date:"01-03/05/2026",ms:[{home:"Capibaras XV",away:"Pampas",played:false},{home:"Yacare XV",away:"Cobras BR",played:false},{home:"Dogos XV",away:"Tarucas",played:false},{home:"Selknam",away:"Peñarol",played:false}]},
+  11:{date:"08-11/05/2026",ms:[{home:"Capibaras XV",away:"Yacare XV",played:false},{home:"Selknam",away:"Dogos XV",played:false},{home:"Cobras BR",away:"Peñarol",played:false},{home:"Pampas",away:"Tarucas",played:false}]},
+  12:{date:"22-23/05/2026",ms:[{home:"Pampas",away:"Cobras BR",played:false},{home:"Peñarol",away:"Dogos XV",played:false},{home:"Capibaras XV",away:"Selknam",played:false},{home:"Tarucas",away:"Yacare XV",played:false}]},
+  13:{date:"29-30/05/2026",ms:[{home:"Capibaras XV",away:"Dogos XV",played:false},{home:"Pampas",away:"Selknam",played:false},{home:"Cobras BR",away:"Tarucas",played:false},{home:"Yacare XV",away:"Peñarol",played:false}]},
+  14:{date:"05-06/06/2026",ms:[{home:"Peñarol",away:"Pampas",played:false},{home:"Dogos XV",away:"Yacare XV",played:false},{home:"Tarucas",away:"Capibaras XV",played:false},{home:"Selknam",away:"Cobras BR",played:false}]},
+};
+
+function go(id,btn){
+  document.querySelectorAll('main .section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  if(btn)btn.classList.add('active');
+  if(id==='partidos')renderMatches();
+  if(id==='locvis')renderLocVis();
+  if(id==='calculadora')renderCalc();
+}
+
+function renderStandings(){
+  const s=[...teams].sort((a,b)=>b.pts-a.pts||(b.pf-b.pc)-(a.pf-a.pc));
+  document.getElementById('standings-body').innerHTML=s.map((t,i)=>{
+    const pos=i+1,diff=t.pf-t.pc,dots=t.form.map(f=>`<div class="dot ${f}"></div>`).join('');
+    return`<tr class="${pos<=4?'semi':''}"><td><span class="pos-num">${pos}</span></td>
+      <td><span class="team-name">${t.name}</span></td>
+      <td class="pts gold">${t.pts}</td><td>${t.pj}</td><td>${t.g}</td><td>${t.e}</td><td>${t.p}</td>
+      <td>${t.pf}</td><td>${t.pc}</td>
+      <td style="color:${diff>0?'var(--green)':diff<0?'#c0392b':'var(--muted)'}">${diff>0?'+':''}${diff}</td>
+      <td style="color:var(--gold)">${t.bp}</td><td>${t.bf}</td>
+      <td><div class="form-dots">${dots}</div></td></tr>`;
+  }).join('');
+}
+
+let curRound=2;
+function renderMatches(r){
+  if(!r)r=curRound;curRound=r;
+  document.getElementById('round-selector').innerHTML=
+    Object.keys(matches).map(n=>`<button class="round-btn ${+n===r?'active':''}" onclick="renderMatches(${n})">F${n}</button>`).join('')+
+    `<button class="round-btn" style="background:rgba(245,197,24,0.15);color:var(--gold);border-color:var(--gold)">SF</button>
+     <button class="round-btn" style="background:rgba(245,197,24,0.15);color:var(--gold);border-color:var(--gold)">FINAL</button>`;
+  const rd=matches[r];if(!rd)return;
+  let html='';
+  const played=rd.ms.filter(m=>m.played),upcoming=rd.ms.filter(m=>!m.played);
+  if(played.length){
+    html+=`<div class="round-title">Fecha ${r} · ${rd.date} · Resultados</div><div class="matches-grid">`;
+    html+=played.map(m=>`<div class="match-card"><div class="match-meta"><span>${rd.date}</span><span style="color:var(--gold);font-size:0.75rem">FINALIZADO</span></div>
+      <div class="match-teams"><div class="match-team home"><div class="name">${m.home}</div></div>
+      <div class="match-score">${m.hs} — ${m.as}</div>
+      <div class="match-team"><div class="name">${m.away}</div></div></div></div>`).join('');
+    html+='</div>';
+  }
+  if(upcoming.length){
+    html+=`<div class="round-title">Fecha ${r} · Próximos partidos</div><div class="matches-grid">`;
+    html+=upcoming.map(m=>`<div class="match-card"><div class="match-meta"><span>${rd.date} · 15:30hs</span><span style="font-size:0.75rem;color:var(--gold)">PRÓXIMO</span></div>
+      <div class="match-teams"><div class="match-team home"><div class="name">${m.home}</div></div>
+      <div class="match-score upcoming">VS</div>
+      <div class="match-team"><div class="name">${m.away}</div></div></div></div>`).join('');
+    html+='</div>';
+  }
+  document.getElementById('matches-container').innerHTML=html;
+}
+
+function renderLocVis(){
+  const loc={},vis={};
+  teams.forEach(t=>{loc[t.name]={pj:0,g:0,p:0,pf:0,pc:0,pts:0};vis[t.name]={pj:0,g:0,p:0,pf:0,pc:0,pts:0};});
+  Object.values(matches).forEach(rd=>rd.ms.filter(m=>m.played).forEach(m=>{
+    loc[m.home].pj++;vis[m.away].pj++;
+    loc[m.home].pf+=m.hs;loc[m.home].pc+=m.as;
+    vis[m.away].pf+=m.as;vis[m.away].pc+=m.hs;
+    if(m.hs>m.as){loc[m.home].g++;loc[m.home].pts+=4;vis[m.away].p++;}
+    else if(m.hs<m.as){vis[m.away].g++;vis[m.away].pts+=4;loc[m.home].p++;}
+    else{loc[m.home].pts+=2;vis[m.away].pts+=2;}
+  }));
+  const rows=d=>[...teams].sort((a,b)=>(d[b.name]?.pts||0)-(d[a.name]?.pts||0))
+    .map(t=>{const v=d[t.name]||{};return`<tr>
+      <td style="text-align:left;padding-left:12px;font-weight:600">${t.name}</td>
+      <td>${v.pj||0}</td><td>${v.g||0}</td><td>${v.p||0}</td>
+      <td>${v.pf||0}</td><td>${v.pc||0}</td>
+      <td style="color:var(--gold);font-weight:700">${v.pts||0}</td></tr>`;}).join('');
+  document.getElementById('loc-body').innerHTML=rows(loc);
+  document.getElementById('vis-body').innerHTML=rows(vis);
+}
+
+const sim={},aopen={};let pending=[];
+function buildPending(){
+  pending=[];
+  Object.entries(matches).forEach(([r,rd])=>rd.ms.filter(m=>!m.played).forEach((m,i)=>pending.push({...m,id:`r${r}i${i}`,round:+r,date:rd.date})));
+}
+function renderCalc(){
+  buildPending();
+  const by={};pending.forEach(m=>{if(!by[m.round])by[m.round]=[];by[m.round].push(m);});
+  const rnds=Object.keys(by).map(Number).sort((a,b)=>a-b);
+  if(rnds.length&&!Object.values(aopen).some(v=>v))aopen[rnds[0]]=true;
+  document.getElementById('sim-matches').innerHTML=rnds.map(r=>{
+    const ms=by[r],sc=ms.filter(m=>sim[m.id]?.result).length;
+    return`<div class="accord-item" id="ac-${r}">
+      <div class="accord-header ${aopen[r]?'open':''}" onclick="tog(${r})">
+        <div class="accord-header-left">
+          <span class="accord-rnd">Fecha ${r}</span>
+          <span class="accord-date">${ms[0].date}</span>
+          ${sc>0?`<span class="accord-badge">✓ ${sc}/${ms.length}</span>`:''}
+        </div><span class="accord-arrow">▼</span>
+      </div>
+      <div class="accord-body ${aopen[r]?'open':''}" id="ab-${r}">${ms.map(simRow).join('')}</div>
+    </div>`;
+  }).join('');
+  renderProjected();
+}
+function tog(r){
+  aopen[r]=!aopen[r];
+  document.querySelector(`#ac-${r} .accord-header`).classList.toggle('open',aopen[r]);
+  document.getElementById(`ab-${r}`).classList.toggle('open',aopen[r]);
+}
+function simRow(m){
+  const s=sim[m.id]||{};
+  const bonus=s.result?`<div class="sim-bonus">
+    <label><input type="checkbox" ${s.bph?'checked':''} onchange="setB('${m.id}','bph',this.checked)"> BP ${m.home.split(' ')[0]}</label>
+    <label><input type="checkbox" ${s.bpa?'checked':''} onchange="setB('${m.id}','bpa',this.checked)"> BP ${m.away.split(' ')[0]}</label>
+    ${s.result!=='draw'?`<label><input type="checkbox" ${s.bfl?'checked':''} onchange="setB('${m.id}','bfl',this.checked)"> BF perdedor</label>`:''}
+  </div>`:'';
+  return`<div><div class="sim-row">
+    <div class="sim-team">${m.home}</div>
+    <div class="sim-btns">
+      <button class="sim-btn ${s.result==='home'?'win':''}" onclick="setR('${m.id}','home','${m.home}','${m.away}')">L</button>
+      <button class="sim-btn ${s.result==='draw'?'draw':''}" onclick="setR('${m.id}','draw','${m.home}','${m.away}')">E</button>
+      <button class="sim-btn ${s.result==='away'?'loss':''}" onclick="setR('${m.id}','away','${m.home}','${m.away}')">V</button>
+    </div>
+    <div class="sim-team r">${m.away}</div>
+  </div>${bonus}</div>`;
+}
+function setR(id,result,home,away){
+  if(!sim[id])sim[id]={};
+  Object.assign(sim[id],{result,home,away,bph:false,bpa:false,bfl:false});
+  const m=pending.find(m=>m.id===id);
+  if(m){
+    const by={};pending.forEach(p=>{if(!by[p.round])by[p.round]=[];by[p.round].push(p);});
+    document.getElementById(`ab-${m.round}`).innerHTML=by[m.round].map(simRow).join('');
+    const sc=by[m.round].filter(p=>sim[p.id]?.result).length;
+    const hl=document.querySelector(`#ac-${m.round} .accord-header-left`);
+    const ex=hl.querySelector('.accord-badge');if(ex)ex.remove();
+    if(sc>0){const b=document.createElement('span');b.className='accord-badge';b.textContent=`✓ ${sc}/${by[m.round].length}`;hl.appendChild(b);}
+  }
+  renderProjected();
+}
+function setB(id,key,val){if(!sim[id])sim[id]={};sim[id][key]=val;renderProjected();}
+function renderProjected(){
+  const pts={};teams.forEach(t=>pts[t.name]=t.pts);
+  Object.values(sim).forEach(s=>{
+    if(!s.result)return;
+    if(s.result==='home'){pts[s.home]=(pts[s.home]||0)+4;if(s.bfl)pts[s.away]=(pts[s.away]||0)+1;}
+    else if(s.result==='away'){pts[s.away]=(pts[s.away]||0)+4;if(s.bfl)pts[s.home]=(pts[s.home]||0)+1;}
+    else{pts[s.home]=(pts[s.home]||0)+2;pts[s.away]=(pts[s.away]||0)+2;}
+    if(s.bph)pts[s.home]=(pts[s.home]||0)+1;
+    if(s.bpa)pts[s.away]=(pts[s.away]||0)+1;
+  });
+  const orig={};[...teams].sort((a,b)=>b.pts-a.pts).forEach((t,i)=>orig[t.name]=i+1);
+  const proj=teams.map(t=>({name:t.name,cur:t.pts,tot:pts[t.name]||t.pts,gain:(pts[t.name]||t.pts)-t.pts})).sort((a,b)=>b.tot-a.tot);
+  const sc=Object.keys(sim).length;
+  document.getElementById('proj-note').textContent=sc>0?`Simulando ${sc} partido${sc>1?'s':''}. Actuales + proyección.`:'Seleccioná resultados para ver la proyección.';
+  document.getElementById('projected-table').innerHTML=proj.map((t,i)=>{
+    const pos=i+1,mv=orig[t.name]-pos;
+    const mi=mv>0?`<span class="mv up">▲${mv}</span>`:mv<0?`<span class="mv dn">▼${Math.abs(mv)}</span>`:`<span class="mv eq">—</span>`;
+    return`<div class="proj-row ${pos<=4?'semi':''}">
+      <div class="proj-pos">${pos}</div>
+      <div class="proj-name">${t.name} ${mi}</div>
+      <div class="proj-cur">${t.cur}</div>
+      ${t.gain>0?`<div class="proj-gain">+${t.gain}</div>`:'<div></div>'}
+      <div class="proj-tot">${t.tot}</div>
+    </div>`;
+  }).join('');
+}
+function resetCalc(){Object.keys(sim).forEach(k=>delete sim[k]);renderCalc();}
+
+renderStandings();
+
+// ── SYNC DESDE JSON ───────────────────────────────────────
+function syncFromJSON() {
+  fetch('data/superrugby.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      if (!data) return;
+
+      // Actualizar matches con resultados del JSON
+      if (data.matches) {
+        Object.entries(data.matches).forEach(([rnd, rd]) => {
+          const msKey = rd.ms ? 'ms' : 'matches';
+          if (!matches[rnd]) return;
+          const localMs = matches[rnd].ms || matches[rnd].matches || [];
+          (rd[msKey] || []).forEach(m => {
+            if (!m.played) return;
+            const local = localMs.find(lm => lm.home === m.home && lm.away === m.away);
+            if (local) { local.hs = m.hs; local.as = m.as; local.played = true; }
+          });
+        });
+      }
+
+      // Recalcular posiciones
+      recalcStandings();
+
+      // Re-renderizar
+      renderStandings();
+      if (typeof currentRound !== 'undefined') renderMatches(currentRound);
+      if (typeof renderLocVis === 'function') renderLocVis();
+
+      // Mostrar última actualización
+      if (data.lastUpdate) {
+        const d = new Date(data.lastUpdate);
+        const label = d.toLocaleString('es-AR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+        const el = document.getElementById('last-update');
+        if (el) el.textContent = '✓ Actualizado: ' + label;
+      }
+    })
+    .catch(e => console.log('JSON sync error:', e));
+}
+
+function recalcStandings() {
+  teams.forEach(t => { t.pts=0; t.pj=0; t.g=0; t.e=0; t.p=0; t.pf=0; t.pc=0; t.bp=0; t.bf=0; t.form=[]; });
+  Object.values(matches).forEach(rd => {
+    const ms = rd.ms || rd.matches || [];
+    ms.filter(m => m.played).forEach(m => {
+      const home = teams.find(t => t.name === m.home);
+      const away = teams.find(t => t.name === m.away);
+      if (!home || !away) return;
+      home.pj++; away.pj++;
+      home.pf += m.hs; home.pc += m.as;
+      away.pf += m.as; away.pc += m.hs;
+      if (m.hs > m.as) {
+        home.g++; home.pts += 4; away.p++;
+        home.form.push('w'); away.form.push('l');
+      } else if (m.hs < m.as) {
+        away.g++; away.pts += 4; home.p++;
+        away.form.push('w'); home.form.push('l');
+      } else {
+        home.e++; away.e++; home.pts += 2; away.pts += 2;
+        home.form.push('d'); away.form.push('d');
+      }
+      if (m.bp_home) { home.pts++; home.bp++; }
+      if (m.bp_away) { away.pts++; away.bp++; }
+      if (m.bf_home) { home.pts++; home.bf++; }
+      if (m.bf_away) { away.pts++; away.bf++; }
+    });
+  });
+  teams.forEach(t => { t.form = t.form.slice(-5); });
+}
+
+syncFromJSON();
+setInterval(syncFromJSON, 10 * 60 * 1000);
+</script>
+</body>
+</html>

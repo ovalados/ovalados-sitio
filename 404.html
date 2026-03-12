@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Página no encontrada — Ovalados</title>
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=21">
+<style>
+  .error-page {
+    min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 2rem;
+  }
+  .error-code {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8rem; line-height: 1;
+    color: var(--green); letter-spacing: 8px;
+    text-shadow: 0 0 40px rgba(0,184,92,0.3);
+    margin-bottom: 0;
+  }
+  .error-msg {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.4rem; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 2.5rem;
+  }
+  .error-links {
+    display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
+    margin-top: 1.5rem;
+  }
+  .error-link {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 1rem 1.5rem;
+    font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+    font-size: 1rem; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--text); transition: all 0.2s;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .error-link:hover { border-color: var(--green); color: var(--green); transform: translateY(-2px); }
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo">OVALADOS</a>
+</header>
+
+<div class="error-page">
+  <div class="error-code">404</div>
+  <div class="error-msg">🏉 Jugada perdida — Esta página no existe</div>
+  <p style="color:var(--muted);max-width:380px;line-height:1.6;font-size:0.9rem">
+    Puede que el link esté roto o la página fue movida.<br>
+    Volvé al inicio y seguí con el partido.
+  </p>
+  <div class="error-links">
+    <a href="index.html" class="error-link">🏠 Inicio</a>
+    <a href="top14.html" class="error-link">🏆 URBA Top 14</a>
+    <a href="super-rugby.html" class="error-link">🌎 Super Rugby</a>
+    <a href="seis-naciones.html" class="error-link">🏆 Seis Naciones</a>
+    <a href="pumas.html" class="error-link">🇦🇷 Los Pumas</a>
+  </div>
+</div>
+</body>
+</html>
