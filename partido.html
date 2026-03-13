@@ -1,68 +1,416 @@
-<div id="cancha-container" style="text-align: center; padding: 20px; color: #666;">Cargando los 15 titulares...</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--
+    El <title> se reemplaza dinámicamente desde JavaScript
+    una vez que se cargan los datos del partido.
+  -->
+  <title>Formaciones — URBA Top 14</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500&display=swap" rel="stylesheet" />
 
-<style>
-    .contenedor-formaciones { display: flex; justify-content: space-between; background-color: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; max-width: 800px; margin: 0 auto; font-family: sans-serif; text-align: left; }
-    .equipo { width: 48%; }
-    .equipo h3 { text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 0; }
-    .lista-jugadores { list-style-type: none; padding: 0; margin: 0; }
-    .lista-jugadores li { padding: 6px 0; border-bottom: 1px solid #eee; font-size: 15px; }
-    .lista-jugadores li:last-child { border-bottom: none; }
-    .numero-camiseta { display: inline-block; width: 28px; font-weight: bold; color: #444; }
-</style>
-
-<script>
-    // --- PEGA AQUÍ LA URL DEL CSV DE LA FASE 1 ---
-    const urlCSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSmQRW3fRD4WnFE18rhcKHBFQOp5IWp53cRH6UelC6nwrNxSW_KhBNQ6OEHkDQBh0CFg7xzjszj7Axp/pub?output=csv';
-    
-    // Este ID debe coincidir exactamente con el que cargaste en el Panel
-    const partidoBuscado = 'fecha1-belgrano-casi'; 
-
-    async function obtenerFormaciones() {
-        try {
-            const respuesta = await fetch(urlCSV);
-            const datosCsv = await respuesta.text();
-            
-            const lineas = datosCsv.split('\n');
-            let equipoLocal = null, equipoVisitante = null;
-
-            for (let i = 1; i < lineas.length; i++) {
-                const columnas = lineas[i].replace('\r', '').split(','); 
-                if (columnas[0] === partidoBuscado) {
-                    if (columnas[2] === 'local') equipoLocal = columnas;
-                    else if (columnas[2] === 'visitante') equipoVisitante = columnas;
-                }
-            }
-
-            if (equipoLocal && equipoVisitante) renderizar(equipoLocal, equipoVisitante);
-            else document.getElementById('cancha-container').innerText = 'Formaciones aún no confirmadas.';
-        } catch (error) {
-            document.getElementById('cancha-container').innerText = 'Error al cargar los datos.';
-        }
+  <!--
+    ════════════════════════════════════════════════════════════════════════
+    ESTILOS
+    ════════════════════════════════════════════════════════════════════════
+  -->
+  <style>
+    /* ─── Variables ─── */
+    :root {
+      --verde:      #1a6b3c;
+      --verde-dark: #0f4526;
+      --oro:        #c9a84c;
+      --bg:         #f4f1eb;
+      --superficie: #ffffff;
+      --texto:      #1a1a1a;
+      --texto-sub:  #6b6b6b;
+      --borde:      #e0dbd0;
+      --radio:      6px;
     }
 
-    function generarTitulares(datos) {
-        let html = '';
-        for (let i = 3; i <= 17; i++) {
-            if (datos[i] && datos[i].trim() !== '') {
-                html += `<li><span class="numero-camiseta">${i - 2}</span> ${datos[i].trim()}</li>`;
-            }
-        }
-        return html;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--bg);
+      color: var(--texto);
+      min-height: 100vh;
     }
 
-    function renderizar(local, visitante) {
-        document.getElementById('cancha-container').innerHTML = `
-            <div class="contenedor-formaciones">
-                <div class="equipo">
-                    <h3>${local[1]}</h3>
-                    <ul class="lista-jugadores">${generarTitulares(local)}</ul>
-                </div>
-                <div class="equipo">
-                    <h3>${visitante[1]}</h3>
-                    <ul class="lista-jugadores">${generarTitulares(visitante)}</ul>
-                </div>
-            </div>`;
+    /* ─── Header ─── */
+    .site-header {
+      background: var(--verde-dark);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
-    obtenerFormaciones();
-</script>
+    .site-header .logo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 1.6rem;
+      color: #fff;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+
+    .site-header .logo span { color: var(--oro); }
+
+    /* ─── Breadcrumb ─── */
+    .breadcrumb {
+      max-width: 900px;
+      margin: 20px auto 0;
+      padding: 0 16px;
+      font-size: 0.8rem;
+      color: var(--texto-sub);
+    }
+
+    .breadcrumb a {
+      color: var(--verde);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ─── Contenido principal ─── */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+    }
+
+    /* ─── Banner del partido ─── */
+    .partido-banner {
+      background: var(--verde-dark);
+      border-radius: var(--radio);
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .banner-equipo {
+      flex: 1;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      color: #fff;
+      line-height: 1.1;
+    }
+
+    .banner-equipo.visitante { text-align: right; }
+
+    .banner-centro {
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .banner-vs {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900;
+      font-size: 1.4rem;
+      color: var(--oro);
+      letter-spacing: 0.1em;
+    }
+
+    .banner-torneo {
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 4px;
+    }
+
+    /* ─── Título de sección ─── */
+    .seccion-titulo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--texto-sub);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--borde);
+    }
+
+    /*
+     * ─── CONTENEDOR DE FORMACIONES ────────────────────────────────────────
+     * En escritorio: dos columnas enfrentadas, separadas por una línea.
+     * En móvil: apiladas (flex-direction: column).
+     */
+    .formaciones-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;   /* col-local | separador | col-visitante */
+      gap: 0;
+      background: var(--superficie);
+      border: 1px solid var(--borde);
+      border-radius: var(--radio);
+      overflow: hidden;
+    }
+
+    /* La línea separadora central */
+    .formaciones-separador {
+      background: var(--borde);
+      align-self: stretch;
+    }
+
+    /* Panel de cada equipo */
+    .equipo-panel {
+      padding: 24px;
+    }
+
+    .equipo-panel-titulo {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--verde-dark);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .equipo-panel-titulo::before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: var(--verde);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* Lista de jugadores */
+    .lista-jugadores {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .lista-jugadores li {
+      font-size: 0.9rem;
+      padding: 7px 10px;
+      border-radius: 3px;
+      transition: background 0.12s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lista-jugadores li:hover {
+      background: var(--bg);
+    }
+
+    /* Número de posición resaltado */
+    .lista-jugadores li .num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      color: var(--texto-sub);
+      min-width: 20px;
+    }
+
+    /* ─── Estado de error / carga ─── */
+    .estado-mensaje {
+      text-align: center;
+      padding: 60px 24px;
+      color: var(--texto-sub);
+    }
+
+    .estado-mensaje h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: var(--texto);
+      margin-bottom: 8px;
+    }
+
+    .estado-mensaje a {
+      color: var(--verde);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .estado-mensaje a:hover { text-decoration: underline; }
+
+    /* ─── Responsive: móvil ─────────────────────────────────────────────── */
+    @media (max-width: 620px) {
+      .partido-banner {
+        padding: 20px 16px;
+        gap: 10px;
+      }
+
+      /*
+       * En móvil, la grilla de 3 columnas se colapsa a 1 columna.
+       * El separador vertical desaparece y el panel visitante agrega
+       * un borde superior como separador horizontal.
+       */
+      .formaciones-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .formaciones-separador {
+        height: 1px;          /* horizontal en vez de vertical */
+        width: auto;
+        background: var(--borde);
+      }
+
+      .equipo-panel {
+        padding: 20px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#">Ovalados<span>.com</span></a>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="fixture.html">← Fixture</a> / <span id="breadcrumb-partido">Partido</span>
+  </div>
+
+  <main>
+    <!--
+      id="app" es el punto de montaje.
+      JavaScript reemplaza su contenido según los datos encontrados.
+    -->
+    <div id="app">
+      <!-- Estado inicial: mensaje de carga mientras JS procesa la URL -->
+      <div class="estado-mensaje">
+        <p>Cargando formaciones…</p>
+      </div>
+    </div>
+  </main>
+
+  <!--
+    ════════════════════════════════════════════════════════════════════════
+    DATOS
+    Se carga primero el archivo de datos para que esté disponible
+    cuando el script de partido.html lo necesite.
+    ════════════════════════════════════════════════════════════════════════
+  -->
+  <script src="data.js"></script>
+
+  <!--
+    ════════════════════════════════════════════════════════════════════════
+    SCRIPT PRINCIPAL
+    Lee el parámetro ?id= de la URL, busca el partido en PARTIDOS
+    y construye el DOM dinámicamente.
+    ════════════════════════════════════════════════════════════════════════
+  -->
+  <script>
+    (function () {
+
+      /* ── 1. Leer el parámetro ?id= de la URL ── */
+      const params   = new URLSearchParams(window.location.search);
+      const partidoId = params.get('id');   // ej: "belgrano_alumni"
+
+      /* ── 2. Buscar el partido en la base de datos ── */
+      const partido = partidoId && PARTIDOS[partidoId];
+
+      /* ── 3. Punto de montaje en el DOM ── */
+      const app = document.getElementById('app');
+
+      /* ── 4a. Si no se encontró el partido, mostrar error ── */
+      if (!partido) {
+        app.innerHTML = `
+          <div class="estado-mensaje">
+            <h2>Partido no encontrado</h2>
+            <p>El ID <strong>"${partidoId || '(vacío)'}"</strong> no existe en la base de datos.</p>
+            <p style="margin-top:12px"><a href="fixture.html">← Volver al fixture</a></p>
+          </div>
+        `;
+        return;  // detener ejecución
+      }
+
+      /* ── 4b. Partido encontrado: actualizar título y breadcrumb ── */
+      const nombreLocal      = partido.local.nombre;
+      const nombreVisitante  = partido.visitante.nombre;
+
+      document.title = `${nombreLocal} vs ${nombreVisitante} — Formaciones`;
+      document.getElementById('breadcrumb-partido').textContent =
+        `${nombreLocal} vs ${nombreVisitante}`;
+
+      /* ── 5. Generar el HTML de la lista de un equipo ── */
+      function renderListaJugadores(jugadores) {
+        return jugadores
+          .map(jugador => {
+            /*
+             * Cada jugador en datos.js tiene el formato "N. Nombre Apellido".
+             * Separamos el número del nombre para poder estilizarlos distinto.
+             */
+            const punto  = jugador.indexOf('.');
+            const num    = jugador.substring(0, punto + 1);       // "1."
+            const nombre = jugador.substring(punto + 1).trim();    // "Marcos Torrillas"
+
+            return `
+              <li>
+                <span class="num">${num}</span>
+                <span>${nombre}</span>
+              </li>
+            `;
+          })
+          .join('');
+      }
+
+      /* ── 6. Construir e inyectar el HTML completo en #app ── */
+      app.innerHTML = `
+
+        <!-- Banner con los nombres de los equipos -->
+        <div class="partido-banner" aria-label="Partido: ${nombreLocal} vs ${nombreVisitante}">
+          <div class="banner-equipo local">${nombreLocal}</div>
+          <div class="banner-centro">
+            <div class="banner-vs">VS</div>
+            <div class="banner-torneo">URBA Top 14</div>
+          </div>
+          <div class="banner-equipo visitante">${nombreVisitante}</div>
+        </div>
+
+        <!-- Título de la sección -->
+        <p class="seccion-titulo">Formaciones titulares</p>
+
+        <!--
+          Grilla de formaciones:
+          - En escritorio: local | separador | visitante  (3 columnas)
+          - En móvil:      local / separador / visitante  (apilados)
+        -->
+        <div class="formaciones-wrapper">
+
+          <!-- Panel del equipo local -->
+          <div class="equipo-panel" aria-label="Formación de ${nombreLocal}">
+            <p class="equipo-panel-titulo">${nombreLocal}</p>
+            <ol class="lista-jugadores">
+              ${renderListaJugadores(partido.local.jugadores)}
+            </ol>
+          </div>
+
+          <!-- Separador central (vertical en desktop, horizontal en móvil) -->
+          <div class="formaciones-separador" role="separator" aria-hidden="true"></div>
+
+          <!-- Panel del equipo visitante -->
+          <div class="equipo-panel" aria-label="Formación de ${nombreVisitante}">
+            <p class="equipo-panel-titulo">${nombreVisitante}</p>
+            <ol class="lista-jugadores">
+              ${renderListaJugadores(partido.visitante.jugadores)}
+            </ol>
+          </div>
+
+        </div>
+      `;
+
+    })();
+  </script>
+
+</body>
+</html>
