@@ -261,7 +261,7 @@ const PARTIDOS = {
       ]
     }
   },
-  los_matreros_regatas: {
+  los_matreros_regatas_bella_vista: {
     local: {
       nombre: "Los Matreros",
       jugadores: [
@@ -283,7 +283,7 @@ const PARTIDOS = {
       ]
     },
     visitante: {
-      nombre: "Regatas",
+      nombre: "Regatas Bella Vista",
       jugadores: [
         "1. Barbaccia, Tomas",
         "2. Landivar, Beltran",
@@ -303,7 +303,7 @@ const PARTIDOS = {
       ]
     }
   },
-  newman_buenos_aires: {
+  newman_buenos_aires_c_rc: {
     local: {
       nombre: "Newman",
       jugadores: [
@@ -325,7 +325,7 @@ const PARTIDOS = {
       ]
     },
     visitante: {
-      nombre: "Buenos Aires",
+      nombre: "Buenos Aires C&RC",
       jugadores: [
         "1. Gallo, Tomas",
         "2. Ruiz, Tomas",
