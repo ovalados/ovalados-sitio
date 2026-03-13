@@ -53,4 +53,49 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="result-away">${p.away}</div>
       <div class="result-date">${p.fecha}</div>
     </div>`).join('');
-});
+  const PARTIDOS = {
+
+  sic_belgrano_athletic: {
+    local: {
+      nombre: "SIC",
+      jugadores: [
+        "1. Nombre Apellido",
+        "2. Nombre Apellido",
+        "3. Nombre Apellido",
+        "4. Nombre Apellido",
+        "5. Nombre Apellido",
+        "6. Nombre Apellido",
+        "7. Nombre Apellido",
+        "8. Nombre Apellido",
+        "9. Nombre Apellido",
+        "10. Nombre Apellido",
+        "11. Nombre Apellido",
+        "12. Nombre Apellido",
+        "13. Nombre Apellido",
+        "14. Nombre Apellido",
+        "15. Nombre Apellido",
+      ]
+    },
+    visitante: {
+      nombre: "Belgrano Athletic",
+      jugadores: [
+        "1. Nombre Apellido",
+        "2. Nombre Apellido",
+        "3. Nombre Apellido",
+        "4. Nombre Apellido",
+        "5. Nombre Apellido",
+        "6. Nombre Apellido",
+        "7. Nombre Apellido",
+        "8. Nombre Apellido",
+        "9. Nombre Apellido",
+        "10. Nombre Apellido",
+        "11. Nombre Apellido",
+        "12. Nombre Apellido",
+        "13. Nombre Apellido",
+        "14. Nombre Apellido",
+        "15. Nombre Apellido",
+      ]
+    }
+  },
+
+};    
