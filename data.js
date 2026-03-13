@@ -90,4 +90,47 @@ const PARTIDOS = {
       ]
     }
   },
+  const PARTIDOS = {
+  la_plata_atletico_del_rosario: {
+    local: {
+      nombre: "La Plata",
+      jugadores: [
+        "1. Del Cerro, Ariel",
+        "2. Nunez, Joaquin",
+        "3. Patat, Martin",
+        "4. Ozog, Bautista",
+        "5. Kucic, Ivan",
+        "6. Pineda, Segundo",
+        "7. Chiappani, Nicolas",
+        "8. Bernasconi, Tomas",
+        "9. De la Fuente, Manuel",
+        "10. Di Lucca, Santino",
+        "11. Addiechi, Pedro",
+        "12. Paz Rizzoli, Francisco",
+        "13. Cejas, Francisco",
+        "14. Panigatti, Facundo",
+        "15. Sica Manuele, Federico",
+      ]
+    },
+    visitante: {
+      nombre: "Atletico del Rosario",
+      jugadores: [
+        "1. Reyes, Ezequiel",
+        "2. Rubio, Ramiro",
+        "3. Montenegro, Bruno",
+        "4. Caceres, Jose",
+        "5. Capella, Octavio",
+        "6. Sapino, Ignacio",
+        "7. Echenique, Francisco",
+        "8. Malanos, Lucas",
+        "9. Nogues, Felipe",
+        "10. Nogues, Manuel",
+        "11. Casals, Nicolas",
+        "12. Malanos, Tomas",
+        "13. Musio, Ramiro",
+        "14. Bertero, Juan Cruz",
+        "15. Elias, Martin",
+      ]
+    }
+  },
 };
