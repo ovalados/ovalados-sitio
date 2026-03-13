@@ -2,9 +2,7 @@
 //  OVALADOS — DATOS DE PORTADA
 //  Editá solo este archivo cada fecha para actualizar el home.
 // ============================================================
-
 // ── ÚLTIMOS RESULTADOS ───────────────────────────────────────
-// Cambiá el label y los 4 partidos después de cada fecha.
 const SR_ULTIMA_FECHA = {
   label: "Super Rugby Américas · Fecha 3",
   partidos: [
@@ -14,9 +12,7 @@ const SR_ULTIMA_FECHA = {
     { home:"Cobras BR",   hs:21, away:"Yacare XV",    as:19, fecha:"07/03/2026" },
   ]
 };
-
 // ── PRÓXIMA FECHA ────────────────────────────────────────────
-// Cambiá el label y los 4 partidos cuando haya nueva fecha.
 const SR_PROXIMA_FECHA = {
   label: "Super Rugby Américas · Fecha 4 · 14–15 mar",
   partidos: [
@@ -26,18 +22,14 @@ const SR_PROXIMA_FECHA = {
     { home:"Selknam",   away:"Cobras BR",    fecha:"15/03" },
   ]
 };
-
 // ── RENDER AUTOMÁTICO ────────────────────────────────────────
-// No toques esto.
 document.addEventListener('DOMContentLoaded', function() {
   const ul = document.getElementById('sr-ultimos');
   const px = document.getElementById('sr-proximos');
   const ulLabel = document.getElementById('sr-ultimos-label');
   const pxLabel = document.getElementById('sr-proximos-label');
-
   if (ulLabel) ulLabel.textContent = SR_ULTIMA_FECHA.label;
   if (pxLabel) pxLabel.textContent = SR_PROXIMA_FECHA.label;
-
   if (ul) ul.innerHTML = SR_ULTIMA_FECHA.partidos.map(p => `
     <div class="result-row gold-hover">
       <div class="result-home">${p.home}</div>
@@ -45,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="result-away">${p.away}</div>
       <div class="result-date">${p.fecha}</div>
     </div>`).join('');
-
   if (px) px.innerHTML = SR_PROXIMA_FECHA.partidos.map(p => `
     <div class="result-row gold-hover">
       <div class="result-home">${p.home}</div>
@@ -53,9 +44,10 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="result-away">${p.away}</div>
       <div class="result-date">${p.fecha}</div>
     </div>`).join('');
-  }
-  const PARTIDOS = {
+});
 
+// ── FORMACIONES TOP 14 ────────────────────────────────────────
+const PARTIDOS = {
   sic_belgrano_athletic: {
     local: {
       nombre: "SIC",
@@ -98,5 +90,4 @@ document.addEventListener('DOMContentLoaded', function() {
       ]
     }
   },
-
-};    
+};
