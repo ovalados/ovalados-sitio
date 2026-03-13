@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="result-away">${p.away}</div>
       <div class="result-date">${p.fecha}</div>
     </div>`).join('');
+  }
   const PARTIDOS = {
 
   sic_belgrano_athletic: {
