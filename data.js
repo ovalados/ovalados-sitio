@@ -90,7 +90,6 @@ const PARTIDOS = {
       ]
     }
   },
-  const PARTIDOS = {
   la_plata_atletico_del_rosario: {
     local: {
       nombre: "La Plata",
