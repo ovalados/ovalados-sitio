@@ -7,7 +7,7 @@
 <meta name="description" content="Tabla de posiciones y fixture de la M22 URBA 2026.">
 <link rel="canonical" href="https://ovalados.com/m22.html">
 <meta property="og:title" content="M22 URBA 2026 — Ovalados">
-<meta property="og:description" content="Tabla de posiciones y fixture de la M22 URBA 2026.">
+<meta property="og:description" content="Tabla de posiciones y fixture de la Intermedia URBA 2026.">
 <meta property="og:image" content="https://ovalados.com/img/og-default.jpg">
 <meta property="og:url" content="https://ovalados.com/m22.html">
 <meta property="og:type" content="website">
@@ -30,13 +30,13 @@
 </header>
 <div class="sub-header">
   <a href="index.html" class="back-btn">← Torneos</a>
-  <span class="sub-label"><strong>M22</strong> · URBA · 26 fechas · 2026</span>
+  <span class="sub-label"><strong>M22</strong> · URBA Top 14 · 26 fechas · 2026</span>
 </div>
 <main>
 
   <section id="posiciones" class="section active">
     <div class="page-title">POSICIONES</div>
-    <div class="page-subtitle">M22 URBA 2026 · 26 fechas</div>
+    <div class="page-subtitle">Intermedia URBA 2026 · URBA 2026 · 26 fechas</div>
     <div class="table-wrap">
       <table>
         <thead><tr>
@@ -398,7 +398,8 @@ function renderStandings(data) {
       <td><span class="team-name">${t.name}</span></td>
       <td class="pts">${t.pts}</td><td>${t.pj}</td><td>${t.g}</td><td>${t.e}</td><td>${t.p}</td>
       <td>${t.pf}</td><td>${t.pc}</td>
-      <td style="color:${diff>0?'var(--green)':diff<0?'#c0392b':'var(--muted)'}">${diff>0?'+':''}${diff||0}</td>
+      <td style="color:${diff>0?'var(--green)':diff<0?'#c0392b':'var(--muted)'}">
+        ${diff>0?'+':''}${diff||0}</td>
       <td style="color:var(--gold)">${t.bp||0}</td><td>${t.bf||0}</td>
       <td><div class="form-dots">${formDots}</div></td>
     </tr>`;
@@ -421,7 +422,7 @@ function renderLocVis() {
     else{h.e++;a.e++;h.pts+=2;a.pts+=2;}
     if(m.bp_home)h.pts++; if(m.bp_away)a.pts++;
     if(m.bf_home)h.pts++; if(m.bf_away)a.pts++;
-  })));
+  }));
   const makeRows = (stats, tbodyId) => {
     const sorted = [...teams].sort((a,b)=>(stats[b.name]?.pts||0)-(stats[a.name]?.pts||0));
     const el = document.getElementById(tbodyId);
@@ -454,8 +455,8 @@ function renderMatches(round) {
   const container = document.getElementById('matches-container');
   if (!container) return;
   const dateStr = roundData.date;
-  const played   = roundData.ms.filter(m => m.played && m.home !== 'Bye' && m.away !== 'Bye');
-  const upcoming = roundData.ms.filter(m => !m.played && m.home !== 'Bye' && m.away !== 'Bye');
+  const played   = roundData.ms.filter(m => m.played);
+  const upcoming = roundData.ms.filter(m => !m.played);
   let html = '';
   if (played.length) {
     html += `<div class="round-title">Fecha ${round} · ${dateStr} · Resultados</div><div class="matches-grid">`;
@@ -499,7 +500,7 @@ let pendingMatches = [];
 function buildPending() {
   pendingMatches = [];
   Object.entries(matches).forEach(([rnd,rndData]) => {
-    rndData.ms.filter(m=>!m.played && m.home !== 'Bye' && m.away !== 'Bye').forEach((m,i) => {
+    rndData.ms.filter(m=>!m.played).forEach((m,i) => {
       pendingMatches.push({...m, id:`r${rnd}m${i}`, round:+rnd, date:rndData.date});
     });
   });
@@ -641,7 +642,7 @@ function syncFromJSON() {
 function recalcStandings() {
   teams.forEach(t => { t.pts=0;t.pj=0;t.g=0;t.e=0;t.p=0;t.pf=0;t.pc=0;t.bp=0;t.bf=0;t.form=[]; });
   Object.values(matches).forEach(rd => {
-    (rd.ms||[]).filter(m=>m.played && m.home !== 'Bye' && m.away !== 'Bye').forEach(m => {
+    (rd.ms||[]).filter(m=>m.played).forEach(m => {
       const h=teams.find(t=>t.name===m.home), a=teams.find(t=>t.name===m.away);
       if(!h||!a) return;
       h.pj++;a.pj++;h.pf+=m.hs;h.pc+=m.as;a.pf+=m.as;a.pc+=m.hs;
@@ -655,14 +656,13 @@ function recalcStandings() {
   teams.forEach(t=>{t.form=t.form.slice(-5);});
 }
 
+syncFromJSON();
+setInterval(syncFromJSON, 10 * 60 * 1000);
+
 // ── INIT ──────────────────────────────────────────────────
-renderStandings(teams);
-renderMatches(1);
 document.addEventListener('DOMContentLoaded', function() {
   renderStandings(teams);
   renderMatches(1);
-  syncFromJSON();
-  setInterval(syncFromJSON, 10 * 60 * 1000);
 });
 </script>
 </body>
