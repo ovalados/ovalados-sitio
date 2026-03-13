@@ -654,13 +654,14 @@ function recalcStandings() {
   teams.forEach(t=>{t.form=t.form.slice(-5);});
 }
 
-syncFromJSON();
-setInterval(syncFromJSON, 10 * 60 * 1000);
-
 // ── INIT ──────────────────────────────────────────────────
+renderStandings(teams);
+renderMatches(1);
 document.addEventListener('DOMContentLoaded', function() {
   renderStandings(teams);
   renderMatches(1);
+  syncFromJSON();
+  setInterval(syncFromJSON, 10 * 60 * 1000);
 });
 </script>
 </body>
