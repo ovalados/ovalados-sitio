@@ -261,7 +261,6 @@ const teams = [
   { id:14,  name: "Los Matreros",        pts: 0, pj:0, g:0, e:0, p:0, pf:0, pc:0, bp:0, bf:0, form:[] },
 ];
 
-// Fixture completo 2026 — IDA fechas 1-13, VUELTA fechas 14-26
 const matches = {
   1: { date:"14/03/2026", ms:[
     { home:"La Plata",           away:"Atlético del Rosario", played:false },
@@ -380,7 +379,6 @@ const matches = {
     { home:"Regatas Bella Vista", away:"La Plata",            played:false },
     { home:"Los Matreros",        away:"Belgrano Athletic",   played:false },
   ]},
-  // VUELTA
   14: { date:"04/07/2026", ms:[
     { home:"Atlético del Rosario",away:"La Plata",            played:false },
     { home:"Los Tilos",           away:"Hindu",               played:false },
@@ -501,11 +499,11 @@ const matches = {
 };
 
 const scorers = [
-  { name:"— Por disputarse",   team:"—",                   pts:0,  detail:"Temporada 2026" },
+  { name:"— Por disputarse", team:"—", pts:0, detail:"Temporada 2026" },
 ];
 
 const tryscorers = [
-  { name:"— Por disputarse",   team:"—",                   tries:0 },
+  { name:"— Por disputarse", team:"—", tries:0 },
 ];
 
 // ── TOURNAMENT SWITCHING ─────────────────────────────────
@@ -625,6 +623,7 @@ function renderLocVis() {
 
 // ── URBA MATCHES ──────────────────────────────────────────
 let currentRound = 1;
+
 function renderMatches(round) {
   if (!round) round = currentRound;
   currentRound = round;
@@ -652,13 +651,26 @@ function renderMatches(round) {
   }
   container.innerHTML = html;
 }
-const isPlayed = m.played && !m.live;
+
+function matchCard(m, dateStr) {
+  const isPlayed = m.played && !m.live;
   const isLive   = !!m.live;
   const statusLeft  = isLive ? '🔴 EN VIVO' : isPlayed ? 'Finalizado' : dateStr;
   const statusRight = m.venue || '';
   const scoreBlock  = isPlayed || isLive
     ? `<div class="match-score">${m.hs} — ${m.as}</div>`
     : `<div class="match-score upcoming">VS</div>`;
+
+  const makeId = str => str.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9]+/g,'_')
+    .replace(/^_|_$/g,'');
+  const partidoId = makeId(m.home) + '_' + makeId(m.away);
+  const tieneFormacion = typeof PARTIDOS !== 'undefined' && PARTIDOS[partidoId];
+  const formacionLink = tieneFormacion
+    ? `<div class="match-formacion"><a href="partido.html?id=${partidoId}">👥 Ver formaciones</a></div>`
+    : '';
+
   return `<div class="match-card${isLive?' live':''}">
     <div class="match-meta">
       <span>${statusLeft}</span>
@@ -669,8 +681,8 @@ const isPlayed = m.played && !m.live;
       ${scoreBlock}
       <div class="match-team"><div class="name">${m.away}</div></div>
     </div>
+    ${formacionLink}
   </div>`;
-
 }
 
 // ── URBA CALC ────────────────────────────────────────────
@@ -917,8 +929,6 @@ function srRenderProjected(){
 function srCalcularProyeccion(){srRenderProjected();}
 function srResetCalc(){Object.keys(srSimState).forEach(k=>delete srSimState[k]);srRenderCalc();}
 
-// ── INIT ──────────────────────────────────────────────────
-
 // ── SYNC DESDE JSON (URBA + SR) ───────────────────────────
 let srTeams = [];
 let srMatches = {};
@@ -990,7 +1000,6 @@ function syncSR() {
       if(data.teams && data.teams.length) srTeams = data.teams;
       if(data.matches) {
         srMatches = data.matches;
-        // Actualizar matches existentes con resultados
         Object.entries(data.matches).forEach(([rnd,rd])=>{
           if(!srMatches[rnd]) srMatches[rnd] = rd;
           (rd.ms||[]).forEach(m=>{
@@ -1006,7 +1015,6 @@ function syncSR() {
     }).catch(e=>console.log('SR sync error:',e));
 }
 
-// Cargar al inicio y cada 10 minutos
 syncURBA();
 syncSR();
 setInterval(syncURBA, 10*60*1000);
@@ -1017,18 +1025,11 @@ document.addEventListener('DOMContentLoaded', function() {
   renderMatches(1);
   srRenderStandings();
   srRenderMatches(1);
-  // Hash routing
   const h = window.location.hash;
   if (h === '#superrugby') { history.replaceState(null,'',window.location.pathname); enterTournament('superrugby'); }
 });
 
 </script>
-</main>
-</div><!-- /tournament-superrugby -->
-
-
-
-
 
 </body>
 </html>
