@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Admin — Formaciones · Ovalados</title>
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/styles.css?v=21">
+<style>
+/* ── ADMIN ESPECÍFICO ── */
+.admin-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  min-height: calc(100vh - 104px);
+}
+.sidebar {
+  background: var(--dark2);
+  border-right: 1px solid var(--border);
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.sidebar-section-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.sidebar select {
+  width: 100%;
+  background: var(--dark3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.85rem;
+  padding: 8px 10px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237a9e84'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+.sidebar select:focus { outline: none; border-color: var(--green); }
+
+.match-btn {
+  width: 100%;
+  text-align: left;
+  background: var(--dark3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.8rem;
+  padding: 8px 10px;
+  cursor: pointer;
+  margin-bottom: 4px;
+  transition: all 0.15s;
+  line-height: 1.3;
+}
+.match-btn:hover { border-color: var(--green); color: var(--green); }
+.match-btn.active { border-color: var(--green); background: rgba(0,184,92,0.08); color: var(--green); }
+.match-btn.done { border-color: rgba(0,184,92,0.4); }
+.match-btn .match-date { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
+
+.main-area {
+  padding: 1.5rem 2rem;
+  overflow-y: auto;
+}
+.main-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  color: var(--muted);
+  text-align: center;
+  gap: 1rem;
+}
+.main-placeholder .icon {
+  font-size: 3rem;
+  opacity: 0.3;
+}
+.main-placeholder p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.match-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.match-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  color: var(--text);
+}
+.match-meta {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 2px;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.header-actions { display: flex; gap: 8px; }
+
+.team-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+.team-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.team-panel-header {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.team-badge {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.badge-local { background: rgba(0,184,92,0.15); color: var(--green); border: 1px solid rgba(0,184,92,0.3); }
+.badge-visit { background: rgba(245,197,24,0.15); color: var(--gold); border: 1px solid rgba(245,197,24,0.3); }
+.team-name-header {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.team-panel-body { padding: 12px 14px; }
+
+.player-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.pos-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--dark3);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.player-input {
+  flex: 1;
+  background: var(--dark3);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.82rem;
+  padding: 5px 9px;
+  transition: border-color 0.15s;
+}
+.player-input:focus { outline: none; border-color: var(--green); }
+.player-input::placeholder { color: var(--muted); font-size: 0.75rem; }
+.pos-label {
+  width: 90px;
+  font-size: 0.68rem;
+  color: var(--muted);
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+/* Botones */
+.btn-admin {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+.btn-admin:hover { border-color: var(--muted); }
+.btn-save {
+  background: var(--green);
+  border-color: var(--green);
+  color: #000;
+  font-weight: 700;
+}
+.btn-save:hover { background: var(--green-light); border-color: var(--green-light); }
+
+/* Export area */
+.export-area {
+  margin-top: 1.5rem;
+  background: var(--dark2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.export-header {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.export-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.export-code {
+  padding: 14px 16px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  color: var(--green);
+  white-space: pre;
+  overflow-x: auto;
+  max-height: 220px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+.save-toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--green);
+  color: #000;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+.save-toast.show { transform: translateY(0); opacity: 1; }
+
+/* Indicador de completado */
+.completeness {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-left: auto;
+  letter-spacing: 1px;
+}
+.completeness.full { color: var(--green); }
+
+@media (max-width: 900px) {
+  .admin-grid { grid-template-columns: 1fr; }
+  .sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+  .team-panels { grid-template-columns: 1fr; }
+  .pos-label { display: none; }
+}
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo">OVALADOS</a>
+  <nav>
+    <button class="active">Formaciones</button>
+  </nav>
+</header>
+<div class="sub-header">
+  <a href="index.html" class="back-btn">← Torneos</a>
+  <span class="sub-label"><strong>ADMIN</strong> · Carga de formaciones 2026</span>
+</div>
+
+<div class="admin-grid">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div>
+      <div class="sidebar-section-title">División</div>
+      <select id="divSelect" onchange="onDivChange()">
+        <option value="">— Elegir —</option>
+        <option value="primera-a">Primera A</option>
+        <option value="primera-b">Primera B</option>
+        <option value="primera-c">Primera C</option>
+        <option value="segunda">Segunda</option>
+        <option value="tercera">Tercera</option>
+        <option value="intermedia">Intermedia</option>
+        <option value="preintermedia-a">Pre-Intermedia A</option>
+        <option value="preintermedia-b">Pre-Intermedia B</option>
+        <option value="preintermedia-c">Pre-Intermedia C</option>
+        <option value="preintermedia-d">Pre-Intermedia D</option>
+        <option value="preintermedia-e">Pre-Intermedia E</option>
+        <option value="preintermedia-f">Pre-Intermedia F</option>
+        <option value="m22">M22</option>
+      </select>
+      <div class="sidebar-section-title" style="margin-top:0.5rem">Fecha</div>
+      <select id="roundSelect" onchange="onRoundChange()" disabled>
+        <option value="">— Elegir —</option>
+      </select>
+    </div>
+    <div>
+      <div class="sidebar-section-title">Partidos</div>
+      <div id="matchList"><span style="font-size:0.8rem;color:var(--muted)">Seleccioná división y fecha</span></div>
+    </div>
+    <div style="margin-top:auto;padding-top:1rem;border-top:1px solid var(--border)">
+      <div class="sidebar-section-title">Formaciones guardadas</div>
+      <div id="savedCount" style="font-size:0.85rem;color:var(--muted)">0 partidos con formación</div>
+      <button class="btn-admin" style="width:100%;margin-top:8px;border-color:var(--gold);color:var(--gold)" onclick="exportAll()">↓ Exportar todo (JSON)</button>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-area">
+    <div id="placeholder" class="main-placeholder">
+      <div class="icon">📋</div>
+      <p>Seleccioná una división, fecha y partido</p>
+    </div>
+    <div id="formEditor" style="display:none">
+      <div class="match-header">
+        <div>
+          <div class="match-title" id="matchTitle">—</div>
+          <div class="match-meta" id="matchMeta">—</div>
+        </div>
+        <div class="header-actions">
+          <button class="btn-admin" onclick="clearCurrent()">✕ Limpiar</button>
+          <button class="btn-admin btn-save" onclick="saveAndExport()">✓ Guardar</button>
+        </div>
+      </div>
+
+      <div class="team-panels">
+        <div class="team-panel">
+          <div class="team-panel-header">
+            <span class="team-badge badge-local">Local</span>
+            <span class="team-name-header" id="homeLabel">—</span>
+            <span class="completeness" id="homeCompleteness"></span>
+          </div>
+          <div class="team-panel-body" id="homePlayers"></div>
+        </div>
+        <div class="team-panel">
+          <div class="team-panel-header">
+            <span class="team-badge badge-visit">Visita</span>
+            <span class="team-name-header" id="awayLabel">—</span>
+            <span class="completeness" id="awayCompleteness"></span>
+          </div>
+          <div class="team-panel-body" id="awayPlayers"></div>
+        </div>
+      </div>
+
+      <div id="exportArea" class="export-area" style="display:none">
+        <div class="export-header">
+          <span class="export-title">JSON generado → copiar a <code style="color:var(--green)">data/lineups.json</code></span>
+          <button class="btn-admin" onclick="copyJSON()" id="copyBtn">Copiar</button>
+        </div>
+        <pre class="export-code" id="exportCode"></pre>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="save-toast" id="toast"></div>
+
+<script>
+const POSITIONS = [
+  'Prop izquierdo','Hooker','Prop derecho',
+  '2do línea','2do línea',
+  'Ala ciego','Ala abierto','Octavo',
+  'Medio scrum','Apertura',
+  'Ala izquierdo','Centro izquierdo','Centro derecho','Ala derecho',
+  'Fullback'
+];
+
+const ROUNDS_COUNT = {
+  'primera-a':26,'primera-b':26,'primera-c':26,'segunda':26,
+  'tercera':22,'intermedia':26,
+  'preintermedia-a':26,'preintermedia-b':26,'preintermedia-c':26,
+  'preintermedia-d':26,'preintermedia-e':26,'preintermedia-f':26,'m22':26
+};
+
+// Almacén en memoria: { "div|round|home|away": { home: [...15], away: [...15] } }
+let lineups = {};
+let currentKey = null;
+let currentMatch = null;
+let currentDiv = '';
+let currentRound = '';
+let fixtureData = null;
+
+// ── Persistencia en localStorage ────────────────────────
+function persist() {
+  try { localStorage.setItem('ovalados_lineups', JSON.stringify(lineups)); } catch(e) {}
+}
+function loadPersisted() {
+  try {
+    const s = localStorage.getItem('ovalados_lineups');
+    if (s) lineups = JSON.parse(s);
+  } catch(e) {}
+  updateSavedCount();
+}
+
+function updateSavedCount() {
+  const n = Object.keys(lineups).length;
+  document.getElementById('savedCount').textContent = n + ' partido' + (n !== 1 ? 's' : '') + ' con formación';
+}
+
+// ── División ─────────────────────────────────────────────
+function onDivChange() {
+  currentDiv = document.getElementById('divSelect').value;
+  fixtureData = null;
+  const rs = document.getElementById('roundSelect');
+  rs.innerHTML = '<option value="">— Elegir —</option>';
+  rs.disabled = !currentDiv;
+  document.getElementById('matchList').innerHTML = '<span style="font-size:0.8rem;color:var(--muted)">Cargando fixture...</span>';
+  document.getElementById('formEditor').style.display = 'none';
+  document.getElementById('placeholder').style.display = 'flex';
+  if (!currentDiv) return;
+
+  fetch('data/' + currentDiv + '.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      fixtureData = data;
+      const n = ROUNDS_COUNT[currentDiv] || 26;
+      for (let i = 1; i <= n; i++) {
+        const o = document.createElement('option');
+        o.value = i;
+        o.textContent = 'Fecha ' + i + (data.matches[i] ? ' — ' + data.matches[i].date : '');
+        rs.appendChild(o);
+      }
+      document.getElementById('matchList').innerHTML = '<span style="font-size:0.8rem;color:var(--muted)">Elegí una fecha</span>';
+    })
+    .catch(() => {
+      document.getElementById('matchList').innerHTML = '<span style="font-size:0.8rem;color:var(--red)">Error al cargar fixture.<br>Abrí este panel desde el sitio.</span>';
+    });
+}
+
+// ── Fecha ─────────────────────────────────────────────────
+function onRoundChange() {
+  currentRound = document.getElementById('roundSelect').value;
+  document.getElementById('formEditor').style.display = 'none';
+  document.getElementById('placeholder').style.display = 'flex';
+  if (!currentRound || !fixtureData) return;
+
+  const rd = fixtureData.matches[currentRound];
+  const ms = rd ? rd.ms.filter(m => m.home !== 'Bye' && m.away !== 'Bye') : [];
+  const list = document.getElementById('matchList');
+  list.innerHTML = '';
+  if (!ms.length) {
+    list.innerHTML = '<span style="font-size:0.8rem;color:var(--muted)">Sin partidos</span>';
+    return;
+  }
+  ms.forEach(m => {
+    const k = makeKey(currentDiv, currentRound, m.home, m.away);
+    const done = !!lineups[k];
+    const b = document.createElement('button');
+    b.className = 'match-btn' + (done ? ' done' : '');
+    b.innerHTML = m.home + ' <span style="color:var(--muted);font-size:0.7rem">vs</span> ' + m.away +
+      (done ? '<div class="match-date" style="color:var(--green)">✓ Formación cargada</div>' :
+               '<div class="match-date">' + rd.date + '</div>');
+    b.onclick = () => selectMatch(m, rd.date, b);
+    list.appendChild(b);
+  });
+}
+
+function makeKey(div, round, home, away) {
+  return [div, round, home, away].join('|');
+}
+
+// ── Partido ───────────────────────────────────────────────
+function selectMatch(m, date, btn) {
+  document.querySelectorAll('.match-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentMatch = m;
+  currentKey = makeKey(currentDiv, currentRound, m.home, m.away);
+
+  document.getElementById('matchTitle').textContent = m.home + ' — ' + m.away;
+  document.getElementById('matchMeta').textContent = 'Fecha ' + currentRound + ' · ' + date + ' · ' + getDivLabel(currentDiv);
+  document.getElementById('homeLabel').textContent = m.home;
+  document.getElementById('awayLabel').textContent = m.away;
+
+  const saved = lineups[currentKey] || { home: Array(15).fill(''), away: Array(15).fill('') };
+  buildInputs('homePlayers', saved.home);
+  buildInputs('awayPlayers', saved.away);
+  updateCompleteness();
+
+  document.getElementById('exportArea').style.display = 'none';
+  document.getElementById('placeholder').style.display = 'none';
+  document.getElementById('formEditor').style.display = 'block';
+}
+
+function getDivLabel(div) {
+  const map = {
+    'primera-a':'Primera A','primera-b':'Primera B','primera-c':'Primera C',
+    'segunda':'Segunda','tercera':'Tercera','intermedia':'Intermedia',
+    'preintermedia-a':'Pre-Int A','preintermedia-b':'Pre-Int B',
+    'preintermedia-c':'Pre-Int C','preintermedia-d':'Pre-Int D',
+    'preintermedia-e':'Pre-Int E','preintermedia-f':'Pre-Int F','m22':'M22'
+  };
+  return map[div] || div;
+}
+
+function buildInputs(containerId, values) {
+  const c = document.getElementById(containerId);
+  c.innerHTML = '';
+  POSITIONS.forEach((pos, i) => {
+    const row = document.createElement('div');
+    row.className = 'player-row';
+    row.innerHTML = `
+      <div class="pos-num">${i+1}</div>
+      <span class="pos-label">${pos}</span>
+      <input class="player-input" type="text" placeholder="${pos}" value="${values[i] || ''}" data-idx="${i}" oninput="updateCompleteness()">
+    `;
+    c.appendChild(row);
+  });
+}
+
+function getValues(containerId) {
+  return Array.from(document.querySelectorAll('#' + containerId + ' .player-input')).map(i => i.value.trim());
+}
+
+function updateCompleteness() {
+  ['home','away'].forEach(side => {
+    const vals = getValues(side + 'Players');
+    const filled = vals.filter(v => v).length;
+    const el = document.getElementById(side + 'Completeness');
+    el.textContent = filled + '/15';
+    el.className = 'completeness' + (filled === 15 ? ' full' : '');
+  });
+}
+
+function clearCurrent() {
+  ['homePlayers','awayPlayers'].forEach(id => {
+    document.querySelectorAll('#' + id + ' .player-input').forEach(i => i.value = '');
+  });
+  updateCompleteness();
+}
+
+// ── Guardar ───────────────────────────────────────────────
+function saveAndExport() {
+  if (!currentKey) return;
+  lineups[currentKey] = {
+    home: getValues('homePlayers'),
+    away: getValues('awayPlayers')
+  };
+  persist();
+  updateSavedCount();
+  onRoundChange(); // refresca botones del sidebar
+
+  // vuelve a marcar el botón activo
+  const m = currentMatch;
+  document.querySelectorAll('.match-btn').forEach(b => {
+    if (b.textContent.includes(m.home) && b.textContent.includes(m.away)) b.classList.add('active');
+  });
+
+  showExport(currentKey);
+  toast('Formación guardada ✓');
+}
+
+function showExport(key) {
+  const output = buildExportJSON();
+  document.getElementById('exportCode').textContent = JSON.stringify(output, null, 2);
+  document.getElementById('exportArea').style.display = 'block';
+}
+
+function exportAll() {
+  const output = buildExportJSON();
+  document.getElementById('exportCode').textContent = JSON.stringify(output, null, 2);
+  document.getElementById('exportArea').style.display = 'block';
+  document.getElementById('formEditor').style.display = 'block';
+  document.getElementById('placeholder').style.display = 'none';
+}
+
+function buildExportJSON() {
+  const out = {};
+  Object.entries(lineups).forEach(([key, data]) => {
+    const [div, round, home, away] = key.split('|');
+    if (!out[div]) out[div] = {};
+    if (!out[div][round]) out[div][round] = {};
+    out[div][round][home + ' vs ' + away] = {
+      local: data.home.map((n,i) => ({ num: i+1, pos: POSITIONS[i], nombre: n })),
+      visita: data.away.map((n,i) => ({ num: i+1, pos: POSITIONS[i], nombre: n }))
+    };
+  });
+  return out;
+}
+
+function copyJSON() {
+  const text = document.getElementById('exportCode').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '✓ Copiado';
+    setTimeout(() => btn.textContent = 'Copiar', 1500);
+  });
+}
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+// ── Init ──────────────────────────────────────────────────
+loadPersisted();
+</script>
+</body>
+</html>

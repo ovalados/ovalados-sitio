@@ -1,0 +1,1208 @@
+{
+  "teams": [
+    {
+      "name": "La Plata E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Hindu E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Champagnat E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Alumni E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Newman E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "SIC E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Belgrano Athletic E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Buenos Aires C&RC E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "CUBA E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "CASI E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "Los Tilos E",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    },
+    {
+      "name": "CUBA F",
+      "pts": 0,
+      "pj": 0,
+      "g": 0,
+      "e": 0,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": []
+    }
+  ],
+  "matches": {
+    "1": {
+      "date": "14/03/2026",
+      "ms": [
+        {
+          "home": "La Plata E",
+          "away": "CUBA F",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "Belgrano Athletic E",
+          "played": false
+        }
+      ]
+    },
+    "2": {
+      "date": "21/03/2026",
+      "ms": [
+        {
+          "home": "SIC E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "3": {
+      "date": "28/03/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "CUBA F",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "SIC E",
+          "played": false
+        }
+      ]
+    },
+    "4": {
+      "date": "11/04/2026",
+      "ms": [
+        {
+          "home": "Newman E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "CUBA F",
+          "played": false
+        }
+      ]
+    },
+    "5": {
+      "date": "18/04/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "Newman E",
+          "played": false
+        }
+      ]
+    },
+    "6": {
+      "date": "25/04/2026",
+      "ms": [
+        {
+          "home": "Alumni E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "7": {
+      "date": "09/05/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "Alumni E",
+          "played": false
+        }
+      ]
+    },
+    "8": {
+      "date": "16/05/2026",
+      "ms": [
+        {
+          "home": "Champagnat E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "CUBA F",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "CASI E",
+          "played": false
+        }
+      ]
+    },
+    "9": {
+      "date": "23/05/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "Champagnat E",
+          "played": false
+        }
+      ]
+    },
+    "10": {
+      "date": "30/05/2026",
+      "ms": [
+        {
+          "home": "Hindu E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "CUBA F",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "CUBA E",
+          "played": false
+        }
+      ]
+    },
+    "11": {
+      "date": "06/06/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "Hindu E",
+          "played": false
+        }
+      ]
+    },
+    "12": {
+      "date": "20/06/2026",
+      "ms": [
+        {
+          "home": "La Plata E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "CUBA F",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        }
+      ]
+    },
+    "13": {
+      "date": "27/06/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "La Plata E",
+          "played": false
+        }
+      ]
+    },
+    "14": {
+      "date": "04/07/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "SIC E",
+          "played": false
+        }
+      ]
+    },
+    "15": {
+      "date": "11/07/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "CUBA F",
+          "played": false
+        }
+      ]
+    },
+    "16": {
+      "date": "18/07/2026",
+      "ms": [
+        {
+          "home": "CUBA F",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "Newman E",
+          "played": false
+        }
+      ]
+    },
+    "17": {
+      "date": "01/08/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "Los Tilos E",
+          "played": false
+        }
+      ]
+    },
+    "18": {
+      "date": "15/08/2026",
+      "ms": [
+        {
+          "home": "Los Tilos E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "CUBA F",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "Alumni E",
+          "played": false
+        }
+      ]
+    },
+    "19": {
+      "date": "22/08/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "CASI E",
+          "played": false
+        }
+      ]
+    },
+    "20": {
+      "date": "29/08/2026",
+      "ms": [
+        {
+          "home": "CASI E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "CUBA F",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "Champagnat E",
+          "played": false
+        }
+      ]
+    },
+    "21": {
+      "date": "05/09/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "CUBA E",
+          "played": false
+        }
+      ]
+    },
+    "22": {
+      "date": "12/09/2026",
+      "ms": [
+        {
+          "home": "CUBA E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "CUBA F",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "Hindu E",
+          "played": false
+        }
+      ]
+    },
+    "23": {
+      "date": "26/09/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "Belgrano Athletic E",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        }
+      ]
+    },
+    "24": {
+      "date": "03/10/2026",
+      "ms": [
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic E",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "25": {
+      "date": "10/10/2026",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "La Plata E",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Hindu E",
+          "played": false
+        },
+        {
+          "home": "CUBA F",
+          "away": "Champagnat E",
+          "played": false
+        },
+        {
+          "home": "Los Tilos E",
+          "away": "Alumni E",
+          "played": false
+        },
+        {
+          "home": "CASI E",
+          "away": "Newman E",
+          "played": false
+        },
+        {
+          "home": "CUBA E",
+          "away": "SIC E",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC E",
+          "away": "Belgrano Athletic E",
+          "played": false
+        }
+      ]
+    },
+    "26": {
+      "date": "17/10/2026",
+      "ms": [
+        {
+          "home": "Belgrano Athletic E",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "SIC E",
+          "away": "Buenos Aires C&RC E",
+          "played": false
+        },
+        {
+          "home": "Newman E",
+          "away": "CUBA E",
+          "played": false
+        },
+        {
+          "home": "Alumni E",
+          "away": "CASI E",
+          "played": false
+        },
+        {
+          "home": "Champagnat E",
+          "away": "Los Tilos E",
+          "played": false
+        },
+        {
+          "home": "Hindu E",
+          "away": "CUBA F",
+          "played": false
+        },
+        {
+          "home": "La Plata E",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    }
+  },
+  "lastUpdate": "2026-03-12T00:00:00Z"
+}
