@@ -58,7 +58,7 @@ const PARTIDOS = {
         “4. Curuchaga, M”,
         “5. Plorutti, C”,
         “6. Panzarini, A”,
-        “7. F De Oliveira, S”,
+        “7. FDeOliveira, S”,
         “8. Meyrelles, T”,
         “9. Albanese, M”,
         “10. Sascaro, A”,
@@ -66,7 +66,7 @@ const PARTIDOS = {
         “12. Piran, C”,
         “13. Acosta, N”,
         “14. Silva, T”,
-        “15. G Capdevilla, F”,
+        “15. GCapdevilla, F”,
       ]
     },
     visitante: {
@@ -76,7 +76,7 @@ const PARTIDOS = {
 “2. García Dragui, Lisandro”,
 “3. Morales, Franco”,
 “4. Tecca, Luciano”,
-“5. Bloom Quesada, Mikael”,
+“5. Bloom, Mikael”,
 “6. Vaccarino, Augusto”,
 “7. Rebussone, Julián”,
 “8. Vega, Franco”,
