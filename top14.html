@@ -653,7 +653,7 @@ function renderMatches(round) {
   container.innerHTML = html;
 }
 
-function matchCard(m, dateStr) {
+function matchCard(m, dateStr) {   const isPlayed = m.played && !m.live;   const isLive   = !!m.live;   const statusLeft  = isLive ? '🔴 EN VIVO' : isPlayed ? 'Finalizado' : dateStr;   const statusRight = m.venue || '';   const scoreBlock  = isPlayed || isLive     ? `<div class="match-score">${m.hs} — ${m.as}</div>`     : `<div class="match-score upcoming">VS</div>`;    const makeId = str => str.toLowerCase()     .normalize('NFD').replace(/[\u0300-\u036f]/g,'')     .replace(/[^a-z0-9]+/g,'_')     .replace(/^_|_$/g,'');   const partidoId = makeId(m.home) + '_' + makeId(m.away);   const tieneFormacion = typeof PARTIDOS !== 'undefined' && PARTIDOS[partidoId];   const formacionLink = tieneFormacion     ? `<div class="match-formacion"><a href="partido.html?id=${partidoId}">👥 Ver formaciones</a></div>`     : '';    return `<div class="match-card${isLive?' live':''}">     <div class="match-meta">       <span>${statusLeft}</span>       <span style="font-size:0.75rem;color:var(--muted)">${statusRight}</span>     </div>     <div class="match-teams">       <div class="match-team home"><div class="name">${m.home}</div></div>       ${scoreBlock}       <div class="match-team"><div class="name">${m.away}</div></div>     </div>     ${formacionLink}   </div>`; }
   const isPlayed = m.played && !m.live;
   const isLive   = !!m.live;
   const statusLeft  = isLive ? '🔴 EN VIVO' : isPlayed ? 'Finalizado' : dateStr;
