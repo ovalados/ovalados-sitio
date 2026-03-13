@@ -53,4 +53,55 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="result-away">${p.away}</div>
       <div class="result-date">${p.fecha}</div>
     </div>`).join('');
+// ── FORMACIONES TOP 14 ────────────────────────────────────────────────────────
+// La clave de cada partido se genera así:
+// nombre local en minúsculas, sin tildes, espacios reemplazados por _
+// + guión bajo + mismo proceso para el visitante
+// Ejemplo: "Belgrano Athletic" vs "CASI" → belgrano_athletic_casi
+
+const PARTIDOS = {
+
+  belgrano_athletic_casi: {
+    local: {
+      nombre: "Belgrano Athletic",
+      jugadores: [
+        "1. Nombre Apellido",
+        "2. Nombre Apellido",
+        "3. Nombre Apellido",
+        "4. Nombre Apellido",
+        "5. Nombre Apellido",
+        "6. Nombre Apellido",
+        "7. Nombre Apellido",
+        "8. Nombre Apellido",
+        "9. Nombre Apellido",
+        "10. Nombre Apellido",
+        "11. Nombre Apellido",
+        "12. Nombre Apellido",
+        "13. Nombre Apellido",
+        "14. Nombre Apellido",
+        "15. Nombre Apellido",
+      ]
+    },
+    visitante: {
+      nombre: "CASI",
+      jugadores: [
+        "1. Nombre Apellido",
+        "2. Nombre Apellido",
+        "3. Nombre Apellido",
+        "4. Nombre Apellido",
+        "5. Nombre Apellido",
+        "6. Nombre Apellido",
+        "7. Nombre Apellido",
+        "8. Nombre Apellido",
+        "9. Nombre Apellido",
+        "10. Nombre Apellido",
+        "11. Nombre Apellido",
+        "12. Nombre Apellido",
+        "13. Nombre Apellido",
+        "14. Nombre Apellido",
+        "15. Nombre Apellido",
+      ]
+    }
+  },
+};
 });
