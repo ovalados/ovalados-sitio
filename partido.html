@@ -1,0 +1,68 @@
+<div id="cancha-container" style="text-align: center; padding: 20px; color: #666;">Cargando los 15 titulares...</div>
+
+<style>
+    .contenedor-formaciones { display: flex; justify-content: space-between; background-color: #f8f9fa; border: 1px solid #ddd; border-radius: 8px; padding: 20px; max-width: 800px; margin: 0 auto; font-family: sans-serif; text-align: left; }
+    .equipo { width: 48%; }
+    .equipo h3 { text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 0; }
+    .lista-jugadores { list-style-type: none; padding: 0; margin: 0; }
+    .lista-jugadores li { padding: 6px 0; border-bottom: 1px solid #eee; font-size: 15px; }
+    .lista-jugadores li:last-child { border-bottom: none; }
+    .numero-camiseta { display: inline-block; width: 28px; font-weight: bold; color: #444; }
+</style>
+
+<script>
+    // --- PEGA AQUÍ LA URL DEL CSV DE LA FASE 1 ---
+    const urlCSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSmQRW3fRD4WnFE18rhcKHBFQOp5IWp53cRH6UelC6nwrNxSW_KhBNQ6OEHkDQBh0CFg7xzjszj7Axp/pub?output=csv';
+    
+    // Este ID debe coincidir exactamente con el que cargaste en el Panel
+    const partidoBuscado = 'fecha1-belgrano-casi'; 
+
+    async function obtenerFormaciones() {
+        try {
+            const respuesta = await fetch(urlCSV);
+            const datosCsv = await respuesta.text();
+            
+            const lineas = datosCsv.split('\n');
+            let equipoLocal = null, equipoVisitante = null;
+
+            for (let i = 1; i < lineas.length; i++) {
+                const columnas = lineas[i].replace('\r', '').split(','); 
+                if (columnas[0] === partidoBuscado) {
+                    if (columnas[2] === 'local') equipoLocal = columnas;
+                    else if (columnas[2] === 'visitante') equipoVisitante = columnas;
+                }
+            }
+
+            if (equipoLocal && equipoVisitante) renderizar(equipoLocal, equipoVisitante);
+            else document.getElementById('cancha-container').innerText = 'Formaciones aún no confirmadas.';
+        } catch (error) {
+            document.getElementById('cancha-container').innerText = 'Error al cargar los datos.';
+        }
+    }
+
+    function generarTitulares(datos) {
+        let html = '';
+        for (let i = 3; i <= 17; i++) {
+            if (datos[i] && datos[i].trim() !== '') {
+                html += `<li><span class="numero-camiseta">${i - 2}</span> ${datos[i].trim()}</li>`;
+            }
+        }
+        return html;
+    }
+
+    function renderizar(local, visitante) {
+        document.getElementById('cancha-container').innerHTML = `
+            <div class="contenedor-formaciones">
+                <div class="equipo">
+                    <h3>${local[1]}</h3>
+                    <ul class="lista-jugadores">${generarTitulares(local)}</ul>
+                </div>
+                <div class="equipo">
+                    <h3>${visitante[1]}</h3>
+                    <ul class="lista-jugadores">${generarTitulares(visitante)}</ul>
+                </div>
+            </div>`;
+    }
+
+    obtenerFormaciones();
+</script>
