@@ -3,7 +3,51 @@
 //  Edita solo este archivo cada fecha para actualizar el home.
 // ============================================================
 
-// ... (resto del código de render y Super Rugby se mantiene igual)
+// ── ULTIMOS RESULTADOS ───────────────────────────────────────
+const SR_ULTIMA_FECHA = {
+  label: "Super Rugby Americas - Fecha 3",
+  partidos: [
+    { home:"Tarucas",     hs:29, away:"Dogos XV",     as:26, fecha:"08/03/2026" },
+    { home:"Pampas",      hs:25, away:"Capibaras XV", as:20, fecha:"08/03/2026" },
+    { home:"Penarol",     hs:40, away:"Selknam",      as:27, fecha:"07/03/2026" },
+    { home:"Cobras BR",   hs:21, away:"Yacare XV",    as:19, fecha:"07/03/2026" },
+  ]
+};
+
+// ── PROXIMA FECHA ────────────────────────────────────────────
+const SR_PROXIMA_FECHA = {
+  label: "Super Rugby Americas - Fecha 4 - 14-15 mar",
+  partidos: [
+    { home:"Penarol",   away:"Tarucas",      fecha:"14/03" },
+    { home:"Dogos XV",  away:"Capibaras XV", fecha:"15/03" },
+    { home:"Yacare XV", away:"Pampas",       fecha:"15/03" },
+    { home:"Selknam",   away:"Cobras BR",    fecha:"15/03" },
+  ]
+};
+
+// ── RENDER AUTOMATICO ────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function() {
+  const ul = document.getElementById('sr-ultimos');
+  const px = document.getElementById('sr-proximos');
+  const ulLabel = document.getElementById('sr-ultimos-label');
+  const pxLabel = document.getElementById('sr-proximos-label');
+  if (ulLabel) ulLabel.textContent = SR_ULTIMA_FECHA.label;
+  if (pxLabel) pxLabel.textContent = SR_PROXIMA_FECHA.label;
+  if (ul) ul.innerHTML = SR_ULTIMA_FECHA.partidos.map(p => `
+    <div class="result-row gold-hover">
+      <div class="result-home">${p.home}</div>
+      <div class="result-score gold">${p.hs} - ${p.as}</div>
+      <div class="result-away">${p.away}</div>
+      <div class="result-date">${p.fecha}</div>
+    </div>`).join('');
+  if (px) px.innerHTML = SR_PROXIMA_FECHA.partidos.map(p => `
+    <div class="result-row gold-hover">
+      <div class="result-home">${p.home}</div>
+      <div class="result-score upcoming">VS</div>
+      <div class="result-away">${p.away}</div>
+      <div class="result-date">${p.fecha}</div>
+    </div>`).join('');
+});
 
 // ── FORMACIONES TOP 14 ────────────────────────────────────────
 const PARTIDOS = {
@@ -251,8 +295,8 @@ const PARTIDOS = {
         "8. Camerlinckx, Felipe",
         "9. Joseph, Marcos",
         "10. Camerlinkckx, Justo",
-        "11. Enrique Camerlinckx, Enrique",
-        "12. Mateo Camerlinckx, Mateo",
+        "11. Camerlinckx, Enrique",
+        "12. Camerlinckx, Mateo",
         "13. Klapenbach, Tobias",
         "14. Pisani, Francisco",
         "15. Rugolo, Felipe",
@@ -293,9 +337,9 @@ const PARTIDOS = {
         "8. Etcheverry, Tomas",
         "9. Freire, Mateo",
         "10. Bunge, Tomas",
+        "11. Bensadon, Ignacio",
         "12. Lamensa, Agustin",
         "13. Costa, Ramiro",
-        "11. Bensadon, Ignacio",
         "14. Ortiz, Segundo",
         "15. Novo, Alejo",
       ]
