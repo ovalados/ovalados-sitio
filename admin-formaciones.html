@@ -43,7 +43,7 @@
 </div>
 
 <script>
-    // Generar los 15 inputs automáticamente
+    // 1. ESTA FUNCIÓN DIBUJA LOS 15 JUGADORES (Faltaba esto en tu pantalla)
     function generarInputs(contenedorId, prefijo) {
         const contenedor = document.getElementById(contenedorId);
         for(let i = 1; i <= 15; i++) {
@@ -54,10 +54,11 @@
             contenedor.appendChild(input);
         }
     }
+    // Ejecutamos la función para ambos equipos
     generarInputs('contenedor-local', 'local');
     generarInputs('contenedor-visitante', 'visitante');
 
-    // Manejar el envío de datos
+    // 2. ESTO ENVÍA LOS DATOS A GOOGLE SHEETS
     document.getElementById('form-formaciones').addEventListener('submit', async function(e) {
         e.preventDefault();
         
@@ -66,6 +67,8 @@
         
         const localJugadores = [];
         const visitanteJugadores = [];
+        
+        // Recolectamos lo escrito en las cajas
         for(let i = 1; i <= 15; i++) {
             localJugadores.push(document.getElementById(`local_${i}`).value || "");
             visitanteJugadores.push(document.getElementById(`visitante_${i}`).value || "");
@@ -77,26 +80,9 @@
             visitante: { nombre: document.getElementById('nombre_visitante').value, jugadores: visitanteJugadores }
         };
 
-        // --- PEGA AQUÍ LA URL DEL SCRIPT DE LA FASE 2 ---
-        const urlGoogleScript = 'https://script.google.com/macros/s/AKfycby0mDVO1KaNYyIkx0dGNY2JTUis_VQGD16sDKaNcD-Nz2zLu1Ox80xpFbB1FDu_w7HOjg/exec';
+        // --- ATENCIÓN: PEGA AQUÍ TU URL DE APPS SCRIPT ---
+        const urlGoogleScript = 'https://script.google.com/macros/s/AKfycbym_h2E2gF4VZnRnZT_9roYQ0wQGF2uvPy17qcNgOeuZFQiDE6nwqiD-1pKDqSw34OY_w/exec';
 
-       try {
-            // VERSIÓN A PRUEBA DE BLOQUEOS (CORS)
-            await fetch(urlGoogleScript, {
-                method: 'POST',
-                mode: 'no-cors', // Esto le dice al navegador que no bloquee la conexión
-                headers: {
-                    'Content-Type': 'text/plain;charset=utf-8',
-                },
-                body: JSON.stringify(paqueteDatos)
-            });
-            
-            // Con "no-cors" el navegador no espera la confirmación de Google, asume que salió bien.
-            alert("¡Formaciones enviadas! Revisá la planilla de Google para confirmar.");
-            document.getElementById('form-formaciones').reset();
-        } catch (error) {
-            console.error(error);
-            alert("Hubo un error de red al intentar enviar los datos.");
-        } finally {
-            btn.innerText = "Guardar Formación";
-        }
+        try {
+            // Envío en modo "no-cors" para que el navegador no lo bloquee
+            await fetch(
