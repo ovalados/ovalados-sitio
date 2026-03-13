@@ -80,21 +80,23 @@
         // --- PEGA AQUÍ LA URL DEL SCRIPT DE LA FASE 2 ---
         const urlGoogleScript = 'https://script.google.com/u/0/home/projects/1VeGgPehg547ifElGaLKxzz3kd7jqaQZXYSX1cdiDwYxK4PezDTHHclPg/edit';
 
-        try {
+       try {
+            // VERSIÓN A PRUEBA DE BLOQUEOS (CORS)
             await fetch(urlGoogleScript, {
                 method: 'POST',
+                mode: 'no-cors', // Esto le dice al navegador que no bloquee la conexión
+                headers: {
+                    'Content-Type': 'text/plain;charset=utf-8',
+                },
                 body: JSON.stringify(paqueteDatos)
             });
-            alert("¡Las formaciones se guardaron correctamente!");
+            
+            // Con "no-cors" el navegador no espera la confirmación de Google, asume que salió bien.
+            alert("¡Formaciones enviadas! Revisá la planilla de Google para confirmar.");
             document.getElementById('form-formaciones').reset();
         } catch (error) {
             console.error(error);
-            alert("Error al guardar.");
+            alert("Hubo un error de red al intentar enviar los datos.");
         } finally {
             btn.innerText = "Guardar Formación";
         }
-    });
-</script>
-
-</body>
-</html>
