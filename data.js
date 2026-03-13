@@ -58,7 +58,7 @@ const PARTIDOS = {
         “4. Curuchaga, M”,
         “5. Plorutti, C”,
         “6. Panzarini, A”,
-        “7. F. De Oliveira, S.”,
+        “7. F De Oliveira, S”,
         “8. Meyrelles, T”,
         “9. Albanese, M”,
         “10. Sascaro, A”,
