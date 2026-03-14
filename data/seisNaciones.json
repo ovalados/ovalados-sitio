@@ -21,34 +21,36 @@
     {
       "name": "Escocia",
       "pts": 12,
-      "pj": 4,
+      "pj": 5,
       "g": 3,
       "e": 0,
-      "p": 1,
-      "pf": 122,
-      "pc": 101,
+      "p": 2,
+      "pf": 143,
+      "pc": 144,
       "bp": 0,
       "bf": 0,
       "form": [
         "l",
         "w",
         "w",
-        "w"
+        "w",
+        "l"
       ]
     },
     {
       "name": "Irlanda",
-      "pts": 12,
-      "pj": 4,
-      "g": 3,
+      "pts": 16,
+      "pj": 5,
+      "g": 4,
       "e": 0,
       "p": 1,
-      "pf": 103,
-      "pc": 87,
+      "pf": 146,
+      "pc": 108,
       "bp": 0,
       "bf": 0,
       "form": [
         "l",
+        "w",
         "w",
         "w",
         "w"
@@ -232,9 +234,11 @@
         {
           "home": "Irlanda",
           "away": "Escocia",
-          "played": false,
+          "played": true,
           "venue": "Aviva Stadium, Dublín",
-          "time": "11:10"
+          "time": "11:10",
+          "hs": 43,
+          "as": 21
         },
         {
           "home": "Gales",
@@ -253,6 +257,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-14T15:54:19.662121+00:00",
-  "matchesScraped": 12
+  "lastUpdate": "2026-03-14T17:02:31.859489+00:00",
+  "matchesScraped": 13
 }
