@@ -59,19 +59,20 @@
     {
       "name": "Italia",
       "pts": 8,
-      "pj": 4,
+      "pj": 5,
       "g": 2,
       "e": 0,
-      "p": 2,
-      "pf": 62,
-      "pc": 86,
+      "p": 3,
+      "pf": 79,
+      "pc": 117,
       "bp": 0,
       "bf": 0,
       "form": [
         "w",
         "l",
         "l",
-        "w"
+        "w",
+        "l"
       ]
     },
     {
@@ -94,20 +95,21 @@
     },
     {
       "name": "Gales",
-      "pts": 0,
-      "pj": 4,
-      "g": 0,
+      "pts": 4,
+      "pj": 5,
+      "g": 1,
       "e": 0,
       "p": 4,
-      "pf": 59,
-      "pc": 155,
+      "pf": 90,
+      "pc": 172,
       "bp": 0,
       "bf": 0,
       "form": [
         "l",
         "l",
         "l",
-        "l"
+        "l",
+        "w"
       ]
     }
   ],
@@ -243,9 +245,11 @@
         {
           "home": "Gales",
           "away": "Italia",
-          "played": false,
+          "played": true,
           "venue": "Principality, Cardiff",
-          "time": "13:40"
+          "time": "13:40",
+          "hs": 31,
+          "as": 17
         },
         {
           "home": "Francia",
@@ -257,6 +261,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-14T19:17:58.651152+00:00",
-  "matchesScraped": 13
+  "lastUpdate": "2026-03-14T19:56:20.873710+00:00",
+  "matchesScraped": 14
 }
