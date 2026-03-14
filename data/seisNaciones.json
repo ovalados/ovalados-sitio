@@ -2,20 +2,21 @@
   "teams": [
     {
       "name": "Francia",
-      "pts": 12,
-      "pj": 4,
-      "g": 3,
+      "pts": 16,
+      "pj": 5,
+      "g": 4,
       "e": 0,
       "p": 1,
-      "pf": 163,
-      "pc": 84,
+      "pf": 211,
+      "pc": 130,
       "bp": 0,
       "bf": 0,
       "form": [
         "w",
         "w",
         "w",
-        "l"
+        "l",
+        "w"
       ]
     },
     {
@@ -78,16 +79,17 @@
     {
       "name": "Inglaterra",
       "pts": 4,
-      "pj": 4,
+      "pj": 5,
       "g": 1,
       "e": 0,
-      "p": 3,
-      "pf": 107,
-      "pc": 103,
+      "p": 4,
+      "pf": 153,
+      "pc": 151,
       "bp": 0,
       "bf": 0,
       "form": [
         "w",
+        "l",
         "l",
         "l",
         "l"
@@ -254,13 +256,15 @@
         {
           "home": "Francia",
           "away": "Inglaterra",
-          "played": false,
+          "played": true,
           "venue": "Stade de France, París",
-          "time": "17:10"
+          "time": "17:10",
+          "hs": 48,
+          "as": 46
         }
       ]
     }
   },
-  "lastUpdate": "2026-03-14T22:58:04.442477+00:00",
-  "matchesScraped": 14
+  "lastUpdate": "2026-03-14T23:55:20.870828+00:00",
+  "matchesScraped": 15
 }
