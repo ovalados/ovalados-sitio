@@ -22,20 +22,20 @@
     {
       "name": "Tarucas",
       "pts": 24,
-      "pj": 6,
+      "pj": 8,
       "g": 6,
       "e": 0,
-      "p": 0,
-      "pf": 196,
-      "pc": 114,
+      "p": 2,
+      "pf": 240,
+      "pc": 200,
       "bp": 0,
       "bf": 0,
       "form": [
+        "l",
         "w",
         "w",
         "w",
-        "w",
-        "w"
+        "l"
       ]
     },
     {
@@ -59,20 +59,20 @@
     },
     {
       "name": "Pampas",
-      "pts": 16,
-      "pj": 6,
-      "g": 4,
+      "pts": 24,
+      "pj": 8,
+      "g": 6,
       "e": 0,
       "p": 2,
-      "pf": 178,
-      "pc": 146,
+      "pf": 264,
+      "pc": 190,
       "bp": 0,
       "bf": 0,
       "form": [
-        "l",
         "w",
         "w",
         "l",
+        "w",
         "w"
       ]
     },
@@ -117,38 +117,38 @@
     {
       "name": "Cobras BR",
       "pts": 8,
-      "pj": 6,
+      "pj": 8,
       "g": 2,
       "e": 0,
-      "p": 4,
-      "pf": 104,
-      "pc": 188,
+      "p": 6,
+      "pf": 144,
+      "pc": 264,
       "bp": 0,
       "bf": 0,
       "form": [
         "l",
+        "l",
+        "l",
         "w",
-        "l",
-        "l",
-        "w"
+        "l"
       ]
     },
     {
       "name": "Peñarol",
-      "pts": 8,
-      "pj": 6,
-      "g": 2,
+      "pts": 16,
+      "pj": 8,
+      "g": 4,
       "e": 0,
       "p": 4,
-      "pf": 130,
-      "pc": 178,
+      "pf": 206,
+      "pc": 218,
       "bp": 0,
       "bf": 0,
       "form": [
-        "l",
         "w",
         "l",
         "l",
+        "w",
         "w"
       ]
     }
@@ -259,12 +259,16 @@
         {
           "home": "Peñarol",
           "away": "Cobras BR",
-          "played": false
+          "played": true,
+          "hs": 38,
+          "as": 20
         },
         {
           "home": "Tarucas",
           "away": "Pampas",
-          "played": false
+          "played": true,
+          "hs": 22,
+          "as": 43
         },
         {
           "home": "Yacare XV",
@@ -468,12 +472,16 @@
         {
           "home": "Cobras BR",
           "away": "Peñarol",
-          "played": false
+          "played": true,
+          "hs": 20,
+          "as": 38
         },
         {
           "home": "Pampas",
           "away": "Tarucas",
-          "played": false
+          "played": true,
+          "hs": 43,
+          "as": 22
         }
       ]
     },
@@ -553,6 +561,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-13T23:57:25.209148+00:00",
-  "matchesScraped": 12
+  "lastUpdate": "2026-03-14T05:03:33.732422+00:00",
+  "matchesScraped": 14
 }
