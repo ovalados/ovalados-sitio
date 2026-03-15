@@ -1,0 +1,1274 @@
+{
+  "teams": [
+    {
+      "name": "Mercedes",
+      "pts": 5,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 43,
+      "pc": 15,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "Varela Jr.",
+      "pts": 1,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 21,
+      "pc": 28,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "Albatros",
+      "pts": 5,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 45,
+      "pc": 14,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "Tigre",
+      "pts": 1,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 20,
+      "pc": 22,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "Atletico Chascomus",
+      "pts": 4,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 26,
+      "pc": 25,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "Los Pinos",
+      "pts": 4,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 24,
+      "pc": 13,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "La Salle",
+      "pts": 0,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 13,
+      "pc": 24,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "El Retiro",
+      "pts": 1,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 25,
+      "pc": 26,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "San Marcos",
+      "pts": 4,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 22,
+      "pc": 20,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "Tiro F de San Pedro",
+      "pts": 0,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 14,
+      "pc": 45,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "Atletico y Progreso",
+      "pts": 4,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 28,
+      "pc": 21,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "Vicente Lopez",
+      "pts": 0,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 15,
+      "pc": 43,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "Old Georgian",
+      "pts": 4,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 33,
+      "pc": 24,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "Las Cañas",
+      "pts": 0,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 24,
+      "pc": 33,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l"
+      ]
+    }
+  ],
+  "matches": {
+    "1": {
+      "date": "2026-03-14",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "Old Georgian",
+          "played": true,
+          "hs": 24,
+          "as": 33
+        },
+        {
+          "home": "Mercedes",
+          "away": "Vicente Lopez",
+          "played": true,
+          "hs": 43,
+          "as": 15
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "Atletico y Progreso",
+          "played": true,
+          "hs": 21,
+          "as": 28
+        },
+        {
+          "home": "Albatros",
+          "away": "Tiro F de San Pedro",
+          "played": true,
+          "hs": 45,
+          "as": 14
+        },
+        {
+          "home": "Tigre",
+          "away": "San Marcos",
+          "played": true,
+          "hs": 20,
+          "as": 22
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "El Retiro",
+          "played": true,
+          "hs": 26,
+          "as": 25
+        },
+        {
+          "home": "Los Pinos",
+          "away": "La Salle",
+          "played": true,
+          "hs": 24,
+          "as": 13
+        }
+      ]
+    },
+    "2": {
+      "date": "2026-03-21",
+      "ms": [
+        {
+          "home": "Los Pinos",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "Old Georgian",
+          "played": false
+        }
+      ]
+    },
+    "3": {
+      "date": "2026-03-28",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "Vicente Lopez",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "Atletico y Progreso",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "San Marcos",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "El Retiro",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "Los Pinos",
+          "played": false
+        }
+      ]
+    },
+    "4": {
+      "date": "2026-04-11",
+      "ms": [
+        {
+          "home": "Atletico Chascomus",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "Old Georgian",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "Vicente Lopez",
+          "played": false
+        }
+      ]
+    },
+    "5": {
+      "date": "2026-04-18",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "Atletico y Progreso",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "San Marcos",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "El Retiro",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Atletico Chascomus",
+          "played": false
+        }
+      ]
+    },
+    "6": {
+      "date": "2026-04-25",
+      "ms": [
+        {
+          "home": "Tigre",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "Old Georgian",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "Vicente Lopez",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "Atletico y Progreso",
+          "played": false
+        }
+      ]
+    },
+    "7": {
+      "date": "2026-05-09",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "San Marcos",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "El Retiro",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "Tigre",
+          "played": false
+        }
+      ]
+    },
+    "8": {
+      "date": "2026-05-16",
+      "ms": [
+        {
+          "home": "Albatros",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "Old Georgian",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "Vicente Lopez",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "Atletico y Progreso",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        }
+      ]
+    },
+    "9": {
+      "date": "2026-05-23",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "San Marcos",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "El Retiro",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "Albatros",
+          "played": false
+        }
+      ]
+    },
+    "10": {
+      "date": "2026-06-06",
+      "ms": [
+        {
+          "home": "Varela Jr.",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Old Georgian",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "Vicente Lopez",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "Atletico y Progreso",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "San Marcos",
+          "played": false
+        }
+      ]
+    },
+    "11": {
+      "date": "2026-06-13",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "El Retiro",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "Varela Jr.",
+          "played": false
+        }
+      ]
+    },
+    "12": {
+      "date": "2026-06-20",
+      "ms": [
+        {
+          "home": "Mercedes",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "Old Georgian",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "Vicente Lopez",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Atletico y Progreso",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "San Marcos",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "El Retiro",
+          "played": false
+        }
+      ]
+    },
+    "13": {
+      "date": "2026-07-04",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "Mercedes",
+          "played": false
+        }
+      ]
+    },
+    "14": {
+      "date": "2026-07-11",
+      "ms": [
+        {
+          "home": "Old Georgian",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "Los Pinos",
+          "played": false
+        }
+      ]
+    },
+    "15": {
+      "date": "2026-07-18",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "El Retiro",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "San Marcos",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "Atletico y Progreso",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "Vicente Lopez",
+          "played": false
+        }
+      ]
+    },
+    "16": {
+      "date": "2026-08-01",
+      "ms": [
+        {
+          "home": "Vicente Lopez",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "Old Georgian",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "Atletico Chascomus",
+          "played": false
+        }
+      ]
+    },
+    "17": {
+      "date": "2026-08-15",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "El Retiro",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "San Marcos",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "Atletico y Progreso",
+          "played": false
+        }
+      ]
+    },
+    "18": {
+      "date": "2026-08-22",
+      "ms": [
+        {
+          "home": "Atletico y Progreso",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "Vicente Lopez",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "Old Georgian",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "Tigre",
+          "played": false
+        }
+      ]
+    },
+    "19": {
+      "date": "2026-08-29",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "El Retiro",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "San Marcos",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        }
+      ]
+    },
+    "20": {
+      "date": "2026-09-05",
+      "ms": [
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "Atletico y Progreso",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "Vicente Lopez",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "Old Georgian",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Albatros",
+          "played": false
+        }
+      ]
+    },
+    "21": {
+      "date": "2026-09-12",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "El Retiro",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "San Marcos",
+          "played": false
+        }
+      ]
+    },
+    "22": {
+      "date": "2026-09-26",
+      "ms": [
+        {
+          "home": "San Marcos",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "Atletico y Progreso",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "Vicente Lopez",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "Old Georgian",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "Varela Jr.",
+          "played": false
+        }
+      ]
+    },
+    "23": {
+      "date": "2026-10-03",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "La Salle",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "El Retiro",
+          "played": false
+        }
+      ]
+    },
+    "24": {
+      "date": "2026-10-10",
+      "ms": [
+        {
+          "home": "El Retiro",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "La Salle",
+          "away": "San Marcos",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "Atletico y Progreso",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Vicente Lopez",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "Old Georgian",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "Mercedes",
+          "played": false
+        }
+      ]
+    },
+    "25": {
+      "date": "2026-10-17",
+      "ms": [
+        {
+          "home": "Las Cañas",
+          "away": "Mercedes",
+          "played": false
+        },
+        {
+          "home": "Old Georgian",
+          "away": "Varela Jr.",
+          "played": false
+        },
+        {
+          "home": "Vicente Lopez",
+          "away": "Albatros",
+          "played": false
+        },
+        {
+          "home": "Atletico y Progreso",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Tiro F de San Pedro",
+          "away": "Atletico Chascomus",
+          "played": false
+        },
+        {
+          "home": "San Marcos",
+          "away": "Los Pinos",
+          "played": false
+        },
+        {
+          "home": "El Retiro",
+          "away": "La Salle",
+          "played": false
+        }
+      ]
+    },
+    "26": {
+      "date": "2026-10-24",
+      "ms": [
+        {
+          "home": "La Salle",
+          "away": "Las Cañas",
+          "played": false
+        },
+        {
+          "home": "Los Pinos",
+          "away": "El Retiro",
+          "played": false
+        },
+        {
+          "home": "Atletico Chascomus",
+          "away": "San Marcos",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Tiro F de San Pedro",
+          "played": false
+        },
+        {
+          "home": "Albatros",
+          "away": "Atletico y Progreso",
+          "played": false
+        },
+        {
+          "home": "Varela Jr.",
+          "away": "Vicente Lopez",
+          "played": false
+        },
+        {
+          "home": "Mercedes",
+          "away": "Old Georgian",
+          "played": false
+        }
+      ]
+    }
+  },
+  "lastUpdate": "2026-03-15T23:41:40.942923+00:00",
+  "matchesScraped": 7,
+  "championshipId": "2025180",
+  "nombre": "Segunda"
+}
