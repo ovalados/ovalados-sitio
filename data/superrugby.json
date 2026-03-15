@@ -2,21 +2,21 @@
   "teams": [
     {
       "name": "Capibaras XV",
-      "pts": 16,
-      "pj": 6,
-      "g": 4,
+      "pts": 24,
+      "pj": 8,
+      "g": 6,
       "e": 0,
       "p": 2,
-      "pf": 216,
-      "pc": 88,
+      "pf": 242,
+      "pc": 112,
       "bp": 0,
       "bf": 0,
       "form": [
         "w",
+        "w",
+        "w",
         "l",
-        "w",
-        "w",
-        "l"
+        "w"
       ]
     },
     {
@@ -40,21 +40,21 @@
     },
     {
       "name": "Dogos XV",
-      "pts": 16,
-      "pj": 6,
-      "g": 4,
+      "pts": 24,
+      "pj": 8,
+      "g": 6,
       "e": 0,
       "p": 2,
-      "pf": 166,
+      "pf": 302,
       "pc": 164,
       "bp": 0,
       "bf": 0,
       "form": [
         "w",
+        "w",
+        "w",
         "l",
-        "w",
-        "w",
-        "l"
+        "w"
       ]
     },
     {
@@ -79,31 +79,31 @@
     {
       "name": "Selknam",
       "pts": 8,
-      "pj": 6,
+      "pj": 8,
       "g": 2,
       "e": 0,
-      "p": 4,
+      "p": 6,
       "pf": 148,
-      "pc": 226,
+      "pc": 362,
       "bp": 0,
       "bf": 0,
       "form": [
-        "w",
         "l",
         "l",
         "w",
+        "l",
         "l"
       ]
     },
     {
       "name": "Yacare XV",
       "pts": 0,
-      "pj": 6,
+      "pj": 8,
       "g": 0,
       "e": 0,
-      "p": 6,
-      "pf": 136,
-      "pc": 170,
+      "p": 8,
+      "pf": 160,
+      "pc": 196,
       "bp": 0,
       "bf": 0,
       "form": [
@@ -273,12 +273,16 @@
         {
           "home": "Yacare XV",
           "away": "Capibaras XV",
-          "played": false
+          "played": true,
+          "hs": 12,
+          "as": 13
         },
         {
           "home": "Dogos XV",
           "away": "Selknam",
-          "played": false
+          "played": true,
+          "hs": 68,
+          "as": 0
         }
       ]
     },
@@ -462,12 +466,16 @@
         {
           "home": "Capibaras XV",
           "away": "Yacare XV",
-          "played": false
+          "played": true,
+          "hs": 13,
+          "as": 12
         },
         {
           "home": "Selknam",
           "away": "Dogos XV",
-          "played": false
+          "played": true,
+          "hs": 0,
+          "as": 68
         },
         {
           "home": "Cobras BR",
@@ -561,6 +569,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-14T23:55:20.759373+00:00",
-  "matchesScraped": 14
+  "lastUpdate": "2026-03-15T05:45:19.693682+00:00",
+  "matchesScraped": 16
 }
