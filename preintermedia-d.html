@@ -3,67 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Preintermedia D URBA 2026 — Ovalados</title>
-<meta name="description" content="Tabla de posiciones y fixture de la Preintermedia D URBA 2026.">
+<title>Tabla URBA Pre-Intermedia D 2026 — Ovalados</title>
+<meta name="description" content="Tabla de posiciones, fixture y resultados del Torneo URBA Pre-Intermedia D 2026.">
 <link rel="canonical" href="https://ovalados.com/preintermedia-d.html">
-<meta property="og:title" content="Preintermedia D URBA 2026 — Ovalados">
-<meta property="og:description" content="Tabla de posiciones y fixture de la Preintermedia D URBA 2026.">
-<meta property="og:image" content="https://ovalados.com/img/og-default.jpg">
+<meta property="og:title" content="Tabla URBA Pre-Intermedia D 2026 — Ovalados">
+<meta property="og:description" content="Posiciones y fixture del URBA Pre-Intermedia D 2026.">
 <meta property="og:url" content="https://ovalados.com/preintermedia-d.html">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="google-site-verification" content="eObn6uPNHec1448XkrJbqhSoKF69bKaJayuLrdOZAj0" />
 <link rel="icon" href="img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css?v=21">
 </head>
 <body>
+
 <header>
   <a href="index.html" class="logo">OVALADOS</a>
-  <nav>
+  <nav id="main-nav" style="display:flex">
     <button class="active" onclick="go('posiciones',this)">Posiciones</button>
     <button onclick="go('partidos',this)">Partidos</button>
     <button onclick="go('locvis',this)">Local/Visit.</button>
-    <button onclick="go('calculadora',this)">Calculadora</button>
   </nav>
 </header>
-<div class="sub-header">
+
+<div id="tournament-header" class="sub-header" style="display:flex">
   <a href="index.html" class="back-btn">← Torneos</a>
-  <span class="sub-label"><strong>PREINTERMEDIA D</strong> · URBA Top 14 · 26 fechas · 2026</span>
+  <span class="sub-label"><strong>URBA PREINTERMEDIA D</strong> · División Pre-Intermedia D 2026
+    <span id="last-update" style="font-size:0.75rem;color:var(--muted);margin-left:12px"></span>
+  </span>
 </div>
+
+<div id="tournament-urba" style="display:block">
 <main>
 
   <section id="posiciones" class="section active">
-    <div class="page-title">POSICIONES</div>
-    <div class="page-subtitle">Preintermedia D URBA 2026 · URBA 2026 · 26 fechas</div>
+    <div class="page-title">TABLA DE POSICIONES</div>
+    <div class="page-subtitle">Torneo URBA Pre-Intermedia D · Temporada 2026</div>
     <div class="table-wrap">
-      <table>
-        <thead><tr>
-          <th style="width:40px">#</th><th style="text-align:left">EQUIPO</th>
-          <th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th>
-          <th>PF</th><th>PC</th><th>+/-</th><th>BP</th><th>BF</th><th>FORMA</th>
-        </tr></thead>
+      <table id="standings-table">
+        <thead>
+          <tr>
+            <th style="width:40px">#</th>
+            <th style="text-align:left">EQUIPO</th>
+            <th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th>
+            <th>PF</th><th>PC</th><th>+/-</th>
+            <th>BP</th><th>BF</th>
+            <th>FORMA</th>
+          </tr>
+        </thead>
         <tbody id="standings-body"></tbody>
       </table>
     </div>
     <div class="legend">
-      <div class="legend-item"><div class="legend-bar" style="background:var(--green)"></div> Clasifican a Semifinales (1°-2°)</div>
-      <div class="legend-item"><div class="legend-bar" style="background:var(--gold)"></div> Clasifican a Cuartos (3°-4°)</div>
-      <div class="legend-item"><div class="legend-bar" style="background:#c0392b"></div> Descenso (13°-14°)</div>
+      <div class="legend-item">BP = Bonus por 4+ tries</div>
+      <div class="legend-item">BF = Bonus perdiendo por ≤7</div>
     </div>
   </section>
 
   <section id="partidos" class="section">
     <div class="page-title">PARTIDOS</div>
-    <div class="page-subtitle">Fixture completo 2026 · IDA: Fechas 1–13 · VUELTA: Fechas 14–26</div>
+    <div class="page-subtitle">Fixture completo · URBA Pre-Intermedia D 2026</div>
     <div class="round-selector" id="round-selector"></div>
     <div id="matches-container"></div>
   </section>
 
   <section id="locvis" class="section">
     <div class="page-title">LOCAL / VISITANTE</div>
-    <div class="page-subtitle">Rendimiento según condición de juego · 2026</div>
+    <div class="page-subtitle">Rendimiento según condición de juego · URBA Pre-Intermedia D 2026</div>
     <div class="locvis-grid">
       <div>
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2px;color:var(--green);margin-bottom:0.75rem;text-transform:uppercase">🏠 De Local</div>
@@ -82,307 +91,27 @@
     </div>
   </section>
 
-  <section id="calculadora" class="section">
-    <div class="page-title">CALCULADORA</div>
-    <div class="page-subtitle">Proyectá escenarios y posiciones finales</div>
-    <div class="calc-grid">
-      <div><div class="calc-panel">
-        <h3>⚙ Sistema de puntos</h3>
-        <div class="points-info"
-          style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px 10px;text-align:center">
-          <div><div class="points-num">4</div><div class="points-label">Victoria</div></div>
-          <div><div class="points-num">2</div><div class="points-label">Empate</div></div>
-          <div><div class="points-num">0</div><div class="points-label">Derrota</div></div>
-          <div><div class="points-num">+1</div><div class="points-label">Bonus 4+ tries</div></div>
-          <div><div class="points-num">+1</div><div class="points-label">Bonus derrota ≤7</div></div>
-          <div><div class="points-num">26</div><div class="points-label">Fechas totales</div></div>
-        </div>
-        <h3>📅 Simular fechas</h3>
-        <div class="info-banner"><span class="info-icon">ℹ</span><span>Abrí cada fecha, seleccioná resultados y la tabla se actualiza.</span></div>
-        <div id="sim-matches"></div>
-        <button class="calc-btn" onclick="renderProjected()">PROYECTAR</button>
-        <button class="reset-btn" onclick="resetCalc()">↺ Reiniciar</button>
-      </div></div>
-      <div><div class="calc-panel">
-        <h3>📊 Tabla proyectada</h3>
-        <div class="proj-note" id="proj-note">Seleccioná resultados para ver la proyección</div>
-        <div id="projected-table"></div>
-      </div></div>
-    </div>
-  </section>
-
 </main>
+</div>
+
 <script>
-const teams = [
-  {name:'La Plata',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Hindu',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Champagnat',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Alumni',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Newman',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'SIC',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Belgrano Athletic',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Buenos Aires C&RC',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'CUBA',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'CASI',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Los Tilos',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Atlético del Rosario',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Regatas Bella Vista',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Los Matreros',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-];
+// Datos cargados dinámicamente desde el JSON
+let teams = [];
+let matches = {};
+let currentRound = 1;
 
-const matches = {
-  1: {date:'14/03/2026',ms:[
-    {home:'La Plata',away:'Atlético del Rosario',played:false},
-    {home:'Hindu',away:'Los Tilos',played:false},
-    {home:'Champagnat',away:'CASI',played:false},
-    {home:'Alumni',away:'CUBA',played:false},
-    {home:'Newman',away:'Buenos Aires C&RC',played:false},
-    {home:'SIC',away:'Belgrano Athletic',played:false},
-    {home:'Los Matreros',away:'Regatas Bella Vista',played:false},
-  ]},
-  2: {date:'21/03/2026',ms:[
-    {home:'Belgrano Athletic',away:'Newman',played:false},
-    {home:'Buenos Aires C&RC',away:'Alumni',played:false},
-    {home:'CUBA',away:'Champagnat',played:false},
-    {home:'CASI',away:'Hindu',played:false},
-    {home:'Los Tilos',away:'La Plata',played:false},
-    {home:'Atlético del Rosario',away:'Regatas Bella Vista',played:false},
-    {home:'SIC',away:'Los Matreros',played:false},
-  ]},
-  3: {date:'28/03/2026',ms:[
-    {home:'Regatas Bella Vista',away:'Los Tilos',played:false},
-    {home:'La Plata',away:'CASI',played:false},
-    {home:'Hindu',away:'CUBA',played:false},
-    {home:'Champagnat',away:'Buenos Aires C&RC',played:false},
-    {home:'Alumni',away:'Belgrano Athletic',played:false},
-    {home:'Newman',away:'SIC',played:false},
-    {home:'Los Matreros',away:'Atlético del Rosario',played:false},
-  ]},
-  4: {date:'11/04/2026',ms:[
-    {home:'SIC',away:'Alumni',played:false},
-    {home:'Belgrano Athletic',away:'Champagnat',played:false},
-    {home:'Buenos Aires C&RC',away:'Hindu',played:false},
-    {home:'CUBA',away:'La Plata',played:false},
-    {home:'CASI',away:'Regatas Bella Vista',played:false},
-    {home:'Los Tilos',away:'Atlético del Rosario',played:false},
-    {home:'Newman',away:'Los Matreros',played:false},
-  ]},
-  5: {date:'18/04/2026',ms:[
-    {home:'Atlético del Rosario',away:'CASI',played:false},
-    {home:'Regatas Bella Vista',away:'CUBA',played:false},
-    {home:'La Plata',away:'Buenos Aires C&RC',played:false},
-    {home:'Hindu',away:'Belgrano Athletic',played:false},
-    {home:'Champagnat',away:'SIC',played:false},
-    {home:'Alumni',away:'Newman',played:false},
-    {home:'Los Matreros',away:'Los Tilos',played:false},
-  ]},
-  6: {date:'25/04/2026',ms:[
-    {home:'Newman',away:'Champagnat',played:false},
-    {home:'SIC',away:'Hindu',played:false},
-    {home:'Belgrano Athletic',away:'La Plata',played:false},
-    {home:'Buenos Aires C&RC',away:'Regatas Bella Vista',played:false},
-    {home:'CUBA',away:'Atlético del Rosario',played:false},
-    {home:'CASI',away:'Los Tilos',played:false},
-    {home:'Alumni',away:'Los Matreros',played:false},
-  ]},
-  7: {date:'09/05/2026',ms:[
-    {home:'Los Tilos',away:'CUBA',played:false},
-    {home:'Atlético del Rosario',away:'Buenos Aires C&RC',played:false},
-    {home:'Regatas Bella Vista',away:'Belgrano Athletic',played:false},
-    {home:'La Plata',away:'SIC',played:false},
-    {home:'Hindu',away:'Newman',played:false},
-    {home:'Champagnat',away:'Alumni',played:false},
-    {home:'Los Matreros',away:'CASI',played:false},
-  ]},
-  8: {date:'16/05/2026',ms:[
-    {home:'Alumni',away:'Hindu',played:false},
-    {home:'Newman',away:'La Plata',played:false},
-    {home:'SIC',away:'Regatas Bella Vista',played:false},
-    {home:'Belgrano Athletic',away:'Atlético del Rosario',played:false},
-    {home:'Buenos Aires C&RC',away:'Los Tilos',played:false},
-    {home:'CUBA',away:'CASI',played:false},
-    {home:'Champagnat',away:'Los Matreros',played:false},
-  ]},
-  9: {date:'23/05/2026',ms:[
-    {home:'CASI',away:'Buenos Aires C&RC',played:false},
-    {home:'Los Tilos',away:'Belgrano Athletic',played:false},
-    {home:'Atlético del Rosario',away:'SIC',played:false},
-    {home:'Regatas Bella Vista',away:'Newman',played:false},
-    {home:'La Plata',away:'Alumni',played:false},
-    {home:'Hindu',away:'Champagnat',played:false},
-    {home:'Los Matreros',away:'CUBA',played:false},
-  ]},
-  10: {date:'30/05/2026',ms:[
-    {home:'Champagnat',away:'La Plata',played:false},
-    {home:'Alumni',away:'Regatas Bella Vista',played:false},
-    {home:'Newman',away:'Atlético del Rosario',played:false},
-    {home:'SIC',away:'Los Tilos',played:false},
-    {home:'Belgrano Athletic',away:'CASI',played:false},
-    {home:'Buenos Aires C&RC',away:'CUBA',played:false},
-    {home:'Hindu',away:'Los Matreros',played:false},
-  ]},
-  11: {date:'06/06/2026',ms:[
-    {home:'CUBA',away:'Belgrano Athletic',played:false},
-    {home:'CASI',away:'SIC',played:false},
-    {home:'Los Tilos',away:'Newman',played:false},
-    {home:'Atlético del Rosario',away:'Alumni',played:false},
-    {home:'Regatas Bella Vista',away:'Champagnat',played:false},
-    {home:'La Plata',away:'Hindu',played:false},
-    {home:'Los Matreros',away:'Buenos Aires C&RC',played:false},
-  ]},
-  12: {date:'20/06/2026',ms:[
-    {home:'Hindu',away:'Regatas Bella Vista',played:false},
-    {home:'Champagnat',away:'Atlético del Rosario',played:false},
-    {home:'Alumni',away:'Los Tilos',played:false},
-    {home:'Newman',away:'CASI',played:false},
-    {home:'SIC',away:'CUBA',played:false},
-    {home:'Belgrano Athletic',away:'Buenos Aires C&RC',played:false},
-    {home:'La Plata',away:'Los Matreros',played:false},
-  ]},
-  13: {date:'27/06/2026',ms:[
-    {home:'Buenos Aires C&RC',away:'SIC',played:false},
-    {home:'CUBA',away:'Newman',played:false},
-    {home:'CASI',away:'Alumni',played:false},
-    {home:'Los Tilos',away:'Champagnat',played:false},
-    {home:'Atlético del Rosario',away:'Hindu',played:false},
-    {home:'Regatas Bella Vista',away:'La Plata',played:false},
-    {home:'Los Matreros',away:'Belgrano Athletic',played:false},
-  ]},
-  14: {date:'04/07/2026',ms:[
-    {home:'Atlético del Rosario',away:'La Plata',played:false},
-    {home:'Los Tilos',away:'Hindu',played:false},
-    {home:'CASI',away:'Champagnat',played:false},
-    {home:'CUBA',away:'Alumni',played:false},
-    {home:'Buenos Aires C&RC',away:'Newman',played:false},
-    {home:'Belgrano Athletic',away:'SIC',played:false},
-    {home:'Regatas Bella Vista',away:'Los Matreros',played:false},
-  ]},
-  15: {date:'11/07/2026',ms:[
-    {home:'Newman',away:'Belgrano Athletic',played:false},
-    {home:'Alumni',away:'Buenos Aires C&RC',played:false},
-    {home:'Champagnat',away:'CUBA',played:false},
-    {home:'Hindu',away:'CASI',played:false},
-    {home:'La Plata',away:'Los Tilos',played:false},
-    {home:'Regatas Bella Vista',away:'Atlético del Rosario',played:false},
-    {home:'Los Matreros',away:'SIC',played:false},
-  ]},
-  16: {date:'18/07/2026',ms:[
-    {home:'Los Tilos',away:'Regatas Bella Vista',played:false},
-    {home:'CASI',away:'La Plata',played:false},
-    {home:'CUBA',away:'Hindu',played:false},
-    {home:'Buenos Aires C&RC',away:'Champagnat',played:false},
-    {home:'Belgrano Athletic',away:'Alumni',played:false},
-    {home:'SIC',away:'Newman',played:false},
-    {home:'Atlético del Rosario',away:'Los Matreros',played:false},
-  ]},
-  17: {date:'01/08/2026',ms:[
-    {home:'Alumni',away:'SIC',played:false},
-    {home:'Champagnat',away:'Belgrano Athletic',played:false},
-    {home:'Hindu',away:'Buenos Aires C&RC',played:false},
-    {home:'La Plata',away:'CUBA',played:false},
-    {home:'Regatas Bella Vista',away:'CASI',played:false},
-    {home:'Atlético del Rosario',away:'Los Tilos',played:false},
-    {home:'Los Matreros',away:'Newman',played:false},
-  ]},
-  18: {date:'15/08/2026',ms:[
-    {home:'CASI',away:'Atlético del Rosario',played:false},
-    {home:'CUBA',away:'Regatas Bella Vista',played:false},
-    {home:'Buenos Aires C&RC',away:'La Plata',played:false},
-    {home:'Belgrano Athletic',away:'Hindu',played:false},
-    {home:'SIC',away:'Champagnat',played:false},
-    {home:'Newman',away:'Alumni',played:false},
-    {home:'Los Tilos',away:'Los Matreros',played:false},
-  ]},
-  19: {date:'22/08/2026',ms:[
-    {home:'Champagnat',away:'Newman',played:false},
-    {home:'Hindu',away:'SIC',played:false},
-    {home:'La Plata',away:'Belgrano Athletic',played:false},
-    {home:'Regatas Bella Vista',away:'Buenos Aires C&RC',played:false},
-    {home:'Atlético del Rosario',away:'CUBA',played:false},
-    {home:'Los Tilos',away:'CASI',played:false},
-    {home:'Los Matreros',away:'Alumni',played:false},
-  ]},
-  20: {date:'29/08/2026',ms:[
-    {home:'CUBA',away:'Los Tilos',played:false},
-    {home:'Buenos Aires C&RC',away:'Atlético del Rosario',played:false},
-    {home:'Belgrano Athletic',away:'Regatas Bella Vista',played:false},
-    {home:'SIC',away:'La Plata',played:false},
-    {home:'Newman',away:'Hindu',played:false},
-    {home:'Alumni',away:'Champagnat',played:false},
-    {home:'CASI',away:'Los Matreros',played:false},
-  ]},
-  21: {date:'05/09/2026',ms:[
-    {home:'Hindu',away:'Alumni',played:false},
-    {home:'La Plata',away:'Newman',played:false},
-    {home:'Regatas Bella Vista',away:'SIC',played:false},
-    {home:'Atlético del Rosario',away:'Belgrano Athletic',played:false},
-    {home:'Los Tilos',away:'Buenos Aires C&RC',played:false},
-    {home:'CASI',away:'CUBA',played:false},
-    {home:'Champagnat',away:'Los Matreros',played:false},
-  ]},
-  22: {date:'12/09/2026',ms:[
-    {home:'Buenos Aires C&RC',away:'CASI',played:false},
-    {home:'Belgrano Athletic',away:'Los Tilos',played:false},
-    {home:'SIC',away:'Atlético del Rosario',played:false},
-    {home:'Newman',away:'Regatas Bella Vista',played:false},
-    {home:'Alumni',away:'La Plata',played:false},
-    {home:'Champagnat',away:'Hindu',played:false},
-    {home:'CUBA',away:'Buenos Aires C&RC',played:false},
-  ]},
-  23: {date:'26/09/2026',ms:[
-    {home:'La Plata',away:'Champagnat',played:false},
-    {home:'Regatas Bella Vista',away:'Alumni',played:false},
-    {home:'Atlético del Rosario',away:'Newman',played:false},
-    {home:'Los Tilos',away:'SIC',played:false},
-    {home:'CASI',away:'Belgrano Athletic',played:false},
-    {home:'CUBA',away:'Buenos Aires C&RC',played:false},
-    {home:'Hindu',away:'Los Matreros',played:false},
-  ]},
-  24: {date:'03/10/2026',ms:[
-    {home:'Buenos Aires C&RC',away:'Los Matreros',played:false},
-    {home:'Belgrano Athletic',away:'CUBA',played:false},
-    {home:'SIC',away:'CASI',played:false},
-    {home:'Newman',away:'Los Tilos',played:false},
-    {home:'Alumni',away:'Atlético del Rosario',played:false},
-    {home:'Champagnat',away:'Regatas Bella Vista',played:false},
-    {home:'Hindu',away:'La Plata',played:false},
-  ]},
-  25: {date:'10/10/2026',ms:[
-    {home:'Los Matreros',away:'La Plata',played:false},
-    {home:'Regatas Bella Vista',away:'Hindu',played:false},
-    {home:'Atlético del Rosario',away:'Champagnat',played:false},
-    {home:'Los Tilos',away:'Alumni',played:false},
-    {home:'CASI',away:'Newman',played:false},
-    {home:'CUBA',away:'SIC',played:false},
-    {home:'Buenos Aires C&RC',away:'Belgrano Athletic',played:false},
-  ]},
-  26: {date:'17/10/2026',ms:[
-    {home:'Belgrano Athletic',away:'Los Matreros',played:false},
-    {home:'SIC',away:'Buenos Aires C&RC',played:false},
-    {home:'Newman',away:'CUBA',played:false},
-    {home:'Alumni',away:'CASI',played:false},
-    {home:'Champagnat',away:'Los Tilos',played:false},
-    {home:'Hindu',away:'Atlético del Rosario',played:false},
-    {home:'La Plata',away:'Regatas Bella Vista',played:false},
-  ]},
-};
-
-// ── TABS ──────────────────────────────────────────────────
 function go(id, btn) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
-  const el = document.getElementById(id);
-  if (el) el.classList.add('active');
+  document.querySelectorAll('#main-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
   if (btn) btn.classList.add('active');
-  if (id === 'partidos')    renderMatches(currentRound);
-  if (id === 'calculadora') renderCalc();
-  if (id === 'locvis')      renderLocVis();
+  if (id === 'partidos') renderMatches(currentRound);
+  if (id === 'locvis')   renderLocVis();
 }
 
-// ── STANDINGS ─────────────────────────────────────────────
-function renderStandings(data) {
-  const allZero = data.every(t => t.pts === 0 && t.pj === 0);
-  const sorted = [...data].sort((a,b) => {
+function renderStandings() {
+  const allZero = teams.every(t => t.pts === 0 && t.pj === 0);
+  const sorted = [...teams].sort((a,b) => {
     if (allZero) return a.name.localeCompare(b.name, 'es');
     return b.pts - a.pts || (b.pf-b.pc) - (a.pf-a.pc);
   });
@@ -390,64 +119,26 @@ function renderStandings(data) {
   if (!tbody) return;
   tbody.innerHTML = sorted.map((t,i) => {
     const pos = i+1;
-    const rowClass = !allZero && pos<=2 ? 'qualify' : !allZero && pos<=4 ? 'semifinal' : pos>=13 ? 'descent' : '';
     const diff = t.pf - t.pc;
     const formDots = (t.form||[]).map(f => `<div class="dot ${f==='w'?'w':f==='l'?'l':'d'}"></div>`).join('');
-    return `<tr class="${rowClass} pos-${pos}">
+    return `<tr class="pos-${pos}">
       <td><span class="pos-num">${allZero ? '—' : pos}</span></td>
       <td><span class="team-name">${t.name}</span></td>
       <td class="pts">${t.pts}</td><td>${t.pj}</td><td>${t.g}</td><td>${t.e}</td><td>${t.p}</td>
       <td>${t.pf}</td><td>${t.pc}</td>
-      <td style="color:${diff>0?'var(--green)':diff<0?'#c0392b':'var(--muted)'}">
-        ${diff>0?'+':''}${diff||0}</td>
+      <td style="color:${diff>0?'var(--green)':diff<0?'#c0392b':'var(--muted)'}">${diff>0?'+':''}${diff||0}</td>
       <td style="color:var(--gold)">${t.bp||0}</td><td>${t.bf||0}</td>
       <td><div class="form-dots">${formDots}</div></td>
     </tr>`;
   }).join('');
 }
 
-// ── LOCAL / VISITANTE ─────────────────────────────────────
-function renderLocVis() {
-  const homeStats = {}, awayStats = {};
-  teams.forEach(t => {
-    homeStats[t.name] = {pj:0,g:0,e:0,p:0,pf:0,pc:0,pts:0};
-    awayStats[t.name] = {pj:0,g:0,e:0,p:0,pf:0,pc:0,pts:0};
-  });
-  Object.values(matches).forEach(rd => rd.ms.filter(m=>m.played).forEach(m => {
-    if (!homeStats[m.home] || !awayStats[m.away]) return;
-    const h=homeStats[m.home], a=awayStats[m.away];
-    h.pj++; a.pj++; h.pf+=m.hs; h.pc+=m.as; a.pf+=m.as; a.pc+=m.hs;
-    if(m.hs>m.as){h.g++;h.pts+=4;a.p++;}
-    else if(m.hs<m.as){a.g++;a.pts+=4;h.p++;}
-    else{h.e++;a.e++;h.pts+=2;a.pts+=2;}
-    if(m.bp_home)h.pts++; if(m.bp_away)a.pts++;
-    if(m.bf_home)h.pts++; if(m.bf_away)a.pts++;
-  }));
-  const makeRows = (stats, tbodyId) => {
-    const sorted = [...teams].sort((a,b)=>(stats[b.name]?.pts||0)-(stats[a.name]?.pts||0));
-    const el = document.getElementById(tbodyId);
-    if (!el) return;
-    el.innerHTML = sorted.map(t => {
-      const d = stats[t.name]||{};
-      return `<tr>
-        <td style="text-align:left;padding-left:12px;font-weight:600">${t.name}</td>
-        <td>${d.pj||0}</td><td>${d.g||0}</td><td>${d.e||0}</td><td>${d.p||0}</td>
-        <td>${d.pf||0}</td><td>${d.pc||0}</td>
-        <td style="color:var(--green);font-weight:700">${d.pts||0}</td>
-      </tr>`;
-    }).join('');
-  };
-  makeRows(homeStats, 'loc-body');
-  makeRows(awayStats, 'vis-body');
-}
-
-// ── PARTIDOS ──────────────────────────────────────────────
-let currentRound = 1;
 function renderMatches(round) {
   if (!round) round = currentRound;
   currentRound = round;
+  const keys = Object.keys(matches).sort((a,b) => +a - +b);
   const sel = document.getElementById('round-selector');
-  if (sel) sel.innerHTML = Object.keys(matches).map(r =>
+  if (sel) sel.innerHTML = keys.map(r =>
     `<button class="round-btn ${+r===round?'active':''}" onclick="renderMatches(${r})">F${r}</button>`
   ).join('');
   const roundData = matches[round];
@@ -464,7 +155,7 @@ function renderMatches(round) {
     html += '</div>';
   }
   if (upcoming.length) {
-    html += `<div class="round-title">Fecha ${round} · ${dateStr} · Próximos · 15:30 hs</div><div class="matches-grid">`;
+    html += `<div class="round-title">Fecha ${round} · ${dateStr} · Próximos</div><div class="matches-grid">`;
     html += upcoming.map(m => matchCard(m, dateStr)).join('');
     html += '</div>';
   }
@@ -474,15 +165,12 @@ function renderMatches(round) {
 function matchCard(m, dateStr) {
   const isPlayed = m.played && !m.live;
   const isLive   = !!m.live;
-  const statusLeft  = isLive ? '🔴 EN VIVO' : isPlayed ? 'Finalizado' : dateStr;
-  const statusRight = m.venue || '';
-  const scoreBlock  = isPlayed || isLive
+  const scoreBlock = isPlayed || isLive
     ? `<div class="match-score">${m.hs} — ${m.as}</div>`
     : `<div class="match-score upcoming">VS</div>`;
   return `<div class="match-card${isLive?' live':''}">
     <div class="match-meta">
-      <span>${statusLeft}</span>
-      <span style="font-size:0.75rem;color:var(--muted)">${statusRight}</span>
+      <span>${isLive?'🔴 EN VIVO':isPlayed?'Finalizado':dateStr}</span>
     </div>
     <div class="match-teams">
       <div class="match-team home"><div class="name">${m.home}</div></div>
@@ -492,178 +180,64 @@ function matchCard(m, dateStr) {
   </div>`;
 }
 
-// ── CALCULADORA ───────────────────────────────────────────
-const simState = {};
-const accordOpen = {};
-let pendingMatches = [];
-
-function buildPending() {
-  pendingMatches = [];
-  Object.entries(matches).forEach(([rnd,rndData]) => {
-    rndData.ms.filter(m=>!m.played).forEach((m,i) => {
-      pendingMatches.push({...m, id:`r${rnd}m${i}`, round:+rnd, date:rndData.date});
-    });
+function renderLocVis() {
+  const homeStats = {}, awayStats = {};
+  teams.forEach(t => {
+    homeStats[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
+    awayStats[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
   });
+  Object.values(matches).forEach(rd => (rd.ms||[]).filter(m=>m.played).forEach(m => {
+    if (!homeStats[m.home] || !awayStats[m.away]) return;
+    const h=homeStats[m.home], a=awayStats[m.away];
+    h.pj++; a.pj++; h.pf+=m.hs; h.pc+=m.as; a.pf+=m.as; a.pc+=m.hs;
+    if(m.hs>m.as){h.g++;h.pts+=4;a.p++;}
+    else if(m.hs<m.as){a.g++;a.pts+=4;h.p++;}
+    else{h.pts+=2;a.pts+=2;}
+  }));
+  const makeRows = (stats, tbodyId) => {
+    const sorted = [...teams].sort((a,b)=>(stats[b.name]?.pts||0)-(stats[a.name]?.pts||0));
+    const el = document.getElementById(tbodyId);
+    if (!el) return;
+    el.innerHTML = sorted.map(t => {
+      const d = stats[t.name]||{};
+      return `<tr>
+        <td style="text-align:left;padding-left:12px;font-weight:600">${t.name}</td>
+        <td>${d.pj||0}</td><td>${d.g||0}</td><td>${d.p||0}</td>
+        <td>${d.pf||0}</td><td>${d.pc||0}</td>
+        <td style="color:var(--green);font-weight:700">${d.pts||0}</td>
+      </tr>`;
+    }).join('');
+  };
+  makeRows(homeStats, 'loc-body');
+  makeRows(awayStats, 'vis-body');
 }
-
-function renderCalc() {
-  buildPending();
-  const byRound = {};
-  pendingMatches.forEach(m => { if(!byRound[m.round]) byRound[m.round]=[]; byRound[m.round].push(m); });
-  const rnds = Object.keys(byRound).map(Number).sort((a,b)=>a-b);
-  if (rnds.length && !Object.values(accordOpen).some(v=>v)) accordOpen[rnds[0]] = true;
-  const el = document.getElementById('sim-matches');
-  if (!el) return;
-  el.innerHTML = rnds.map(rnd => {
-    const ms = byRound[rnd];
-    const sc = ms.filter(m=>simState[m.id]?.result).length;
-    return `<div class="accord-item" id="accord-${rnd}">
-      <div class="accord-header ${accordOpen[rnd]?'open':''}" onclick="toggleAccord(${rnd})">
-        <div class="accord-header-left">
-          <span class="accord-rnd">Fecha ${rnd}</span>
-          <span class="accord-date">${ms[0].date}</span>
-          ${sc>0?`<span class="accord-badge-sim">✓ ${sc}/${ms.length}</span>`:''}
-        </div>
-        <span class="accord-arrow">▼</span>
-      </div>
-      <div class="accord-body ${accordOpen[rnd]?'open':''}" id="accord-body-${rnd}">
-        ${ms.map(m=>simRow(m)).join('')}
-      </div>
-    </div>`;
-  }).join('');
-  renderProjected();
-}
-
-function toggleAccord(rnd) {
-  accordOpen[rnd] = !accordOpen[rnd];
-  document.querySelector(`#accord-${rnd} .accord-header`).classList.toggle('open', accordOpen[rnd]);
-  document.getElementById(`accord-body-${rnd}`).classList.toggle('open', accordOpen[rnd]);
-}
-
-function simRow(m) {
-  const s = simState[m.id]||{};
-  const bonus = s.result ? `<div class="sim-row-bonus">
-    <label class="sim-bonus-label"><input type="checkbox" ${s.bpHome?'checked':''} onchange="setBonus('${m.id}','bpHome',this.checked)"> BP ${m.home.split(' ')[0]}</label>
-    <label class="sim-bonus-label"><input type="checkbox" ${s.bpAway?'checked':''} onchange="setBonus('${m.id}','bpAway',this.checked)"> BP ${m.away.split(' ')[0]}</label>
-    ${s.result!=='draw'?`<label class="sim-bonus-label"><input type="checkbox" ${s.bfLoser?'checked':''} onchange="setBonus('${m.id}','bfLoser',this.checked)"> BF perdedor</label>`:''}
-  </div>` : '';
-  return `<div><div class="sim-row">
-    <div class="sim-row-team">${m.home}</div>
-    <div class="sim-row-btns">
-      <button class="sim-row-btn ${s.result==='home'?'win':''}" onclick="setResult('${m.id}','home','${m.home}','${m.away}')">L</button>
-      <button class="sim-row-btn ${s.result==='draw'?'draw':''}" onclick="setResult('${m.id}','draw','${m.home}','${m.away}')">E</button>
-      <button class="sim-row-btn ${s.result==='away'?'loss':''}" onclick="setResult('${m.id}','away','${m.home}','${m.away}')">V</button>
-    </div>
-    <div class="sim-row-team right">${m.away}</div>
-  </div>${bonus}</div>`;
-}
-
-function setResult(id, result, home, away) {
-  if (!simState[id]) simState[id] = {};
-  Object.assign(simState[id], {result, home, away, bpHome:false, bpAway:false, bfLoser:false});
-  buildPending();
-  const m = pendingMatches.find(m=>m.id===id);
-  if (m) {
-    const byRound = {};
-    pendingMatches.forEach(pm=>{if(!byRound[pm.round])byRound[pm.round]=[];byRound[pm.round].push(pm);});
-    const body = document.getElementById(`accord-body-${m.round}`);
-    if (body) body.innerHTML = byRound[m.round].map(pm=>simRow(pm)).join('');
-    const sc = byRound[m.round].filter(pm=>simState[pm.id]?.result).length;
-    const hl = document.querySelector(`#accord-${m.round} .accord-header-left`);
-    if (hl) { const ex=hl.querySelector('.accord-badge-sim'); if(ex)ex.remove(); if(sc>0){const b=document.createElement('span');b.className='accord-badge-sim';b.textContent=`✓ ${sc}/${byRound[m.round].length}`;hl.appendChild(b);} }
-  }
-  renderProjected();
-}
-
-function setBonus(id, key, val) { if(!simState[id])simState[id]={}; simState[id][key]=val; renderProjected(); }
-
-function renderProjected() {
-  const pts = {};
-  teams.forEach(t => pts[t.name] = t.pts);
-  Object.values(simState).forEach(s => {
-    if (!s.result) return;
-    if (s.result==='home') { pts[s.home]=(pts[s.home]||0)+4; if(s.bfLoser)pts[s.away]=(pts[s.away]||0)+1; }
-    else if (s.result==='away') { pts[s.away]=(pts[s.away]||0)+4; if(s.bfLoser)pts[s.home]=(pts[s.home]||0)+1; }
-    else { pts[s.home]=(pts[s.home]||0)+2; pts[s.away]=(pts[s.away]||0)+2; }
-    if(s.bpHome)pts[s.home]=(pts[s.home]||0)+1;
-    if(s.bpAway)pts[s.away]=(pts[s.away]||0)+1;
-  });
-  const orig = {};
-  [...teams].sort((a,b)=>b.pts-a.pts).forEach((t,i)=>orig[t.name]=i+1);
-  const projected = teams.map(t=>{
-    return {name:t.name,current:t.pts,projected:pts[t.name]||t.pts,gained:(pts[t.name]||t.pts)-t.pts};
-  }).sort((a,b)=>b.projected-a.projected);
-  const sc = Object.keys(simState).filter(k=>simState[k].result).length;
-  const noteEl = document.getElementById('proj-note');
-  if (noteEl) noteEl.textContent = sc>0 ? `Simulando ${sc} partido${sc>1?'s':''}. Actuales + proyección.` : 'Seleccioná resultados para ver la proyección.';
-  const projEl = document.getElementById('projected-table');
-  if (!projEl) return;
-  projEl.innerHTML = projected.map((t,i) => {
-    const pos=i+1, moved=orig[t.name]-pos;
-    const mi = moved>0?`<span class="movement up">▲${moved}</span>`:moved<0?`<span class="movement down">▼${Math.abs(moved)}</span>`:`<span class="movement same">—</span>`;
-    const cls = pos<=2?'q1 q2':pos<=4?'q3 q4':pos>=13?'descent':'';
-    return `<div class="proj-row ${cls}">
-      <div class="proj-pos">${pos}</div>
-      <div class="proj-name">${t.name} ${mi}</div>
-      <div class="proj-pts-current">${t.current}</div>
-      ${t.gained>0?`<div class="proj-pts-gained">+${t.gained}</div>`:`<div></div>`}
-      <div class="proj-pts-total">${t.projected}</div>
-    </div>`;
-  }).join('');
-}
-
-function resetCalc() { Object.keys(simState).forEach(k=>delete simState[k]); renderCalc(); }
 
 // ── SYNC DESDE JSON ───────────────────────────────────────
-function syncFromJSON() {
-  fetch('data/preintermedia-d.json?v=' + Date.now())
+function syncData() {
+  fetch('data/urba-preinter-d.json?v=' + Date.now())
     .then(r => r.json())
     .then(data => {
-      if (!data || !data.matches) return;
-      Object.entries(data.matches).forEach(([rnd, rd]) => {
-        if (!matches[rnd]) return;
-        (rd.ms || []).forEach(m => {
-          if (!m.played) return;
-          const local = (matches[rnd].ms || []).find(lm => lm.home === m.home && lm.away === m.away);
-          if (local) { local.hs = m.hs; local.as = m.as; local.played = true; }
-        });
-      });
-      recalcStandings();
-      renderStandings(teams);
+      if (!data) return;
+      if (data.teams && data.teams.length) teams = data.teams;
+      if (data.matches) matches = data.matches;
+      renderStandings();
+      if (document.getElementById('partidos')?.classList.contains('active')) renderMatches(currentRound);
       if (data.lastUpdate) {
         const d = new Date(data.lastUpdate);
         const el = document.getElementById('last-update');
-        if (el) el.textContent = '✓ ' + d.toLocaleString('es-AR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+        if (el) el.textContent = '✓ Actualizado: ' + d.toLocaleString('es-AR',{day:'2-digit',month:'numeric',hour:'2-digit',minute:'2-digit'});
       }
-    })
-    .catch(e => console.log('sync error:', e));
+    }).catch(e => console.log('Pre-Intermedia D sync error:', e));
 }
 
-function recalcStandings() {
-  teams.forEach(t => { t.pts=0;t.pj=0;t.g=0;t.e=0;t.p=0;t.pf=0;t.pc=0;t.bp=0;t.bf=0;t.form=[]; });
-  Object.values(matches).forEach(rd => {
-    (rd.ms||[]).filter(m=>m.played).forEach(m => {
-      const h=teams.find(t=>t.name===m.home), a=teams.find(t=>t.name===m.away);
-      if(!h||!a) return;
-      h.pj++;a.pj++;h.pf+=m.hs;h.pc+=m.as;a.pf+=m.as;a.pc+=m.hs;
-      if(m.hs>m.as){h.g++;h.pts+=4;a.p++;h.form.push('w');a.form.push('l');}
-      else if(m.hs<m.as){a.g++;a.pts+=4;h.p++;a.form.push('w');h.form.push('l');}
-      else{h.e++;a.e++;h.pts+=2;a.pts+=2;h.form.push('d');a.form.push('d');}
-      if(m.bp_home){h.pts++;h.bp++;} if(m.bp_away){a.pts++;a.bp++;}
-      if(m.bf_home){h.pts++;h.bf++;} if(m.bf_away){a.pts++;a.bf++;}
-    });
-  });
-  teams.forEach(t=>{t.form=t.form.slice(-5);});
-}
+syncData();
+setInterval(syncData, 10*60*1000);
 
-syncFromJSON();
-setInterval(syncFromJSON, 10 * 60 * 1000);
-
-// ── INIT ──────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function() {
-  renderStandings(teams);
+  renderStandings();
   renderMatches(1);
 });
 </script>
+
 </body>
 </html>
