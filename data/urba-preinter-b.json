@@ -1,0 +1,1274 @@
+{
+  "teams": [
+    {
+      "name": "La Plata B",
+      "pts": 5,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 40,
+      "pc": 18,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "Hindu B",
+      "pts": 1,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 31,
+      "pc": 32,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "Champagnat B",
+      "pts": 2,
+      "pj": 1,
+      "g": 0,
+      "e": 1,
+      "p": 0,
+      "pf": 25,
+      "pc": 25,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "d"
+      ]
+    },
+    {
+      "name": "Alumni B",
+      "pts": 0,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 20,
+      "pc": 32,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "Newman B",
+      "pts": 4,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 18,
+      "pc": 14,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "SIC B",
+      "pts": 4,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 32,
+      "pc": 31,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "Belgrano Athletic B",
+      "pts": 1,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 31,
+      "pc": 32,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "Buenos Aires C&RC B",
+      "pts": 1,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 14,
+      "pc": 18,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "CUBA B",
+      "pts": 4,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 32,
+      "pc": 20,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "CASI B",
+      "pts": 2,
+      "pj": 1,
+      "g": 0,
+      "e": 1,
+      "p": 0,
+      "pf": 25,
+      "pc": 25,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "d"
+      ]
+    },
+    {
+      "name": "Los Tilos B",
+      "pts": 4,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 32,
+      "pc": 31,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "Atletico del Rosario B",
+      "pts": 0,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 18,
+      "pc": 40,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l"
+      ]
+    },
+    {
+      "name": "Regatas Bella Vista B",
+      "pts": 5,
+      "pj": 1,
+      "g": 1,
+      "e": 0,
+      "p": 0,
+      "pf": 41,
+      "pc": 20,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w"
+      ]
+    },
+    {
+      "name": "Los Matreros B",
+      "pts": 0,
+      "pj": 1,
+      "g": 0,
+      "e": 0,
+      "p": 1,
+      "pf": 20,
+      "pc": 41,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l"
+      ]
+    }
+  ],
+  "matches": {
+    "1": {
+      "date": "2026-03-14",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "Regatas Bella Vista B",
+          "played": true,
+          "hs": 20,
+          "as": 41
+        },
+        {
+          "home": "La Plata B",
+          "away": "Atletico del Rosario B",
+          "played": true,
+          "hs": 40,
+          "as": 18
+        },
+        {
+          "home": "Hindu B",
+          "away": "Los Tilos B",
+          "played": true,
+          "hs": 31,
+          "as": 32
+        },
+        {
+          "home": "Champagnat B",
+          "away": "CASI B",
+          "played": true,
+          "hs": 25,
+          "as": 25
+        },
+        {
+          "home": "Alumni B",
+          "away": "CUBA B",
+          "played": true,
+          "hs": 20,
+          "as": 32
+        },
+        {
+          "home": "Newman B",
+          "away": "Buenos Aires C&RC B",
+          "played": true,
+          "hs": 18,
+          "as": 14
+        },
+        {
+          "home": "SIC B",
+          "away": "Belgrano Athletic B",
+          "played": true,
+          "hs": 32,
+          "as": 31
+        }
+      ]
+    },
+    "2": {
+      "date": "2026-03-21",
+      "ms": [
+        {
+          "home": "SIC B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        }
+      ]
+    },
+    "3": {
+      "date": "2026-03-28",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "Los Tilos B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "CASI B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "CUBA B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "SIC B",
+          "played": false
+        }
+      ]
+    },
+    "4": {
+      "date": "2026-04-11",
+      "ms": [
+        {
+          "home": "Newman B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        }
+      ]
+    },
+    "5": {
+      "date": "2026-04-18",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "Los Tilos B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "CASI B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "CUBA B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "Newman B",
+          "played": false
+        }
+      ]
+    },
+    "6": {
+      "date": "2026-04-25",
+      "ms": [
+        {
+          "home": "Alumni B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "Los Tilos B",
+          "played": false
+        }
+      ]
+    },
+    "7": {
+      "date": "2026-05-09",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "CASI B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "CUBA B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "Alumni B",
+          "played": false
+        }
+      ]
+    },
+    "8": {
+      "date": "2026-05-16",
+      "ms": [
+        {
+          "home": "Champagnat B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "Los Tilos B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "CASI B",
+          "played": false
+        }
+      ]
+    },
+    "9": {
+      "date": "2026-05-23",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "CUBA B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "Champagnat B",
+          "played": false
+        }
+      ]
+    },
+    "10": {
+      "date": "2026-05-30",
+      "ms": [
+        {
+          "home": "Hindu B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "Los Tilos B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "CASI B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "CUBA B",
+          "played": false
+        }
+      ]
+    },
+    "11": {
+      "date": "2026-06-06",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "Hindu B",
+          "played": false
+        }
+      ]
+    },
+    "12": {
+      "date": "2026-06-20",
+      "ms": [
+        {
+          "home": "La Plata B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "Los Tilos B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "CASI B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "CUBA B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        }
+      ]
+    },
+    "13": {
+      "date": "2026-06-27",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "La Plata B",
+          "played": false
+        }
+      ]
+    },
+    "14": {
+      "date": "2026-07-04",
+      "ms": [
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "SIC B",
+          "played": false
+        }
+      ]
+    },
+    "15": {
+      "date": "2026-07-11",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "CUBA B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "CASI B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "Los Tilos B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        }
+      ]
+    },
+    "16": {
+      "date": "2026-07-18",
+      "ms": [
+        {
+          "home": "Atletico del Rosario B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "Newman B",
+          "played": false
+        }
+      ]
+    },
+    "17": {
+      "date": "2026-08-01",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "CUBA B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "CASI B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "Los Tilos B",
+          "played": false
+        }
+      ]
+    },
+    "18": {
+      "date": "2026-08-15",
+      "ms": [
+        {
+          "home": "Los Tilos B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "Alumni B",
+          "played": false
+        }
+      ]
+    },
+    "19": {
+      "date": "2026-08-22",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "CUBA B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "CASI B",
+          "played": false
+        }
+      ]
+    },
+    "20": {
+      "date": "2026-08-29",
+      "ms": [
+        {
+          "home": "CASI B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "Los Tilos B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "Champagnat B",
+          "played": false
+        }
+      ]
+    },
+    "21": {
+      "date": "2026-09-05",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "CUBA B",
+          "played": false
+        }
+      ]
+    },
+    "22": {
+      "date": "2026-09-12",
+      "ms": [
+        {
+          "home": "CUBA B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "CASI B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "Los Tilos B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "Hindu B",
+          "played": false
+        }
+      ]
+    },
+    "23": {
+      "date": "2026-09-26",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        }
+      ]
+    },
+    "24": {
+      "date": "2026-10-03",
+      "ms": [
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "Belgrano Athletic B",
+          "away": "CUBA B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "CASI B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "Los Tilos B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "La Plata B",
+          "played": false
+        }
+      ]
+    },
+    "25": {
+      "date": "2026-10-10",
+      "ms": [
+        {
+          "home": "Los Matreros B",
+          "away": "La Plata B",
+          "played": false
+        },
+        {
+          "home": "Regatas Bella Vista B",
+          "away": "Hindu B",
+          "played": false
+        },
+        {
+          "home": "Atletico del Rosario B",
+          "away": "Champagnat B",
+          "played": false
+        },
+        {
+          "home": "Los Tilos B",
+          "away": "Alumni B",
+          "played": false
+        },
+        {
+          "home": "CASI B",
+          "away": "Newman B",
+          "played": false
+        },
+        {
+          "home": "CUBA B",
+          "away": "SIC B",
+          "played": false
+        },
+        {
+          "home": "Buenos Aires C&RC B",
+          "away": "Belgrano Athletic B",
+          "played": false
+        }
+      ]
+    },
+    "26": {
+      "date": "2026-10-17",
+      "ms": [
+        {
+          "home": "Belgrano Athletic B",
+          "away": "Los Matreros B",
+          "played": false
+        },
+        {
+          "home": "SIC B",
+          "away": "Buenos Aires C&RC B",
+          "played": false
+        },
+        {
+          "home": "Newman B",
+          "away": "CUBA B",
+          "played": false
+        },
+        {
+          "home": "Alumni B",
+          "away": "CASI B",
+          "played": false
+        },
+        {
+          "home": "Champagnat B",
+          "away": "Los Tilos B",
+          "played": false
+        },
+        {
+          "home": "Hindu B",
+          "away": "Atletico del Rosario B",
+          "played": false
+        },
+        {
+          "home": "La Plata B",
+          "away": "Regatas Bella Vista B",
+          "played": false
+        }
+      ]
+    }
+  },
+  "lastUpdate": "2026-03-15T20:37:35.201565+00:00",
+  "matchesScraped": 7,
+  "championshipId": "2025186",
+  "nombre": "Pre-Inter B"
+}
