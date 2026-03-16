@@ -1,142 +1,534 @@
 {
   "teams": [
-    {"name": "Capibaras XV", "pts": 15, "pj": 4, "g": 3, "e": 0, "p": 1, "pf": 121, "pc": 56,  "bp": 3, "bf": 0, "form": ["w","w","l","w"]},
-    {"name": "Tarucas",      "pts": 13, "pj": 4, "g": 3, "e": 0, "p": 1, "pf": 120, "pc": 100, "bp": 1, "bf": 0, "form": ["w","w","w","l"]},
-    {"name": "Dogos XV",     "pts": 16, "pj": 4, "g": 3, "e": 0, "p": 1, "pf": 151, "pc": 82,  "bp": 4, "bf": 0, "form": ["w","w","l","w"]},
-    {"name": "Pampas",       "pts": 16, "pj": 4, "g": 3, "e": 0, "p": 1, "pf": 132, "pc": 95,  "bp": 4, "bf": 0, "form": ["w","l","w","w"]},
-    {"name": "Selknam",      "pts": 6,  "pj": 4, "g": 1, "e": 0, "p": 3, "pf": 74,  "pc": 181, "bp": 2, "bf": 0, "form": ["l","w","l","l"]},
-    {"name": "Yacare XV",    "pts": 4,  "pj": 4, "g": 0, "e": 0, "p": 4, "pf": 80,  "pc": 98,  "bp": 4, "bf": 0, "form": ["l","l","l","l"]},
-    {"name": "Cobras BR",    "pts": 5,  "pj": 4, "g": 1, "e": 0, "p": 3, "pf": 72,  "pc": 132, "bp": 1, "bf": 0, "form": ["l","l","w","l"]},
-    {"name": "Peñarol",      "pts": 10, "pj": 4, "g": 2, "e": 0, "p": 2, "pf": 103, "pc": 109, "bp": 2, "bf": 0, "form": ["l","l","w","w"]}
+    {
+      "name": "Capibaras XV",
+      "pts": 15,
+      "pj": 4,
+      "g": 3,
+      "e": 0,
+      "p": 1,
+      "pf": 121,
+      "pc": 56,
+      "bp": 3,
+      "bf": 0,
+      "form": [
+        "w",
+        "w",
+        "l",
+        "w"
+      ]
+    },
+    {
+      "name": "Tarucas",
+      "pts": 13,
+      "pj": 4,
+      "g": 3,
+      "e": 0,
+      "p": 1,
+      "pf": 120,
+      "pc": 100,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w",
+        "w",
+        "w",
+        "l"
+      ]
+    },
+    {
+      "name": "Dogos XV",
+      "pts": 16,
+      "pj": 4,
+      "g": 3,
+      "e": 0,
+      "p": 1,
+      "pf": 151,
+      "pc": 82,
+      "bp": 4,
+      "bf": 0,
+      "form": [
+        "w",
+        "w",
+        "l",
+        "w"
+      ]
+    },
+    {
+      "name": "Pampas",
+      "pts": 16,
+      "pj": 4,
+      "g": 3,
+      "e": 0,
+      "p": 1,
+      "pf": 132,
+      "pc": 95,
+      "bp": 4,
+      "bf": 0,
+      "form": [
+        "w",
+        "l",
+        "w",
+        "w"
+      ]
+    },
+    {
+      "name": "Selknam",
+      "pts": 6,
+      "pj": 4,
+      "g": 1,
+      "e": 0,
+      "p": 3,
+      "pf": 74,
+      "pc": 181,
+      "bp": 2,
+      "bf": 0,
+      "form": [
+        "l",
+        "w",
+        "l",
+        "l"
+      ]
+    },
+    {
+      "name": "Yacare XV",
+      "pts": 4,
+      "pj": 4,
+      "g": 0,
+      "e": 0,
+      "p": 4,
+      "pf": 80,
+      "pc": 98,
+      "bp": 4,
+      "bf": 0,
+      "form": [
+        "l",
+        "l",
+        "l",
+        "l"
+      ]
+    },
+    {
+      "name": "Cobras BR",
+      "pts": 5,
+      "pj": 4,
+      "g": 1,
+      "e": 0,
+      "p": 3,
+      "pf": 72,
+      "pc": 132,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "l",
+        "l",
+        "w",
+        "l"
+      ]
+    },
+    {
+      "name": "Peñarol",
+      "pts": 10,
+      "pj": 4,
+      "g": 2,
+      "e": 0,
+      "p": 2,
+      "pf": 103,
+      "pc": 109,
+      "bp": 2,
+      "bf": 0,
+      "form": [
+        "l",
+        "l",
+        "w",
+        "w"
+      ]
+    }
   ],
   "matches": {
     "1": {
       "date": "20-23/02/2026",
       "ms": [
-        {"home": "Tarucas",      "away": "Selknam",      "hs": 41, "as": 13, "played": true},
-        {"home": "Yacare XV",    "away": "Pampas",       "hs": 17, "as": 30, "played": true},
-        {"home": "Capibaras XV", "away": "Peñarol",      "hs": 34, "as": 7,  "played": true},
-        {"home": "Dogos XV",     "away": "Cobras BR",    "hs": 21, "as": 19, "played": true}
+        {
+          "home": "Tarucas",
+          "away": "Selknam",
+          "hs": 41,
+          "as": 13,
+          "played": true
+        },
+        {
+          "home": "Yacare XV",
+          "away": "Pampas",
+          "hs": 17,
+          "as": 30,
+          "played": true
+        },
+        {
+          "home": "Capibaras XV",
+          "away": "Peñarol",
+          "hs": 34,
+          "as": 7,
+          "played": true
+        },
+        {
+          "home": "Dogos XV",
+          "away": "Cobras BR",
+          "hs": 21,
+          "as": 19,
+          "played": true
+        }
       ]
     },
     "2": {
       "date": "27/02-01/03/2026",
       "ms": [
-        {"home": "Peñarol",      "away": "Tarucas",      "hs": 18, "as": 28, "played": true},
-        {"home": "Selknam",      "away": "Yacare XV",    "hs": 34, "as": 32, "played": true},
-        {"home": "Capibaras XV", "away": "Cobras BR",    "hs": 54, "as": 12, "played": true},
-        {"home": "Pampas",       "away": "Dogos XV",     "hs": 34, "as": 36, "played": true}
+        {
+          "home": "Peñarol",
+          "away": "Tarucas",
+          "hs": 18,
+          "as": 28,
+          "played": true
+        },
+        {
+          "home": "Selknam",
+          "away": "Yacare XV",
+          "hs": 34,
+          "as": 32,
+          "played": true
+        },
+        {
+          "home": "Capibaras XV",
+          "away": "Cobras BR",
+          "hs": 54,
+          "as": 12,
+          "played": true
+        },
+        {
+          "home": "Pampas",
+          "away": "Dogos XV",
+          "hs": 34,
+          "as": 36,
+          "played": true
+        }
       ]
     },
     "3": {
       "date": "06-08/03/2026",
       "ms": [
-        {"home": "Pampas",       "away": "Capibaras XV", "hs": 25, "as": 20, "played": true},
-        {"home": "Tarucas",      "away": "Dogos XV",     "hs": 29, "as": 26, "played": true},
-        {"home": "Peñarol",      "away": "Selknam",      "hs": 40, "as": 27, "played": true},
-        {"home": "Cobras BR",    "away": "Yacare XV",    "hs": 21, "as": 19, "played": true}
+        {
+          "home": "Pampas",
+          "away": "Capibaras XV",
+          "hs": 25,
+          "as": 20,
+          "played": true
+        },
+        {
+          "home": "Tarucas",
+          "away": "Dogos XV",
+          "hs": 29,
+          "as": 26,
+          "played": true
+        },
+        {
+          "home": "Peñarol",
+          "away": "Selknam",
+          "hs": 40,
+          "as": 27,
+          "played": true
+        },
+        {
+          "home": "Cobras BR",
+          "away": "Yacare XV",
+          "hs": 21,
+          "as": 19,
+          "played": true
+        }
       ]
     },
     "4": {
       "date": "13-14/03/2026",
       "ms": [
-        {"home": "Peñarol",      "away": "Cobras BR",    "hs": 38, "as": 20, "played": true},
-        {"home": "Tarucas",      "away": "Pampas",       "hs": 22, "as": 43, "played": true},
-        {"home": "Yacare XV",    "away": "Capibaras XV", "hs": 12, "as": 13, "played": true},
-        {"home": "Dogos XV",     "away": "Selknam",      "hs": 68, "as": 0,  "played": true}
+        {
+          "home": "Peñarol",
+          "away": "Cobras BR",
+          "hs": 38,
+          "as": 20,
+          "played": true
+        },
+        {
+          "home": "Tarucas",
+          "away": "Pampas",
+          "hs": 22,
+          "as": 43,
+          "played": true
+        },
+        {
+          "home": "Yacare XV",
+          "away": "Capibaras XV",
+          "hs": 12,
+          "as": 13,
+          "played": true
+        },
+        {
+          "home": "Dogos XV",
+          "away": "Selknam",
+          "hs": 68,
+          "as": 0,
+          "played": true
+        }
       ]
     },
     "5": {
       "date": "20-22/03/2026",
       "ms": [
-        {"home": "Dogos XV",     "away": "Peñarol",      "played": false},
-        {"home": "Selknam",      "away": "Capibaras XV", "played": false},
-        {"home": "Yacare XV",    "away": "Tarucas",      "played": false},
-        {"home": "Cobras BR",    "away": "Pampas",       "played": false}
+        {
+          "home": "Dogos XV",
+          "away": "Peñarol",
+          "played": false
+        },
+        {
+          "home": "Selknam",
+          "away": "Capibaras XV",
+          "played": false
+        },
+        {
+          "home": "Yacare XV",
+          "away": "Tarucas",
+          "played": false
+        },
+        {
+          "home": "Cobras BR",
+          "away": "Pampas",
+          "played": false
+        }
       ]
     },
     "6": {
       "date": "27-30/03/2026",
       "ms": [
-        {"home": "Tarucas",      "away": "Cobras BR",    "played": false},
-        {"home": "Peñarol",      "away": "Yacare XV",    "played": false},
-        {"home": "Selknam",      "away": "Pampas",       "played": false},
-        {"home": "Dogos XV",     "away": "Capibaras XV", "played": false}
+        {
+          "home": "Tarucas",
+          "away": "Cobras BR",
+          "played": false
+        },
+        {
+          "home": "Peñarol",
+          "away": "Yacare XV",
+          "played": false
+        },
+        {
+          "home": "Selknam",
+          "away": "Pampas",
+          "played": false
+        },
+        {
+          "home": "Dogos XV",
+          "away": "Capibaras XV",
+          "played": false
+        }
       ]
     },
     "7": {
       "date": "10-13/04/2026",
       "ms": [
-        {"home": "Pampas",       "away": "Peñarol",      "played": false},
-        {"home": "Yacare XV",    "away": "Dogos XV",     "played": false},
-        {"home": "Cobras BR",    "away": "Selknam",      "played": false},
-        {"home": "Capibaras XV", "away": "Tarucas",      "played": false}
+        {
+          "home": "Pampas",
+          "away": "Peñarol",
+          "played": false
+        },
+        {
+          "home": "Yacare XV",
+          "away": "Dogos XV",
+          "played": false
+        },
+        {
+          "home": "Cobras BR",
+          "away": "Selknam",
+          "played": false
+        },
+        {
+          "home": "Capibaras XV",
+          "away": "Tarucas",
+          "played": false
+        }
       ]
     },
     "8": {
       "date": "17-20/04/2026",
       "ms": [
-        {"home": "Pampas",       "away": "Yacare XV",    "played": false},
-        {"home": "Cobras BR",    "away": "Dogos XV",     "played": false},
-        {"home": "Selknam",      "away": "Tarucas",      "played": false},
-        {"home": "Peñarol",      "away": "Capibaras XV", "played": false}
+        {
+          "home": "Pampas",
+          "away": "Yacare XV",
+          "played": false
+        },
+        {
+          "home": "Cobras BR",
+          "away": "Dogos XV",
+          "played": false
+        },
+        {
+          "home": "Selknam",
+          "away": "Tarucas",
+          "played": false
+        },
+        {
+          "home": "Peñarol",
+          "away": "Capibaras XV",
+          "played": false
+        }
       ]
     },
     "9": {
       "date": "24-27/04/2026",
       "ms": [
-        {"home": "Dogos XV",     "away": "Pampas",       "played": false},
-        {"home": "Yacare XV",    "away": "Selknam",      "played": false},
-        {"home": "Cobras BR",    "away": "Capibaras XV", "played": false},
-        {"home": "Tarucas",      "away": "Peñarol",      "played": false}
+        {
+          "home": "Dogos XV",
+          "away": "Pampas",
+          "played": false
+        },
+        {
+          "home": "Yacare XV",
+          "away": "Selknam",
+          "played": false
+        },
+        {
+          "home": "Cobras BR",
+          "away": "Capibaras XV",
+          "played": false
+        },
+        {
+          "home": "Tarucas",
+          "away": "Peñarol",
+          "played": false
+        }
       ]
     },
     "10": {
       "date": "01-03/05/2026",
       "ms": [
-        {"home": "Capibaras XV", "away": "Pampas",       "played": false},
-        {"home": "Yacare XV",    "away": "Cobras BR",    "played": false},
-        {"home": "Dogos XV",     "away": "Tarucas",      "played": false},
-        {"home": "Selknam",      "away": "Peñarol",      "played": false}
+        {
+          "home": "Capibaras XV",
+          "away": "Pampas",
+          "played": false
+        },
+        {
+          "home": "Yacare XV",
+          "away": "Cobras BR",
+          "played": false
+        },
+        {
+          "home": "Dogos XV",
+          "away": "Tarucas",
+          "played": false
+        },
+        {
+          "home": "Selknam",
+          "away": "Peñarol",
+          "played": false
+        }
       ]
     },
     "11": {
       "date": "08-11/05/2026",
       "ms": [
-        {"home": "Capibaras XV", "away": "Yacare XV",    "played": false},
-        {"home": "Selknam",      "away": "Dogos XV",     "played": false},
-        {"home": "Cobras BR",    "away": "Peñarol",      "played": false},
-        {"home": "Pampas",       "away": "Tarucas",      "played": false}
+        {
+          "home": "Capibaras XV",
+          "away": "Yacare XV",
+          "played": false
+        },
+        {
+          "home": "Selknam",
+          "away": "Dogos XV",
+          "played": false
+        },
+        {
+          "home": "Cobras BR",
+          "away": "Peñarol",
+          "played": false
+        },
+        {
+          "home": "Pampas",
+          "away": "Tarucas",
+          "played": false
+        }
       ]
     },
     "12": {
       "date": "22-23/05/2026",
       "ms": [
-        {"home": "Pampas",       "away": "Cobras BR",    "played": false},
-        {"home": "Peñarol",      "away": "Dogos XV",     "played": false},
-        {"home": "Capibaras XV", "away": "Selknam",      "played": false},
-        {"home": "Tarucas",      "away": "Yacare XV",    "played": false}
+        {
+          "home": "Pampas",
+          "away": "Cobras BR",
+          "played": false
+        },
+        {
+          "home": "Peñarol",
+          "away": "Dogos XV",
+          "played": false
+        },
+        {
+          "home": "Capibaras XV",
+          "away": "Selknam",
+          "played": false
+        },
+        {
+          "home": "Tarucas",
+          "away": "Yacare XV",
+          "played": false
+        }
       ]
     },
     "13": {
       "date": "29-30/05/2026",
       "ms": [
-        {"home": "Capibaras XV", "away": "Dogos XV",     "played": false},
-        {"home": "Pampas",       "away": "Selknam",      "played": false},
-        {"home": "Cobras BR",    "away": "Tarucas",      "played": false},
-        {"home": "Yacare XV",    "away": "Peñarol",      "played": false}
+        {
+          "home": "Capibaras XV",
+          "away": "Dogos XV",
+          "played": false
+        },
+        {
+          "home": "Pampas",
+          "away": "Selknam",
+          "played": false
+        },
+        {
+          "home": "Cobras BR",
+          "away": "Tarucas",
+          "played": false
+        },
+        {
+          "home": "Yacare XV",
+          "away": "Peñarol",
+          "played": false
+        }
       ]
     },
     "14": {
       "date": "05-06/06/2026",
       "ms": [
-        {"home": "Peñarol",      "away": "Pampas",       "played": false},
-        {"home": "Dogos XV",     "away": "Yacare XV",    "played": false},
-        {"home": "Tarucas",      "away": "Capibaras XV", "played": false},
-        {"home": "Selknam",      "away": "Cobras BR",    "played": false}
+        {
+          "home": "Peñarol",
+          "away": "Pampas",
+          "played": false
+        },
+        {
+          "home": "Dogos XV",
+          "away": "Yacare XV",
+          "played": false
+        },
+        {
+          "home": "Tarucas",
+          "away": "Capibaras XV",
+          "played": false
+        },
+        {
+          "home": "Selknam",
+          "away": "Cobras BR",
+          "played": false
+        }
       ]
     }
   },
-  "lastUpdate": "2026-03-16T00:00:00+00:00",
+  "lastUpdate": "2026-03-16T19:36:06.320578+00:00",
   "matchesScraped": 16
 }
