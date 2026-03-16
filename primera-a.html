@@ -17,183 +17,194 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css?v=21">
-<style>
-  :root {
-    --primary: #000;
-    --accent: #E50914;
-    --bg: #fff;
-    --text: #000;
-    --muted: #777;
-    --border: #eee;
-    --green: #2ecc71;
-    --red: #e74c3c;
-    --card-bg: #fff;
-    --nav-bg: #fff;
-    --header-h: 56px;
-    --subnav-h: 48px;
-  }
-  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  body { margin: 0; font-family: 'Barlow', sans-serif; background: var(--bg); color: var(--text); padding-top: calc(var(--header-h) + var(--subnav-h)); }
-  header { position: fixed; top: 0; left: 0; right: 0; height: var(--header-h); background: var(--nav-bg); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; border-bottom: 1px solid var(--border); z-index: 1000; }
-  .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; text-decoration: none; color: var(--primary); letter-spacing: 1px; }
-  nav { display: flex; height: 100%; }
-  nav button { background: none; border: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.95rem; text-transform: uppercase; padding: 0 12px; cursor: pointer; color: var(--muted); position: relative; }
-  nav button.active { color: var(--primary); }
-  nav button.active::after { content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--accent); }
-  .sub-header { position: fixed; top: var(--header-h); left: 0; right: 0; height: var(--subnav-h); background: #f9f9f9; display: flex; align-items: center; padding: 0 16px; border-bottom: 1px solid var(--border); z-index: 999; }
-  .back-btn { text-decoration: none; color: var(--primary); font-size: 0.9rem; font-weight: 600; margin-right: 12px; display: flex; align-items: center; }
-  .sub-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.9rem; text-transform: uppercase; color: var(--muted); }
-  .container { max-width: 600px; margin: 0 auto; padding: 16px; }
-  table { width: 100%; border-collapse: collapse; background: var(--card-bg); font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; }
-  th { background: #f2f2f2; color: var(--muted); text-transform: uppercase; font-size: 0.75rem; padding: 10px 4px; border-bottom: 1px solid var(--border); }
-  td { padding: 12px 4px; text-align: center; border-bottom: 1px solid var(--border); }
-  .match-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; padding: 16px; display: flex; flex-direction: column; align-items: center; }
-  .match-row { display: flex; width: 100%; align-items: center; justify-content: space-between; margin: 4px 0; }
-  .team-name { flex: 1; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.1rem; }
-  .score { width: 35px; height: 35px; background: #eee; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; }
-  .score.winner { background: var(--primary); color: #fff; }
-  .round-selector { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; background: #eee; padding: 4px; border-radius: 6px; }
-  .round-selector button { background: var(--bg); border: 1px solid var(--border); padding: 6px 12px; border-radius: 4px; cursor: pointer; font-weight: 600; }
-  .section { display: none; }
-  .section.active { display: block; }
-  .loc-vis-tables { display: grid; grid-template-columns: 1fr; gap: 20px; }
-</style>
 </head>
 <body>
 
 <header>
   <a href="index.html" class="logo">OVALADOS</a>
-  <nav id="main-nav">
-    <button id="btn-posiciones" class="active" onclick="go('posiciones',this)">Posiciones</button>
-    <button id="btn-partidos" onclick="go('partidos',this)">Partidos</button>
-    <button id="btn-locvis" onclick="go('locvis',this)">Local/Visit.</button>
+  <nav id="main-nav" style="display:flex">
+    <button class="active" onclick="go('posiciones',this)">Posiciones</button>
+    <button onclick="go('partidos',this)">Partidos</button>
+    <button onclick="go('locvis',this)">Local/Visit.</button>
   </nav>
 </header>
 
-<div id="tournament-header" class="sub-header">
+<div id="tournament-header" class="sub-header" style="display:flex">
   <a href="index.html" class="back-btn">← Torneos</a>
-  <span class="sub-label"><strong>URBA PRIMERA A</strong> · División Primera A 2026 
+  <span class="sub-label"><strong>URBA PRIMERA A</strong> · División Primera A 2026
     <span id="last-update" style="font-size:0.75rem;color:var(--muted);margin-left:12px"></span>
   </span>
 </div>
 
-<div class="container">
-  <div id="posiciones" class="section active">
-    <table>
-      <thead>
-        <tr>
-          <th style="text-align:left;padding-left:12px">Equipo</th>
-          <th>PJ</th><th>G</th><th>P</th><th>PF</th><th>PC</th><th style="color:var(--primary)">PTS</th>
-        </tr>
-      </thead>
-      <tbody id="standings-body"></tbody>
-    </table>
-  </div>
+<div id="tournament-urba" style="display:block">
+<main>
 
-  <div id="partidos" class="section">
-    <div class="round-selector">
-      <button onclick="prevRound()">←</button>
-      <span id="round-label" style="font-weight:700;text-transform:uppercase">Fecha 1</span>
-      <button onclick="nextRound()">→</button>
+  <section id="posiciones" class="section active">
+    <div class="page-title">TABLA DE POSICIONES</div>
+    <div class="page-subtitle">Torneo URBA Primera A · Temporada 2026</div>
+    <div class="table-wrap">
+      <table id="standings-table">
+        <thead>
+          <tr>
+            <th style="width:40px">#</th>
+            <th style="text-align:left">EQUIPO</th>
+            <th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th>
+            <th>PF</th><th>PC</th><th>+/-</th>
+            <th>BP</th><th>BF</th>
+            <th>FORMA</th>
+          </tr>
+        </thead>
+        <tbody id="standings-body"></tbody>
+      </table>
     </div>
-    <div id="matches-body"></div>
-  </div>
+    <div class="legend">
+      <div class="legend-item">BP = Bonus por 4+ tries</div>
+      <div class="legend-item">BF = Bonus perdiendo por ≤7</div>
+    </div>
+  </section>
 
-  <div id="locvis" class="section">
-    <div class="loc-vis-tables">
+  <section id="partidos" class="section">
+    <div class="page-title">PARTIDOS</div>
+    <div class="page-subtitle">Fixture completo · URBA Primera A 2026</div>
+    <div class="round-selector" id="round-selector"></div>
+    <div id="matches-container"></div>
+  </section>
+
+  <section id="locvis" class="section">
+    <div class="page-title">LOCAL / VISITANTE</div>
+    <div class="page-subtitle">Rendimiento según condición de juego · URBA Primera A 2026</div>
+    <div class="locvis-grid">
       <div>
-        <h3 style="font-family:'Bebas Neue';letter-spacing:1px;margin-bottom:8px">LOCAL</h3>
-        <table>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2px;color:var(--green);margin-bottom:0.75rem;text-transform:uppercase">🏠 De Local</div>
+        <div class="table-wrap"><table>
           <thead><tr><th style="text-align:left;padding-left:12px">Equipo</th><th>PJ</th><th>G</th><th>P</th><th>PF</th><th>PC</th><th>PTS</th></tr></thead>
           <tbody id="loc-body"></tbody>
-        </table>
+        </table></div>
       </div>
       <div>
-        <h3 style="font-family:'Bebas Neue';letter-spacing:1px;margin-bottom:8px;margin-top:20px">VISITANTE</h3>
-        <table>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2px;color:var(--gold);margin-bottom:0.75rem;text-transform:uppercase">✈️ De Visitante</div>
+        <div class="table-wrap"><table>
           <thead><tr><th style="text-align:left;padding-left:12px">Equipo</th><th>PJ</th><th>G</th><th>P</th><th>PF</th><th>PC</th><th>PTS</th></tr></thead>
           <tbody id="vis-body"></tbody>
-        </table>
+        </table></div>
       </div>
     </div>
-  </div>
+  </section>
+
+</main>
 </div>
 
 <script>
 let teams = [];
-let matches = [];
+let matches = {};
 let currentRound = 1;
 
 function go(id, btn) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
   document.querySelectorAll('#main-nav button').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  document.getElementById(id).classList.add('active');
+  if (btn) btn.classList.add('active');
   if (id === 'partidos') renderMatches(currentRound);
+  if (id === 'locvis')   renderLocVis();
 }
 
 function renderStandings() {
-  const stats = {};
-  teams.forEach(t => stats[t.name] = { pj:0, g:0, p:0, pf:0, pc:0, pts:0 });
-  matches.forEach(m => {
-    if (m.scoreA === null || m.scoreB === null) return;
-    stats[m.teamA].pj++; stats[m.teamB].pj++;
-    stats[m.teamA].pf += m.scoreA; stats[m.teamA].pc += m.scoreB;
-    stats[m.teamB].pf += m.scoreB; stats[m.teamB].pc += m.scoreA;
-    if (m.scoreA > m.scoreB) { stats[m.teamA].g++; stats[m.teamA].pts += 4; stats[m.teamB].p++; }
-    else if (m.scoreB > m.scoreA) { stats[m.teamB].g++; stats[m.teamB].pts += 4; stats[m.teamA].p++; }
+  const allZero = teams.every(t => t.pts === 0 && t.pj === 0);
+  const sorted = [...teams].sort((a,b) => {
+    if (allZero) return a.name.localeCompare(b.name, 'es');
+    return b.pts - a.pts || (b.pf-b.pc) - (a.pf-a.pc);
   });
-  const sorted = [...teams].sort((a,b) => (stats[b.name].pts - stats[a.name].pts) || ((stats[b.name].pf - stats[b.name].pc) - (stats[a.name].pf - stats[a.name].pc)));
-  document.getElementById('standings-body').innerHTML = sorted.map(t => {
-    const d = stats[t.name];
-    return `<tr><td style="text-align:left;padding-left:12px;font-weight:700">${t.name}</td><td>${d.pj}</td><td>${d.g}</td><td>${d.p}</td><td>${d.pf}</td><td>${d.pc}</td><td style="color:var(--accent);font-weight:700">${d.pts}</td></tr>`;
+  const tbody = document.getElementById('standings-body');
+  if (!tbody) return;
+  tbody.innerHTML = sorted.map((t,i) => {
+    const pos = i+1;
+    const diff = t.pf - t.pc;
+    const formDots = (t.form||[]).map(f => `<div class="dot ${f==='w'?'w':f==='l'?'l':'d'}"></div>`).join('');
+    return `<tr class="pos-${pos}">
+      <td><span class="pos-num">${allZero ? '—' : pos}</span></td>
+      <td><span class="team-name">${t.name}</span></td>
+      <td class="pts">${t.pts}</td><td>${t.pj}</td><td>${t.g}</td><td>${t.e}</td><td>${t.p}</td>
+      <td>${t.pf}</td><td>${t.pc}</td>
+      <td style="color:${diff>0?'var(--green)':diff<0?'#c0392b':'var(--muted)'}">${diff>0?'+':''}${diff||0}</td>
+      <td style="color:var(--gold)">${t.bp||0}</td><td>${t.bf||0}</td>
+      <td><div class="form-dots">${formDots}</div></td>
+    </tr>`;
   }).join('');
-  renderLocVis(stats);
 }
 
 function renderMatches(round) {
-  const filtered = matches.filter(m => m.round == round);
-  if (!filtered.length && matches.length) {
-      currentRound = Math.max(...matches.map(m => m.round));
-      renderMatches(currentRound);
-      return;
+  if (!round) round = currentRound;
+  currentRound = round;
+  const keys = Object.keys(matches).sort((a,b) => +a - +b);
+  const sel = document.getElementById('round-selector');
+  if (sel) sel.innerHTML = keys.map(r =>
+    `<button class="round-btn ${+r===round?'active':''}" onclick="renderMatches(${r})">F${r}</button>`
+  ).join('');
+  const roundData = matches[round];
+  if (!roundData) return;
+  const container = document.getElementById('matches-container');
+  if (!container) return;
+  const dateStr = roundData.date;
+  const played   = roundData.ms.filter(m => m.played);
+  const upcoming = roundData.ms.filter(m => !m.played);
+  let html = '';
+  if (played.length) {
+    html += `<div class="round-title">Fecha ${round} · ${dateStr} · Resultados</div><div class="matches-grid">`;
+    html += played.map(m => matchCard(m, dateStr)).join('');
+    html += '</div>';
   }
-  document.getElementById('round-label').textContent = 'Fecha ' + round;
-  document.getElementById('matches-body').innerHTML = filtered.map(m => `
-    <div class="match-card">
-      <div class="match-row">
-        <span class="team-name" style="text-align:right;margin-right:12px">${m.teamA}</span>
-        <span class="score ${m.scoreA > m.scoreB ? 'winner' : ''}">${m.scoreA !== null ? m.scoreA : '-'}</span>
-      </div>
-      <div class="match-row">
-        <span class="team-name" style="text-align:right;margin-right:12px">${m.teamB}</span>
-        <span class="score ${m.scoreB > m.scoreA ? 'winner' : ''}">${m.scoreB !== null ? m.scoreB : '-'}</span>
-      </div>
-    </div>
-  `).join('');
+  if (upcoming.length) {
+    html += `<div class="round-title">Fecha ${round} · ${dateStr} · Próximos</div><div class="matches-grid">`;
+    html += upcoming.map(m => matchCard(m, dateStr)).join('');
+    html += '</div>';
+  }
+  container.innerHTML = html;
 }
 
-function nextRound() { currentRound++; renderMatches(currentRound); }
-function prevRound() { if (currentRound > 1) currentRound--; renderMatches(currentRound); }
+function matchCard(m, dateStr) {
+  const isPlayed = m.played && !m.live;
+  const isLive   = !!m.live;
+  const scoreBlock = isPlayed || isLive
+    ? `<div class="match-score">${m.hs} — ${m.as}</div>`
+    : `<div class="match-score upcoming">VS</div>`;
+  return `<div class="match-card${isLive?' live':''}">
+    <div class="match-meta">
+      <span>${isLive?'🔴 EN VIVO':isPlayed?'Finalizado':dateStr}</span>
+    </div>
+    <div class="match-teams">
+      <div class="match-team home"><div class="name">${m.home}</div></div>
+      ${scoreBlock}
+      <div class="match-team"><div class="name">${m.away}</div></div>
+    </div>
+  </div>`;
+}
 
 function renderLocVis() {
-  const homeStats = {}; const awayStats = {};
+  const homeStats = {}, awayStats = {};
   teams.forEach(t => {
-    homeStats[t.name] = { pj:0, g:0, p:0, pf:0, pc:0, pts:0 };
-    awayStats[t.name] = { pj:0, g:0, p:0, pf:0, pc:0, pts:0 };
+    homeStats[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
+    awayStats[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
   });
-  matches.forEach(m => {
-    if (m.scoreA === null || m.scoreB === null) return;
-    homeStats[m.teamA].pj++; homeStats[m.teamA].pf += m.scoreA; homeStats[m.teamA].pc += m.scoreB;
-    if (m.scoreA > m.scoreB) { homeStats[m.teamA].g++; homeStats[m.teamA].pts += 4; } else { homeStats[m.teamA].p++; }
-    awayStats[m.teamB].pj++; awayStats[m.teamB].pf += m.scoreB; awayStats[m.teamB].pc += m.scoreA;
-    if (m.scoreB > m.scoreA) { awayStats[m.teamB].g++; awayStats[m.teamB].pts += 4; } else { awayStats[m.teamB].p++; }
-  });
+  Object.values(matches).forEach(rd => (rd.ms||[]).filter(m=>m.played).forEach(m => {
+    if (!homeStats[m.home] || !awayStats[m.away]) return;
+    const h=homeStats[m.home], a=awayStats[m.away];
+    h.pj++; a.pj++; h.pf+=m.hs; h.pc+=m.as; a.pf+=m.as; a.pc+=m.hs;
+    if(m.hs>m.as){h.g++;h.pts+=4;a.p++;}
+    else if(m.hs<m.as){a.g++;a.pts+=4;h.p++;}
+    else{h.pts+=2;a.pts+=2;}
+  }));
   const makeRows = (stats, tbodyId) => {
-    const sorted = [...teams].sort((a,b) => stats[b.name].pts - stats[a.name].pts);
-    document.getElementById(tbodyId).innerHTML = sorted.map(t => {
-      const d = stats[t.name];
-      return `<tr><td style="text-align:left;padding-left:12px;font-weight:600">${t.name}</td><td>${d.pj}</td><td>${d.g}</td><td>${d.p}</td><td>${d.pf}</td><td>${d.pc}</td><td style="color:var(--green);font-weight:700">${d.pts}</td></tr>`;
+    const sorted = [...teams].sort((a,b)=>(stats[b.name]?.pts||0)-(stats[a.name]?.pts||0));
+    const el = document.getElementById(tbodyId);
+    if (!el) return;
+    el.innerHTML = sorted.map(t => {
+      const d = stats[t.name]||{};
+      return `<tr>
+        <td style="text-align:left;padding-left:12px;font-weight:600">${t.name}</td>
+        <td>${d.pj||0}</td><td>${d.g||0}</td><td>${d.p||0}</td>
+        <td>${d.pf||0}</td><td>${d.pc||0}</td>
+        <td style="color:var(--green);font-weight:700">${d.pts||0}</td>
+      </tr>`;
     }).join('');
   };
   makeRows(homeStats, 'loc-body');
@@ -205,16 +216,26 @@ function syncData() {
     .then(r => r.json())
     .then(data => {
       if (!data) return;
-      if (data.teams) teams = data.teams;
+      if (data.teams && data.teams.length) teams = data.teams;
       if (data.matches) matches = data.matches;
       renderStandings();
+      if (document.getElementById('partidos')?.classList.contains('active')) renderMatches(currentRound);
       if (data.lastUpdate) {
         const d = new Date(data.lastUpdate);
-        document.getElementById('last-update').textContent = '✓ Actualizado: ' + d.toLocaleDateString();
+        const el = document.getElementById('last-update');
+        if (el) el.textContent = '✓ Actualizado: ' + d.toLocaleString('es-AR',{day:'2-digit',month:'numeric',hour:'2-digit',minute:'2-digit'});
       }
-    });
+    }).catch(e => console.log('Primera A sync error:', e));
 }
+
 syncData();
+setInterval(syncData, 10*60*1000);
+
+document.addEventListener('DOMContentLoaded', function() {
+  renderStandings();
+  renderMatches(1);
+});
 </script>
+
 </body>
 </html>
