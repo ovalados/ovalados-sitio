@@ -3,66 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tercera División URBA 2026 — Ovalados</title>
-<meta name="description" content="Tabla y fixture de la Tercera División URBA 2026.">
+<title>Tabla URBA Tercera 2026 — Ovalados</title>
+<meta name="description" content="Tabla de posiciones, fixture y resultados del Torneo URBA Tercera 2026.">
 <link rel="canonical" href="https://ovalados.com/tercera.html">
-<meta property="og:title" content="Tercera División URBA 2026 — Ovalados">
-<meta property="og:description" content="Tabla y fixture de la Tercera División URBA 2026.">
-<meta property="og:image" content="https://ovalados.com/img/og-default.jpg">
+<meta property="og:title" content="Tabla URBA Tercera 2026 — Ovalados">
+<meta property="og:description" content="Posiciones y fixture del URBA Tercera 2026.">
 <meta property="og:url" content="https://ovalados.com/tercera.html">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="google-site-verification" content="eObn6uPNHec1448XkrJbqhSoKF69bKaJayuLrdOZAj0" />
 <link rel="icon" href="img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="img/favicon.png">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css?v=21">
+</head>
 <body>
+
 <header>
   <a href="index.html" class="logo">OVALADOS</a>
-  <nav>
+  <nav id="main-nav" style="display:flex">
     <button class="active" onclick="go('posiciones',this)">Posiciones</button>
     <button onclick="go('partidos',this)">Partidos</button>
     <button onclick="go('locvis',this)">Local/Visit.</button>
-    <button onclick="go('calculadora',this)">Calculadora</button>
   </nav>
 </header>
-<div class="sub-header">
+
+<div id="tournament-header" class="sub-header" style="display:flex">
   <a href="index.html" class="back-btn">← Torneos</a>
-  <span class="sub-label"><strong>TERCERA DIVISIÓN 2026</strong> · 22 fechas · Play Off oct</span>
+  <span class="sub-label"><strong>URBA TERCERA</strong> · División Tercera 2026
+    <span id="last-update" style="font-size:0.75rem;color:var(--muted);margin-left:12px"></span>
+  </span>
 </div>
+
+<div id="tournament-urba" style="display:block">
 <main>
-  
+
   <section id="posiciones" class="section active">
-    <div class="page-title">POSICIONES</div>
-    <div class="page-subtitle">URBA Tercera División · 2026 · 22 fechas</div>
+    <div class="page-title">TABLA DE POSICIONES</div>
+    <div class="page-subtitle">Torneo URBA Tercera · Temporada 2026</div>
     <div class="table-wrap">
-      <table>
-        <thead><tr>
-          <th style="width:40px">#</th><th style="text-align:left">EQUIPO</th>
-          <th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th>
-          <th>PF</th><th>PC</th><th>+/-</th><th>BP</th><th>BF</th><th>FORMA</th>
-        </tr></thead>
+      <table id="standings-table">
+        <thead>
+          <tr>
+            <th style="width:40px">#</th>
+            <th style="text-align:left">EQUIPO</th>
+            <th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th>
+            <th>PF</th><th>PC</th><th>+/-</th>
+            <th>BP</th><th>BF</th>
+            <th>FORMA</th>
+          </tr>
+        </thead>
         <tbody id="standings-body"></tbody>
       </table>
     </div>
     <div class="legend">
-      <div class="legend-item"><div class="legend-bar" style="background:var(--green)"></div> Clasifican a Semifinales (1°-2°)</div>
-      <div class="legend-item"><div class="legend-bar" style="background:var(--gold)"></div> Clasifican a Cuartos (3°-4°)</div>
-      <div class="legend-item"><div class="legend-bar" style="background:#c0392b"></div> Descenso (13°-14°)</div>
+      <div class="legend-item">BP = Bonus por 4+ tries</div>
+      <div class="legend-item">BF = Bonus perdiendo por ≤7</div>
     </div>
   </section>
+
   <section id="partidos" class="section">
     <div class="page-title">PARTIDOS</div>
-    <div class="page-subtitle">Fixture completo 2026</div>
+    <div class="page-subtitle">Fixture completo · URBA Tercera 2026</div>
     <div class="round-selector" id="round-selector"></div>
     <div id="matches-container"></div>
   </section>
+
   <section id="locvis" class="section">
     <div class="page-title">LOCAL / VISITANTE</div>
-    <div class="page-subtitle">Rendimiento según condición de juego · 2026</div>
+    <div class="page-subtitle">Rendimiento según condición de juego · URBA Tercera 2026</div>
     <div class="locvis-grid">
       <div>
         <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2px;color:var(--green);margin-bottom:0.75rem;text-transform:uppercase">🏠 De Local</div>
@@ -80,356 +90,75 @@
       </div>
     </div>
   </section>
-  <section id="calculadora" class="section">
-    <div class="page-title">CALCULADORA</div>
-    <div class="page-subtitle">Proyectá escenarios y posiciones finales</div>
-    <div class="calc-grid">
-      <div><div class="calc-panel">
-        <h3>⚙ Sistema de puntos</h3>
-        <div class="points-info">
-          <div class="points-info-item"><div class="points-info-val">4</div><div class="points-info-label">Victoria</div></div>
-          <div class="points-info-item"><div class="points-info-val">2</div><div class="points-info-label">Empate</div></div>
-          <div class="points-info-item"><div class="points-info-val">0</div><div class="points-info-label">Derrota</div></div>
-          <div class="points-info-item"><div class="points-info-val">+1</div><div class="points-info-label">BP (4+ tries)</div></div>
-          <div class="points-info-item"><div class="points-info-val">+1</div><div class="points-info-label">BF (≤7 pts)</div></div>
-          <div class="points-info-item"><div class="points-info-val">22</div><div class="points-info-label">Fechas</div></div>
-        </div>
-        <h3>📅 Simular fechas</h3>
-        <div class="info-banner"><span class="info-icon">ℹ</span><span>Abrí cada fecha, seleccioná resultados y la tabla se actualiza.</span></div>
-        <div id="sim-matches"></div>
-        <button class="calc-btn" onclick="renderProjected()">PROYECTAR</button>
-        <button class="reset-btn" onclick="resetCalc()">↺ Reiniciar</button>
-      </div></div>
-      <div><div class="calc-panel">
-        <h3>📊 Tabla proyectada</h3>
-        <div class="proj-note" id="proj-note">Seleccioná resultados para ver la proyección</div>
-        <div id="projected-table"></div>
-      </div></div>
-    </div>
-  </section>
+
 </main>
-<script>
-const teams = [
-  {name:'Almafuerte',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Tiro F de Baradero',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Los Cedros',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Arsenal Zarate',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Banco Hipotecario',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Pac General Rodriguez',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'G y E de Ituzaingo',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Beromama',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Porteño',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Berisso',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]},
-  {name:'Ciudad de Campana',pts:0,pj:0,g:0,e:0,p:0,pf:0,pc:0,bp:0,bf:0,form:[]}
-];
-const matches = {
-  1: {date:'11/04/2026',ms:[
-    {home:'Almafuerte',away:'Berisso',played:false},
-    {home:'Tiro F de Baradero',away:'Porteño',played:false},
-    {home:'Los Cedros',away:'Beromama',played:false},
-    {home:'Arsenal Zarate',away:'G y E de Ituzaingo',played:false},
-    {home:'Banco Hipotecario',away:'Pac General Rodriguez',played:false}
-  ]},
-  2: {date:'18/04/2026',ms:[
-    {home:'Ciudad de Campana',away:'Porteño',played:false},
-    {home:'Almafuerte',away:'Beromama',played:false},
-    {home:'Tiro F de Baradero',away:'G y E de Ituzaingo',played:false},
-    {home:'Los Cedros',away:'Pac General Rodriguez',played:false},
-    {home:'Arsenal Zarate',away:'Banco Hipotecario',played:false}
-  ]},
-  3: {date:'25/04/2026',ms:[
-    {home:'Berisso',away:'Beromama',played:false},
-    {home:'Ciudad de Campana',away:'G y E de Ituzaingo',played:false},
-    {home:'Almafuerte',away:'Pac General Rodriguez',played:false},
-    {home:'Tiro F de Baradero',away:'Banco Hipotecario',played:false},
-    {home:'Los Cedros',away:'Arsenal Zarate',played:false}
-  ]},
-  4: {date:'09/05/2026',ms:[
-    {home:'Porteño',away:'G y E de Ituzaingo',played:false},
-    {home:'Berisso',away:'Pac General Rodriguez',played:false},
-    {home:'Ciudad de Campana',away:'Banco Hipotecario',played:false},
-    {home:'Almafuerte',away:'Arsenal Zarate',played:false},
-    {home:'Tiro F de Baradero',away:'Los Cedros',played:false}
-  ]},
-  5: {date:'16/05/2026',ms:[
-    {home:'Beromama',away:'Pac General Rodriguez',played:false},
-    {home:'Porteño',away:'Banco Hipotecario',played:false},
-    {home:'Berisso',away:'Arsenal Zarate',played:false},
-    {home:'Ciudad de Campana',away:'Los Cedros',played:false},
-    {home:'Almafuerte',away:'Tiro F de Baradero',played:false}
-  ]},
-  6: {date:'23/05/2026',ms:[
-    {home:'G y E de Ituzaingo',away:'Banco Hipotecario',played:false},
-    {home:'Beromama',away:'Arsenal Zarate',played:false},
-    {home:'Porteño',away:'Los Cedros',played:false},
-    {home:'Berisso',away:'Tiro F de Baradero',played:false},
-    {home:'Ciudad de Campana',away:'Almafuerte',played:false}
-  ]},
-  7: {date:'06/06/2026',ms:[
-    {home:'Pac General Rodriguez',away:'Banco Hipotecario',played:false},
-    {home:'G y E de Ituzaingo',away:'Arsenal Zarate',played:false},
-    {home:'Beromama',away:'Los Cedros',played:false},
-    {home:'Porteño',away:'Almafuerte',played:false},
-    {home:'Berisso',away:'Ciudad de Campana',played:false}
-  ]},
-  8: {date:'13/06/2026',ms:[
-    {home:'Banco Hipotecario',away:'Arsenal Zarate',played:false},
-    {home:'Pac General Rodriguez',away:'Los Cedros',played:false},
-    {home:'G y E de Ituzaingo',away:'Almafuerte',played:false},
-    {home:'Beromama',away:'Ciudad de Campana',played:false},
-    {home:'Porteño',away:'Berisso',played:false}
-  ]},
-  9: {date:'20/06/2026',ms:[
-    {home:'Arsenal Zarate',away:'Los Cedros',played:false},
-    {home:'Banco Hipotecario',away:'Almafuerte',played:false},
-    {home:'Pac General Rodriguez',away:'Ciudad de Campana',played:false},
-    {home:'G y E de Ituzaingo',away:'Berisso',played:false},
-    {home:'Beromama',away:'Porteño',played:false}
-  ]},
-  10: {date:'04/07/2026',ms:[
-    {home:'Los Cedros',away:'Almafuerte',played:false},
-    {home:'Arsenal Zarate',away:'Ciudad de Campana',played:false},
-    {home:'Banco Hipotecario',away:'Berisso',played:false},
-    {home:'Pac General Rodriguez',away:'Porteño',played:false},
-    {home:'G y E de Ituzaingo',away:'Beromama',played:false}
-  ]},
-  11: {date:'11/07/2026',ms:[
-    {home:'Berisso',away:'Almafuerte',played:false},
-    {home:'Porteño',away:'Tiro F de Baradero',played:false},
-    {home:'Beromama',away:'Los Cedros',played:false},
-    {home:'G y E de Ituzaingo',away:'Arsenal Zarate',played:false},
-    {home:'Pac General Rodriguez',away:'Banco Hipotecario',played:false}
-  ]},
-  12: {date:'18/07/2026',ms:[
-    {home:'Ciudad de Campana',away:'Berisso',played:false},
-    {home:'Porteño',away:'Almafuerte',played:false},
-    {home:'Beromama',away:'Tiro F de Baradero',played:false},
-    {home:'G y E de Ituzaingo',away:'Los Cedros',played:false},
-    {home:'Pac General Rodriguez',away:'Arsenal Zarate',played:false},
-    {home:'Banco Hipotecario',away:'Ciudad de Campana',played:false}
-  ]},
-  13: {date:'01/08/2026',ms:[
-    {home:'Beromama',away:'Berisso',played:false},
-    {home:'Ciudad de Campana',away:'Porteño',played:false},
-    {home:'G y E de Ituzaingo',away:'Almafuerte',played:false},
-    {home:'Pac General Rodriguez',away:'Tiro F de Baradero',played:false},
-    {home:'Banco Hipotecario',away:'Los Cedros',played:false},
-    {home:'Arsenal Zarate',away:'Ciudad de Campana',played:false}
-  ]},
-  14: {date:'15/08/2026',ms:[
-    {home:'G y E de Ituzaingo',away:'Berisso',played:false},
-    {home:'Beromama',away:'Ciudad de Campana',played:false},
-    {home:'Pac General Rodriguez',away:'Almafuerte',played:false},
-    {home:'Banco Hipotecario',away:'Tiro F de Baradero',played:false},
-    {home:'Arsenal Zarate',away:'Los Cedros',played:false}
-  ]},
-  15: {date:'22/08/2026',ms:[
-    {home:'Pac General Rodriguez',away:'Berisso',played:false},
-    {home:'G y E de Ituzaingo',away:'Ciudad de Campana',played:false},
-    {home:'Banco Hipotecario',away:'Almafuerte',played:false},
-    {home:'Arsenal Zarate',away:'Tiro F de Baradero',played:false},
-    {home:'Los Cedros',away:'Porteño',played:false}
-  ]},
-  16: {date:'29/08/2026',ms:[
-    {home:'Banco Hipotecario',away:'Berisso',played:false},
-    {home:'Pac General Rodriguez',away:'Ciudad de Campana',played:false},
-    {home:'Arsenal Zarate',away:'Almafuerte',played:false},
-    {home:'Los Cedros',away:'Tiro F de Baradero',played:false},
-    {home:'Porteño',away:'Beromama',played:false}
-  ]},
-  17: {date:'05/09/2026',ms:[
-    {home:'Arsenal Zarate',away:'Berisso',played:false},
-    {home:'Banco Hipotecario',away:'Ciudad de Campana',played:false},
-    {home:'Los Cedros',away:'Almafuerte',played:false},
-    {home:'Porteño',away:'Tiro F de Baradero',played:false},
-    {home:'Beromama',away:'G y E de Ituzaingo',played:false}
-  ]},
-  18: {date:'12/09/2026',ms:[
-    {home:'Los Cedros',away:'Berisso',played:false},
-    {home:'Arsenal Zarate',away:'Ciudad de Campana',played:false},
-    {home:'Porteño',away:'Almafuerte',played:false},
-    {home:'Beromama',away:'Tiro F de Baradero',played:false},
-    {home:'G y E de Ituzaingo',away:'Pac General Rodriguez',played:false}
-  ]},
-  19: {date:'26/09/2026',ms:[
-    {home:'Porteño',away:'Berisso',played:false},
-    {home:'Los Cedros',away:'Ciudad de Campana',played:false},
-    {home:'Beromama',away:'Almafuerte',played:false},
-    {home:'G y E de Ituzaingo',away:'Tiro F de Baradero',played:false},
-    {home:'Pac General Rodriguez',away:'Arsenal Zarate',played:false},
-    {home:'Banco Hipotecario',away:'Beromama',played:false}
-  ]},
-  20: {date:'03/10/2026',ms:[
-    {home:'Beromama',away:'Berisso',played:false},
-    {home:'Porteño',away:'Ciudad de Campana',played:false},
-    {home:'G y E de Ituzaingo',away:'Almafuerte',played:false},
-    {home:'Pac General Rodriguez',away:'Tiro F de Baradero',played:false},
-    {home:'Banco Hipotecario',away:'Los Cedros',played:false},
-    {home:'Arsenal Zarate',away:'Porteño',played:false}
-  ]},
-  21: {date:'10/10/2026',ms:[
-    {home:'G y E de Ituzaingo',away:'Berisso',played:false},
-    {home:'Beromama',away:'Ciudad de Campana',played:false},
-    {home:'Pac General Rodriguez',away:'Almafuerte',played:false},
-    {home:'Banco Hipotecario',away:'Tiro F de Baradero',played:false},
-    {home:'Arsenal Zarate',away:'Los Cedros',played:false}
-  ]},
-  22: {date:'17/10/2026',ms:[
-    {home:'Pac General Rodriguez',away:'Banco Hipotecario',played:false},
-    {home:'Arsenal Zarate',away:'Beromama',played:false},
-    {home:'Los Cedros',away:'Porteño',played:false},
-    {home:'Tiro F de Baradero',away:'Berisso',played:false},
-    {home:'Almafuerte',away:'Ciudad de Campana',played:false}
-  ]},
-};
-
-// ── SYNC DESDE JSON ───────────────────────────────────────
-function syncFromJSON() {
-  fetch('data/tercera.json?v=' + Date.now())
-    .then(r => r.json())
-    .then(data => {
-      if (!data) return;
-
-      // Actualizar matches con resultados del JSON
-      if (data.matches) {
-        Object.entries(data.matches).forEach(([rnd, rd]) => {
-          const msKey = rd.ms ? 'ms' : 'matches';
-          if (!matches[rnd]) return;
-          const localMs = matches[rnd].ms || matches[rnd].matches || [];
-          (rd[msKey] || []).forEach(m => {
-            if (!m.played) return;
-            const local = localMs.find(lm => lm.home === m.home && lm.away === m.away);
-            if (local) { local.hs = m.hs; local.as = m.as; local.played = true; }
-          });
-        });
-      }
-
-      // Recalcular posiciones
-      recalcStandings();
-
-      // Re-renderizar
-      renderStandings();
-      if (typeof currentRound !== 'undefined') renderMatches(currentRound);
-      if (typeof renderLocVis === 'function') renderLocVis();
-
-      // Mostrar última actualización
-      if (data.lastUpdate) {
-        const d = new Date(data.lastUpdate);
-        const label = d.toLocaleString('es-AR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
-        const el = document.getElementById('last-update');
-        if (el) el.textContent = '✓ Actualizado: ' + label;
-      }
-    })
-    .catch(e => console.log('JSON sync error:', e));
-}
-
-function recalcStandings() {
-  teams.forEach(t => { t.pts=0; t.pj=0; t.g=0; t.e=0; t.p=0; t.pf=0; t.pc=0; t.bp=0; t.bf=0; t.form=[]; });
-  Object.values(matches).forEach(rd => {
-    const ms = rd.ms || rd.matches || [];
-    ms.filter(m => m.played).forEach(m => {
-      const home = teams.find(t => t.name === m.home);
-      const away = teams.find(t => t.name === m.away);
-      if (!home || !away) return;
-      home.pj++; away.pj++;
-      home.pf += m.hs; home.pc += m.as;
-      away.pf += m.as; away.pc += m.hs;
-      if (m.hs > m.as) {
-        home.g++; home.pts += 4; away.p++;
-        home.form.push('w'); away.form.push('l');
-      } else if (m.hs < m.as) {
-        away.g++; away.pts += 4; home.p++;
-        away.form.push('w'); home.form.push('l');
-      } else {
-        home.e++; away.e++; home.pts += 2; away.pts += 2;
-        home.form.push('d'); away.form.push('d');
-      }
-      if (m.bp_home) { home.pts++; home.bp++; }
-      if (m.bp_away) { away.pts++; away.bp++; }
-      if (m.bf_home) { home.pts++; home.bf++; }
-      if (m.bf_away) { away.pts++; away.bf++; }
-    });
-  });
-  teams.forEach(t => { t.form = t.form.slice(-5); });
-}
-
-syncFromJSON();
-setInterval(syncFromJSON, 10 * 60 * 1000);
-
-</script>
+</div>
 
 <script>
+let teams = [];
+let matches = {};
+let currentRound = 1;
 
 function go(id, btn) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#main-nav button').forEach(b => b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   if (btn) btn.classList.add('active');
-  if (id === 'partidos')    renderMatches(currentRound);
-  if (id === 'calculadora') renderCalc();
-  if (id === 'locvis')      renderLocVis();
+  if (id === 'partidos') renderMatches(currentRound);
+  if (id === 'locvis')   renderLocVis();
 }
 
-function showSection(id) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('nav a').forEach(b => b.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  if(event && event.currentTarget) event.currentTarget.classList.add('active');
-  if(id==='partidos') renderMatches(1);
-  if(id==='calculadora') renderCalc();
-  if(id==='locvis') renderLocVis();
-}
-
-// STANDINGS
-function renderStandings(teams, tbodyId, opts) {
-  opts = opts || {};
-  const allZero = teams.every(t=>t.pts===0&&t.pj===0);
-  const sorted = [...teams].sort((a,b)=>{
-    if(allZero) return a.name.localeCompare(b.name,'es');
-    return b.pts-a.pts||(b.pf-b.pc)-(a.pf-a.pc);
+function renderStandings() {
+  const allZero = teams.every(t => t.pts === 0 && t.pj === 0);
+  const sorted = [...teams].sort((a,b) => {
+    if (allZero) return a.name.localeCompare(b.name, 'es');
+    return b.pts - a.pts || (b.pf-b.pc) - (a.pf-a.pc);
   });
-  document.getElementById(tbodyId).innerHTML = sorted.map((t,i)=>{
-    const pos=i+1;
-    const cls = !allZero&&pos<=2?'qualify':!allZero&&pos<=4?'semifinal':pos>=13?'descent':'';
-    const diff=t.pf-t.pc;
-    const dots=(t.form||[]).map(f=>`<div class="dot ${f}"></div>`).join('');
-    return `<tr class="${cls} pos-${pos}">
-      <td><span class="pos-num">${allZero?'—':pos}</span></td>
+  const tbody = document.getElementById('standings-body');
+  if (!tbody) return;
+  tbody.innerHTML = sorted.map((t,i) => {
+    const pos = i+1;
+    const diff = t.pf - t.pc;
+    const formDots = (t.form||[]).map(f => `<div class="dot ${f==='w'?'w':f==='l'?'l':'d'}"></div>`).join('');
+    return `<tr class="pos-${pos}">
+      <td><span class="pos-num">${allZero ? '—' : pos}</span></td>
       <td><span class="team-name">${t.name}</span></td>
       <td class="pts">${t.pts}</td><td>${t.pj}</td><td>${t.g}</td><td>${t.e}</td><td>${t.p}</td>
       <td>${t.pf}</td><td>${t.pc}</td>
       <td style="color:${diff>0?'var(--green)':diff<0?'#c0392b':'var(--muted)'}">${diff>0?'+':''}${diff||0}</td>
       <td style="color:var(--gold)">${t.bp||0}</td><td>${t.bf||0}</td>
-      <td><div class="form-dots">${dots}</div></td>
+      <td><div class="form-dots">${formDots}</div></td>
     </tr>`;
   }).join('');
 }
 
-// MATCHES
-let currentRound=1;
 function renderMatches(round) {
-  if(!round) round=currentRound;
-  currentRound=round;
-  const sel=document.getElementById('round-selector');
-  if(sel) sel.innerHTML=Object.keys(matches).map(r=>
+  if (!round) round = currentRound;
+  currentRound = round;
+  const keys = Object.keys(matches).sort((a,b) => +a - +b);
+  const sel = document.getElementById('round-selector');
+  if (sel) sel.innerHTML = keys.map(r =>
     `<button class="round-btn ${+r===round?'active':''}" onclick="renderMatches(${r})">F${r}</button>`
   ).join('');
-  const rd=matches[round];
-  if(!rd) return;
-  const played=rd.ms.filter(m=>m.played);
-  const upcoming=rd.ms.filter(m=>!m.played);
-  let html='';
-  if(played.length){
-    html+=`<div class="round-title">Fecha ${round} · ${rd.date} · Resultados</div><div class="matches-grid">`;
-    html+=played.map(m=>matchCard(m,rd.date)).join('');
-    html+='</div>';
+  const roundData = matches[round];
+  if (!roundData) return;
+  const container = document.getElementById('matches-container');
+  if (!container) return;
+  const dateStr = roundData.date;
+  const played   = roundData.ms.filter(m => m.played);
+  const upcoming = roundData.ms.filter(m => !m.played);
+  let html = '';
+  if (played.length) {
+    html += `<div class="round-title">Fecha ${round} · ${dateStr} · Resultados</div><div class="matches-grid">`;
+    html += played.map(m => matchCard(m, dateStr)).join('');
+    html += '</div>';
   }
-  if(upcoming.length){
-    html+=`<div class="round-title">Fecha ${round} · ${rd.date} · Próximos</div><div class="matches-grid">`;
-    html+=upcoming.map(m=>matchCard(m,rd.date)).join('');
-    html+='</div>';
+  if (upcoming.length) {
+    html += `<div class="round-title">Fecha ${round} · ${dateStr} · Próximos</div><div class="matches-grid">`;
+    html += upcoming.map(m => matchCard(m, dateStr)).join('');
+    html += '</div>';
   }
-  document.getElementById('matches-container').innerHTML=html;
+  container.innerHTML = html;
 }
 
 function matchCard(m, dateStr) {
@@ -438,10 +167,9 @@ function matchCard(m, dateStr) {
   const scoreBlock = isPlayed || isLive
     ? `<div class="match-score">${m.hs} — ${m.as}</div>`
     : `<div class="match-score upcoming">VS</div>`;
-  return `<div class="match-card">
+  return `<div class="match-card${isLive?' live':''}">
     <div class="match-meta">
-      <span>${isLive ? '🔴 EN VIVO' : isPlayed ? 'Finalizado' : dateStr}</span>
-      <span style="font-size:0.75rem;color:var(--muted)">${m.venue||''}</span>
+      <span>${isLive?'🔴 EN VIVO':isPlayed?'Finalizado':dateStr}</span>
     </div>
     <div class="match-teams">
       <div class="match-team home"><div class="name">${m.home}</div></div>
@@ -451,167 +179,63 @@ function matchCard(m, dateStr) {
   </div>`;
 }
 
-// CALCULADORA
-const simState={};
-const accordOpen={};
-let pendingMatches=[];
-
-function buildPending(){
-  pendingMatches=[];
-  Object.entries(matches).forEach(([rnd,rndData])=>{
-    rndData.ms.filter(m=>!m.played).forEach((m,i)=>{
-      pendingMatches.push({...m,id:`r${rnd}m${i}`,round:+rnd,date:rndData.date});
-    });
+function renderLocVis() {
+  const homeStats = {}, awayStats = {};
+  teams.forEach(t => {
+    homeStats[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
+    awayStats[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
   });
-}
-
-function renderCalc(){
-  buildPending();
-  const byRound={};
-  pendingMatches.forEach(m=>{if(!byRound[m.round])byRound[m.round]=[];byRound[m.round].push(m);});
-  const rnds=Object.keys(byRound).map(Number).sort((a,b)=>a-b);
-  if(rnds.length>0 && !Object.values(accordOpen).some(v=>v)) accordOpen[rnds[0]]=true;
-  document.getElementById('sim-matches').innerHTML=rnds.map(rnd=>{
-    const ms=byRound[rnd];
-    const sc=ms.filter(m=>simState[m.id]?.result).length;
-    return `<div class="accord-item" id="accord-${rnd}">
-      <div class="accord-header ${accordOpen[rnd]?'open':''}" onclick="toggleAccord(${rnd})">
-        <div class="accord-header-left">
-          <span class="accord-rnd">Fecha ${rnd}</span>
-          <span class="accord-date">${ms[0].date}</span>
-          ${sc>0?`<span class="accord-badge-sim">✓ ${sc}/${ms.length}</span>`:''}
-        </div>
-        <span class="accord-arrow">▼</span>
-      </div>
-      <div class="accord-body ${accordOpen[rnd]?'open':''}" id="accord-body-${rnd}">
-        ${ms.map(m=>simRow(m)).join('')}
-      </div>
-    </div>`;
-  }).join('');
-  renderProjected();
-}
-
-function toggleAccord(rnd){
-  accordOpen[rnd]=!accordOpen[rnd];
-  document.querySelector(`#accord-${rnd} .accord-header`).classList.toggle('open',accordOpen[rnd]);
-  document.getElementById(`accord-body-${rnd}`).classList.toggle('open',accordOpen[rnd]);
-}
-
-function simRow(m){
-  const s=simState[m.id]||{};
-  const bonus=s.result?`<div class="sim-row-bonus">
-    <label class="sim-bonus-label"><input type="checkbox" ${s.bpHome?'checked':''} onchange="setBonus('${m.id}','bpHome',this.checked)"> BP ${m.home.split(' ')[0]}</label>
-    <label class="sim-bonus-label"><input type="checkbox" ${s.bpAway?'checked':''} onchange="setBonus('${m.id}','bpAway',this.checked)"> BP ${m.away.split(' ')[0]}</label>
-    ${s.result!=='draw'?`<label class="sim-bonus-label"><input type="checkbox" ${s.bfLoser?'checked':''} onchange="setBonus('${m.id}','bfLoser',this.checked)"> BF perdedor</label>`:''}
-  </div>`:'';
-  return `<div><div class="sim-row">
-    <div class="sim-row-team">${m.home}</div>
-    <div class="sim-row-btns">
-      <button class="sim-row-btn ${s.result==='home'?'win':''}" onclick="setResult('${m.id}','home','${m.home}','${m.away}')">L</button>
-      <button class="sim-row-btn ${s.result==='draw'?'draw':''}" onclick="setResult('${m.id}','draw','${m.home}','${m.away}')">E</button>
-      <button class="sim-row-btn ${s.result==='away'?'loss':''}" onclick="setResult('${m.id}','away','${m.home}','${m.away}')">V</button>
-    </div>
-    <div class="sim-row-team right">${m.away}</div>
-  </div>${bonus}</div>`;
-}
-
-function setResult(id,result,home,away){
-  if(!simState[id])simState[id]={};
-  Object.assign(simState[id],{result,home,away,bpHome:false,bpAway:false,bfLoser:false});
-  const m=pendingMatches.find(m=>m.id===id);
-  if(m){
-    const byRound={};
-    pendingMatches.forEach(pm=>{if(!byRound[pm.round])byRound[pm.round]=[];byRound[pm.round].push(pm);});
-    const body=document.getElementById(`accord-body-${m.round}`);
-    if(body) body.innerHTML=byRound[m.round].map(pm=>simRow(pm)).join('');
-    const sc=byRound[m.round].filter(pm=>simState[pm.id]?.result).length;
-    const hl=document.querySelector(`#accord-${m.round} .accord-header-left`);
-    const ex=hl.querySelector('.accord-badge-sim');
-    if(ex)ex.remove();
-    if(sc>0){const b=document.createElement('span');b.className='accord-badge-sim';b.textContent=`✓ ${sc}/${byRound[m.round].length}`;hl.appendChild(b);}
-  }
-  renderProjected();
-}
-
-function setBonus(id,key,val){if(!simState[id])simState[id]={};simState[id][key]=val;renderProjected();}
-
-function renderProjected(){
-  const pts={};
-  teams.forEach(t=>pts[t.name]=t.pts);
-  Object.values(simState).forEach(s=>{
-    if(!s.result)return;
-    if(s.result==='home'){pts[s.home]=(pts[s.home]||0)+4;if(s.bfLoser)pts[s.away]=(pts[s.away]||0)+1;}
-    else if(s.result==='away'){pts[s.away]=(pts[s.away]||0)+4;if(s.bfLoser)pts[s.home]=(pts[s.home]||0)+1;}
-    else{pts[s.home]=(pts[s.home]||0)+2;pts[s.away]=(pts[s.away]||0)+2;}
-    if(s.bpHome)pts[s.home]=(pts[s.home]||0)+1;
-    if(s.bpAway)pts[s.away]=(pts[s.away]||0)+1;
-  });
-  const orig={};
-  [...teams].sort((a,b)=>b.pts-a.pts).forEach((t,i)=>orig[t.name]=i+1);
-  const projected=teams.map(t=>({name:t.name,current:t.pts,projected:pts[t.name]||t.pts,gained:(pts[t.name]||t.pts)-t.pts})).sort((a,b)=>b.projected-a.projected);
-  const sc=Object.keys(simState).length;
-  document.getElementById('proj-note').textContent=sc>0?`Simulando ${sc} partido${sc>1?'s':''}. Actuales + proyección.`:'Seleccioná resultados para ver la proyección.';
-  document.getElementById('projected-table').innerHTML=projected.map((t,i)=>{
-    const pos=i+1,moved=orig[t.name]-pos;
-    const mi=moved>0?`<span class="movement up">▲${moved}</span>`:moved<0?`<span class="movement down">▼${Math.abs(moved)}</span>`:`<span class="movement same">—</span>`;
-    const cls=pos<=2?'q1 q2':pos<=4?'q3 q4':pos>=13?'descent':'';
-    return `<div class="proj-row ${cls}">
-      <div class="proj-pos" style="${pos>=13?'color:#e57373':''}">${pos}</div>
-      <div class="proj-name">${t.name} ${mi}</div>
-      <div class="proj-pts-current">${t.current}</div>
-      ${t.gained>0?`<div class="proj-pts-gained">+${t.gained}</div>`:'<div></div>'}
-      <div class="proj-pts-total">${t.projected}</div>
-    </div>`;
-  }).join('');
-}
-
-function resetCalc(){Object.keys(simState).forEach(k=>delete simState[k]);renderCalc();}
-
-function calcLocVis(teamList, matchData) {
-  const loc = {}, vis = {};
-  teamList.forEach(t => {
-    loc[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
-    vis[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
-  });
-  Object.values(matchData).forEach(rd => {
-    rd.ms.filter(m => m.played).forEach(m => {
-      if (!loc[m.home] || !vis[m.away]) return;
-      loc[m.home].pj++; vis[m.away].pj++;
-      loc[m.home].pf += m.hs; loc[m.home].pc += m.as;
-      vis[m.away].pf += m.as; vis[m.away].pc += m.hs;
-      if (m.hs > m.as) { loc[m.home].g++; loc[m.home].pts+=4; vis[m.away].p++; }
-      else if (m.hs < m.as) { vis[m.away].g++; vis[m.away].pts+=4; loc[m.home].p++; }
-      else { loc[m.home].pts+=2; vis[m.away].pts+=2; }
-    });
-  });
-  return {loc, vis};
-}
-
-function locVisRows(data, teamList) {
-  return [...teamList]
-    .sort((a,b) => (data[b.name]?.pts||0) - (data[a.name]?.pts||0))
-    .map(t => {
-      const d = data[t.name] || {};
-      return `<tr><td style="text-align:left;padding-left:12px;font-weight:600">${t.name}</td>
+  Object.values(matches).forEach(rd => (rd.ms||[]).filter(m=>m.played).forEach(m => {
+    if (!homeStats[m.home] || !awayStats[m.away]) return;
+    const h=homeStats[m.home], a=awayStats[m.away];
+    h.pj++; a.pj++; h.pf+=m.hs; h.pc+=m.as; a.pf+=m.as; a.pc+=m.hs;
+    if(m.hs>m.as){h.g++;h.pts+=4;a.p++;}
+    else if(m.hs<m.as){a.g++;a.pts+=4;h.p++;}
+    else{h.pts+=2;a.pts+=2;}
+  }));
+  const makeRows = (stats, tbodyId) => {
+    const sorted = [...teams].sort((a,b)=>(stats[b.name]?.pts||0)-(stats[a.name]?.pts||0));
+    const el = document.getElementById(tbodyId);
+    if (!el) return;
+    el.innerHTML = sorted.map(t => {
+      const d = stats[t.name]||{};
+      return `<tr>
+        <td style="text-align:left;padding-left:12px;font-weight:600">${t.name}</td>
         <td>${d.pj||0}</td><td>${d.g||0}</td><td>${d.p||0}</td>
         <td>${d.pf||0}</td><td>${d.pc||0}</td>
-        <td style="color:var(--green);font-weight:700">${d.pts||0}</td></tr>`;
+        <td style="color:var(--green);font-weight:700">${d.pts||0}</td>
+      </tr>`;
     }).join('');
+  };
+  makeRows(homeStats, 'loc-body');
+  makeRows(awayStats, 'vis-body');
 }
 
-function renderLocVis() {
-  const {loc, vis} = calcLocVis(teams, matches);
-  document.getElementById('loc-body').innerHTML = locVisRows(loc, teams);
-  document.getElementById('vis-body').innerHTML = locVisRows(vis, teams);
+function syncData() {
+  fetch('data/urba-tercera.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      if (!data) return;
+      if (data.teams && data.teams.length) teams = data.teams;
+      if (data.matches) matches = data.matches;
+      renderStandings();
+      if (document.getElementById('partidos')?.classList.contains('active')) renderMatches(currentRound);
+      if (data.lastUpdate) {
+        const d = new Date(data.lastUpdate);
+        const el = document.getElementById('last-update');
+        if (el) el.textContent = '✓ Actualizado: ' + d.toLocaleString('es-AR',{day:'2-digit',month:'numeric',hour:'2-digit',minute:'2-digit'});
+      }
+    }).catch(e => console.log('Tercera sync error:', e));
 }
 
-</script>
+syncData();
+setInterval(syncData, 10*60*1000);
 
-<script>
-window.addEventListener('DOMContentLoaded',function(){
-  renderStandings(teams,'standings-body');
+document.addEventListener('DOMContentLoaded', function() {
+  renderStandings();
   renderMatches(1);
 });
 </script>
+
 </body>
 </html>
