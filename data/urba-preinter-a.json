@@ -227,14 +227,16 @@
           "away": "Atletico del Rosario",
           "played": true,
           "hs": 32,
-          "as": 28
+          "as": 28,
+          "bf_away": true
         },
         {
           "home": "Hindu",
           "away": "Los Tilos",
           "played": true,
           "hs": 42,
-          "as": 39
+          "as": 39,
+          "bf_away": true
         },
         {
           "home": "Champagnat",
@@ -248,7 +250,8 @@
           "away": "CUBA",
           "played": true,
           "hs": 32,
-          "as": 30
+          "as": 30,
+          "bf_away": true
         },
         {
           "home": "Newman",
@@ -262,7 +265,8 @@
           "away": "Belgrano Athletic",
           "played": true,
           "hs": 29,
-          "as": 24
+          "as": 24,
+          "bf_away": true
         }
       ]
     },
@@ -1267,7 +1271,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-16T15:48:25.729654+00:00",
+  "lastUpdate": "2026-03-16T19:05:26.369220+00:00",
   "matchesScraped": 7,
   "championshipId": "2025185",
   "nombre": "Pre-Intermedia"
