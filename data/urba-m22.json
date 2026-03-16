@@ -220,14 +220,16 @@
           "away": "Regatas Bella Vista",
           "played": true,
           "hs": 25,
-          "as": 21
+          "as": 21,
+          "bf_away": true
         },
         {
           "home": "La Plata",
           "away": "Belgrano Athletic B",
           "played": true,
           "hs": 76,
-          "as": 14
+          "as": 14,
+          "bp_home": true
         },
         {
           "home": "Hindu",
@@ -241,28 +243,32 @@
           "away": "CASI",
           "played": true,
           "hs": 36,
-          "as": 10
+          "as": 10,
+          "bp_home": true
         },
         {
           "home": "Alumni",
           "away": "CUBA",
           "played": true,
           "hs": 36,
-          "as": 35
+          "as": 35,
+          "bf_away": true
         },
         {
           "home": "Newman",
           "away": "Buenos Aires C&RC",
           "played": true,
           "hs": 28,
-          "as": 33
+          "as": 33,
+          "bf_home": true
         },
         {
           "home": "SIC",
           "away": "Belgrano Athletic",
           "played": true,
           "hs": 27,
-          "as": 21
+          "as": 21,
+          "bf_away": true
         }
       ]
     },
@@ -1267,7 +1273,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-16T15:48:39.027493+00:00",
+  "lastUpdate": "2026-03-16T19:05:34.864394+00:00",
   "matchesScraped": 7,
   "championshipId": "2025206",
   "nombre": "M22"
