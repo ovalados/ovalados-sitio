@@ -220,21 +220,24 @@
           "away": "Regatas Bella Vista B",
           "played": true,
           "hs": 20,
-          "as": 41
+          "as": 41,
+          "bp_away": true
         },
         {
           "home": "La Plata B",
           "away": "Atletico del Rosario B",
           "played": true,
           "hs": 40,
-          "as": 18
+          "as": 18,
+          "bp_home": true
         },
         {
           "home": "Hindu B",
           "away": "Los Tilos B",
           "played": true,
           "hs": 31,
-          "as": 32
+          "as": 32,
+          "bf_home": true
         },
         {
           "home": "Champagnat B",
@@ -255,14 +258,16 @@
           "away": "Buenos Aires C&RC B",
           "played": true,
           "hs": 18,
-          "as": 14
+          "as": 14,
+          "bf_away": true
         },
         {
           "home": "SIC B",
           "away": "Belgrano Athletic B",
           "played": true,
           "hs": 32,
-          "as": 31
+          "as": 31,
+          "bf_away": true
         }
       ]
     },
@@ -1267,7 +1272,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-16T15:48:27.156290+00:00",
+  "lastUpdate": "2026-03-16T19:05:27.732788+00:00",
   "matchesScraped": 7,
   "championshipId": "2025186",
   "nombre": "Pre-Inter B"
