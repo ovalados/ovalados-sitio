@@ -227,7 +227,8 @@
           "away": "Los Tilos G",
           "played": true,
           "hs": 12,
-          "as": 62
+          "as": 62,
+          "bp_away": true
         },
         {
           "home": "Newman G",
@@ -262,7 +263,8 @@
           "away": "Belgrano Athletic F",
           "played": true,
           "hs": 73,
-          "as": 7
+          "as": 7,
+          "bp_home": true
         }
       ]
     },
@@ -1267,7 +1269,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-16T15:48:36.374019+00:00",
+  "lastUpdate": "2026-03-16T19:05:33.302502+00:00",
   "matchesScraped": 7,
   "championshipId": "2025201",
   "nombre": "Pre-Inter F"
