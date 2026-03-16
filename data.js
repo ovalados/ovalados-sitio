@@ -5,25 +5,10 @@
 
 // ── ULTIMOS RESULTADOS ───────────────────────────────────────
 const SR_ULTIMA_FECHA = {
-  label: "Super Rugby Americas - Fecha 3",
-  partidos: [
-    { home:"Tarucas",     hs:29, away:"Dogos XV",     as:26, fecha:"08/03/2026" },
-    { home:"Pampas",      hs:25, away:"Capibaras XV", as:20, fecha:"08/03/2026" },
-    { home:"Penarol",     hs:40, away:"Selknam",      as:27, fecha:"07/03/2026" },
-    { home:"Cobras BR",   hs:21, away:"Yacare XV",    as:19, fecha:"07/03/2026" },
-  ]
-};
-
+  label: "Super Rugby Americas - Fecha 4",
 // ── PROXIMA FECHA ────────────────────────────────────────────
 const SR_PROXIMA_FECHA = {
-  label: "Super Rugby Americas - Fecha 4 - 14-15 mar",
-  partidos: [
-    { home:"Penarol",   away:"Tarucas",      fecha:"14/03" },
-    { home:"Dogos XV",  away:"Capibaras XV", fecha:"15/03" },
-    { home:"Yacare XV", away:"Pampas",       fecha:"15/03" },
-    { home:"Selknam",   away:"Cobras BR",    fecha:"15/03" },
-  ]
-};
+  label: "Super Rugby Americas - Fecha 5 - 20-21 mar",
 
 // ── RENDER AUTOMATICO ────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', function() {
