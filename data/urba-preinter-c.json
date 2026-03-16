@@ -220,49 +220,56 @@
           "away": "Regatas Bella Vista C",
           "played": true,
           "hs": 7,
-          "as": 44
+          "as": 44,
+          "bp_away": true
         },
         {
           "home": "La Plata C",
           "away": "Atletico del Rosario C",
           "played": true,
           "hs": 38,
-          "as": 10
+          "as": 10,
+          "bp_home": true
         },
         {
           "home": "Hindu C",
           "away": "Los Tilos C",
           "played": true,
           "hs": 12,
-          "as": 45
+          "as": 45,
+          "bp_away": true
         },
         {
           "home": "Champagnat C",
           "away": "CASI C",
           "played": true,
           "hs": 24,
-          "as": 0
+          "as": 0,
+          "bp_home": true
         },
         {
           "home": "Alumni C",
           "away": "CUBA C",
           "played": true,
           "hs": 34,
-          "as": 31
+          "as": 31,
+          "bf_away": true
         },
         {
           "home": "Newman C",
           "away": "Buenos Aires C&RC C",
           "played": true,
           "hs": 18,
-          "as": 38
+          "as": 38,
+          "bp_away": true
         },
         {
           "home": "SIC C",
           "away": "Belgrano Athletic C",
           "played": true,
           "hs": 35,
-          "as": 17
+          "as": 17,
+          "bp_home": true
         }
       ]
     },
@@ -1267,7 +1274,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-16T15:48:28.639678+00:00",
+  "lastUpdate": "2026-03-16T19:05:29.190714+00:00",
   "matchesScraped": 7,
   "championshipId": "2025197",
   "nombre": "Pre-Inter C"
