@@ -15,9 +15,7 @@
 <meta name="google-site-verification" content="eObn6uPNHec1448XkrJbqhSoKF69bKaJayuLrdOZAj0" />
 <link rel="icon" href="img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="img/favicon.png">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link rel="stylesheet" href="css/styles.css?v=21">
 <body>
 <header class="gold-accent">
@@ -192,7 +190,10 @@ function renderMatches(r){
 
 function renderLocVis(){
   const loc={},vis={};
-  teams.forEach(t=>{loc[t.name]={pj:0,g:0,p:0,pf:0,pc:0,pts:0};vis[t.name]={pj:0,g:0,p:0,pf:0,pc:0,pts:0};});
+  teams.forEach(t=>{
+    loc[t.name]={pj:0,g:0,p:0,pf:0,pc:0,pts:0};
+    vis[t.name]={pj:0,g:0,p:0,pf:0,pc:0,pts:0};
+  });
   Object.values(matches).forEach(rd=>rd.ms.filter(m=>m.played).forEach(m=>{
     loc[m.home].pj++;vis[m.away].pj++;
     loc[m.home].pf+=m.hs;loc[m.home].pc+=m.as;
@@ -200,6 +201,10 @@ function renderLocVis(){
     if(m.hs>m.as){loc[m.home].g++;loc[m.home].pts+=4;vis[m.away].p++;}
     else if(m.hs<m.as){vis[m.away].g++;vis[m.away].pts+=4;loc[m.home].p++;}
     else{loc[m.home].pts+=2;vis[m.away].pts+=2;}
+    if(m.bp_home){loc[m.home].pts++;}
+    if(m.bp_away){vis[m.away].pts++;}
+    if(m.bf_home){loc[m.home].pts++;}
+    if(m.bf_away){vis[m.away].pts++;}
   }));
   const rows=d=>[...teams].sort((a,b)=>(d[b.name]?.pts||0)-(d[a.name]?.pts||0))
     .map(t=>{const v=d[t.name]||{};return`<tr>
@@ -303,14 +308,11 @@ function resetCalc(){Object.keys(sim).forEach(k=>delete sim[k]);renderCalc();}
 
 renderStandings();
 
-// ── SYNC DESDE JSON ───────────────────────────────────────
 function syncFromJSON() {
   fetch('data/superrugby.json?v=' + Date.now())
     .then(r => r.json())
     .then(data => {
       if (!data) return;
-
-      // Actualizar matches con resultados del JSON
       if (data.matches) {
         Object.entries(data.matches).forEach(([rnd, rd]) => {
           const msKey = rd.ms ? 'ms' : 'matches';
@@ -318,21 +320,21 @@ function syncFromJSON() {
           const localMs = matches[rnd].ms || matches[rnd].matches || [];
           (rd[msKey] || []).forEach(m => {
             if (!m.played) return;
-            const local = localMs.find(lm => lm.home === m.home && lm.away === m.away);
-            if (local) { local.hs = m.hs; local.as = m.as; local.played = true; }
+            const local = localMs.find(lm => lm.home === m.home && lm.away === m.away && !lm.played);
+            if (local) {
+              local.hs = m.hs; local.as = m.as; local.played = true;
+              if (m.bp_home) local.bp_home = true;
+              if (m.bp_away) local.bp_away = true;
+              if (m.bf_home) local.bf_home = true;
+              if (m.bf_away) local.bf_away = true;
+            }
           });
         });
       }
-
-      // Recalcular posiciones
       recalcStandings();
-
-      // Re-renderizar
       renderStandings();
-      if (typeof currentRound !== 'undefined') renderMatches(currentRound);
-      if (typeof renderLocVis === 'function') renderLocVis();
-
-      // Mostrar última actualización
+      if (typeof curRound !== 'undefined') renderMatches(curRound);
+      renderLocVis();
       if (data.lastUpdate) {
         const d = new Date(data.lastUpdate);
         const label = d.toLocaleString('es-AR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
