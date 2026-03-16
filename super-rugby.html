@@ -332,6 +332,13 @@ function syncFromJSON() {
         });
       }
       recalcStandings();
+      // Restaurar bonus desde el JSON ya que los partidos no los tienen
+      if (data.teams && data.teams.length) {
+        data.teams.forEach(jt => {
+          const t = teams.find(t => t.name === jt.name);
+          if (t) { t.bp = jt.bp || 0; t.bf = jt.bf || 0; t.pts = jt.pts || t.pts; }
+        });
+      }
       renderStandings();
       if (typeof curRound !== 'undefined') renderMatches(curRound);
       renderLocVis();
