@@ -227,7 +227,8 @@
           "away": "Atletico del Rosario",
           "played": true,
           "hs": 45,
-          "as": 10
+          "as": 10,
+          "bp_home": true
         },
         {
           "home": "Hindu",
@@ -241,28 +242,32 @@
           "away": "CASI",
           "played": true,
           "hs": 17,
-          "as": 38
+          "as": 38,
+          "bp_away": true
         },
         {
           "home": "Alumni",
           "away": "CUBA",
           "played": true,
           "hs": 19,
-          "as": 24
+          "as": 24,
+          "bf_home": true
         },
         {
           "home": "Newman",
           "away": "Buenos Aires C&RC",
           "played": true,
           "hs": 24,
-          "as": 21
+          "as": 21,
+          "bf_away": true
         },
         {
           "home": "SIC",
           "away": "Belgrano Athletic",
           "played": true,
           "hs": 23,
-          "as": 19
+          "as": 19,
+          "bf_away": true
         }
       ]
     },
@@ -1267,7 +1272,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-16T15:48:24.307164+00:00",
+  "lastUpdate": "2026-03-16T19:05:25.029346+00:00",
   "matchesScraped": 7,
   "championshipId": "2025184",
   "nombre": "Intermedia"
