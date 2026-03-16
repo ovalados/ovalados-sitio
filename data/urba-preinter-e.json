@@ -213,21 +213,24 @@
           "away": "CUBA F",
           "played": true,
           "hs": 7,
-          "as": 72
+          "as": 72,
+          "bp_away": true
         },
         {
           "home": "Hindu E",
           "away": "Los Tilos E",
           "played": true,
           "hs": 14,
-          "as": 47
+          "as": 47,
+          "bp_away": true
         },
         {
           "home": "Champagnat E",
           "away": "CASI E",
           "played": true,
           "hs": 29,
-          "as": 26
+          "as": 26,
+          "bf_away": true
         },
         {
           "home": "Alumni E",
@@ -241,14 +244,16 @@
           "away": "Buenos Aires C&RC E",
           "played": true,
           "hs": 29,
-          "as": 31
+          "as": 31,
+          "bf_home": true
         },
         {
           "home": "SIC E",
           "away": "Belgrano Athletic E",
           "played": true,
           "hs": 43,
-          "as": 29
+          "as": 29,
+          "bp_home": true
         }
       ]
     },
@@ -1253,7 +1258,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-16T15:48:33.208885+00:00",
+  "lastUpdate": "2026-03-16T19:05:31.970876+00:00",
   "matchesScraped": 7,
   "championshipId": "2025200",
   "nombre": "Pre-Inter E"
