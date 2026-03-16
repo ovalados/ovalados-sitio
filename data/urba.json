@@ -220,49 +220,56 @@
           "away": "Regatas Bella Vista",
           "played": true,
           "hs": 27,
-          "as": 25
+          "as": 25,
+          "bf_away": true
         },
         {
           "home": "La Plata",
           "away": "Atletico del Rosario",
           "played": true,
           "hs": 29,
-          "as": 36
+          "as": 36,
+          "bf_home": true
         },
         {
           "home": "Hindu",
           "away": "Los Tilos",
           "played": true,
           "hs": 52,
-          "as": 18
+          "as": 18,
+          "bp_home": true
         },
         {
           "home": "Champagnat",
           "away": "CASI",
           "played": true,
           "hs": 16,
-          "as": 40
+          "as": 40,
+          "bp_away": true
         },
         {
           "home": "Alumni",
           "away": "CUBA",
           "played": true,
           "hs": 27,
-          "as": 25
+          "as": 25,
+          "bf_away": true
         },
         {
           "home": "Newman",
           "away": "Buenos Aires C&RC",
           "played": true,
           "hs": 31,
-          "as": 3
+          "as": 3,
+          "bp_home": true
         },
         {
           "home": "SIC",
           "away": "Belgrano Athletic",
           "played": true,
           "hs": 58,
-          "as": 18
+          "as": 18,
+          "bp_home": true
         }
       ]
     },
@@ -1267,7 +1274,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-16T15:48:22.748561+00:00",
+  "lastUpdate": "2026-03-16T19:05:23.495219+00:00",
   "matchesScraped": 7,
   "championshipId": "2025176",
   "nombre": "Top 14"
