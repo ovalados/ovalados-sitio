@@ -83,7 +83,7 @@
       "e": 0,
       "p": 0,
       "pf": 27,
-      "pc": 21,
+      "pc": 24,
       "bp": 0,
       "bf": 0,
       "form": [
@@ -97,7 +97,7 @@
       "g": 0,
       "e": 0,
       "p": 1,
-      "pf": 21,
+      "pf": 24,
       "pc": 27,
       "bp": 0,
       "bf": 1,
@@ -267,7 +267,7 @@
           "away": "Belgrano Athletic",
           "played": true,
           "hs": 27,
-          "as": 21,
+          "as": 24,
           "bf_away": true
         }
       ]
@@ -1273,7 +1273,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-16T23:58:08.398809+00:00",
+  "lastUpdate": "2026-03-17T05:15:21.278815+00:00",
   "matchesScraped": 7,
   "championshipId": "2025206",
   "nombre": "M22"
