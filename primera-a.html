@@ -17,6 +17,32 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css?v=21">
+<style>
+.club-modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:1000; align-items:flex-end; justify-content:center; }
+.club-modal-overlay.open { display:flex; }
+.club-modal { background:var(--dark2,#1a1a2e); border-radius:16px 16px 0 0; width:100%; max-width:600px; max-height:85vh; overflow-y:auto; padding:1.5rem; animation:slideUp 0.25s ease; }
+@keyframes slideUp { from{transform:translateY(100%)} to{transform:translateY(0)} }
+.club-modal-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:1.25rem; }
+.club-modal-name { font-family:'Bebas Neue',sans-serif; font-size:1.8rem; letter-spacing:3px; color:var(--green); }
+.club-modal-close { background:none; border:none; color:var(--muted); font-size:1.5rem; cursor:pointer; padding:4px 8px; }
+.club-modal-close:hover { color:var(--text); }
+.club-info-grid { display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; margin-bottom:1.5rem; }
+.club-info-item { background:var(--dark3,#0f0f1a); border-radius:8px; padding:0.75rem 1rem; }
+.club-info-label { font-family:'Barlow Condensed',sans-serif; font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:4px; }
+.club-info-value { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; color:var(--text); }
+.club-section-title { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.85rem; letter-spacing:2px; text-transform:uppercase; color:var(--green); margin:1.25rem 0 0.75rem; padding-bottom:6px; border-bottom:1px solid var(--border); }
+.club-match-row { display:flex; align-items:center; justify-content:space-between; padding:0.5rem 0; border-bottom:1px solid var(--border); font-family:'Barlow Condensed',sans-serif; font-size:0.9rem; }
+.club-match-row:last-child { border-bottom:none; }
+.club-match-teams { flex:1; }
+.club-match-score { font-family:'Bebas Neue',sans-serif; font-size:1.1rem; color:var(--green); min-width:60px; text-align:center; }
+.club-match-score.upcoming { color:var(--muted); font-family:'Barlow Condensed',sans-serif; font-size:0.85rem; }
+.club-match-fecha { font-size:0.75rem; color:var(--muted); min-width:50px; text-align:right; }
+.club-result-w { color:var(--green); font-weight:700; }
+.club-result-l { color:#c0392b; font-weight:700; }
+.club-result-d { color:var(--gold); font-weight:700; }
+.team-name-clickable { cursor:pointer; transition:color 0.15s; }
+.team-name-clickable:hover { color:var(--green); }
+</style>
 </head>
 <body>
 
@@ -34,6 +60,18 @@
   <span class="sub-label"><strong>URBA PRIMERA A</strong> · División Primera A 2026
     <span id="last-update" style="font-size:0.75rem;color:var(--muted);margin-left:12px"></span>
   </span>
+</div>
+
+<!-- MODAL PERFIL DE CLUB -->
+<div class="club-modal-overlay" id="club-modal-overlay" onclick="closeClubModal(event)">
+  <div class="club-modal" id="club-modal">
+    <div class="club-modal-header">
+      <div class="club-modal-name" id="modal-club-name"></div>
+      <button class="club-modal-close" onclick="closeClubModal()">✕</button>
+    </div>
+    <div class="club-info-grid" id="modal-club-info"></div>
+    <div id="modal-club-partidos"></div>
+  </div>
 </div>
 
 <div id="tournament-urba" style="display:block">
@@ -99,6 +137,175 @@ let teams = [];
 let matches = {};
 let currentRound = 1;
 
+
+const CLUBES = {
+  "San Cirano": {
+    "nombre": "Club San Cirano",
+    "apodo": "Cirano",
+    "fundacion": 1973,
+    "estadio": "Villa Celina",
+    "ubicacion": "La Matanza",
+    "colores": "Verde, Celeste y Blanco"
+  },
+  "Hurling": {
+    "nombre": "Hurling Club",
+    "apodo": "El Trébol",
+    "fundacion": 1922,
+    "estadio": "Hurlingham",
+    "ubicacion": "Hurlingham",
+    "colores": "Verde y Blanco"
+  },
+  "GEBA": {
+    "nombre": "Gimnasia y Esgrima Buenos Aires",
+    "apodo": "Mens Sana",
+    "fundacion": 1880,
+    "estadio": "Sede San Martín",
+    "ubicacion": "Palermo, CABA",
+    "colores": "Azul y Blanco"
+  },
+  "Curupayti": {
+    "nombre": "Curupayti Club de Rugby",
+    "apodo": "Curupa",
+    "fundacion": 1924,
+    "estadio": "Hurlingham",
+    "ubicacion": "Hurlingham",
+    "colores": "Blanco, Azul y Rojo"
+  },
+  "San Luis": {
+    "nombre": "Club San Luis",
+    "apodo": "El Marista",
+    "fundacion": 1961,
+    "estadio": "La Cumbre",
+    "ubicacion": "La Plata",
+    "colores": "Azul y Rojo"
+  },
+  "Lomas Athletic": {
+    "nombre": "Lomas Athletic Club",
+    "apodo": "Lomas",
+    "fundacion": 1891,
+    "estadio": "Longchamps",
+    "ubicacion": "Alte. Brown",
+    "colores": "Verde, Rojo y Blanco"
+  },
+  "Pucará": {
+    "nombre": "Club Pucará",
+    "apodo": "Burzaco",
+    "fundacion": 1943,
+    "estadio": "Burzaco",
+    "ubicacion": "Alte. Brown",
+    "colores": "Rojo"
+  },
+  "Pueyrredón": {
+    "nombre": "Club Pueyrredón",
+    "apodo": "Los Húsares",
+    "fundacion": 1953,
+    "estadio": "Benavídez",
+    "ubicacion": "Tigre",
+    "colores": "Azul y Blanco"
+  },
+  "San Andrés": {
+    "nombre": "Club San Andrés",
+    "apodo": "El Santo",
+    "fundacion": 1911,
+    "estadio": "Benavídez",
+    "ubicacion": "Tigre",
+    "colores": "Azul y Blanco"
+  },
+  "Dep. Francesa": {
+    "nombre": "Asociación Deportiva Francesa",
+    "apodo": "El Galo",
+    "fundacion": 1913,
+    "estadio": "Del Viso",
+    "ubicacion": "Pilar",
+    "colores": "Azul, Blanco y Rojo"
+  },
+  "San Fernando": {
+    "nombre": "Club San Fernando",
+    "apodo": "Sanfer",
+    "fundacion": 1923,
+    "estadio": "San Fernando",
+    "ubicacion": "San Fernando",
+    "colores": "Verde y Blanco"
+  },
+  "San Albano": {
+    "nombre": "Club San Albano",
+    "apodo": "Albano",
+    "fundacion": 1923,
+    "estadio": "Burzaco",
+    "ubicacion": "Alte. Brown",
+    "colores": "Azul, Blanco y Rojo"
+  },
+  "Universitario LP": {
+    "nombre": "Universitario de La Plata",
+    "apodo": "La U",
+    "fundacion": 1937,
+    "estadio": "Manuel B. Gonnet",
+    "ubicacion": "La Plata",
+    "colores": "Azul y Blanco"
+  },
+  "Olivos": {
+    "nombre": "Olivos Rugby Club",
+    "apodo": "Olivos",
+    "fundacion": 1927,
+    "estadio": "Munro",
+    "ubicacion": "Vicente López",
+    "colores": "Naranja, Blanco y Negro"
+  }
+};
+
+function openClubModal(teamName) {
+  const club = CLUBES[teamName];
+  if (!club) return;
+  document.getElementById('modal-club-name').textContent = teamName;
+  document.getElementById('modal-club-info').innerHTML =
+    '<div class="club-info-item"><div class="club-info-label">Nombre completo</div><div class="club-info-value">' + club.nombre + '</div></div>' +
+    '<div class="club-info-item"><div class="club-info-label">Apodo</div><div class="club-info-value">' + club.apodo + '</div></div>' +
+    '<div class="club-info-item"><div class="club-info-label">Fundación</div><div class="club-info-value">' + club.fundacion + '</div></div>' +
+    '<div class="club-info-item"><div class="club-info-label">Estadio</div><div class="club-info-value">' + club.estadio + '</div></div>' +
+    '<div class="club-info-item"><div class="club-info-label">Ubicación</div><div class="club-info-value">' + club.ubicacion + '</div></div>' +
+    '<div class="club-info-item"><div class="club-info-label">Colores</div><div class="club-info-value">' + club.colores + '</div></div>';
+  const jugados = [], proximos = [];
+  Object.entries(matches).forEach(function([rnd, rd]) {
+    (rd.ms||[]).forEach(function(m) {
+      if (m.home !== teamName && m.away !== teamName) return;
+      const rival = m.home === teamName ? m.away : m.home;
+      const condicion = m.home === teamName ? 'Local' : 'Visitante';
+      if (m.played) {
+        const pp = m.home === teamName ? m.hs : m.as;
+        const pr = m.home === teamName ? m.as : m.hs;
+        const res = pp > pr ? 'w' : pp < pr ? 'l' : 'd';
+        jugados.push({rnd:rnd, rival:rival, condicion:condicion, pp:pp, pr:pr, res:res});
+      } else {
+        proximos.push({rnd:rnd, rival:rival, condicion:condicion});
+      }
+    });
+  });
+  let html = '';
+  if (jugados.length) {
+    html += '<div class="club-section-title">Partidos Jugados</div>';
+    jugados.slice(-5).reverse().forEach(function(p) {
+      const rl = p.res==='w' ? '<span class="club-result-w">G</span>' : p.res==='l' ? '<span class="club-result-l">P</span>' : '<span class="club-result-d">E</span>';
+      html += '<div class="club-match-row"><div class="club-match-teams">' + rl + ' ' + p.condicion + ' vs <strong>' + p.rival + '</strong></div><div class="club-match-score">' + p.pp + ' - ' + p.pr + '</div><div class="club-match-fecha">F' + p.rnd + '</div></div>';
+    });
+  }
+  if (proximos.length) {
+    html += '<div class="club-section-title">Proximos Partidos</div>';
+    proximos.slice(0,5).forEach(function(p) {
+      html += '<div class="club-match-row"><div class="club-match-teams">' + p.condicion + ' vs <strong>' + p.rival + '</strong></div><div class="club-match-score upcoming">VS</div><div class="club-match-fecha">F' + p.rnd + '</div></div>';
+    });
+  }
+  document.getElementById('modal-club-partidos').innerHTML = html;
+  document.getElementById('club-modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeClubModal(event) {
+  if (event && event.target !== document.getElementById('club-modal-overlay')) return;
+  document.getElementById('club-modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+
 function go(id, btn) {
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('#main-nav button').forEach(b => b.classList.remove('active'));
@@ -122,7 +329,7 @@ function renderStandings() {
     const formDots = (t.form||[]).map(f => `<div class="dot ${f==='w'?'w':f==='l'?'l':'d'}"></div>`).join('');
     return `<tr class="pos-${pos}">
       <td><span class="pos-num">${allZero ? '—' : pos}</span></td>
-      <td><span class="team-name">${t.name}</span></td>
+      <td><span class="team-name team-name-clickable" onclick="openClubModal('${t.name}')">${t.name}</span></td>
       <td class="pts">${t.pts}</td><td>${t.pj}</td><td>${t.g}</td><td>${t.e}</td><td>${t.p}</td>
       <td>${t.pf}</td><td>${t.pc}</td>
       <td style="color:${diff>0?'var(--green)':diff<0?'#c0392b':'var(--muted)'}">${diff>0?'+':''}${diff||0}</td>
@@ -192,6 +399,8 @@ function renderLocVis() {
     if(m.hs>m.as){h.g++;h.pts+=4;a.p++;}
     else if(m.hs<m.as){a.g++;a.pts+=4;h.p++;}
     else{h.pts+=2;a.pts+=2;}
+    if(m.bp_home)h.pts++; if(m.bp_away)a.pts++;
+    if(m.bf_home)h.pts++; if(m.bf_away)a.pts++;
   }));
   const makeRows = (stats, tbodyId) => {
     const sorted = [...teams].sort((a,b)=>(stats[b.name]?.pts||0)-(stats[a.name]?.pts||0));
