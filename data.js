@@ -3,37 +3,6 @@
 //  Edita solo este archivo cada fecha para actualizar el home.
 // ============================================================
 
-// ── ULTIMOS RESULTADOS ───────────────────────────────────────
-const SR_ULTIMA_FECHA = {
-  label: "Super Rugby Americas - Fecha 4",
-// ── PROXIMA FECHA ────────────────────────────────────────────
-const SR_PROXIMA_FECHA = {
-  label: "Super Rugby Americas - Fecha 5 - 20-21 mar",
-
-// ── RENDER AUTOMATICO ────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', function() {
-  const ul = document.getElementById('sr-ultimos');
-  const px = document.getElementById('sr-proximos');
-  const ulLabel = document.getElementById('sr-ultimos-label');
-  const pxLabel = document.getElementById('sr-proximos-label');
-  if (ulLabel) ulLabel.textContent = SR_ULTIMA_FECHA.label;
-  if (pxLabel) pxLabel.textContent = SR_PROXIMA_FECHA.label;
-  if (ul) ul.innerHTML = SR_ULTIMA_FECHA.partidos.map(p => `
-    <div class="result-row gold-hover">
-      <div class="result-home">${p.home}</div>
-      <div class="result-score gold">${p.hs} - ${p.as}</div>
-      <div class="result-away">${p.away}</div>
-      <div class="result-date">${p.fecha}</div>
-    </div>`).join('');
-  if (px) px.innerHTML = SR_PROXIMA_FECHA.partidos.map(p => `
-    <div class="result-row gold-hover">
-      <div class="result-home">${p.home}</div>
-      <div class="result-score upcoming">VS</div>
-      <div class="result-away">${p.away}</div>
-      <div class="result-date">${p.fecha}</div>
-    </div>`).join('');
-});
-
 // ── FORMACIONES TOP 14 ────────────────────────────────────────
 const PARTIDOS = {
   sic_belgrano_athletic: {
