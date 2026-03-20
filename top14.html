@@ -459,15 +459,15 @@ function matchCard(m, dateStr) {
     : `<div class="match-score upcoming">VS</div>`;
   const makeId = str => str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'_').replace(/^_|_$/g,'');
   const partidoId = makeId(m.home) + '_' + makeId(m.away);
-  const tieneFormacion = typeof PARTIDOS !== 'undefined' && PARTIDOS[partidoId];
+  const torneo = 'top14';
+  const tieneFormacion = typeof PARTIDOS !== 'undefined' && PARTIDOS[torneo] && PARTIDOS[torneo][partidoId];
   const score = (isPlayed || isLive) ? `${m.hs} - ${m.as}` : '';
   const formacionBtn = tieneFormacion
-    ? `<button class="match-formacion-btn" onclick="openFormacionModal('${partidoId}','${m.home}','${m.away}','${score}')">👥 Ver formaciones</button>`
+    ? `<button class="match-formacion-btn" onclick="openFormacionModal('${torneo}','${partidoId}','${m.home}','${m.away}','${score}')">👥 Ver formaciones</button>`
     : '';
   return `<div class="match-card${isLive?' live':''}">
     <div class="match-meta">
       <span>${isLive?'🔴 EN VIVO':isPlayed?'Finalizado':dateStr}</span>
-      <span style="font-size:0.75rem;color:var(--muted)">${m.venue||''}</span>
     </div>
     <div class="match-teams">
       <div class="match-team home"><div class="name">${m.home}</div></div>
