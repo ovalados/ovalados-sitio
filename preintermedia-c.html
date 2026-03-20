@@ -17,6 +17,35 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css?v=21">
+<style>
+/* ── MODAL FORMACIONES ────────────────────────────────── */
+.formacion-modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.75); z-index: 1001;
+  align-items: flex-end; justify-content: center;
+}
+.formacion-modal-overlay.open { display: flex; }
+.formacion-modal {
+  background: var(--dark2, #1a1a2e); border-radius: 16px 16px 0 0;
+  width: 100%; max-width: 700px; max-height: 88vh;
+  overflow-y: auto; padding: 1.5rem;
+  animation: slideUpF 0.25s ease;
+}
+@keyframes slideUpF { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.formacion-modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
+.formacion-modal-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: 2px; color: var(--green); }
+.formacion-modal-close { background: none; border: none; color: var(--muted); font-size: 1.5rem; cursor: pointer; padding: 4px 8px; }
+.formacion-modal-close:hover { color: var(--text); }
+.formacion-modal-score { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--text); text-align: center; margin-bottom: 1.25rem; }
+.formacion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.formacion-team-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 0.75rem; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.formacion-jugador { font-family: 'Barlow Condensed', sans-serif; font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: var(--text); }
+.formacion-jugador:last-child { border-bottom: none; }
+.match-formacion-btn { margin-top: 0.5rem; padding: 0.35rem 0.75rem; background: rgba(0,184,92,0.1); border: 1px solid rgba(0,184,92,0.3); border-radius: 4px; color: var(--green); font-family: 'Barlow Condensed', sans-serif; font-size: 0.82rem; cursor: pointer; transition: all 0.15s; width: 100%; }
+.match-formacion-btn:hover { background: rgba(0,184,92,0.2); }
+@media(max-width:600px) { .formacion-grid { grid-template-columns: 1fr; } }
+</style>
+<script src="data.js"></script>
 </head>
 <body>
 
@@ -36,6 +65,17 @@
   </span>
 </div>
 
+<!-- MODAL FORMACIONES -->
+<div class="formacion-modal-overlay" id="formacion-modal-overlay" onclick="closeFormacionModal(event)">
+  <div class="formacion-modal" id="formacion-modal">
+    <div class="formacion-modal-header">
+      <div class="formacion-modal-title" id="formacion-modal-title"></div>
+      <button class="formacion-modal-close" onclick="closeFormacionModal()">✕</button>
+    </div>
+    <div class="formacion-modal-score" id="formacion-modal-score"></div>
+    <div class="formacion-grid" id="formacion-modal-body"></div>
+  </div>
+</div>
 <div id="tournament-urba" style="display:block">
 <main>
 
@@ -168,6 +208,14 @@ function matchCard(m, dateStr) {
   const scoreBlock = isPlayed || isLive
     ? `<div class="match-score">${m.hs} — ${m.as}</div>`
     : `<div class="match-score upcoming">VS</div>`;
+  const makeId = str => str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'_').replace(/^_|_$/g,'');
+  const partidoId = makeId(m.home) + '_' + makeId(m.away);
+  const torneo = 'preinter_c';
+  const tieneFormacion = typeof PARTIDOS !== 'undefined' && PARTIDOS[torneo] && PARTIDOS[torneo][partidoId];
+  const score = (isPlayed || isLive) ? `${m.hs} - ${m.as}` : '';
+  const formacionBtn = tieneFormacion
+    ? `<button class="match-formacion-btn" onclick="openFormacionModal('${torneo}','${partidoId}','${m.home}','${m.away}','${score}')">👥 Ver formaciones</button>`
+    : '';
   return `<div class="match-card${isLive?' live':''}">
     <div class="match-meta">
       <span>${isLive?'🔴 EN VIVO':isPlayed?'Finalizado':dateStr}</span>
@@ -177,6 +225,7 @@ function matchCard(m, dateStr) {
       ${scoreBlock}
       <div class="match-team"><div class="name">${m.away}</div></div>
     </div>
+    ${formacionBtn}
   </div>`;
 }
 
