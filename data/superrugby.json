@@ -2,16 +2,17 @@
   "teams": [
     {
       "name": "Capibaras XV",
-      "pts": 15,
-      "pj": 4,
-      "g": 3,
+      "pts": 24,
+      "pj": 8,
+      "g": 6,
       "e": 0,
-      "p": 1,
-      "pf": 121,
-      "pc": 56,
-      "bp": 3,
+      "p": 2,
+      "pf": 242,
+      "pc": 112,
+      "bp": 0,
       "bf": 0,
       "form": [
+        "w",
         "w",
         "w",
         "l",
@@ -20,16 +21,17 @@
     },
     {
       "name": "Tarucas",
-      "pts": 13,
-      "pj": 4,
-      "g": 3,
+      "pts": 24,
+      "pj": 8,
+      "g": 6,
       "e": 0,
-      "p": 1,
-      "pf": 120,
-      "pc": 100,
-      "bp": 1,
+      "p": 2,
+      "pf": 240,
+      "pc": 200,
+      "bp": 0,
       "bf": 0,
       "form": [
+        "l",
         "w",
         "w",
         "w",
@@ -38,16 +40,17 @@
     },
     {
       "name": "Dogos XV",
-      "pts": 16,
-      "pj": 4,
-      "g": 3,
+      "pts": 24,
+      "pj": 8,
+      "g": 6,
       "e": 0,
-      "p": 1,
-      "pf": 151,
-      "pc": 82,
-      "bp": 4,
+      "p": 2,
+      "pf": 302,
+      "pc": 164,
+      "bp": 0,
       "bf": 0,
       "form": [
+        "w",
         "w",
         "w",
         "l",
@@ -56,16 +59,17 @@
     },
     {
       "name": "Pampas",
-      "pts": 16,
-      "pj": 4,
-      "g": 3,
+      "pts": 24,
+      "pj": 8,
+      "g": 6,
       "e": 0,
-      "p": 1,
-      "pf": 132,
-      "pc": 95,
-      "bp": 4,
+      "p": 2,
+      "pf": 264,
+      "pc": 190,
+      "bp": 0,
       "bf": 0,
       "form": [
+        "w",
         "w",
         "l",
         "w",
@@ -74,16 +78,17 @@
     },
     {
       "name": "Selknam",
-      "pts": 6,
-      "pj": 4,
-      "g": 1,
+      "pts": 8,
+      "pj": 8,
+      "g": 2,
       "e": 0,
-      "p": 3,
-      "pf": 74,
-      "pc": 181,
-      "bp": 2,
+      "p": 6,
+      "pf": 148,
+      "pc": 362,
+      "bp": 0,
       "bf": 0,
       "form": [
+        "l",
         "l",
         "w",
         "l",
@@ -92,16 +97,17 @@
     },
     {
       "name": "Yacare XV",
-      "pts": 4,
-      "pj": 4,
+      "pts": 0,
+      "pj": 8,
       "g": 0,
       "e": 0,
-      "p": 4,
-      "pf": 80,
-      "pc": 98,
-      "bp": 4,
+      "p": 8,
+      "pf": 160,
+      "pc": 196,
+      "bp": 0,
       "bf": 0,
       "form": [
+        "l",
         "l",
         "l",
         "l",
@@ -110,16 +116,17 @@
     },
     {
       "name": "Cobras BR",
-      "pts": 5,
-      "pj": 4,
-      "g": 1,
+      "pts": 8,
+      "pj": 8,
+      "g": 2,
       "e": 0,
-      "p": 3,
-      "pf": 72,
-      "pc": 132,
-      "bp": 1,
+      "p": 6,
+      "pf": 144,
+      "pc": 264,
+      "bp": 0,
       "bf": 0,
       "form": [
+        "l",
         "l",
         "l",
         "w",
@@ -128,16 +135,17 @@
     },
     {
       "name": "Peñarol",
-      "pts": 10,
-      "pj": 4,
-      "g": 2,
+      "pts": 16,
+      "pj": 8,
+      "g": 4,
       "e": 0,
-      "p": 2,
-      "pf": 103,
-      "pc": 109,
-      "bp": 2,
+      "p": 4,
+      "pf": 206,
+      "pc": 218,
+      "bp": 0,
       "bf": 0,
       "form": [
+        "w",
         "l",
         "l",
         "w",
@@ -359,22 +367,30 @@
         {
           "home": "Pampas",
           "away": "Yacare XV",
-          "played": false
+          "played": true,
+          "hs": 30,
+          "as": 17
         },
         {
           "home": "Cobras BR",
           "away": "Dogos XV",
-          "played": false
+          "played": true,
+          "hs": 19,
+          "as": 21
         },
         {
           "home": "Selknam",
           "away": "Tarucas",
-          "played": false
+          "played": true,
+          "hs": 13,
+          "as": 41
         },
         {
           "home": "Peñarol",
           "away": "Capibaras XV",
-          "played": false
+          "played": true,
+          "hs": 7,
+          "as": 34
         }
       ]
     },
@@ -384,22 +400,30 @@
         {
           "home": "Dogos XV",
           "away": "Pampas",
-          "played": false
+          "played": true,
+          "hs": 36,
+          "as": 34
         },
         {
           "home": "Yacare XV",
           "away": "Selknam",
-          "played": false
+          "played": true,
+          "hs": 32,
+          "as": 34
         },
         {
           "home": "Cobras BR",
           "away": "Capibaras XV",
-          "played": false
+          "played": true,
+          "hs": 12,
+          "as": 54
         },
         {
           "home": "Tarucas",
           "away": "Peñarol",
-          "played": false
+          "played": true,
+          "hs": 28,
+          "as": 18
         }
       ]
     },
@@ -409,22 +433,30 @@
         {
           "home": "Capibaras XV",
           "away": "Pampas",
-          "played": false
+          "played": true,
+          "hs": 20,
+          "as": 25
         },
         {
           "home": "Yacare XV",
           "away": "Cobras BR",
-          "played": false
+          "played": true,
+          "hs": 19,
+          "as": 21
         },
         {
           "home": "Dogos XV",
           "away": "Tarucas",
-          "played": false
+          "played": true,
+          "hs": 26,
+          "as": 29
         },
         {
           "home": "Selknam",
           "away": "Peñarol",
-          "played": false
+          "played": true,
+          "hs": 27,
+          "as": 40
         }
       ]
     },
@@ -434,22 +466,30 @@
         {
           "home": "Capibaras XV",
           "away": "Yacare XV",
-          "played": false
+          "played": true,
+          "hs": 13,
+          "as": 12
         },
         {
           "home": "Selknam",
           "away": "Dogos XV",
-          "played": false
+          "played": true,
+          "hs": 0,
+          "as": 68
         },
         {
           "home": "Cobras BR",
           "away": "Peñarol",
-          "played": false
+          "played": true,
+          "hs": 20,
+          "as": 38
         },
         {
           "home": "Pampas",
           "away": "Tarucas",
-          "played": false
+          "played": true,
+          "hs": 43,
+          "as": 22
         }
       ]
     },
@@ -529,6 +569,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-20T14:28:59.290839+00:00",
+  "lastUpdate": "2026-03-20T14:29:28.888652+00:00",
   "matchesScraped": 16
 }
