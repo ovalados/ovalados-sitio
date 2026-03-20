@@ -361,22 +361,16 @@ function closeClubModal(event) {
 }
 
 // ── MODAL DE FORMACIONES ──────────────────────────────────
-function openFormacionModal(partidoId, home, away, score) {
-  if (typeof PARTIDOS === 'undefined' || !PARTIDOS[partidoId]) return;
-  const p = PARTIDOS[partidoId];
+function openFormacionModal(torneo, partidoId, home, away, score) {
+  if (typeof PARTIDOS === 'undefined' || !PARTIDOS[torneo] || !PARTIDOS[torneo][partidoId]) return;
+  const p = PARTIDOS[torneo][partidoId];
   document.getElementById('formacion-modal-title').textContent = home + ' vs ' + away;
   document.getElementById('formacion-modal-score').textContent = score || '';
-  const localJugadores = (p.local.jugadores||[]).map(j => `<div class="formacion-jugador">${j}</div>`).join('');
-  const visitanteJugadores = (p.visitante.jugadores||[]).map(j => `<div class="formacion-jugador">${j}</div>`).join('');
-  document.getElementById('formacion-modal-body').innerHTML = `
-    <div>
-      <div class="formacion-team-title">${p.local.nombre}</div>
-      ${localJugadores}
-    </div>
-    <div>
-      <div class="formacion-team-title">${p.visitante.nombre}</div>
-      ${visitanteJugadores}
-    </div>`;
+  const lj = (p.local.jugadores||[]).map(j => `<div class="formacion-jugador">${j}</div>`).join('');
+  const vj = (p.visitante.jugadores||[]).map(j => `<div class="formacion-jugador">${j}</div>`).join('');
+  document.getElementById('formacion-modal-body').innerHTML =
+    `<div><div class="formacion-team-title">${p.local.nombre}</div>${lj}</div>` +
+    `<div><div class="formacion-team-title">${p.visitante.nombre}</div>${vj}</div>`;
   document.getElementById('formacion-modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
