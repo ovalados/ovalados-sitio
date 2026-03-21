@@ -299,7 +299,9 @@
         {
           "home": "Selknam",
           "away": "Capibaras XV",
-          "played": false
+          "played": true,
+          "hs": 27,
+          "as": 17
         },
         {
           "home": "Yacare XV",
@@ -573,6 +575,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-21T19:48:34.368481+00:00",
-  "matchesScraped": 17
+  "lastUpdate": "2026-03-21T20:53:13.836697+00:00",
+  "matchesScraped": 18
 }
