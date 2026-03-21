@@ -2,211 +2,225 @@
   "teams": [
     {
       "name": "La Plata D",
-      "pts": 4,
-      "pj": 1,
+      "pts": 6,
+      "pj": 2,
       "g": 1,
-      "e": 0,
+      "e": 1,
       "p": 0,
       "pf": 17,
       "pc": 12,
       "bp": 0,
       "bf": 0,
       "form": [
-        "w"
+        "w",
+        "d"
       ]
     },
     {
       "name": "Hindu D",
       "pts": 1,
-      "pj": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 1,
-      "pf": 30,
-      "pc": 36,
+      "p": 2,
+      "pf": 42,
+      "pc": 63,
       "bp": 0,
       "bf": 1,
       "form": [
+        "l",
         "l"
       ]
     },
     {
       "name": "Champagnat D",
       "pts": 0,
-      "pj": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 1,
-      "pf": 17,
-      "pc": 31,
+      "p": 2,
+      "pf": 22,
+      "pc": 100,
       "bp": 0,
       "bf": 0,
       "form": [
+        "l",
         "l"
       ]
     },
     {
       "name": "Alumni D",
-      "pts": 0,
-      "pj": 1,
-      "g": 0,
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
       "e": 0,
       "p": 1,
-      "pf": 13,
-      "pc": 45,
-      "bp": 0,
+      "pf": 56,
+      "pc": 65,
+      "bp": 1,
       "bf": 0,
       "form": [
-        "l"
+        "l",
+        "w"
       ]
     },
     {
       "name": "Newman D",
-      "pts": 2,
-      "pj": 1,
-      "g": 0,
+      "pts": 6,
+      "pj": 2,
+      "g": 1,
       "e": 1,
       "p": 0,
-      "pf": 17,
-      "pc": 17,
+      "pf": 41,
+      "pc": 24,
       "bp": 0,
       "bf": 0,
       "form": [
-        "d"
+        "d",
+        "w"
       ]
     },
     {
       "name": "SIC D",
-      "pts": 5,
-      "pj": 1,
-      "g": 1,
+      "pts": 10,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 33,
+      "pf": 102,
       "pc": 14,
-      "bp": 1,
+      "bp": 2,
       "bf": 0,
       "form": [
+        "w",
         "w"
       ]
     },
     {
       "name": "Belgrano Athletic D",
       "pts": 0,
-      "pj": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 1,
-      "pf": 14,
-      "pc": 33,
+      "p": 2,
+      "pf": 21,
+      "pc": 57,
       "bp": 0,
       "bf": 0,
       "form": [
+        "l",
         "l"
       ]
     },
     {
       "name": "Buenos Aires C&RC D",
       "pts": 2,
-      "pj": 1,
+      "pj": 2,
       "g": 0,
       "e": 1,
-      "p": 0,
-      "pf": 17,
-      "pc": 17,
+      "p": 1,
+      "pf": 37,
+      "pc": 60,
       "bp": 0,
       "bf": 0,
       "form": [
-        "d"
+        "d",
+        "l"
       ]
     },
     {
       "name": "CUBA D",
-      "pts": 5,
-      "pj": 1,
-      "g": 1,
+      "pts": 10,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 45,
-      "pc": 13,
-      "bp": 1,
+      "pf": 114,
+      "pc": 18,
+      "bp": 2,
       "bf": 0,
       "form": [
+        "w",
         "w"
       ]
     },
     {
       "name": "CASI D",
-      "pts": 4,
-      "pj": 1,
-      "g": 1,
+      "pts": 8,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 31,
-      "pc": 17,
+      "pf": 58,
+      "pc": 29,
       "bp": 0,
       "bf": 0,
       "form": [
+        "w",
         "w"
       ]
     },
     {
       "name": "Los Tilos D",
-      "pts": 4,
-      "pj": 1,
+      "pts": 6,
+      "pj": 2,
       "g": 1,
-      "e": 0,
+      "e": 1,
       "p": 0,
       "pf": 36,
       "pc": 30,
       "bp": 0,
       "bf": 0,
       "form": [
-        "w"
+        "w",
+        "d"
       ]
     },
     {
       "name": "Atletico del Rosario D",
-      "pts": 1,
-      "pj": 1,
-      "g": 0,
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
       "e": 0,
       "p": 1,
-      "pf": 12,
-      "pc": 17,
+      "pf": 51,
+      "pc": 46,
       "bp": 0,
       "bf": 1,
       "form": [
-        "l"
+        "l",
+        "w"
       ]
     },
     {
       "name": "Regatas Bella Vista D",
       "pts": 5,
-      "pj": 1,
+      "pj": 2,
       "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 62,
-      "pc": 0,
+      "p": 1,
+      "pf": 91,
+      "pc": 39,
       "bp": 1,
       "bf": 0,
       "form": [
-        "w"
+        "w",
+        "l"
       ]
     },
     {
       "name": "Los Matreros D",
       "pts": 0,
-      "pj": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 1,
+      "p": 2,
       "pf": 0,
-      "pc": 62,
+      "pc": 131,
       "bp": 0,
       "bf": 0,
       "form": [
+        "l",
         "l"
       ]
     }
@@ -277,37 +291,54 @@
         {
           "home": "SIC D",
           "away": "Los Matreros D",
-          "played": false
+          "played": true,
+          "hs": 69,
+          "as": 0,
+          "bp_home": true
         },
         {
           "home": "Belgrano Athletic D",
           "away": "Newman D",
-          "played": false
+          "played": true,
+          "hs": 7,
+          "as": 24
         },
         {
           "home": "Buenos Aires C&RC D",
           "away": "Alumni D",
-          "played": false
+          "played": true,
+          "hs": 20,
+          "as": 43,
+          "bp_away": true
         },
         {
           "home": "CUBA D",
           "away": "Champagnat D",
-          "played": false
+          "played": true,
+          "hs": 69,
+          "as": 5,
+          "bp_home": true
         },
         {
           "home": "CASI D",
           "away": "Hindu D",
-          "played": false
+          "played": true,
+          "hs": 27,
+          "as": 12
         },
         {
           "home": "Los Tilos D",
           "away": "La Plata D",
-          "played": false
+          "played": true,
+          "hs": 0,
+          "as": 0
         },
         {
           "home": "Atletico del Rosario D",
           "away": "Regatas Bella Vista D",
-          "played": false
+          "played": true,
+          "hs": 39,
+          "as": 29
         }
       ]
     },
@@ -1272,8 +1303,8 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-21T21:50:27.574614+00:00",
-  "matchesScraped": 7,
+  "lastUpdate": "2026-03-21T22:55:15.184626+00:00",
+  "matchesScraped": 14,
   "championshipId": "2025198",
   "nombre": "Pre-Inter D"
 }
