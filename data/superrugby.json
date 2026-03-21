@@ -306,7 +306,9 @@
         {
           "home": "Yacare XV",
           "away": "Tarucas",
-          "played": false
+          "played": true,
+          "hs": 22,
+          "as": 28
         },
         {
           "home": "Cobras BR",
@@ -575,6 +577,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-21T20:53:13.836697+00:00",
-  "matchesScraped": 18
+  "lastUpdate": "2026-03-21T21:50:19.489669+00:00",
+  "matchesScraped": 19
 }
