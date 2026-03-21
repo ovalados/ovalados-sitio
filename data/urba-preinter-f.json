@@ -47,17 +47,18 @@
     },
     {
       "name": "Alumni F",
-      "pts": 4,
-      "pj": 1,
+      "pts": 6,
+      "pj": 2,
       "g": 1,
-      "e": 0,
+      "e": 1,
       "p": 0,
       "pf": 8,
       "pc": 0,
       "bp": 0,
       "bf": 0,
       "form": [
-        "w"
+        "w",
+        "d"
       ]
     },
     {
@@ -107,16 +108,17 @@
     },
     {
       "name": "Bye",
-      "pts": 2,
-      "pj": 1,
+      "pts": 4,
+      "pj": 2,
       "g": 0,
-      "e": 1,
+      "e": 2,
       "p": 0,
       "pf": 0,
       "pc": 0,
       "bp": 0,
       "bf": 0,
       "form": [
+        "d",
         "d"
       ]
     },
@@ -284,7 +286,9 @@
         {
           "home": "Bye",
           "away": "Alumni F",
-          "played": false
+          "played": true,
+          "hs": 0,
+          "as": 0
         },
         {
           "home": "CUBA G",
@@ -1269,8 +1273,8 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-21T19:48:43.140044+00:00",
-  "matchesScraped": 7,
+  "lastUpdate": "2026-03-21T20:53:23.764971+00:00",
+  "matchesScraped": 8,
   "championshipId": "2025201",
   "nombre": "Pre-Inter F"
 }
