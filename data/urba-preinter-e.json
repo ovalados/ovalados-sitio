@@ -77,17 +77,18 @@
     },
     {
       "name": "SIC E",
-      "pts": 5,
-      "pj": 1,
+      "pts": 7,
+      "pj": 2,
       "g": 1,
-      "e": 0,
+      "e": 1,
       "p": 0,
       "pf": 43,
       "pc": 29,
       "bp": 1,
       "bf": 0,
       "form": [
-        "w"
+        "w",
+        "d"
       ]
     },
     {
@@ -167,31 +168,34 @@
     },
     {
       "name": "CUBA F",
-      "pts": 5,
-      "pj": 1,
+      "pts": 7,
+      "pj": 2,
       "g": 1,
-      "e": 0,
+      "e": 1,
       "p": 0,
       "pf": 72,
       "pc": 7,
       "bp": 1,
       "bf": 0,
       "form": [
-        "w"
+        "w",
+        "d"
       ]
     },
     {
       "name": "Bye",
-      "pts": 4,
-      "pj": 2,
+      "pts": 8,
+      "pj": 4,
       "g": 0,
-      "e": 2,
+      "e": 4,
       "p": 0,
       "pf": 0,
       "pc": 0,
       "bp": 0,
       "bf": 0,
       "form": [
+        "d",
+        "d",
         "d",
         "d"
       ]
@@ -263,7 +267,9 @@
         {
           "home": "SIC E",
           "away": "Bye",
-          "played": false
+          "played": true,
+          "hs": 0,
+          "as": 0
         },
         {
           "home": "Belgrano Athletic E",
@@ -293,7 +299,9 @@
         {
           "home": "CUBA F",
           "away": "Bye",
-          "played": false
+          "played": true,
+          "hs": 0,
+          "as": 0
         }
       ]
     },
@@ -1258,8 +1266,8 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-21T19:48:42.242591+00:00",
-  "matchesScraped": 7,
+  "lastUpdate": "2026-03-21T20:53:22.665478+00:00",
+  "matchesScraped": 9,
   "championshipId": "2025200",
   "nombre": "Pre-Inter E"
 }
