@@ -292,7 +292,9 @@
         {
           "home": "Dogos XV",
           "away": "Peñarol",
-          "played": false
+          "played": true,
+          "hs": 32,
+          "as": 22
         },
         {
           "home": "Selknam",
@@ -569,6 +571,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-20T23:57:08.687949+00:00",
-  "matchesScraped": 16
+  "lastUpdate": "2026-03-21T04:55:28.002415+00:00",
+  "matchesScraped": 17
 }
