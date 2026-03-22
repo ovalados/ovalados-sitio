@@ -262,7 +262,26 @@ function renderLocVis() {
 }
 
 // ── SYNC DESDE JSON ───────────────────────────────────────
-function syncData() {
+function openFormacionModal(torneo, partidoId, home, away, score) {
+  if (typeof PARTIDOS === 'undefined' || !PARTIDOS[torneo] || !PARTIDOS[torneo][partidoId]) return;
+  const p = PARTIDOS[torneo][partidoId];
+  document.getElementById('formacion-modal-title').textContent = home + ' vs ' + away;
+  document.getElementById('formacion-modal-score').textContent = score || '';
+  const lj = (p.local.jugadores||[]).map(j => `<div class="formacion-jugador">${j}</div>`).join('');
+  const vj = (p.visitante.jugadores||[]).map(j => `<div class="formacion-jugador">${j}</div>`).join('');
+  document.getElementById('formacion-modal-body').innerHTML =
+    `<div><div class="formacion-team-title">${p.local.nombre}</div>${lj}</div>` +
+    `<div><div class="formacion-team-title">${p.visitante.nombre}</div>${vj}</div>`;
+  document.getElementById('formacion-modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeFormacionModal(event) {
+  if (event && event.target !== document.getElementById('formacion-modal-overlay')) return;
+  document.getElementById('formacion-modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+  function syncData() {
   fetch('data/urba-intermedia.json?v=' + Date.now())
     .then(r => r.json())
     .then(data => {
