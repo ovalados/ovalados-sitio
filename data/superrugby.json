@@ -313,7 +313,9 @@
         {
           "home": "Cobras BR",
           "away": "Pampas",
-          "played": false
+          "played": true,
+          "hs": 19,
+          "as": 49
         }
       ]
     },
@@ -581,6 +583,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-22T19:52:30.046001+00:00",
-  "matchesScraped": 19
+  "lastUpdate": "2026-03-22T20:57:03.089255+00:00",
+  "matchesScraped": 20
 }
