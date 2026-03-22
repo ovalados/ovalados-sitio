@@ -18,18 +18,18 @@
     },
     {
       "name": "Hindu D",
-      "pts": 1,
+      "pts": 5,
       "pj": 2,
-      "g": 0,
+      "g": 1,
       "e": 0,
-      "p": 2,
-      "pf": 42,
-      "pc": 63,
+      "p": 1,
+      "pf": 57,
+      "pc": 48,
       "bp": 0,
       "bf": 1,
       "form": [
         "l",
-        "l"
+        "w"
       ]
     },
     {
@@ -146,18 +146,18 @@
     },
     {
       "name": "CASI D",
-      "pts": 8,
+      "pts": 4,
       "pj": 2,
-      "g": 2,
+      "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 58,
-      "pc": 29,
+      "p": 1,
+      "pf": 43,
+      "pc": 44,
       "bp": 0,
       "bf": 0,
       "form": [
         "w",
-        "w"
+        "l"
       ]
     },
     {
@@ -323,8 +323,8 @@
           "home": "CASI D",
           "away": "Hindu D",
           "played": true,
-          "hs": 27,
-          "as": 12
+          "hs": 12,
+          "as": 27
         },
         {
           "home": "Los Tilos D",
@@ -1303,7 +1303,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-21T23:51:51.286656+00:00",
+  "lastUpdate": "2026-03-22T05:13:18.240179+00:00",
   "matchesScraped": 14,
   "championshipId": "2025198",
   "nombre": "Pre-Inter D"
