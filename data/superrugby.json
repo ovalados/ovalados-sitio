@@ -3,12 +3,31 @@
     {
       "name": "Capibaras XV",
       "pts": 24,
-      "pj": 8,
+      "pj": 10,
       "g": 6,
       "e": 0,
+      "p": 4,
+      "pf": 276,
+      "pc": 166,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w",
+        "w",
+        "l",
+        "w",
+        "l"
+      ]
+    },
+    {
+      "name": "Tarucas",
+      "pts": 32,
+      "pj": 10,
+      "g": 8,
+      "e": 0,
       "p": 2,
-      "pf": 242,
-      "pc": 112,
+      "pf": 296,
+      "pc": 244,
       "bp": 0,
       "bf": 0,
       "form": [
@@ -17,25 +36,6 @@
         "w",
         "l",
         "w"
-      ]
-    },
-    {
-      "name": "Tarucas",
-      "pts": 24,
-      "pj": 8,
-      "g": 6,
-      "e": 0,
-      "p": 2,
-      "pf": 240,
-      "pc": 200,
-      "bp": 0,
-      "bf": 0,
-      "form": [
-        "l",
-        "w",
-        "w",
-        "w",
-        "l"
       ]
     },
     {
@@ -78,32 +78,32 @@
     },
     {
       "name": "Selknam",
-      "pts": 8,
-      "pj": 8,
-      "g": 2,
+      "pts": 16,
+      "pj": 10,
+      "g": 4,
       "e": 0,
       "p": 6,
-      "pf": 148,
-      "pc": 362,
+      "pf": 202,
+      "pc": 396,
       "bp": 0,
       "bf": 0,
       "form": [
         "l",
-        "l",
         "w",
         "l",
-        "l"
+        "l",
+        "w"
       ]
     },
     {
       "name": "Yacare XV",
       "pts": 0,
-      "pj": 8,
+      "pj": 10,
       "g": 0,
       "e": 0,
-      "p": 8,
-      "pf": 160,
-      "pc": 196,
+      "p": 10,
+      "pf": 204,
+      "pc": 252,
       "bp": 0,
       "bf": 0,
       "form": [
@@ -517,12 +517,16 @@
         {
           "home": "Capibaras XV",
           "away": "Selknam",
-          "played": false
+          "played": true,
+          "hs": 17,
+          "as": 27
         },
         {
           "home": "Tarucas",
           "away": "Yacare XV",
-          "played": false
+          "played": true,
+          "hs": 28,
+          "as": 22
         }
       ]
     },
@@ -577,6 +581,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-22T19:15:42.867949+00:00",
+  "lastUpdate": "2026-03-22T19:52:30.046001+00:00",
   "matchesScraped": 19
 }
