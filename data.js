@@ -1217,7 +1217,7 @@ const PARTIDOS = {
   // ── PRE-INTERMEDIA B ─────────────────────────────────────────
   preinter_b: {
 
-    sic_los_matreros: {
+    sic_b_los_matreros_b: {
       local: {
         nombre: "SIC",
         jugadores: [
@@ -1260,7 +1260,7 @@ const PARTIDOS = {
       }
     },
 
-    buenos_aires_c_rc_alumni: {
+    buenos_aires_c_rc_b_alumni_b: {
       local: {
         nombre: "Buenos Aires C&RC",
         jugadores: [
@@ -1303,7 +1303,7 @@ const PARTIDOS = {
       }
     },
 
-    los_tilos_la_plata: {
+    los_tilos_b_la_plata_b: {
       local: {
         nombre: "Los Tilos",
         jugadores: [
@@ -1346,7 +1346,7 @@ const PARTIDOS = {
       }
     },
 
-    cuba_champagnat: {
+    cuba_b_champagnat_b: {
       local: {
         nombre: "CUBA",
         jugadores: [
@@ -1389,7 +1389,7 @@ const PARTIDOS = {
       }
     },
 
-    belgrano_athletic_newman: {
+    belgrano_athletic_b_newman_b: {
       local: {
         nombre: "Belgrano Athletic",
         jugadores: [
@@ -1432,7 +1432,7 @@ const PARTIDOS = {
       }
     },
 
-    atletico_del_rosario_regatas_bella_vista: {
+    atletico_del_rosario_b_regatas_bella_vista_b: {
       local: {
         nombre: "Atlético del Rosario",
         jugadores: [
@@ -1475,7 +1475,7 @@ const PARTIDOS = {
       }
     },
 
-    casi_hindu: {
+    casi_b_hindu_b: {
       local: {
         nombre: "CASI",
         jugadores: [
@@ -1523,7 +1523,7 @@ const PARTIDOS = {
   // ── PRE-INTERMEDIA C ─────────────────────────────────────────
   preinter_c: {
 
-    sic_los_matreros: {
+    sic_c_los_matreros_c: {
       local: {
         nombre: "SIC",
         jugadores: [
@@ -1566,7 +1566,7 @@ const PARTIDOS = {
       }
     },
 
-    buenos_aires_c_rc_alumni: {
+    buenos_aires_c_rc_c_alumni_c: {
       local: {
         nombre: "Buenos Aires C&RC",
         jugadores: [
@@ -1609,7 +1609,7 @@ const PARTIDOS = {
       }
     },
 
-    los_tilos_la_plata: {
+    los_tilos_c_la_plata_c: {
       local: {
         nombre: "Los Tilos",
         jugadores: [
@@ -1652,7 +1652,7 @@ const PARTIDOS = {
       }
     },
 
-    cuba_champagnat: {
+    cuba_c_champagnat_c: {
       local: {
         nombre: "CUBA",
         jugadores: [
@@ -1695,7 +1695,7 @@ const PARTIDOS = {
       }
     },
 
-    belgrano_athletic_newman: {
+    belgrano_athletic_c_newman_c: {
       local: {
         nombre: "Belgrano Athletic",
         jugadores: [
@@ -1738,7 +1738,7 @@ const PARTIDOS = {
       }
     },
 
-    atletico_del_rosario_regatas_bella_vista: {
+    atletico_del_rosario_c_regatas_bella_vista_c: {
       local: {
         nombre: "Atlético del Rosario",
         jugadores: [
@@ -1781,7 +1781,7 @@ const PARTIDOS = {
       }
     },
 
-    casi_hindu: {
+    casi_c_hindu_c: {
       local: {
         nombre: "CASI",
         jugadores: [
@@ -1829,7 +1829,7 @@ const PARTIDOS = {
   // ── PRE-INTERMEDIA D ─────────────────────────────────────────
   preinter_d: {
 
-    sic_los_matreros: {
+    sic_d_los_matreros_d: {
       local: {
         nombre: "SIC",
         jugadores: [
@@ -1872,7 +1872,7 @@ const PARTIDOS = {
       }
     },
 
-    buenos_aires_c_rc_alumni: {
+    buenos_aires_c_rc_d_alumni_d: {
       local: {
         nombre: "Buenos Aires C&RC",
         jugadores: [
@@ -1915,7 +1915,7 @@ const PARTIDOS = {
       }
     },
 
-    los_tilos_la_plata: {
+    los_tilos_d_la_plata_d: {
       local: {
         nombre: "Los Tilos",
         jugadores: [
@@ -1958,7 +1958,7 @@ const PARTIDOS = {
       }
     },
 
-    cuba_champagnat: {
+    cuba_d_champagnat_d: {
       local: {
         nombre: "CUBA",
         jugadores: [
@@ -2001,7 +2001,7 @@ const PARTIDOS = {
       }
     },
 
-    belgrano_athletic_newman: {
+    belgrano_athletic_d_newman_d: {
       local: {
         nombre: "Belgrano Athletic",
         jugadores: [
@@ -2044,7 +2044,7 @@ const PARTIDOS = {
       }
     },
 
-    atletico_del_rosario_regatas_bella_vista: {
+    atletico_del_rosario_d_regatas_bella_vista_d: {
       local: {
         nombre: "Atlético del Rosario",
         jugadores: [
@@ -2087,7 +2087,7 @@ const PARTIDOS = {
       }
     },
 
-    casi_hindu: {
+    casi_d_hindu_d: {
       local: {
         nombre: "CASI",
         jugadores: [
