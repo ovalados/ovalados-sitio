@@ -18,18 +18,18 @@
     },
     {
       "name": "Hindu C",
-      "pts": 1,
+      "pts": 4,
       "pj": 2,
-      "g": 0,
+      "g": 1,
       "e": 0,
-      "p": 2,
-      "pf": 44,
-      "pc": 79,
+      "p": 1,
+      "pf": 46,
+      "pc": 77,
       "bp": 0,
-      "bf": 1,
+      "bf": 0,
       "form": [
         "l",
-        "l"
+        "w"
       ]
     },
     {
@@ -146,18 +146,18 @@
     },
     {
       "name": "CASI C",
-      "pts": 4,
+      "pts": 1,
       "pj": 2,
-      "g": 1,
+      "g": 0,
       "e": 0,
-      "p": 1,
-      "pf": 34,
-      "pc": 56,
+      "p": 2,
+      "pf": 32,
+      "pc": 58,
       "bp": 0,
-      "bf": 0,
+      "bf": 1,
       "form": [
         "l",
-        "w"
+        "l"
       ]
     },
     {
@@ -326,9 +326,9 @@
           "home": "CASI C",
           "away": "Hindu C",
           "played": true,
-          "hs": 34,
-          "as": 32,
-          "bf_away": true
+          "hs": 32,
+          "as": 34,
+          "bf_home": true
         },
         {
           "home": "Los Tilos C",
@@ -1308,7 +1308,7 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-22T17:55:08.979403+00:00",
+  "lastUpdate": "2026-03-22T19:15:51.354475+00:00",
   "matchesScraped": 14,
   "championshipId": "2025197",
   "nombre": "Pre-Inter C"
