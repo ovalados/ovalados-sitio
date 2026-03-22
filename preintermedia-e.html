@@ -151,7 +151,7 @@ function go(id, btn) {
 
 function renderStandings() {
   const allZero = teams.every(t => t.pts === 0 && t.pj === 0);
-  const sorted = [...teams].sort((a,b) => {
+  const sorted = [...teams].filter(t => t.name !== 'Bye').sort((a,b) => {
     if (allZero) return a.name.localeCompare(b.name, 'es');
     return b.pts - a.pts || (b.pf-b.pc) - (a.pf-a.pc);
   });
@@ -203,6 +203,19 @@ function renderMatches(round) {
 }
 
 function matchCard(m, dateStr) {
+  // Bye = fecha libre, no es un partido real
+  const isBye = m.home === 'Bye' || m.away === 'Bye';
+  if (isBye) {
+    const team = m.home === 'Bye' ? m.away : m.home;
+    return `<div class="match-card" style="opacity:0.55">
+      <div class="match-meta"><span>Fecha libre</span></div>
+      <div class="match-teams">
+        <div class="match-team home"><div class="name">${team}</div></div>
+        <div class="match-score upcoming" style="font-size:0.75rem;letter-spacing:1px">BYE</div>
+        <div class="match-team"><div class="name">—</div></div>
+      </div>
+    </div>`;
+  }
   const isPlayed = m.played && !m.live;
   const isLive   = !!m.live;
   const scoreBlock = isPlayed || isLive
@@ -231,7 +244,7 @@ function matchCard(m, dateStr) {
 
 function renderLocVis() {
   const homeStats = {}, awayStats = {};
-  teams.forEach(t => {
+  teams.filter(t => t.name !== 'Bye').forEach(t => {
     homeStats[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
     awayStats[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
   });
