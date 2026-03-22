@@ -17,35 +17,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css?v=21">
+<script src="data.js"></script>
 <style>
 /* ── MODAL FORMACIONES ────────────────────────────────── */
-.formacion-modal-overlay {
-  display: none; position: fixed; inset: 0;
-  background: rgba(0,0,0,0.75); z-index: 1001;
-  align-items: flex-end; justify-content: center;
-}
-.formacion-modal-overlay.open { display: flex; }
-.formacion-modal {
-  background: var(--dark2, #1a1a2e); border-radius: 16px 16px 0 0;
-  width: 100%; max-width: 700px; max-height: 88vh;
-  overflow-y: auto; padding: 1.5rem;
-  animation: slideUpF 0.25s ease;
-}
-@keyframes slideUpF { from { transform: translateY(100%); } to { transform: translateY(0); } }
-.formacion-modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
-.formacion-modal-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: 2px; color: var(--green); }
-.formacion-modal-close { background: none; border: none; color: var(--muted); font-size: 1.5rem; cursor: pointer; padding: 4px 8px; }
-.formacion-modal-close:hover { color: var(--text); }
-.formacion-modal-score { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--text); text-align: center; margin-bottom: 1.25rem; }
-.formacion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.formacion-team-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 0.75rem; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
-.formacion-jugador { font-family: 'Barlow Condensed', sans-serif; font-size: 0.9rem; padding: 0.3rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: var(--text); }
-.formacion-jugador:last-child { border-bottom: none; }
-.match-formacion-btn { margin-top: 0.5rem; padding: 0.35rem 0.75rem; background: rgba(0,184,92,0.1); border: 1px solid rgba(0,184,92,0.3); border-radius: 4px; color: var(--green); font-family: 'Barlow Condensed', sans-serif; font-size: 0.82rem; cursor: pointer; transition: all 0.15s; width: 100%; }
-.match-formacion-btn:hover { background: rgba(0,184,92,0.2); }
-@media(max-width:600px) { .formacion-grid { grid-template-columns: 1fr; } }
+.formacion-modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:1001; align-items:flex-end; justify-content:center; }
+.formacion-modal-overlay.open { display:flex; }
+.formacion-modal { background:var(--dark2,#1a1a2e); border-radius:16px 16px 0 0; width:100%; max-width:700px; max-height:88vh; overflow-y:auto; padding:1.5rem; animation:slideUpF 0.25s ease; }
+@keyframes slideUpF { from{transform:translateY(100%)} to{transform:translateY(0)} }
+.formacion-modal-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:1.25rem; }
+.formacion-modal-title { font-family:'Bebas Neue',sans-serif; font-size:1.4rem; letter-spacing:2px; color:var(--green); }
+.formacion-modal-close { background:none; border:none; color:var(--muted); font-size:1.5rem; cursor:pointer; padding:4px 8px; }
+.formacion-modal-close:hover { color:var(--text); }
+.formacion-modal-score { font-family:'Bebas Neue',sans-serif; font-size:1.8rem; color:var(--text); text-align:center; margin-bottom:1.25rem; }
+.formacion-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+.formacion-team-title { font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem; letter-spacing:2px; text-transform:uppercase; color:var(--green); margin-bottom:0.75rem; padding-bottom:6px; border-bottom:1px solid var(--border); }
+.formacion-jugador { font-family:'Barlow Condensed',sans-serif; font-size:0.9rem; padding:0.3rem 0; border-bottom:1px solid rgba(255,255,255,0.05); color:var(--text); }
+.formacion-jugador:last-child { border-bottom:none; }
+.match-formacion-btn { margin-top:0.5rem; padding:0.35rem 0.75rem; background:rgba(0,184,92,0.1); border:1px solid rgba(0,184,92,0.3); border-radius:4px; color:var(--green); font-family:'Barlow Condensed',sans-serif; font-size:0.82rem; cursor:pointer; transition:all 0.15s; width:100%; }
+.match-formacion-btn:hover { background:rgba(0,184,92,0.2); }
+@media(max-width:600px) { .formacion-grid { grid-template-columns:1fr; } }
 </style>
-<script src="data.js"></script>
 </head>
 <body>
 
@@ -262,6 +253,27 @@ function renderLocVis() {
 }
 
 // ── SYNC DESDE JSON ───────────────────────────────────────
+
+function openFormacionModal(torneo, partidoId, home, away, score) {
+  if (typeof PARTIDOS === 'undefined' || !PARTIDOS[torneo] || !PARTIDOS[torneo][partidoId]) return;
+  const p = PARTIDOS[torneo][partidoId];
+  document.getElementById('formacion-modal-title').textContent = home + ' vs ' + away;
+  document.getElementById('formacion-modal-score').textContent = score || '';
+  const lj = (p.local.jugadores||[]).map(j => `<div class="formacion-jugador">${j}</div>`).join('');
+  const vj = (p.visitante.jugadores||[]).map(j => `<div class="formacion-jugador">${j}</div>`).join('');
+  document.getElementById('formacion-modal-body').innerHTML =
+    `<div><div class="formacion-team-title">${p.local.nombre}</div>${lj}</div>` +
+    `<div><div class="formacion-team-title">${p.visitante.nombre}</div>${vj}</div>`;
+  document.getElementById('formacion-modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeFormacionModal(event) {
+  if (event && event.target !== document.getElementById('formacion-modal-overlay')) return;
+  document.getElementById('formacion-modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
 function syncData() {
   fetch('data/urba-preinter-b.json?v=' + Date.now())
     .then(r => r.json())
