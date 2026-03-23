@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="css/styles.css?v=21">
 <style>
   /* ── INDEX-ONLY STYLES ─────────────────────────── */
-  .home { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+  .home { max-width: 1000px; margin: 0 auto; padding: 2.5rem 1.5rem; }
 
   /* Hero */
   .hero { text-align: center; margin-bottom: 3rem; }
@@ -62,159 +62,184 @@
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 0.82rem; letter-spacing: 1px; text-transform: uppercase;
     color: var(--green); border: 1px solid rgba(0,184,92,0.3);
-    padding: 4px 10px; border-radius: 4px; transition: all 0.15s;
+    padding: 4px 12px; border-radius: 4px; text-decoration: none;
+    transition: all 0.2s;
   }
-  .home-section-link:hover { background: rgba(0,184,92,0.1); border-color: var(--green); }
-  .home-section-link.gold { color: var(--gold); border-color: rgba(245,197,24,0.3); }
-  .home-section-link.gold:hover { background: rgba(245,197,24,0.08); border-color: var(--gold); }
+  .home-section-link:hover { background: rgba(0,184,92,0.1); }
 
-  /* Compact result row */
-  .results-list { display: flex; flex-direction: column; gap: 6px; }
-  .result-row {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 6px; padding: 0.7rem 1rem;
-    display: grid; grid-template-columns: 1fr auto 1fr auto;
-    align-items: center; gap: 0.5rem;
-    transition: border-color 0.15s;
-  }
-  .result-row:hover { border-color: rgba(0,184,92,0.4); }
-  .result-row.gold-hover:hover { border-color: rgba(245,197,24,0.4); }
-  .result-home { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.95rem; text-align: right; }
-  .result-away { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.95rem; }
-  .result-score {
-    font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem;
-    color: var(--green); text-align: center; min-width: 70px;
-  }
-  .result-score.gold { color: var(--gold); }
-  .result-score.upcoming { font-size: 0.85rem; color: var(--muted); font-family: 'Barlow Condensed', sans-serif; font-weight: 600; }
-  .result-date { font-size: 0.72rem; color: var(--muted); white-space: nowrap; }
-
-  /* Group sections */
+  /* Groups */
   .group { margin-bottom: 2.5rem; }
   .group-header {
-    display: flex; align-items: center; gap: 12px;
-    margin-bottom: 1rem; padding-bottom: 10px;
-    border-bottom: 2px solid var(--border);
+    display: flex; align-items: baseline; gap: 12px;
+    padding: 0.6rem 1rem; border-radius: 6px;
+    margin-bottom: 0.75rem;
+    background: rgba(255,255,255,0.03);
+    border-left: 4px solid var(--green);
   }
-  .group-header.urba { border-bottom-color: var(--green); }
-  .group-header.intl  { border-bottom-color: var(--gold); }
-  .group-label { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 3px; }
-  .group-label.urba { color: var(--green); }
-  .group-label.intl  { color: var(--gold); }
-  .group-sub { font-family: 'Barlow Condensed', sans-serif; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+  .group-header.intl { border-left-color: var(--gold); }
+  .group-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem; letter-spacing: 3px; color: var(--green);
+  }
+  .group-label.intl { color: var(--gold); }
+  .group-sub {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.78rem; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--muted);
+  }
 
   /* Category cards */
-  .categories { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 1rem; }
+  .categories { display: flex; flex-direction: column; gap: 6px; }
   .cat-card {
-    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
-    padding: 1.2rem 1.4rem; display: flex; align-items: center; justify-content: space-between;
-    transition: all 0.2s; border-left: 4px solid transparent;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: var(--dark2, #111);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none; color: var(--text);
+    transition: all 0.18s;
   }
-  .cat-card:hover { border-color: var(--green); transform: translateX(4px); background: rgba(0,184,92,0.06); }
-  .cat-card.intl:hover { border-color: var(--gold); background: rgba(245,197,24,0.05); }
-  .cat-card.highlight { background: rgba(0,184,92,0.06); border-color: rgba(0,184,92,0.4); border-left-color: var(--green); }
-  .cat-card.highlight .cat-name { color: var(--green); }
-  .cat-card.intl.highlight { background: rgba(245,197,24,0.06); border-color: rgba(245,197,24,0.4); border-left-color: var(--gold); }
-  .cat-card.intl.highlight .cat-name { color: var(--gold); }
-  .cat-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.15rem; letter-spacing: 1px; color: var(--text); }
-  .cat-detail { font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
-  .cat-arrow { font-size: 1.2rem; color: var(--muted); transition: color 0.2s; }
-  .cat-card:hover .cat-arrow { color: var(--green); }
-  .cat-card.intl:hover .cat-arrow { color: var(--gold); }
+  .cat-card:hover { border-color: var(--green); background: rgba(0,184,92,0.06); }
+  .cat-card.highlight { border-color: var(--green); background: rgba(0,184,92,0.08); }
+  .cat-card.intl:hover { border-color: var(--gold); background: rgba(255,200,0,0.06); }
+  .cat-card-left { display: flex; flex-direction: column; gap: 2px; }
+  .cat-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700; font-size: 1rem; letter-spacing: 1px;
+  }
+  .cat-detail {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.75rem; color: var(--muted);
+  }
+  .cat-arrow { color: var(--muted); font-size: 1.1rem; }
 
-  /* utils */
-  .utils { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+  /* Sub-category (indented) */
+  .subcategories { display: flex; flex-direction: column; gap: 4px; margin-top: 4px; padding-left: 1.25rem; }
+  .cat-card.sub {
+    padding: 0.55rem 0.85rem;
+    border-left: 2px solid var(--border);
+    border-radius: 6px;
+    background: rgba(255,255,255,0.02);
+  }
+  .cat-card.sub:hover { border-left-color: var(--green); background: rgba(0,184,92,0.05); }
+  .cat-card.sub .cat-name { font-size: 0.88rem; font-weight: 600; color: var(--muted); }
+  .cat-card.sub:hover .cat-name { color: var(--text); }
 
-  @media(max-width: 600px) {
+  /* Collapsible group */
+  .div-group { margin-bottom: 1rem; }
+  .div-group-header {
+    display: flex; align-items: center; justify-content: space-between;
+    cursor: pointer; padding: 0.75rem 1rem;
+    background: var(--dark2, #111);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-decoration: none; color: var(--text);
+    transition: all 0.18s;
+    user-select: none;
+  }
+  .div-group-header:hover { border-color: rgba(0,184,92,0.4); background: rgba(0,184,92,0.05); }
+  .div-group-header.open { border-color: var(--green); border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: none; }
+  .div-group-left { display: flex; flex-direction: column; gap: 2px; }
+  .div-group-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700; font-size: 1rem; letter-spacing: 1px;
+  }
+  .div-group-detail {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.75rem; color: var(--muted);
+  }
+  .div-group-right { display: flex; align-items: center; gap: 10px; }
+  .div-group-chevron {
+    color: var(--muted); font-size: 0.9rem;
+    transition: transform 0.2s;
+  }
+  .div-group-header.open .div-group-chevron { transform: rotate(90deg); color: var(--green); }
+  .div-group-body {
+    display: none;
+    border: 1px solid var(--green);
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+  }
+  .div-group-body.open { display: block; }
+  .div-group-body .cat-card {
+    border-radius: 0; border: none;
+    border-bottom: 1px solid var(--border);
+    padding: 0.6rem 1rem 0.6rem 1.5rem;
+  }
+  .div-group-body .cat-card:last-child { border-bottom: none; }
+  .div-group-body .cat-card.superior-link {
+    background: rgba(0,184,92,0.07);
+  }
+  .div-group-body .cat-card .cat-name { font-size: 0.9rem; }
+  .div-group-body .cat-card .cat-detail { font-size: 0.72rem; }
+
+  /* Latest results */
+  .result-row {
+    display: grid; grid-template-columns: 1fr auto 1fr;
+    align-items: center; gap: 8px;
+    padding: 10px 0; border-bottom: 1px solid var(--border);
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .result-row:last-child { border-bottom: none; }
+  .result-home { text-align: right; font-size: 0.9rem; font-weight: 600; }
+  .result-away { text-align: left; font-size: 0.9rem; font-weight: 600; }
+  .result-score {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem; letter-spacing: 2px; color: var(--green);
+    min-width: 80px; text-align: center;
+  }
+  .result-date { display: none; }
+
+  @media (max-width: 600px) {
     .hero-brand { font-size: 3.5rem; }
-    .categories { grid-template-columns: 1fr; }
-    .utils { grid-template-columns: 1fr; }
-    .result-row { grid-template-columns: 1fr auto 1fr; }
-    .result-date { display: none; }
   }
 </style>
 </head>
 <body>
-
 <header>
   <a href="index.html" class="logo">OVALADOS</a>
+  <nav>
+    <a href="index.html" class="active">Inicio</a>
+  </nav>
 </header>
 
 <div class="home">
   <div class="hero">
     <div class="hero-brand">OVALADOS</div>
-    <div class="hero-sub">Tu portal de rugby argentino · Temporada 2026</div>
-  </div>
-  
-  <!-- ÚLTIMOS RESULTADOS: URBA TOP 14 -->
-  <div class="home-section">
-    <div class="home-section-header green">
-      <span class="home-section-label green">🏆 Últimos Resultados</span>
-      <span id="urba-ultimos-label" class="home-section-sub">URBA Top 14</span>
-      <a href="top14.html" class="home-section-link">Ver todo →</a>
-    </div>
-    <div class="results-list" id="urba-ultimos"></div>
+    <div class="hero-sub">Rugby Argentina · Temporada 2026</div>
   </div>
 
-  <!-- TORNEOS: URBA -->
+  <!-- ÚLTIMOS RESULTADOS URBA TOP 14 -->
+  <div class="home-section">
+    <div class="home-section-header green">
+      <span class="home-section-label green" id="urba-ultimos-label">URBA Top 14 · Últimos resultados</span>
+      <a href="top14.html" class="home-section-link">Ver todo →</a>
+    </div>
+    <div id="urba-ultimos"><span style="color:var(--muted);font-size:0.85rem">Cargando resultados…</span></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       GRUPO: URBA TOP 14
+  ═══════════════════════════════════════════ -->
   <div class="group">
-    <div class="group-header urba">
-      <span class="group-label urba">URBA</span>
-      <span class="group-sub">Unión de Rugby de Buenos Aires · División Superior 2026</span>
+    <div class="group-header">
+      <span class="group-label">🏆 URBA TOP 14</span>
+      <span class="group-sub">Todas las divisiones · Temporada 2026</span>
     </div>
     <div class="categories">
+
+      <!-- Superior (TOP 14) -->
       <a href="top14.html" class="cat-card highlight">
         <div class="cat-card-left">
-          <div class="cat-name">🏆 TOP 14</div>
+          <div class="cat-name">⭐ Superior — Top 14</div>
           <div class="cat-detail">14 equipos · 26 fechas · 14 mar – 17 oct</div>
         </div>
         <div class="cat-arrow">→</div>
       </a>
-      <a href="primera-a.html" class="cat-card">
-        <div class="cat-card-left">
-          <div class="cat-name">Primera A</div>
-          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
-        </div>
-        <div class="cat-arrow">→</div>
-      </a>
-      <a href="primera-b.html" class="cat-card">
-        <div class="cat-card-left">
-          <div class="cat-name">Primera B</div>
-          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
-        </div>
-        <div class="cat-arrow">→</div>
-      </a>
-      <a href="primera-c.html" class="cat-card">
-        <div class="cat-card-left">
-          <div class="cat-name">Primera C</div>
-          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
-        </div>
-        <div class="cat-arrow">→</div>
-      </a>
-      <a href="segunda.html" class="cat-card">
-        <div class="cat-card-left">
-          <div class="cat-name">Segunda División</div>
-          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
-        </div>
-        <div class="cat-arrow">→</div>
-      </a>
-      <a href="tercera.html" class="cat-card">
-        <div class="cat-card-left">
-          <div class="cat-name">Tercera División</div>
-          <div class="cat-detail">11 equipos · 22 fechas · Play Off oct</div>
-        </div>
-        <div class="cat-arrow">→</div>
-      </a>
-    </div>
-  </div>
 
-  <!-- TORNEOS: DIVISIONES INTERMEDIAS URBA -->
-  <div class="group">
-    <div class="group-header urba">
-      <span class="group-label urba">INTERMEDIAS</span>
-      <span class="group-sub">Divisiones intermedias URBA Top 14 · 2026</span>
-    </div>
-    <div class="categories">
+      <!-- Intermedia -->
       <a href="intermedia.html" class="cat-card">
         <div class="cat-card-left">
           <div class="cat-name">Intermedia</div>
@@ -222,68 +247,286 @@
         </div>
         <div class="cat-arrow">→</div>
       </a>
+
+      <!-- Pre-Intermedias -->
       <a href="preintermedia-a.html" class="cat-card">
         <div class="cat-card-left">
-          <div class="cat-name">Preintermedia A</div>
-          <div class="cat-detail">14 equipos · 26 fechas · fixture Top 14</div>
+          <div class="cat-name">Pre-Intermedia A</div>
+          <div class="cat-detail">URBA Top 14 · 2026</div>
         </div>
         <div class="cat-arrow">→</div>
       </a>
       <a href="preintermedia-b.html" class="cat-card">
         <div class="cat-card-left">
-          <div class="cat-name">Preintermedia B</div>
-          <div class="cat-detail">14 equipos · 26 fechas · fixture Top 14</div>
+          <div class="cat-name">Pre-Intermedia B</div>
+          <div class="cat-detail">URBA Top 14 · 2026</div>
         </div>
         <div class="cat-arrow">→</div>
       </a>
       <a href="preintermedia-c.html" class="cat-card">
         <div class="cat-card-left">
-          <div class="cat-name">Preintermedia C</div>
-          <div class="cat-detail">14 equipos · 26 fechas · fixture Top 14</div>
+          <div class="cat-name">Pre-Intermedia C</div>
+          <div class="cat-detail">URBA Top 14 · 2026</div>
         </div>
         <div class="cat-arrow">→</div>
       </a>
       <a href="preintermedia-d.html" class="cat-card">
         <div class="cat-card-left">
-          <div class="cat-name">Preintermedia D</div>
-          <div class="cat-detail">14 equipos · 26 fechas · fixture Top 14</div>
+          <div class="cat-name">Pre-Intermedia D</div>
+          <div class="cat-detail">URBA Top 14 · 2026</div>
         </div>
         <div class="cat-arrow">→</div>
       </a>
       <a href="preintermedia-e.html" class="cat-card">
         <div class="cat-card-left">
-          <div class="cat-name">Preintermedia E</div>
-          <div class="cat-detail">12 equipos · 26 fechas · fixture Top 14</div>
+          <div class="cat-name">Pre-Intermedia E</div>
+          <div class="cat-detail">URBA Top 14 · 2026</div>
         </div>
         <div class="cat-arrow">→</div>
       </a>
       <a href="preintermedia-f.html" class="cat-card">
         <div class="cat-card-left">
-          <div class="cat-name">Preintermedia F</div>
-          <div class="cat-detail">13 equipos · 26 fechas · fixture Top 14</div>
+          <div class="cat-name">Pre-Intermedia F</div>
+          <div class="cat-detail">URBA Top 14 · 2026</div>
         </div>
         <div class="cat-arrow">→</div>
       </a>
+
+      <!-- M22 -->
       <a href="m22.html" class="cat-card">
         <div class="cat-card-left">
           <div class="cat-name">M22</div>
-          <div class="cat-detail">14 equipos · 26 fechas · fixture Top 14</div>
+          <div class="cat-detail">URBA Top 14 · Juveniles menores de 22 · 2026</div>
         </div>
         <div class="cat-arrow">→</div>
       </a>
+
     </div>
   </div>
 
-  <!-- TORNEOS: INTERNACIONAL -->
+  <!-- ═══════════════════════════════════════════
+       GRUPO: PRIMERA A
+  ═══════════════════════════════════════════ -->
   <div class="group">
-    <div class="group-header intl">
-      <span class="group-label intl">INTERNACIONAL</span>
-      <span class="group-sub">Competencias regionales e internacionales 2026</span>
+    <div class="group-header">
+      <span class="group-label">PRIMERA A</span>
+      <span class="group-sub">Todas las divisiones · Temporada 2026</span>
     </div>
     <div class="categories">
-      <a href="super-rugby.html" class="cat-card intl highlight">
+
+      <a href="primera-a.html" class="cat-card highlight">
         <div class="cat-card-left">
-          <div class="cat-name">🌎 Súper Rugby Américas</div>
+          <div class="cat-name">⭐ Superior — Primera A</div>
+          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+      <a href="primera-a-intermedia.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Intermedia — Primera A</div>
+          <div class="cat-detail">Primera A · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+      <a href="primera-a-preintermedia-a.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Pre-Intermedia A — Primera A</div>
+          <div class="cat-detail">Primera A · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="primera-a-preintermedia-b.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Pre-Intermedia B — Primera A</div>
+          <div class="cat-detail">Primera A · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="primera-a-preintermedia-c.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Pre-Intermedia C — Primera A</div>
+          <div class="cat-detail">Primera A · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="primera-a-preintermedia-d.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Pre-Intermedia D — Primera A</div>
+          <div class="cat-detail">Primera A · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       GRUPO: PRIMERA B
+  ═══════════════════════════════════════════ -->
+  <div class="group">
+    <div class="group-header">
+      <span class="group-label">PRIMERA B</span>
+      <span class="group-sub">Todas las divisiones · Temporada 2026</span>
+    </div>
+    <div class="categories">
+
+      <a href="primera-b.html" class="cat-card highlight">
+        <div class="cat-card-left">
+          <div class="cat-name">⭐ Superior — Primera B</div>
+          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+      <a href="primera-b-intermedia.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Intermedia — Primera B</div>
+          <div class="cat-detail">Primera B · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+      <a href="primera-b-preintermedia-a.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Pre-Intermedia A — Primera B</div>
+          <div class="cat-detail">Primera B · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="primera-b-preintermedia-b.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Pre-Intermedia B — Primera B</div>
+          <div class="cat-detail">Primera B · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="primera-b-preintermedia-c.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Pre-Intermedia C — Primera B</div>
+          <div class="cat-detail">Primera B · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       GRUPO: PRIMERA C
+  ═══════════════════════════════════════════ -->
+  <div class="group">
+    <div class="group-header">
+      <span class="group-label">PRIMERA C</span>
+      <span class="group-sub">Todas las divisiones · Temporada 2026</span>
+    </div>
+    <div class="categories">
+
+      <a href="primera-c.html" class="cat-card highlight">
+        <div class="cat-card-left">
+          <div class="cat-name">⭐ Superior — Primera C</div>
+          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+      <a href="primera-c-intermedia.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Intermedia — Primera C</div>
+          <div class="cat-detail">Primera C · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+      <a href="primera-c-preintermedia-a.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Pre-Intermedia A — Primera C</div>
+          <div class="cat-detail">Primera C · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+      <a href="primera-c-preintermedia-b.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Pre-Intermedia B — Primera C</div>
+          <div class="cat-detail">Primera C · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       GRUPO: SEGUNDA DIVISIÓN
+  ═══════════════════════════════════════════ -->
+  <div class="group">
+    <div class="group-header">
+      <span class="group-label">SEGUNDA DIVISIÓN</span>
+      <span class="group-sub">Todas las divisiones · Temporada 2026</span>
+    </div>
+    <div class="categories">
+
+      <a href="segunda.html" class="cat-card highlight">
+        <div class="cat-card-left">
+          <div class="cat-name">⭐ Superior — Segunda</div>
+          <div class="cat-detail">14 equipos · 26 fechas · Play Off nov</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+      <a href="segunda-intermedia.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Intermedia — Segunda</div>
+          <div class="cat-detail">Segunda División · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       GRUPO: TERCERA DIVISIÓN
+  ═══════════════════════════════════════════ -->
+  <div class="group">
+    <div class="group-header">
+      <span class="group-label">TERCERA DIVISIÓN</span>
+      <span class="group-sub">Todas las divisiones · Temporada 2026</span>
+    </div>
+    <div class="categories">
+
+      <a href="tercera.html" class="cat-card highlight">
+        <div class="cat-card-left">
+          <div class="cat-name">⭐ Superior — Tercera</div>
+          <div class="cat-detail">11 equipos · 22 fechas · Play Off oct</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+      <a href="tercera-intermedia.html" class="cat-card">
+        <div class="cat-card-left">
+          <div class="cat-name">Intermedia — Tercera</div>
+          <div class="cat-detail">Tercera División · 2026</div>
+        </div>
+        <div class="cat-arrow">→</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       GRUPO: INTERNACIONALES
+  ═══════════════════════════════════════════ -->
+  <div class="group">
+    <div class="group-header intl">
+      <span class="group-label intl">🌎 INTERNACIONALES</span>
+      <span class="group-sub">Rugby internacional · 2026</span>
+    </div>
+    <div class="categories">
+      <a href="superrugby.html" class="cat-card intl">
+        <div class="cat-card-left">
+          <div class="cat-name">🏆 Super Rugby Américas 2026</div>
           <div class="cat-detail">8 franquicias · ARG · URU · PAR · BRA · CHI</div>
         </div>
         <div class="cat-arrow">→</div>
@@ -315,7 +558,6 @@ function loadUrbaUltimos() {
     .then(r => r.json())
     .then(data => {
       if (!data || !data.matches) return;
-      // Buscar la última fecha con partidos jugados
       const rnds = Object.keys(data.matches).map(Number).sort((a,b) => b - a);
       let ultimaFecha = null;
       let ultimosPartidos = [];
@@ -333,7 +575,6 @@ function loadUrbaUltimos() {
             <div class="result-home">${p.home}</div>
             <div class="result-score">${p.hs} - ${p.as}</div>
             <div class="result-away">${p.away}</div>
-            <div class="result-date">Fecha ${ultimaFecha}</div>
           </div>`).join('');
       }
     }).catch(e => console.log('URBA home sync error:', e));

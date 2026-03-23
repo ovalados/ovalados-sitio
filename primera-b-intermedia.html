@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tabla URBA Primera B · Intermedia 2026 — Ovalados</title>
+<meta name="description" content="Tabla de posiciones, fixture y resultados · URBA Primera B · Intermedia · Temporada 2026.">
+<link rel="canonical" href="https://ovalados.com/primera-b-intermedia.html">
+<meta property="og:title" content="Tabla URBA Primera B · Intermedia 2026 — Ovalados">
+<meta property="og:description" content="Posiciones y fixture · URBA Primera B · Intermedia 2026.">
+<meta property="og:url" content="https://ovalados.com/primera-b-intermedia.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=21">
+<script src="data.js"></script>
+<style>
+.formacion-modal-overlay {display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:1001;align-items:flex-end;justify-content:center}
+.formacion-modal-overlay.open {display:flex}
+.formacion-modal {background:var(--dark2,#1a1a2e);border-radius:16px 16px 0 0;width:100%;max-width:700px;max-height:88vh;overflow-y:auto;padding:1.5rem;animation:slideUpF 0.25s ease}
+@keyframes slideUpF {from{transform:translateY(100%)}to{transform:translateY(0)}}
+.formacion-modal-header {display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem}
+.formacion-modal-title {font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:2px;color:var(--green)}
+.formacion-modal-close {background:none;border:none;color:var(--muted);font-size:1.5rem;cursor:pointer;padding:4px 8px}
+.formacion-modal-close:hover {color:var(--text)}
+.formacion-modal-score {font-family:'Bebas Neue',sans-serif;font-size:1.8rem;color:var(--text);text-align:center;margin-bottom:1.25rem}
+.formacion-grid {display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.formacion-team-title {font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:0.75rem;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.formacion-jugador {font-family:'Barlow Condensed',sans-serif;font-size:0.9rem;padding:0.3rem 0;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--text)}
+.formacion-jugador:last-child {border-bottom:none}
+.match-formacion-btn {margin-top:0.5rem;padding:0.35rem 0.75rem;background:rgba(0,184,92,0.1);border:1px solid rgba(0,184,92,0.3);border-radius:4px;color:var(--green);font-family:'Barlow Condensed',sans-serif;font-size:0.82rem;cursor:pointer;transition:all 0.15s;width:100%}
+.match-formacion-btn:hover {background:rgba(0,184,92,0.2)}
+@media(max-width:600px){.formacion-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">OVALADOS</a>
+  <nav id="main-nav" style="display:flex">
+    <button class="active" onclick="go('posiciones',this)">Posiciones</button>
+    <button onclick="go('partidos',this)">Partidos</button>
+    <button onclick="go('locvis',this)">Local/Visit.</button>
+  </nav>
+</header>
+
+<div id="tournament-header" class="sub-header" style="display:flex">
+  <a href="index.html" class="back-btn">← Torneos</a>
+  <span class="sub-label"><strong>PRIMERA B · INTERMEDIA</strong> · Intermedia Primera B 2026
+    <span id="last-update" style="font-size:0.75rem;color:var(--muted);margin-left:12px"></span>
+  </span>
+</div>
+
+<div class="formacion-modal-overlay" id="formacion-modal-overlay" onclick="closeFormacionModal(event)">
+  <div class="formacion-modal" id="formacion-modal">
+    <div class="formacion-modal-header">
+      <div class="formacion-modal-title" id="formacion-modal-title"></div>
+      <button class="formacion-modal-close" onclick="closeFormacionModal()">✕</button>
+    </div>
+    <div class="formacion-modal-score" id="formacion-modal-score"></div>
+    <div class="formacion-grid" id="formacion-modal-body"></div>
+  </div>
+</div>
+
+<div id="tournament-urba" style="display:block">
+<main>
+
+  <section id="posiciones" class="section active">
+    <div class="page-title">TABLA DE POSICIONES</div>
+    <div class="page-subtitle">Torneo URBA Primera B · Intermedia · Temporada 2026</div>
+    <div class="table-wrap">
+      <table id="standings-table">
+        <thead>
+          <tr>
+            <th style="width:40px">#</th>
+            <th style="text-align:left">EQUIPO</th>
+            <th>PTS</th><th>PJ</th><th>G</th><th>E</th><th>P</th>
+            <th>PF</th><th>PC</th><th>+/-</th>
+            <th>BP</th><th>BF</th>
+            <th>FORMA</th>
+          </tr>
+        </thead>
+        <tbody id="standings-body"></tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <div class="legend-item">BP = Bonus por 4+ tries</div>
+      <div class="legend-item">BF = Bonus perdiendo por ≤7</div>
+    </div>
+  </section>
+
+  <section id="partidos" class="section">
+    <div class="page-title">PARTIDOS</div>
+    <div class="page-subtitle">Fixture completo · Primera B Intermedia 2026</div>
+    <div class="round-selector" id="round-selector"></div>
+    <div id="matches-container"></div>
+  </section>
+
+  <section id="locvis" class="section">
+    <div class="page-title">LOCAL / VISITANTE</div>
+    <div class="page-subtitle">Rendimiento según condición · Primera B Intermedia 2026</div>
+    <div class="locvis-grid">
+      <div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2px;color:var(--green);margin-bottom:0.75rem;text-transform:uppercase">🏠 De Local</div>
+        <div class="table-wrap"><table>
+          <thead><tr><th style="text-align:left;padding-left:12px">Equipo</th><th>PJ</th><th>G</th><th>P</th><th>PF</th><th>PC</th><th>PTS</th></tr></thead>
+          <tbody id="loc-body"></tbody>
+        </table></div>
+      </div>
+      <div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:2px;color:var(--gold);margin-bottom:0.75rem;text-transform:uppercase">✈️ De Visitante</div>
+        <div class="table-wrap"><table>
+          <thead><tr><th style="text-align:left;padding-left:12px">Equipo</th><th>PJ</th><th>G</th><th>P</th><th>PF</th><th>PC</th><th>PTS</th></tr></thead>
+          <tbody id="vis-body"></tbody>
+        </table></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+</div>
+
+<script>
+let teams = [];
+let matches = {};
+let currentRound = 1;
+
+function go(id, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('#main-nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  if (btn) btn.classList.add('active');
+  if (id === 'partidos') renderMatches(currentRound);
+  if (id === 'locvis')   renderLocVis();
+}
+
+function renderStandings() {
+  const allZero = teams.every(t => t.pts === 0 && t.pj === 0);
+  const sorted = [...teams].sort((a,b) => {
+    if (allZero) return a.name.localeCompare(b.name, 'es');
+    return b.pts - a.pts || (b.pf-b.pc) - (a.pf-a.pc);
+  });
+  const tbody = document.getElementById('standings-body');
+  if (!tbody) return;
+  tbody.innerHTML = sorted.map((t,i) => {
+    const pos = i+1;
+    const diff = t.pf - t.pc;
+    const formDots = (t.form||[]).map(f => `<div class="dot ${f==='w'?'w':f==='l'?'l':'d'}"></div>`).join('');
+    return `<tr class="pos-${pos}">
+      <td><span class="pos-num">${allZero ? '—' : pos}</span></td>
+      <td><span class="team-name">${t.name}</span></td>
+      <td class="pts">${t.pts}</td><td>${t.pj}</td><td>${t.g}</td><td>${t.e}</td><td>${t.p}</td>
+      <td>${t.pf}</td><td>${t.pc}</td>
+      <td style="color:${diff>0?'var(--green)':diff<0?'#c0392b':'var(--muted)'}">${diff>0?'+':''}${diff||0}</td>
+      <td style="color:var(--gold)">${t.bp||0}</td><td>${t.bf||0}</td>
+      <td><div class="form-dots">${formDots}</div></td>
+    </tr>`;
+  }).join('');
+}
+
+function renderMatches(round) {
+  if (!round) round = currentRound;
+  currentRound = round;
+  const keys = Object.keys(matches).sort((a,b) => +a - +b);
+  const sel = document.getElementById('round-selector');
+  if (sel) sel.innerHTML = keys.map(r =>
+    `<button class="round-btn ${+r===round?'active':''}" onclick="renderMatches(${+r})">${r}</button>`
+  ).join('');
+  const rd = matches[round];
+  const container = document.getElementById('matches-container');
+  if (!container) return;
+  if (!rd) { container.innerHTML = '<p style="color:var(--muted);padding:1rem">Sin datos para esta fecha.</p>'; return; }
+  const torneo = 'primera-b-intermedia';
+  container.innerHTML = (rd.ms||[]).map(m => matchCard(m, rd.date, torneo)).join('');
+}
+
+function matchCard(m, dateStr, torneo) {
+  const isPlayed = m.played;
+  const isLive = m.live || false;
+  const scoreBlock = isPlayed
+    ? `<div class="match-score"><span class="${m.hs>m.as?'winner':''}">${m.hs}</span><span class="score-sep">—</span><span class="${m.as>m.hs?'winner':''}">${m.as}</span></div>`
+    : `<div class="match-score-pending">${dateStr||'—'}</div>`;
+  const partidoId = [m.home, m.away].join('_').replace(/[^a-zA-Z0-9_]/g,'').toLowerCase();
+  const score = isPlayed ? `${m.hs} - ${m.as}` : '';
+  const formacionData = window.LINEUPS && window.LINEUPS[torneo];
+  const tieneFormacion = formacionData && formacionData[partidoId];
+  const formacionBtn = tieneFormacion
+    ? `<button class="match-formacion-btn" onclick="openFormacionModal('${torneo}','${partidoId}','${m.home}','${m.away}','${score}')">👥 Ver formaciones</button>`
+    : '';
+  return `<div class="match-card${isLive?' live':''}">
+    <div class="match-meta"><span>${isLive?'🔴 EN VIVO':isPlayed?'Finalizado':dateStr}</span></div>
+    <div class="match-teams">
+      <div class="match-team home"><div class="name">${m.home}</div></div>
+      ${scoreBlock}
+      <div class="match-team"><div class="name">${m.away}</div></div>
+    </div>
+    ${formacionBtn}
+  </div>`;
+}
+
+function openFormacionModal(torneo, partidoId, home, away, score) {
+  const formacionData = window.LINEUPS && window.LINEUPS[torneo] && window.LINEUPS[torneo][partidoId];
+  if (!formacionData) return;
+  document.getElementById('formacion-modal-title').textContent = home + ' — ' + away;
+  document.getElementById('formacion-modal-score').textContent = score;
+  const body = document.getElementById('formacion-modal-body');
+  const makeList = (eq) => `<div><div class="formacion-team-title">${eq.nombre}</div>${(eq.jugadores||[]).map(j=>`<div class="formacion-jugador">${j}</div>`).join('')}</div>`;
+  body.innerHTML = makeList(formacionData.local) + makeList(formacionData.visitante);
+  document.getElementById('formacion-modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeFormacionModal(event) {
+  if (event && event.target !== document.getElementById('formacion-modal-overlay')) return;
+  document.getElementById('formacion-modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function renderLocVis() {
+  const homeStats = {}, awayStats = {};
+  teams.forEach(t => {
+    homeStats[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
+    awayStats[t.name] = {pj:0,g:0,p:0,pf:0,pc:0,pts:0};
+  });
+  Object.values(matches).forEach(rd => (rd.ms||[]).filter(m=>m.played).forEach(m => {
+    if (!homeStats[m.home] || !awayStats[m.away]) return;
+    const h=homeStats[m.home], a=awayStats[m.away];
+    h.pj++; a.pj++; h.pf+=m.hs; h.pc+=m.as; a.pf+=m.as; a.pc+=m.hs;
+    if(m.hs>m.as){h.g++;h.pts+=4;a.p++;}
+    else if(m.hs<m.as){a.g++;a.pts+=4;h.p++;}
+    else{h.pts+=2;a.pts+=2;}
+  }));
+  const makeRows = (stats, tbodyId) => {
+    const sorted = [...teams].sort((a,b)=>(stats[b.name]?.pts||0)-(stats[a.name]?.pts||0));
+    const el = document.getElementById(tbodyId);
+    if (!el) return;
+    el.innerHTML = sorted.map(t => {
+      const d = stats[t.name]||{};
+      return `<tr>
+        <td style="text-align:left;padding-left:12px;font-weight:600">${t.name}</td>
+        <td>${d.pj||0}</td><td>${d.g||0}</td><td>${d.p||0}</td>
+        <td>${d.pf||0}</td><td>${d.pc||0}</td>
+        <td style="color:var(--green);font-weight:700">${d.pts||0}</td>
+      </tr>`;
+    }).join('');
+  };
+  makeRows(homeStats,'loc-body');
+  makeRows(awayStats,'vis-body');
+}
+
+function syncData() {
+  fetch('data/primera-b-intermedia.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      if (!data) return;
+      if (data.teams && data.teams.length) teams = data.teams;
+      if (data.matches) matches = data.matches;
+      renderStandings();
+      if (document.getElementById('partidos')?.classList.contains('active')) renderMatches(currentRound);
+      if (data.lastUpdate) {
+        const d = new Date(data.lastUpdate);
+        const el = document.getElementById('last-update');
+        if (el) el.textContent = '✓ Actualizado: ' + d.toLocaleString('es-AR',{day:'2-digit',month:'numeric',hour:'2-digit',minute:'2-digit'});
+      }
+    }).catch(e => console.log('Primera B Intermedia sync error:', e));
+}
+
+syncData();
+setInterval(syncData, 10*60*1000);
+document.addEventListener('DOMContentLoaded', function() {
+  renderStandings();
+  renderMatches(1);
+});
+</script>
+</body>
+</html>
