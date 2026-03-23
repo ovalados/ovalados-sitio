@@ -2,231 +2,356 @@
   "teams": [
     {
       "name": "Hurling B",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "p": 1,
+      "pf": 122,
+      "pc": 55,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "l"
+      ]
     },
     {
       "name": "Lomas Athletic B",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "pf": 77,
+      "pc": 37,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "w"
+      ]
     },
     {
       "name": "Curupayti B",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 4,
+      "pj": 2,
+      "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 1,
+      "pf": 41,
+      "pc": 49,
       "bp": 0,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "l"
+      ]
     },
     {
       "name": "San Luis B",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "pf": 66,
+      "pc": 45,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "w"
+      ]
     },
     {
       "name": "Olivos B",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "pf": 79,
+      "pc": 50,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "w"
+      ]
     },
     {
       "name": "Gimnasia y Esgrima B",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
-      "e": 0,
+      "pts": 6,
+      "pj": 2,
+      "g": 1,
+      "e": 1,
       "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "pf": 22,
+      "pc": 17,
       "bp": 0,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "d"
+      ]
     },
     {
       "name": "San Albano B",
-      "pts": 0,
-      "pj": 0,
+      "pts": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 2,
+      "pf": 31,
+      "pc": 56,
       "bp": 0,
-      "bf": 0,
-      "form": []
+      "bf": 1,
+      "form": [
+        "l",
+        "l"
+      ]
     },
     {
       "name": "San Cirano B",
-      "pts": 0,
-      "pj": 0,
+      "pts": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 2,
+      "pf": 53,
+      "pc": 64,
       "bp": 0,
-      "bf": 0,
-      "form": []
+      "bf": 1,
+      "form": [
+        "l",
+        "l"
+      ]
     },
     {
       "name": "Deportiva Francesa B",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 4,
+      "pj": 2,
+      "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 1,
+      "pf": 50,
+      "pc": 57,
       "bp": 0,
       "bf": 0,
-      "form": []
+      "form": [
+        "l",
+        "w"
+      ]
     },
     {
       "name": "San Fernando B",
-      "pts": 0,
-      "pj": 0,
+      "pts": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 2,
+      "pf": 40,
+      "pc": 77,
       "bp": 0,
-      "bf": 0,
-      "form": []
+      "bf": 1,
+      "form": [
+        "l",
+        "l"
+      ]
     },
     {
       "name": "Pueyrredon B",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 1,
+      "pf": 58,
+      "pc": 57,
       "bp": 0,
-      "bf": 0,
-      "form": []
+      "bf": 1,
+      "form": [
+        "l",
+        "w"
+      ]
     },
     {
       "name": "Universitario de la Plata B",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 4,
+      "pj": 2,
+      "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 1,
+      "pf": 43,
+      "pc": 113,
       "bp": 0,
       "bf": 0,
-      "form": []
+      "form": [
+        "l",
+        "w"
+      ]
     },
     {
       "name": "San Andres B",
-      "pts": 0,
-      "pj": 0,
+      "pts": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 2,
+      "pf": 22,
+      "pc": 112,
       "bp": 0,
-      "bf": 0,
-      "form": []
+      "bf": 1,
+      "form": [
+        "l",
+        "l"
+      ]
     },
     {
       "name": "Pucara B",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
-      "e": 0,
+      "pts": 7,
+      "pj": 2,
+      "g": 1,
+      "e": 1,
       "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "pf": 90,
+      "pc": 5,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "d"
+      ]
     }
   ],
   "matches": {
     "1": {
-      "date": "14/03/2026",
+      "date": "",
       "ms": [
+        {
+          "home": "Pucara B",
+          "away": "San Andres B",
+          "played": true,
+          "hs": 90,
+          "as": 5,
+          "bp_home": true
+        },
         {
           "home": "Hurling B",
           "away": "Universitario de la Plata B",
-          "played": false
+          "played": true,
+          "hs": 96,
+          "as": 21,
+          "bp_home": true
         },
         {
           "home": "Lomas Athletic B",
           "away": "Pueyrredon B",
-          "played": false
+          "played": true,
+          "hs": 31,
+          "as": 24,
+          "bf_away": true
         },
         {
           "home": "Curupayti B",
           "away": "San Fernando B",
-          "played": false
+          "played": true,
+          "hs": 31,
+          "as": 27,
+          "bf_away": true
         },
         {
           "home": "San Luis B",
           "away": "Deportiva Francesa B",
-          "played": false
+          "played": true,
+          "hs": 47,
+          "as": 28,
+          "bp_home": true
         },
         {
           "home": "Olivos B",
           "away": "San Cirano B",
-          "played": false
+          "played": true,
+          "hs": 45,
+          "as": 36
         },
         {
           "home": "Gimnasia y Esgrima B",
           "away": "San Albano B",
-          "played": false
-        },
-        {
-          "home": "Pucara B",
-          "away": "San Andres B",
-          "played": false
+          "played": true,
+          "hs": 22,
+          "as": 17,
+          "bf_away": true
         }
       ]
     },
     "2": {
-      "date": "21/03/2026",
+      "date": "",
       "ms": [
+        {
+          "home": "Gimnasia y Esgrima B",
+          "away": "Pucara B",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "San Albano B",
+          "away": "Olivos B",
+          "played": true,
+          "hs": 14,
+          "as": 34,
+          "bp_away": true
+        },
+        {
+          "home": "San Cirano B",
+          "away": "San Luis B",
+          "played": true,
+          "hs": 17,
+          "as": 19,
+          "bf_home": true
+        },
+        {
+          "home": "Deportiva Francesa B",
+          "away": "Curupayti B",
+          "played": true,
+          "hs": 22,
+          "as": 10
+        },
+        {
+          "home": "San Fernando B",
+          "away": "Lomas Athletic B",
+          "played": true,
+          "hs": 13,
+          "as": 46,
+          "bp_away": true
+        },
+        {
+          "home": "Pueyrredon B",
+          "away": "Hurling B",
+          "played": true,
+          "hs": 34,
+          "as": 26
+        },
+        {
+          "home": "Universitario de la Plata B",
+          "away": "San Andres B",
+          "played": true,
+          "hs": 22,
+          "as": 17,
+          "bf_away": true
+        }
+      ]
+    },
+    "3": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara B",
+          "away": "Universitario de la Plata B",
+          "played": false
+        },
         {
           "home": "San Andres B",
           "away": "Pueyrredon B",
@@ -255,737 +380,732 @@
         {
           "home": "Olivos B",
           "away": "Gimnasia y Esgrima B",
-          "played": false
-        },
-        {
-          "home": "Pucara B",
-          "away": "Universitario de la Plata B",
-          "played": false
-        }
-      ]
-    },
-    "3": {
-      "date": "28/03/2026",
-      "ms": [
-        {
-          "home": "Universitario de la Plata B",
-          "away": "San Fernando B",
-          "played": false
-        },
-        {
-          "home": "San Andres B",
-          "away": "Deportiva Francesa B",
-          "played": false
-        },
-        {
-          "home": "Hurling B",
-          "away": "San Cirano B",
-          "played": false
-        },
-        {
-          "home": "Lomas Athletic B",
-          "away": "San Albano B",
-          "played": false
-        },
-        {
-          "home": "Curupayti B",
-          "away": "Gimnasia y Esgrima B",
-          "played": false
-        },
-        {
-          "home": "San Luis B",
-          "away": "Olivos B",
-          "played": false
-        },
-        {
-          "home": "Pucara B",
-          "away": "Pueyrredon B",
           "played": false
         }
       ]
     },
     "4": {
-      "date": "11/04/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Pueyrredon B",
-          "away": "Deportiva Francesa B",
+          "home": "Olivos B",
+          "away": "Pucara B",
           "played": false
         },
         {
-          "home": "Universitario de la Plata B",
-          "away": "San Cirano B",
-          "played": false
-        },
-        {
-          "home": "San Andres B",
-          "away": "San Albano B",
-          "played": false
-        },
-        {
-          "home": "Hurling B",
-          "away": "Gimnasia y Esgrima B",
-          "played": false
-        },
-        {
-          "home": "Lomas Athletic B",
-          "away": "Olivos B",
-          "played": false
-        },
-        {
-          "home": "Curupayti B",
+          "home": "Gimnasia y Esgrima B",
           "away": "San Luis B",
           "played": false
         },
         {
-          "home": "Pucara B",
-          "away": "San Fernando B",
+          "home": "San Albano B",
+          "away": "Curupayti B",
+          "played": false
+        },
+        {
+          "home": "San Cirano B",
+          "away": "Lomas Athletic B",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa B",
+          "away": "Hurling B",
+          "played": false
+        },
+        {
+          "home": "San Fernando B",
+          "away": "San Andres B",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon B",
+          "away": "Universitario de la Plata B",
           "played": false
         }
       ]
     },
     "5": {
-      "date": "18/04/2026",
+      "date": "",
       "ms": [
         {
-          "home": "San Fernando B",
-          "away": "San Cirano B",
-          "played": false
-        },
-        {
-          "home": "Pueyrredon B",
-          "away": "San Albano B",
+          "home": "Pucara B",
+          "away": "Pueyrredon B",
           "played": false
         },
         {
           "home": "Universitario de la Plata B",
-          "away": "Gimnasia y Esgrima B",
+          "away": "San Fernando B",
           "played": false
         },
         {
           "home": "San Andres B",
-          "away": "Olivos B",
+          "away": "Deportiva Francesa B",
           "played": false
         },
         {
           "home": "Hurling B",
-          "away": "San Luis B",
+          "away": "San Cirano B",
           "played": false
         },
         {
           "home": "Lomas Athletic B",
-          "away": "Curupayti B",
+          "away": "San Albano B",
           "played": false
         },
         {
-          "home": "Pucara B",
-          "away": "Deportiva Francesa B",
+          "home": "Curupayti B",
+          "away": "Gimnasia y Esgrima B",
+          "played": false
+        },
+        {
+          "home": "San Luis B",
+          "away": "Olivos B",
           "played": false
         }
       ]
     },
     "6": {
-      "date": "25/04/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Deportiva Francesa B",
-          "away": "San Albano B",
+          "home": "San Luis B",
+          "away": "Pucara B",
           "played": false
         },
         {
-          "home": "San Fernando B",
-          "away": "Gimnasia y Esgrima B",
-          "played": false
-        },
-        {
-          "home": "Pueyrredon B",
-          "away": "Olivos B",
-          "played": false
-        },
-        {
-          "home": "Universitario de la Plata B",
-          "away": "San Luis B",
-          "played": false
-        },
-        {
-          "home": "San Andres B",
+          "home": "Olivos B",
           "away": "Curupayti B",
           "played": false
         },
         {
-          "home": "Hurling B",
+          "home": "Gimnasia y Esgrima B",
           "away": "Lomas Athletic B",
           "played": false
         },
         {
-          "home": "Pucara B",
-          "away": "San Cirano B",
+          "home": "San Albano B",
+          "away": "Hurling B",
+          "played": false
+        },
+        {
+          "home": "San Cirano B",
+          "away": "San Andres B",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa B",
+          "away": "Universitario de la Plata B",
+          "played": false
+        },
+        {
+          "home": "San Fernando B",
+          "away": "Pueyrredon B",
           "played": false
         }
       ]
     },
     "7": {
-      "date": "09/05/2026",
+      "date": "",
       "ms": [
         {
-          "home": "San Cirano B",
-          "away": "Gimnasia y Esgrima B",
-          "played": false
-        },
-        {
-          "home": "Deportiva Francesa B",
-          "away": "Olivos B",
-          "played": false
-        },
-        {
-          "home": "San Fernando B",
-          "away": "San Luis B",
+          "home": "Pucara B",
+          "away": "San Fernando B",
           "played": false
         },
         {
           "home": "Pueyrredon B",
-          "away": "Curupayti B",
+          "away": "Deportiva Francesa B",
           "played": false
         },
         {
           "home": "Universitario de la Plata B",
-          "away": "Lomas Athletic B",
+          "away": "San Cirano B",
           "played": false
         },
         {
           "home": "San Andres B",
-          "away": "Hurling B",
+          "away": "San Albano B",
           "played": false
         },
         {
-          "home": "Pucara B",
-          "away": "San Albano B",
+          "home": "Hurling B",
+          "away": "Gimnasia y Esgrima B",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic B",
+          "away": "Olivos B",
+          "played": false
+        },
+        {
+          "home": "Curupayti B",
+          "away": "San Luis B",
           "played": false
         }
       ]
     },
     "8": {
-      "date": "16/05/2026",
+      "date": "",
       "ms": [
         {
-          "home": "San Albano B",
-          "away": "Olivos B",
+          "home": "Curupayti B",
+          "away": "Pucara B",
           "played": false
         },
         {
-          "home": "San Cirano B",
-          "away": "San Luis B",
-          "played": false
-        },
-        {
-          "home": "Deportiva Francesa B",
-          "away": "Curupayti B",
-          "played": false
-        },
-        {
-          "home": "San Fernando B",
+          "home": "San Luis B",
           "away": "Lomas Athletic B",
           "played": false
         },
         {
-          "home": "Pueyrredon B",
+          "home": "Olivos B",
           "away": "Hurling B",
           "played": false
         },
         {
-          "home": "Universitario de la Plata B",
+          "home": "Gimnasia y Esgrima B",
           "away": "San Andres B",
           "played": false
         },
         {
-          "home": "Gimnasia y Esgrima B",
-          "away": "Pucara B",
+          "home": "San Albano B",
+          "away": "Universitario de la Plata B",
+          "played": false
+        },
+        {
+          "home": "San Cirano B",
+          "away": "Pueyrredon B",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa B",
+          "away": "San Fernando B",
           "played": false
         }
       ]
     },
     "9": {
-      "date": "23/05/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Gimnasia y Esgrima B",
-          "away": "San Luis B",
-          "played": false
-        },
-        {
-          "home": "San Albano B",
-          "away": "Curupayti B",
-          "played": false
-        },
-        {
-          "home": "San Cirano B",
-          "away": "Lomas Athletic B",
-          "played": false
-        },
-        {
-          "home": "Deportiva Francesa B",
-          "away": "Hurling B",
+          "home": "Pucara B",
+          "away": "Deportiva Francesa B",
           "played": false
         },
         {
           "home": "San Fernando B",
-          "away": "San Andres B",
+          "away": "San Cirano B",
           "played": false
         },
         {
           "home": "Pueyrredon B",
-          "away": "Universitario de la Plata B",
+          "away": "San Albano B",
           "played": false
         },
         {
-          "home": "Olivos B",
-          "away": "Pucara B",
+          "home": "Universitario de la Plata B",
+          "away": "Gimnasia y Esgrima B",
+          "played": false
+        },
+        {
+          "home": "San Andres B",
+          "away": "Olivos B",
+          "played": false
+        },
+        {
+          "home": "Hurling B",
+          "away": "San Luis B",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic B",
+          "away": "Curupayti B",
           "played": false
         }
       ]
     },
     "10": {
-      "date": "06/06/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Olivos B",
-          "away": "Curupayti B",
+          "home": "Lomas Athletic B",
+          "away": "Pucara B",
           "played": false
         },
         {
-          "home": "Gimnasia y Esgrima B",
-          "away": "Lomas Athletic B",
-          "played": false
-        },
-        {
-          "home": "San Albano B",
+          "home": "Curupayti B",
           "away": "Hurling B",
           "played": false
         },
         {
-          "home": "San Cirano B",
+          "home": "San Luis B",
           "away": "San Andres B",
           "played": false
         },
         {
-          "home": "Deportiva Francesa B",
+          "home": "Olivos B",
           "away": "Universitario de la Plata B",
           "played": false
         },
         {
-          "home": "San Fernando B",
+          "home": "Gimnasia y Esgrima B",
           "away": "Pueyrredon B",
           "played": false
         },
         {
-          "home": "San Luis B",
-          "away": "Pucara B",
+          "home": "San Albano B",
+          "away": "San Fernando B",
+          "played": false
+        },
+        {
+          "home": "San Cirano B",
+          "away": "Deportiva Francesa B",
           "played": false
         }
       ]
     },
     "11": {
-      "date": "13/06/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Lomas Athletic B",
-          "away": "San Andres B",
-          "played": false
-        },
-        {
-          "home": "Curupayti B",
-          "away": "Universitario de la Plata B",
-          "played": false
-        },
-        {
-          "home": "San Luis B",
-          "away": "Pueyrredon B",
-          "played": false
-        },
-        {
-          "home": "Olivos B",
-          "away": "San Fernando B",
-          "played": false
-        },
-        {
-          "home": "Gimnasia y Esgrima B",
-          "away": "Deportiva Francesa B",
-          "played": false
-        },
-        {
-          "home": "San Albano B",
+          "home": "Pucara B",
           "away": "San Cirano B",
           "played": false
         },
         {
+          "home": "Deportiva Francesa B",
+          "away": "San Albano B",
+          "played": false
+        },
+        {
+          "home": "San Fernando B",
+          "away": "Gimnasia y Esgrima B",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon B",
+          "away": "Olivos B",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata B",
+          "away": "San Luis B",
+          "played": false
+        },
+        {
+          "home": "San Andres B",
+          "away": "Curupayti B",
+          "played": false
+        },
+        {
           "home": "Hurling B",
-          "away": "Pucara B",
+          "away": "Lomas Athletic B",
           "played": false
         }
       ]
     },
     "12": {
-      "date": "20/06/2026",
+      "date": "",
       "ms": [
         {
-          "home": "San Albano B",
+          "home": "Hurling B",
           "away": "Pucara B",
           "played": false
         },
         {
-          "home": "Gimnasia y Esgrima B",
-          "away": "San Cirano B",
-          "played": false
-        },
-        {
-          "home": "Olivos B",
-          "away": "Deportiva Francesa B",
-          "played": false
-        },
-        {
-          "home": "San Luis B",
-          "away": "San Fernando B",
+          "home": "Lomas Athletic B",
+          "away": "San Andres B",
           "played": false
         },
         {
           "home": "Curupayti B",
-          "away": "Pueyrredon B",
-          "played": false
-        },
-        {
-          "home": "Lomas Athletic B",
           "away": "Universitario de la Plata B",
           "played": false
         },
         {
-          "home": "Hurling B",
-          "away": "San Andres B",
+          "home": "San Luis B",
+          "away": "Pueyrredon B",
+          "played": false
+        },
+        {
+          "home": "Olivos B",
+          "away": "San Fernando B",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima B",
+          "away": "Deportiva Francesa B",
+          "played": false
+        },
+        {
+          "home": "San Albano B",
+          "away": "San Cirano B",
           "played": false
         }
       ]
     },
     "13": {
-      "date": "04/07/2026",
+      "date": "",
       "ms": [
         {
-          "home": "San Andres B",
-          "away": "Pucara B",
-          "played": false
-        },
-        {
-          "home": "Universitario de la Plata B",
-          "away": "Hurling B",
-          "played": false
-        },
-        {
-          "home": "Pueyrredon B",
-          "away": "Lomas Athletic B",
-          "played": false
-        },
-        {
-          "home": "San Fernando B",
-          "away": "Curupayti B",
-          "played": false
-        },
-        {
-          "home": "Deportiva Francesa B",
-          "away": "San Luis B",
+          "home": "Pucara B",
+          "away": "San Albano B",
           "played": false
         },
         {
           "home": "San Cirano B",
+          "away": "Gimnasia y Esgrima B",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa B",
           "away": "Olivos B",
           "played": false
         },
         {
-          "home": "San Albano B",
-          "away": "Gimnasia y Esgrima B",
+          "home": "San Fernando B",
+          "away": "San Luis B",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon B",
+          "away": "Curupayti B",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata B",
+          "away": "Lomas Athletic B",
+          "played": false
+        },
+        {
+          "home": "San Andres B",
+          "away": "Hurling B",
           "played": false
         }
       ]
     },
     "14": {
-      "date": "11/07/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Pucara B",
-          "away": "Gimnasia y Esgrima B",
-          "played": false
-        },
-        {
-          "home": "Olivos B",
-          "away": "San Albano B",
-          "played": false
-        },
-        {
-          "home": "San Luis B",
-          "away": "San Cirano B",
-          "played": false
-        },
-        {
-          "home": "Curupayti B",
-          "away": "Deportiva Francesa B",
-          "played": false
-        },
-        {
-          "home": "Lomas Athletic B",
-          "away": "San Fernando B",
-          "played": false
-        },
-        {
-          "home": "Hurling B",
-          "away": "Pueyrredon B",
-          "played": false
-        },
-        {
           "home": "San Andres B",
-          "away": "Universitario de la Plata B",
+          "away": "Pucara B",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata B",
+          "away": "Hurling B",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon B",
+          "away": "Lomas Athletic B",
+          "played": false
+        },
+        {
+          "home": "San Fernando B",
+          "away": "Curupayti B",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa B",
+          "away": "San Luis B",
+          "played": false
+        },
+        {
+          "home": "San Cirano B",
+          "away": "Olivos B",
+          "played": false
+        },
+        {
+          "home": "San Albano B",
+          "away": "Gimnasia y Esgrima B",
           "played": false
         }
       ]
     },
     "15": {
-      "date": "18/07/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Universitario de la Plata B",
-          "away": "Pucara B",
+          "home": "Pucara B",
+          "away": "Gimnasia y Esgrima B",
           "played": false
         },
         {
-          "home": "Pueyrredon B",
-          "away": "San Andres B",
+          "home": "Olivos B",
+          "away": "San Albano B",
           "played": false
         },
         {
-          "home": "San Fernando B",
-          "away": "Hurling B",
+          "home": "San Luis B",
+          "away": "San Cirano B",
           "played": false
         },
         {
-          "home": "Deportiva Francesa B",
-          "away": "Lomas Athletic B",
+          "home": "Curupayti B",
+          "away": "Deportiva Francesa B",
           "played": false
         },
         {
-          "home": "San Cirano B",
-          "away": "Curupayti B",
+          "home": "Lomas Athletic B",
+          "away": "San Fernando B",
           "played": false
         },
         {
-          "home": "San Albano B",
-          "away": "San Luis B",
+          "home": "Hurling B",
+          "away": "Pueyrredon B",
           "played": false
         },
         {
-          "home": "Gimnasia y Esgrima B",
-          "away": "Olivos B",
+          "home": "San Andres B",
+          "away": "Universitario de la Plata B",
           "played": false
         }
       ]
     },
     "16": {
-      "date": "01/08/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Pucara B",
-          "away": "Olivos B",
-          "played": false
-        },
-        {
-          "home": "San Luis B",
-          "away": "Gimnasia y Esgrima B",
-          "played": false
-        },
-        {
-          "home": "Curupayti B",
-          "away": "San Albano B",
-          "played": false
-        },
-        {
-          "home": "Lomas Athletic B",
-          "away": "San Cirano B",
-          "played": false
-        },
-        {
-          "home": "Hurling B",
-          "away": "Deportiva Francesa B",
-          "played": false
-        },
-        {
-          "home": "San Andres B",
-          "away": "San Fernando B",
-          "played": false
-        },
-        {
           "home": "Universitario de la Plata B",
-          "away": "Pueyrredon B",
+          "away": "Pucara B",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon B",
+          "away": "San Andres B",
+          "played": false
+        },
+        {
+          "home": "San Fernando B",
+          "away": "Hurling B",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa B",
+          "away": "Lomas Athletic B",
+          "played": false
+        },
+        {
+          "home": "San Cirano B",
+          "away": "Curupayti B",
+          "played": false
+        },
+        {
+          "home": "San Albano B",
+          "away": "San Luis B",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima B",
+          "away": "Olivos B",
           "played": false
         }
       ]
     },
     "17": {
-      "date": "15/08/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Pueyrredon B",
-          "away": "Pucara B",
+          "home": "Pucara B",
+          "away": "Olivos B",
           "played": false
         },
         {
-          "home": "San Fernando B",
-          "away": "Universitario de la Plata B",
+          "home": "San Luis B",
+          "away": "Gimnasia y Esgrima B",
           "played": false
         },
         {
-          "home": "Deportiva Francesa B",
-          "away": "San Andres B",
+          "home": "Curupayti B",
+          "away": "San Albano B",
           "played": false
         },
         {
-          "home": "San Cirano B",
-          "away": "Hurling B",
+          "home": "Lomas Athletic B",
+          "away": "San Cirano B",
           "played": false
         },
         {
-          "home": "San Albano B",
-          "away": "Lomas Athletic B",
+          "home": "Hurling B",
+          "away": "Deportiva Francesa B",
           "played": false
         },
         {
-          "home": "Gimnasia y Esgrima B",
-          "away": "Curupayti B",
+          "home": "San Andres B",
+          "away": "San Fernando B",
           "played": false
         },
         {
-          "home": "Olivos B",
-          "away": "San Luis B",
+          "home": "Universitario de la Plata B",
+          "away": "Pueyrredon B",
           "played": false
         }
       ]
     },
     "18": {
-      "date": "22/08/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Pucara B",
-          "away": "San Luis B",
-          "played": false
-        },
-        {
-          "home": "Curupayti B",
-          "away": "Olivos B",
-          "played": false
-        },
-        {
-          "home": "Lomas Athletic B",
-          "away": "Gimnasia y Esgrima B",
-          "played": false
-        },
-        {
-          "home": "Hurling B",
-          "away": "San Albano B",
-          "played": false
-        },
-        {
-          "home": "San Andres B",
-          "away": "San Cirano B",
-          "played": false
-        },
-        {
-          "home": "Universitario de la Plata B",
-          "away": "Deportiva Francesa B",
-          "played": false
-        },
-        {
           "home": "Pueyrredon B",
-          "away": "San Fernando B",
+          "away": "Pucara B",
+          "played": false
+        },
+        {
+          "home": "San Fernando B",
+          "away": "Universitario de la Plata B",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa B",
+          "away": "San Andres B",
+          "played": false
+        },
+        {
+          "home": "San Cirano B",
+          "away": "Hurling B",
+          "played": false
+        },
+        {
+          "home": "San Albano B",
+          "away": "Lomas Athletic B",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima B",
+          "away": "Curupayti B",
+          "played": false
+        },
+        {
+          "home": "Olivos B",
+          "away": "San Luis B",
           "played": false
         }
       ]
     },
     "19": {
-      "date": "29/08/2026",
+      "date": "",
       "ms": [
         {
-          "home": "San Fernando B",
-          "away": "Pucara B",
+          "home": "Pucara B",
+          "away": "San Luis B",
           "played": false
         },
         {
-          "home": "Deportiva Francesa B",
-          "away": "Pueyrredon B",
+          "home": "Curupayti B",
+          "away": "Olivos B",
           "played": false
         },
         {
-          "home": "San Cirano B",
-          "away": "Universitario de la Plata B",
+          "home": "Lomas Athletic B",
+          "away": "Gimnasia y Esgrima B",
           "played": false
         },
         {
-          "home": "San Albano B",
-          "away": "San Andres B",
+          "home": "Hurling B",
+          "away": "San Albano B",
           "played": false
         },
         {
-          "home": "Gimnasia y Esgrima B",
-          "away": "Hurling B",
+          "home": "San Andres B",
+          "away": "San Cirano B",
           "played": false
         },
         {
-          "home": "Olivos B",
-          "away": "Lomas Athletic B",
+          "home": "Universitario de la Plata B",
+          "away": "Deportiva Francesa B",
           "played": false
         },
         {
-          "home": "San Luis B",
-          "away": "Curupayti B",
+          "home": "Pueyrredon B",
+          "away": "San Fernando B",
           "played": false
         }
       ]
     },
     "20": {
-      "date": "05/09/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Pucara B",
-          "away": "Curupayti B",
-          "played": false
-        },
-        {
-          "home": "Lomas Athletic B",
-          "away": "San Luis B",
-          "played": false
-        },
-        {
-          "home": "Hurling B",
-          "away": "Olivos B",
-          "played": false
-        },
-        {
-          "home": "San Andres B",
-          "away": "Gimnasia y Esgrima B",
-          "played": false
-        },
-        {
-          "home": "Universitario de la Plata B",
-          "away": "San Albano B",
-          "played": false
-        },
-        {
-          "home": "Pueyrredon B",
-          "away": "San Cirano B",
-          "played": false
-        },
-        {
           "home": "San Fernando B",
-          "away": "Deportiva Francesa B",
+          "away": "Pucara B",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa B",
+          "away": "Pueyrredon B",
+          "played": false
+        },
+        {
+          "home": "San Cirano B",
+          "away": "Universitario de la Plata B",
+          "played": false
+        },
+        {
+          "home": "San Albano B",
+          "away": "San Andres B",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima B",
+          "away": "Hurling B",
+          "played": false
+        },
+        {
+          "home": "Olivos B",
+          "away": "Lomas Athletic B",
+          "played": false
+        },
+        {
+          "home": "San Luis B",
+          "away": "Curupayti B",
           "played": false
         }
       ]
     },
     "21": {
-      "date": "12/09/2026",
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara B",
+          "away": "Curupayti B",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic B",
+          "away": "San Luis B",
+          "played": false
+        },
+        {
+          "home": "Hurling B",
+          "away": "Olivos B",
+          "played": false
+        },
+        {
+          "home": "San Andres B",
+          "away": "Gimnasia y Esgrima B",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata B",
+          "away": "San Albano B",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon B",
+          "away": "San Cirano B",
+          "played": false
+        },
+        {
+          "home": "San Fernando B",
+          "away": "Deportiva Francesa B",
+          "played": false
+        }
+      ]
+    },
+    "22": {
+      "date": "",
       "ms": [
         {
           "home": "Deportiva Francesa B",
@@ -1024,8 +1144,8 @@
         }
       ]
     },
-    "22": {
-      "date": "26/09/2026",
+    "23": {
+      "date": "",
       "ms": [
         {
           "home": "Pucara B",
@@ -1064,8 +1184,8 @@
         }
       ]
     },
-    "23": {
-      "date": "03/10/2026",
+    "24": {
+      "date": "",
       "ms": [
         {
           "home": "San Cirano B",
@@ -1104,8 +1224,8 @@
         }
       ]
     },
-    "24": {
-      "date": "10/10/2026",
+    "25": {
+      "date": "",
       "ms": [
         {
           "home": "Pucara B",
@@ -1144,8 +1264,8 @@
         }
       ]
     },
-    "25": {
-      "date": "17/10/2026",
+    "26": {
+      "date": "",
       "ms": [
         {
           "home": "San Albano B",
@@ -1185,5 +1305,8 @@
       ]
     }
   },
-  "lastUpdate": "manual"
+  "lastUpdate": "2026-03-23T23:17:31.222021+00:00",
+  "matchesScraped": 14,
+  "championshipId": "2025189",
+  "nombre": "1A Pre-Inter B"
 }
