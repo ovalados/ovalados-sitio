@@ -1,0 +1,1310 @@
+{
+  "teams": [
+    {
+      "name": "Hurling",
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
+      "e": 0,
+      "p": 1,
+      "pf": 81,
+      "pc": 62,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w",
+        "l"
+      ]
+    },
+    {
+      "name": "Lomas Athletic",
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
+      "e": 0,
+      "p": 0,
+      "pf": 53,
+      "pc": 27,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w",
+        "w"
+      ]
+    },
+    {
+      "name": "Curupayti",
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
+      "e": 0,
+      "p": 0,
+      "pf": 84,
+      "pc": 40,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w",
+        "w"
+      ]
+    },
+    {
+      "name": "San Luis",
+      "pts": 4,
+      "pj": 2,
+      "g": 1,
+      "e": 0,
+      "p": 1,
+      "pf": 69,
+      "pc": 58,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w",
+        "l"
+      ]
+    },
+    {
+      "name": "Olivos",
+      "pts": 6,
+      "pj": 2,
+      "g": 1,
+      "e": 1,
+      "p": 0,
+      "pf": 74,
+      "pc": 72,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w",
+        "d"
+      ]
+    },
+    {
+      "name": "Gimnasia y Esgrima",
+      "pts": 6,
+      "pj": 2,
+      "g": 1,
+      "e": 1,
+      "p": 0,
+      "pf": 34,
+      "pc": 27,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w",
+        "d"
+      ]
+    },
+    {
+      "name": "San Albano",
+      "pts": 3,
+      "pj": 2,
+      "g": 0,
+      "e": 1,
+      "p": 1,
+      "pf": 65,
+      "pc": 72,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l",
+        "d"
+      ]
+    },
+    {
+      "name": "San Cirano",
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
+      "e": 0,
+      "p": 1,
+      "pf": 68,
+      "pc": 62,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l",
+        "w"
+      ]
+    },
+    {
+      "name": "Deportiva Francesa",
+      "pts": 1,
+      "pj": 2,
+      "g": 0,
+      "e": 0,
+      "p": 2,
+      "pf": 48,
+      "pc": 72,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l",
+        "l"
+      ]
+    },
+    {
+      "name": "San Fernando",
+      "pts": 0,
+      "pj": 2,
+      "g": 0,
+      "e": 0,
+      "p": 2,
+      "pf": 26,
+      "pc": 83,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l",
+        "l"
+      ]
+    },
+    {
+      "name": "Pueyrredon",
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
+      "e": 0,
+      "p": 1,
+      "pf": 65,
+      "pc": 37,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "l",
+        "w"
+      ]
+    },
+    {
+      "name": "Universitario de la Plata",
+      "pts": 2,
+      "pj": 2,
+      "g": 0,
+      "e": 1,
+      "p": 1,
+      "pf": 32,
+      "pc": 87,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l",
+        "d"
+      ]
+    },
+    {
+      "name": "San Andres",
+      "pts": 2,
+      "pj": 2,
+      "g": 0,
+      "e": 1,
+      "p": 1,
+      "pf": 42,
+      "pc": 79,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l",
+        "d"
+      ]
+    },
+    {
+      "name": "Pucara",
+      "pts": 7,
+      "pj": 2,
+      "g": 1,
+      "e": 1,
+      "p": 0,
+      "pf": 61,
+      "pc": 24,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w",
+        "d"
+      ]
+    }
+  ],
+  "matches": {
+    "1": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "San Andres",
+          "played": true,
+          "hs": 61,
+          "as": 24,
+          "bp_home": true
+        },
+        {
+          "home": "Hurling",
+          "away": "Universitario de la Plata",
+          "played": true,
+          "hs": 69,
+          "as": 14,
+          "bp_home": true
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "Pueyrredon",
+          "played": true,
+          "hs": 25,
+          "as": 17
+        },
+        {
+          "home": "Curupayti",
+          "away": "San Fernando",
+          "played": true,
+          "hs": 55,
+          "as": 16,
+          "bp_home": true
+        },
+        {
+          "home": "San Luis",
+          "away": "Deportiva Francesa",
+          "played": true,
+          "hs": 43,
+          "as": 24
+        },
+        {
+          "home": "Olivos",
+          "away": "San Cirano",
+          "played": true,
+          "hs": 36,
+          "as": 34,
+          "bf_away": true
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "San Albano",
+          "played": true,
+          "hs": 34,
+          "as": 27,
+          "bf_away": true
+        }
+      ]
+    },
+    "2": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "Pucara",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "San Albano",
+          "away": "Olivos",
+          "played": true,
+          "hs": 38,
+          "as": 38
+        },
+        {
+          "home": "San Cirano",
+          "away": "San Luis",
+          "played": true,
+          "hs": 34,
+          "as": 26
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "Curupayti",
+          "played": true,
+          "hs": 24,
+          "as": 29,
+          "bf_home": true
+        },
+        {
+          "home": "San Fernando",
+          "away": "Lomas Athletic",
+          "played": true,
+          "hs": 10,
+          "as": 28,
+          "bp_away": true
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "Hurling",
+          "played": true,
+          "hs": 48,
+          "as": 12,
+          "bp_home": true
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "San Andres",
+          "played": true,
+          "hs": 18,
+          "as": 18
+        }
+      ]
+    },
+    "3": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        }
+      ]
+    },
+    "4": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Olivos",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "San Luis",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "Curupayti",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "Lomas Athletic",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "Hurling",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "San Andres",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "Universitario de la Plata",
+          "played": false
+        }
+      ]
+    },
+    "5": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "Olivos",
+          "played": false
+        }
+      ]
+    },
+    "6": {
+      "date": "",
+      "ms": [
+        {
+          "home": "San Luis",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "Curupayti",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "Lomas Athletic",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "Hurling",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "San Andres",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "Pueyrredon",
+          "played": false
+        }
+      ]
+    },
+    "7": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "Olivos",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "San Luis",
+          "played": false
+        }
+      ]
+    },
+    "8": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Curupayti",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "Lomas Athletic",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "Hurling",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "San Andres",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "San Fernando",
+          "played": false
+        }
+      ]
+    },
+    "9": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "Olivos",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "San Luis",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "Curupayti",
+          "played": false
+        }
+      ]
+    },
+    "10": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Lomas Athletic",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "Hurling",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "San Andres",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "Deportiva Francesa",
+          "played": false
+        }
+      ]
+    },
+    "11": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "Olivos",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "San Luis",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "Curupayti",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "Lomas Athletic",
+          "played": false
+        }
+      ]
+    },
+    "12": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Hurling",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "San Andres",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "San Cirano",
+          "played": false
+        }
+      ]
+    },
+    "13": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "Olivos",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "San Luis",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "Curupayti",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "Lomas Athletic",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "Hurling",
+          "played": false
+        }
+      ]
+    },
+    "14": {
+      "date": "",
+      "ms": [
+        {
+          "home": "San Andres",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "Hurling",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "Lomas Athletic",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "Curupayti",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "San Luis",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "Olivos",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        }
+      ]
+    },
+    "15": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "Universitario de la Plata",
+          "played": false
+        }
+      ]
+    },
+    "16": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Universitario de la Plata",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "San Andres",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "Hurling",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "Lomas Athletic",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "Curupayti",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "San Luis",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "Olivos",
+          "played": false
+        }
+      ]
+    },
+    "17": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "Olivos",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "Pueyrredon",
+          "played": false
+        }
+      ]
+    },
+    "18": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pueyrredon",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "San Andres",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "Hurling",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "Lomas Athletic",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "Curupayti",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "San Luis",
+          "played": false
+        }
+      ]
+    },
+    "19": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "San Luis",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "Olivos",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "San Fernando",
+          "played": false
+        }
+      ]
+    },
+    "20": {
+      "date": "",
+      "ms": [
+        {
+          "home": "San Fernando",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "San Andres",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "Hurling",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "Lomas Athletic",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "Curupayti",
+          "played": false
+        }
+      ]
+    },
+    "21": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "Curupayti",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "San Luis",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "Olivos",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "Deportiva Francesa",
+          "played": false
+        }
+      ]
+    },
+    "22": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Deportiva Francesa",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "San Andres",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "Hurling",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "Lomas Athletic",
+          "played": false
+        }
+      ]
+    },
+    "23": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "Lomas Athletic",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "Curupayti",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "San Luis",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "Olivos",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "San Albano",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "San Cirano",
+          "played": false
+        }
+      ]
+    },
+    "24": {
+      "date": "",
+      "ms": [
+        {
+          "home": "San Cirano",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "San Albano",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "San Andres",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "Hurling",
+          "played": false
+        }
+      ]
+    },
+    "25": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Pucara",
+          "away": "Hurling",
+          "played": false
+        },
+        {
+          "home": "San Andres",
+          "away": "Lomas Athletic",
+          "played": false
+        },
+        {
+          "home": "Universitario de la Plata",
+          "away": "Curupayti",
+          "played": false
+        },
+        {
+          "home": "Pueyrredon",
+          "away": "San Luis",
+          "played": false
+        },
+        {
+          "home": "San Fernando",
+          "away": "Olivos",
+          "played": false
+        },
+        {
+          "home": "Deportiva Francesa",
+          "away": "Gimnasia y Esgrima",
+          "played": false
+        },
+        {
+          "home": "San Cirano",
+          "away": "San Albano",
+          "played": false
+        }
+      ]
+    },
+    "26": {
+      "date": "",
+      "ms": [
+        {
+          "home": "San Albano",
+          "away": "Pucara",
+          "played": false
+        },
+        {
+          "home": "Gimnasia y Esgrima",
+          "away": "San Cirano",
+          "played": false
+        },
+        {
+          "home": "Olivos",
+          "away": "Deportiva Francesa",
+          "played": false
+        },
+        {
+          "home": "San Luis",
+          "away": "San Fernando",
+          "played": false
+        },
+        {
+          "home": "Curupayti",
+          "away": "Pueyrredon",
+          "played": false
+        },
+        {
+          "home": "Lomas Athletic",
+          "away": "Universitario de la Plata",
+          "played": false
+        },
+        {
+          "home": "Hurling",
+          "away": "San Andres",
+          "played": false
+        }
+      ]
+    }
+  },
+  "lastUpdate": "2026-03-23T23:17:30.236383+00:00",
+  "matchesScraped": 14,
+  "championshipId": "2025188",
+  "nombre": "1A Pre-Inter A"
+}
