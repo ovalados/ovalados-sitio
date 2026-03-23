@@ -1,332 +1,1264 @@
 {
   "teams": [
-    { "name": "Ciudad De Bs.As. B", "pts": 0, "pj": 0, "g": 0, "e": 0, "p": 0, "pf": 0, "pc": 0, "bp": 0, "bf": 0, "form": [] },
-    { "name": "SITAS B",            "pts": 0, "pj": 0, "g": 0, "e": 0, "p": 0, "pf": 0, "pc": 0, "bp": 0, "bf": 0, "form": [] },
-    { "name": "San Carlos B",       "pts": 0, "pj": 0, "g": 0, "e": 0, "p": 0, "pf": 0, "pc": 0, "bp": 0, "bf": 0, "form": [] },
-    { "name": "Los Molinos B",      "pts": 0, "pj": 0, "g": 0, "e": 0, "p": 0, "pf": 0, "pc": 0, "bp": 0, "bf": 0, "form": [] },
-    { "name": "CASA De Padua B",    "pts": 0, "pj": 0, "g": 0, "e": 0, "p": 0, "pf": 0, "pc": 0, "bp": 0, "bf": 0, "form": [] },
-    { "name": "Lanus B",            "pts": 0, "pj": 0, "g": 0, "e": 0, "p": 0, "pf": 0, "pc": 0, "bp": 0, "bf": 0, "form": [] },
-    { "name": "Virreyes B",         "pts": 0, "pj": 0, "g": 0, "e": 0, "p": 0, "pf": 0, "pc": 0, "bp": 0, "bf": 0, "form": [] },
-    { "name": "Tigre",              "pts": 0, "pj": 0, "g": 0, "e": 0, "p": 0, "pf": 0, "pc": 0, "bp": 0, "bf": 0, "form": [] },
-    { "name": "Centro Naval B",     "pts": 0, "pj": 0, "g": 0, "e": 0, "p": 0, "pf": 0, "pc": 0, "bp": 0, "bf": 0, "form": [] },
-    { "name": "Lujan B",            "pts": 0, "pj": 0, "g": 0, "e": 0, "p": 0, "pf": 0, "pc": 0, "bp": 0, "bf": 0, "form": [] }
+    {
+      "name": "Bye",
+      "pts": 16,
+      "pj": 8,
+      "g": 0,
+      "e": 8,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "d",
+        "d",
+        "d",
+        "d",
+        "d"
+      ]
+    },
+    {
+      "name": "SITAS B",
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
+      "e": 0,
+      "p": 0,
+      "pf": 65,
+      "pc": 24,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w",
+        "w"
+      ]
+    },
+    {
+      "name": "Tigre",
+      "pts": 4,
+      "pj": 2,
+      "g": 0,
+      "e": 2,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "name": "Lanus B",
+      "pts": 3,
+      "pj": 2,
+      "g": 0,
+      "e": 1,
+      "p": 1,
+      "pf": 21,
+      "pc": 26,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "name": "Virreyes B",
+      "pts": 1,
+      "pj": 2,
+      "g": 0,
+      "e": 0,
+      "p": 2,
+      "pf": 26,
+      "pc": 69,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l",
+        "l"
+      ]
+    },
+    {
+      "name": "San Carlos B",
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
+      "e": 0,
+      "p": 0,
+      "pf": 76,
+      "pc": 35,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w",
+        "w"
+      ]
+    },
+    {
+      "name": "CASA de Padua B",
+      "pts": 3,
+      "pj": 2,
+      "g": 0,
+      "e": 1,
+      "p": 1,
+      "pf": 17,
+      "pc": 20,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "d",
+        "l"
+      ]
+    },
+    {
+      "name": "Centro Naval B",
+      "pts": 2,
+      "pj": 2,
+      "g": 0,
+      "e": 1,
+      "p": 1,
+      "pf": 7,
+      "pc": 45,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l",
+        "d"
+      ]
+    },
+    {
+      "name": "Los Molinos B",
+      "pts": 7,
+      "pj": 2,
+      "g": 1,
+      "e": 1,
+      "p": 0,
+      "pf": 44,
+      "pc": 14,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "d",
+        "w"
+      ]
+    },
+    {
+      "name": "Lujan B",
+      "pts": 0,
+      "pj": 2,
+      "g": 0,
+      "e": 0,
+      "p": 2,
+      "pf": 21,
+      "pc": 78,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l",
+        "l"
+      ]
+    },
+    {
+      "name": "Ciudad de Bs.As. B",
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
+      "e": 0,
+      "p": 0,
+      "pf": 53,
+      "pc": 19,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w",
+        "w"
+      ]
+    }
   ],
   "matches": {
     "1": {
-      "date": "14/03/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "Lujan B",         "played": false },
-        { "home": "Bye",                "away": "Los Molinos B",   "played": false },
-        { "home": "SITAS B",            "away": "Centro Naval B",  "played": false },
-        { "home": "Bye",                "away": "CASA De Padua B", "played": false },
-        { "home": "Tigre",              "away": "Bye",             "played": false },
-        { "home": "Lanus B",            "away": "Bye",             "played": false },
-        { "home": "Virreyes B",         "away": "San Carlos B",    "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "Lujan B",
+          "played": true,
+          "hs": 34,
+          "as": 7,
+          "bp_home": true
+        },
+        {
+          "home": "Bye",
+          "away": "Los Molinos B",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "SITAS B",
+          "away": "Centro Naval B",
+          "played": true,
+          "hs": 45,
+          "as": 7,
+          "bp_home": true
+        },
+        {
+          "home": "Bye",
+          "away": "CASA de Padua B",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Tigre",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Lanus B",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Virreyes B",
+          "away": "San Carlos B",
+          "played": true,
+          "hs": 14,
+          "as": 50,
+          "bp_away": true
+        }
       ]
     },
     "2": {
-      "date": "21/03/2026",
+      "date": "",
       "ms": [
-        { "home": "Virreyes B",         "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "San Carlos B",       "away": "Lanus B",            "played": false },
-        { "home": "Bye",                "away": "Tigre",              "played": false },
-        { "home": "Bye",                "away": "Bye",                "played": false },
-        { "home": "CASA De Padua B",    "away": "SITAS B",            "played": false },
-        { "home": "Centro Naval B",     "away": "Bye",                "played": false },
-        { "home": "Los Molinos B",      "away": "Lujan B",            "played": false }
+        {
+          "home": "Virreyes B",
+          "away": "Ciudad de Bs.As. B",
+          "played": true,
+          "hs": 12,
+          "as": 19,
+          "bf_home": true
+        },
+        {
+          "home": "San Carlos B",
+          "away": "Lanus B",
+          "played": true,
+          "hs": 26,
+          "as": 21,
+          "bf_away": true
+        },
+        {
+          "home": "Bye",
+          "away": "Tigre",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "SITAS B",
+          "played": true,
+          "hs": 17,
+          "as": 20,
+          "bf_home": true
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "Lujan B",
+          "played": true,
+          "hs": 44,
+          "as": 14,
+          "bp_home": true
+        }
       ]
     },
     "3": {
-      "date": "28/03/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "Los Molinos B",   "played": false },
-        { "home": "Lujan B",            "away": "Centro Naval B",  "played": false },
-        { "home": "Bye",                "away": "CASA De Padua B", "played": false },
-        { "home": "SITAS B",            "away": "Bye",             "played": false },
-        { "home": "Bye",                "away": "Bye",             "played": false },
-        { "home": "Tigre",              "away": "San Carlos B",    "played": false },
-        { "home": "Lanus B",            "away": "Virreyes B",      "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "Los Molinos B",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "Centro Naval B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "CASA de Padua B",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "Virreyes B",
+          "played": false
+        }
       ]
     },
     "4": {
-      "date": "11/04/2026",
+      "date": "",
       "ms": [
-        { "home": "Lanus B",            "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "Virreyes B",         "away": "Tigre",              "played": false },
-        { "home": "San Carlos B",       "away": "Bye",                "played": false },
-        { "home": "Bye",                "away": "Bye",                "played": false },
-        { "home": "Bye",                "away": "SITAS B",            "played": false },
-        { "home": "CASA De Padua B",    "away": "Lujan B",            "played": false },
-        { "home": "Centro Naval B",     "away": "Los Molinos B",      "played": false }
+        {
+          "home": "Lanus B",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "SITAS B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "Lujan B",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "Los Molinos B",
+          "played": false
+        }
       ]
     },
     "5": {
-      "date": "18/04/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "Centro Naval B",  "played": false },
-        { "home": "Los Molinos B",      "away": "CASA De Padua B", "played": false },
-        { "home": "Lujan B",            "away": "Bye",             "played": false },
-        { "home": "Bye",                "away": "Bye",             "played": false },
-        { "home": "SITAS B",            "away": "San Carlos B",    "played": false },
-        { "home": "Bye",                "away": "Virreyes B",      "played": false },
-        { "home": "Tigre",              "away": "Lanus B",         "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "Centro Naval B",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "CASA de Padua B",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Lanus B",
+          "played": false
+        }
       ]
     },
     "6": {
-      "date": "25/04/2026",
+      "date": "",
       "ms": [
-        { "home": "Tigre",              "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "Lanus B",            "away": "Bye",                "played": false },
-        { "home": "Virreyes B",         "away": "SITAS B",            "played": false },
-        { "home": "San Carlos B",       "away": "Bye",                "played": false },
-        { "home": "Bye",                "away": "Lujan B",            "played": false },
-        { "home": "Los Molinos B",      "away": "CASA De Padua B",    "played": false },
-        { "home": "Centro Naval B",     "away": "Bye",                "played": false }
+        {
+          "home": "Tigre",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "SITAS B",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Lujan B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Los Molinos B",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "Centro Naval B",
+          "played": false
+        }
       ]
     },
     "7": {
-      "date": "09/05/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "CASA De Padua B", "played": false },
-        { "home": "Centro Naval B",     "away": "Bye",             "played": false },
-        { "home": "Los Molinos B",      "away": "Bye",             "played": false },
-        { "home": "Lujan B",            "away": "San Carlos B",    "played": false },
-        { "home": "Bye",                "away": "Virreyes B",      "played": false },
-        { "home": "SITAS B",            "away": "Lanus B",         "played": false },
-        { "home": "Bye",                "away": "Tigre",           "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "CASA de Padua B",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "Lanus B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Tigre",
+          "played": false
+        }
       ]
     },
     "8": {
-      "date": "16/05/2026",
+      "date": "",
       "ms": [
-        { "home": "Bye",                "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "Tigre",              "away": "SITAS B",            "played": false },
-        { "home": "Lanus B",            "away": "Bye",                "played": false },
-        { "home": "Virreyes B",         "away": "Lujan B",            "played": false },
-        { "home": "San Carlos B",       "away": "Los Molinos B",      "played": false },
-        { "home": "Bye",                "away": "Centro Naval B",     "played": false },
-        { "home": "CASA De Padua B",    "away": "Bye",                "played": false }
+        {
+          "home": "Bye",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "SITAS B",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "Lujan B",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "Los Molinos B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Centro Naval B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "CASA de Padua B",
+          "played": false
+        }
       ]
     },
     "9": {
-      "date": "23/05/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "Bye",             "played": false },
-        { "home": "CASA De Padua B",    "away": "Bye",             "played": false },
-        { "home": "Centro Naval B",     "away": "San Carlos B",    "played": false },
-        { "home": "Los Molinos B",      "away": "Virreyes B",      "played": false },
-        { "home": "Lujan B",            "away": "Lanus B",         "played": false },
-        { "home": "Bye",                "away": "Tigre",           "played": false },
-        { "home": "SITAS B",            "away": "Bye",             "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "Lanus B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "Bye",
+          "played": false
+        }
       ]
     },
     "10": {
-      "date": "06/06/2026",
+      "date": "",
       "ms": [
-        { "home": "SITAS B",            "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "Bye",                "away": "Bye",                "played": false },
-        { "home": "Tigre",              "away": "Lujan B",            "played": false },
-        { "home": "Lanus B",            "away": "Los Molinos B",      "played": false },
-        { "home": "Virreyes B",         "away": "Centro Naval B",     "played": false },
-        { "home": "San Carlos B",       "away": "Bye",                "played": false },
-        { "home": "CASA De Padua B",    "away": "Bye",                "played": false }
+        {
+          "home": "SITAS B",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Lujan B",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "Los Molinos B",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "Centro Naval B",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "CASA de Padua B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        }
       ]
     },
     "11": {
-      "date": "13/06/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "Bye",             "played": false },
-        { "home": "Bye",                "away": "San Carlos B",    "played": false },
-        { "home": "CASA De Padua B",    "away": "Virreyes B",      "played": false },
-        { "home": "Centro Naval B",     "away": "Lanus B",         "played": false },
-        { "home": "Los Molinos B",      "away": "Tigre",           "played": false },
-        { "home": "Lujan B",            "away": "Bye",             "played": false },
-        { "home": "Bye",                "away": "SITAS B",         "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "Lanus B",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "SITAS B",
+          "played": false
+        }
       ]
     },
     "12": {
-      "date": "20/06/2026",
+      "date": "",
       "ms": [
-        { "home": "Bye",                "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "SITAS B",            "away": "Lujan B",            "played": false },
-        { "home": "Bye",                "away": "Los Molinos B",      "played": false },
-        { "home": "Tigre",              "away": "Centro Naval B",     "played": false },
-        { "home": "Lanus B",            "away": "CASA De Padua B",    "played": false },
-        { "home": "Virreyes B",         "away": "Bye",                "played": false },
-        { "home": "Bye",                "away": "San Carlos B",       "played": false }
+        {
+          "home": "Bye",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "Lujan B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Los Molinos B",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Centro Naval B",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "CASA de Padua B",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "Bye",
+          "played": false
+        }
       ]
     },
     "13": {
-      "date": "04/07/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "San Carlos B",    "played": false },
-        { "home": "Bye",                "away": "Virreyes B",      "played": false },
-        { "home": "Bye",                "away": "Lanus B",         "played": false },
-        { "home": "CASA De Padua B",    "away": "Tigre",           "played": false },
-        { "home": "Centro Naval B",     "away": "Bye",             "played": false },
-        { "home": "Los Molinos B",      "away": "SITAS B",         "played": false },
-        { "home": "Lujan B",            "away": "Bye",             "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Lanus B",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "SITAS B",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "Bye",
+          "played": false
+        }
       ]
     },
     "14": {
-      "date": "11/07/2026",
+      "date": "",
       "ms": [
-        { "home": "Lujan B",            "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "Los Molinos B",      "away": "Bye",                "played": false },
-        { "home": "Centro Naval B",     "away": "SITAS B",            "played": false },
-        { "home": "CASA De Padua B",    "away": "Bye",                "played": false },
-        { "home": "Bye",                "away": "Tigre",              "played": false },
-        { "home": "Lanus B",            "away": "San Carlos B",       "played": false },
-        { "home": "Virreyes B",         "away": "Bye",                "played": false }
+        {
+          "home": "Lujan B",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "SITAS B",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Lanus B",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "Virreyes B",
+          "played": false
+        }
       ]
     },
     "15": {
-      "date": "18/07/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "Virreyes B",      "played": false },
-        { "home": "Lanus B",            "away": "San Carlos B",    "played": false },
-        { "home": "Tigre",              "away": "Bye",             "played": false },
-        { "home": "Bye",                "away": "Bye",             "played": false },
-        { "home": "SITAS B",            "away": "CASA De Padua B", "played": false },
-        { "home": "Bye",                "away": "Centro Naval B",  "played": false },
-        { "home": "Lujan B",            "away": "Los Molinos B",   "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "CASA de Padua B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Centro Naval B",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "Los Molinos B",
+          "played": false
+        }
       ]
     },
     "16": {
-      "date": "01/08/2026",
+      "date": "",
       "ms": [
-        { "home": "Los Molinos B",      "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "Centro Naval B",     "away": "Lujan B",            "played": false },
-        { "home": "CASA De Padua B",    "away": "Bye",                "played": false },
-        { "home": "Bye",                "away": "Bye",                "played": false },
-        { "home": "SITAS B",            "away": "Bye",                "played": false },
-        { "home": "Bye",                "away": "San Carlos B",       "played": false },
-        { "home": "Tigre",              "away": "Virreyes B",         "played": false },
-        { "home": "Lanus B",            "away": "Bye",                "played": false }
+        {
+          "home": "Los Molinos B",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "Lujan B",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "SITAS B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "Lanus B",
+          "played": false
+        }
       ]
     },
     "17": {
-      "date": "15/08/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "Lanus B",         "played": false },
-        { "home": "Tigre",              "away": "Virreyes B",      "played": false },
-        { "home": "Bye",                "away": "San Carlos B",    "played": false },
-        { "home": "Centro Naval B",     "away": "Lujan B",         "played": false },
-        { "home": "CASA De Padua B",    "away": "Bye",             "played": false },
-        { "home": "Bye",                "away": "SITAS B",         "played": false },
-        { "home": "Los Molinos B",      "away": "Centro Naval B",  "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "Lanus B",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "CASA de Padua B",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "Centro Naval B",
+          "played": false
+        }
       ]
     },
     "18": {
-      "date": "22/08/2026",
+      "date": "",
       "ms": [
-        { "home": "Centro Naval B",     "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "CASA De Padua B",    "away": "Los Molinos B",      "played": false },
-        { "home": "Bye",                "away": "Lujan B",            "played": false },
-        { "home": "Bye",                "away": "Bye",                "played": false },
-        { "home": "San Carlos B",       "away": "SITAS B",            "played": false },
-        { "home": "Virreyes B",         "away": "Bye",                "played": false },
-        { "home": "Lanus B",            "away": "Tigre",              "played": false }
+        {
+          "home": "Centro Naval B",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "Los Molinos B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Lujan B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "SITAS B",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "Tigre",
+          "played": false
+        }
       ]
     },
     "19": {
-      "date": "29/08/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "Tigre",           "played": false },
-        { "home": "Bye",                "away": "Lanus B",         "played": false },
-        { "home": "SITAS B",            "away": "Virreyes B",      "played": false },
-        { "home": "Bye",                "away": "San Carlos B",    "played": false },
-        { "home": "Lujan B",            "away": "Bye",             "played": false },
-        { "home": "Los Molinos B",      "away": "Bye",             "played": false },
-        { "home": "Centro Naval B",     "away": "CASA De Padua B", "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Lanus B",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "CASA de Padua B",
+          "played": false
+        }
       ]
     },
     "20": {
-      "date": "05/09/2026",
+      "date": "",
       "ms": [
-        { "home": "CASA De Padua B",    "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "Bye",                "away": "Centro Naval B",     "played": false },
-        { "home": "Bye",                "away": "Los Molinos B",      "played": false },
-        { "home": "San Carlos B",       "away": "Lujan B",            "played": false },
-        { "home": "Virreyes B",         "away": "Bye",                "played": false },
-        { "home": "Bye",                "away": "Lanus B",            "played": false },
-        { "home": "SITAS B",            "away": "Tigre",              "played": false }
+        {
+          "home": "CASA de Padua B",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Centro Naval B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Los Molinos B",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "Lujan B",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "SITAS B",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Bye",
+          "played": false
+        }
       ]
     },
     "21": {
-      "date": "12/09/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "Bye",             "played": false },
-        { "home": "SITAS B",            "away": "Tigre",           "played": false },
-        { "home": "Bye",                "away": "Lanus B",         "played": false },
-        { "home": "San Carlos B",       "away": "Lujan B",         "played": false },
-        { "home": "Virreyes B",         "away": "Bye",             "played": false },
-        { "home": "Lanus B",            "away": "SITAS B",         "played": false },
-        { "home": "Centro Naval B",     "away": "Bye",             "played": false },
-        { "home": "CASA De Padua B",    "away": "Bye",             "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Lanus B",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "Bye",
+          "played": false
+        }
       ]
     },
     "22": {
-      "date": "26/09/2026",
+      "date": "",
       "ms": [
-        { "home": "Bye",                "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "Bye",                "away": "CASA De Padua B",    "played": false },
-        { "home": "San Carlos B",       "away": "Centro Naval B",     "played": false },
-        { "home": "Virreyes B",         "away": "Los Molinos B",      "played": false },
-        { "home": "Lanus B",            "away": "Lujan B",            "played": false },
-        { "home": "Tigre",              "away": "Bye",                "played": false },
-        { "home": "SITAS B",            "away": "Bye",                "played": false }
+        {
+          "home": "Bye",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "CASA de Padua B",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "Centro Naval B",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "Los Molinos B",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "Lujan B",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "SITAS B",
+          "played": false
+        }
       ]
     },
     "23": {
-      "date": "03/10/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "SITAS B",         "played": false },
-        { "home": "Bye",                "away": "Bye",             "played": false },
-        { "home": "Lujan B",            "away": "Tigre",           "played": false },
-        { "home": "Los Molinos B",      "away": "Lanus B",         "played": false },
-        { "home": "Centro Naval B",     "away": "Virreyes B",      "played": false },
-        { "home": "CASA De Padua B",    "away": "San Carlos B",    "played": false },
-        { "home": "Bye",                "away": "Bye",             "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "SITAS B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "Lanus B",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "San Carlos B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        }
       ]
     },
     "24": {
-      "date": "10/10/2026",
+      "date": "",
       "ms": [
-        { "home": "Bye",                "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "San Carlos B",       "away": "Bye",                "played": false },
-        { "home": "Virreyes B",         "away": "Bye",                "played": false },
-        { "home": "CASA De Padua B",    "away": "Lanus B",            "played": false },
-        { "home": "Centro Naval B",     "away": "Tigre",              "played": false },
-        { "home": "Los Molinos B",      "away": "Bye",                "played": false },
-        { "home": "Lujan B",            "away": "SITAS B",            "played": false }
+        {
+          "home": "Bye",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "San Carlos B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "CASA de Padua B",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "Centro Naval B",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "Los Molinos B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Lujan B",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "Bye",
+          "played": false
+        }
       ]
     },
     "25": {
-      "date": "17/10/2026",
+      "date": "",
       "ms": [
-        { "home": "Ciudad De Bs.As. B", "away": "Bye",             "played": false },
-        { "home": "Lujan B",            "away": "SITAS B",         "played": false },
-        { "home": "Los Molinos B",      "away": "Bye",             "played": false },
-        { "home": "Centro Naval B",     "away": "Tigre",           "played": false },
-        { "home": "CASA De Padua B",    "away": "Lanus B",         "played": false },
-        { "home": "Bye",                "away": "Virreyes B",      "played": false },
-        { "home": "San Carlos B",       "away": "Bye",             "played": false }
+        {
+          "home": "Ciudad de Bs.As. B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Lujan B",
+          "away": "SITAS B",
+          "played": false
+        },
+        {
+          "home": "Los Molinos B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Centro Naval B",
+          "away": "Tigre",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua B",
+          "away": "Lanus B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Virreyes B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Carlos B",
+          "played": false
+        }
       ]
     },
     "26": {
-      "date": "24/10/2026",
+      "date": "",
       "ms": [
-        { "home": "San Carlos B",       "away": "Ciudad De Bs.As. B", "played": false },
-        { "home": "Virreyes B",         "away": "Bye",                "played": false },
-        { "home": "Lanus B",            "away": "Bye",                "played": false },
-        { "home": "Tigre",              "away": "CASA De Padua B",    "played": false },
-        { "home": "Bye",                "away": "Centro Naval B",     "played": false },
-        { "home": "SITAS B",            "away": "Bye",                "played": false },
-        { "home": "Los Molinos B",      "away": "Bye",                "played": false },
-        { "home": "Bye",                "away": "Lujan B",            "played": false }
+        {
+          "home": "San Carlos B",
+          "away": "Ciudad de Bs.As. B",
+          "played": false
+        },
+        {
+          "home": "Virreyes B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Lanus B",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Tigre",
+          "away": "CASA de Padua B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Centro Naval B",
+          "played": false
+        },
+        {
+          "home": "SITAS B",
+          "away": "Los Molinos B",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Lujan B",
+          "played": false
+        }
       ]
     }
   },
-  "lastUpdate": "manual"
+  "lastUpdate": "2026-03-23T23:17:42.665486+00:00",
+  "matchesScraped": 14,
+  "championshipId": "2025205",
+  "nombre": "1C Pre-Inter B"
 }
