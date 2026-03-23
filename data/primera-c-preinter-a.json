@@ -2,231 +2,355 @@
   "teams": [
     {
       "name": "Areco",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "pf": 54,
+      "pc": 32,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "w"
+      ]
     },
     {
       "name": "SITAS",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "pf": 45,
+      "pc": 12,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "w"
+      ]
     },
     {
       "name": "San Miguel",
       "pts": 0,
-      "pj": 0,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 2,
+      "pf": 17,
+      "pc": 50,
       "bp": 0,
       "bf": 0,
-      "form": []
+      "form": [
+        "l",
+        "l"
+      ]
     },
     {
-      "name": "St Brendan's",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "name": "St Brendan´s",
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "pf": 72,
+      "pc": 51,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "w"
+      ]
     },
     {
       "name": "Lanus",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "pf": 82,
+      "pc": 29,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "w"
+      ]
     },
     {
       "name": "Virreyes",
       "pts": 0,
-      "pj": 0,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 2,
+      "pf": 5,
+      "pc": 111,
       "bp": 0,
       "bf": 0,
-      "form": []
+      "form": [
+        "l",
+        "l"
+      ]
     },
     {
       "name": "San Carlos",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "p": 1,
+      "pf": 71,
+      "pc": 30,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "l"
+      ]
     },
     {
       "name": "Daom",
       "pts": 0,
-      "pj": 0,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 2,
+      "pf": 33,
+      "pc": 93,
       "bp": 0,
       "bf": 0,
-      "form": []
+      "form": [
+        "l",
+        "l"
+      ]
     },
     {
       "name": "Del Sur",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 1,
+      "pf": 58,
+      "pc": 43,
       "bp": 0,
-      "bf": 0,
-      "form": []
+      "bf": 1,
+      "form": [
+        "l",
+        "w"
+      ]
     },
     {
       "name": "CASA de Padua",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 4,
+      "pj": 2,
+      "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 1,
+      "pf": 27,
+      "pc": 32,
       "bp": 0,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "l"
+      ]
     },
     {
       "name": "Centro Naval",
       "pts": 0,
-      "pj": 0,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 2,
+      "pf": 22,
+      "pc": 51,
       "bp": 0,
       "bf": 0,
-      "form": []
+      "form": [
+        "l",
+        "l"
+      ]
     },
     {
       "name": "Los Molinos",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 1,
+      "pf": 48,
+      "pc": 35,
       "bp": 0,
-      "bf": 0,
-      "form": []
+      "bf": 1,
+      "form": [
+        "l",
+        "w"
+      ]
     },
     {
       "name": "Lujan",
-      "pts": 0,
-      "pj": 0,
+      "pts": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 0,
-      "pf": 0,
-      "pc": 0,
+      "p": 2,
+      "pf": 43,
+      "pc": 65,
       "bp": 0,
-      "bf": 0,
-      "form": []
+      "bf": 1,
+      "form": [
+        "l",
+        "l"
+      ]
     },
     {
       "name": "Ciudad de Bs.As.",
-      "pts": 0,
-      "pj": 0,
-      "g": 0,
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 0,
-      "pc": 0,
-      "bp": 0,
+      "pf": 91,
+      "pc": 34,
+      "bp": 1,
       "bf": 0,
-      "form": []
+      "form": [
+        "w",
+        "w"
+      ]
     }
   ],
   "matches": {
     "1": {
-      "date": "14/03/2026",
+      "date": "",
       "ms": [
+        {
+          "home": "Ciudad de Bs.As.",
+          "away": "Lujan",
+          "played": true,
+          "hs": 34,
+          "as": 29,
+          "bf_away": true
+        },
         {
           "home": "Areco",
           "away": "Los Molinos",
-          "played": false
+          "played": true,
+          "hs": 21,
+          "as": 17,
+          "bf_away": true
         },
         {
           "home": "SITAS",
           "away": "Centro Naval",
-          "played": false
+          "played": true,
+          "hs": 18,
+          "as": 7
         },
         {
           "home": "San Miguel",
           "away": "CASA de Padua",
-          "played": false
+          "played": true,
+          "hs": 5,
+          "as": 22
         },
         {
-          "home": "St Brendan\"s",
+          "home": "St Brendan´s",
           "away": "Del Sur",
-          "played": false
+          "played": true,
+          "hs": 31,
+          "as": 30,
+          "bf_away": true
         },
         {
           "home": "Lanus",
           "away": "Daom",
-          "played": false
+          "played": true,
+          "hs": 52,
+          "as": 12,
+          "bp_home": true
         },
         {
           "home": "Virreyes",
           "away": "San Carlos",
-          "played": false
-        },
-        {
-          "home": "Ciudad de Bs.As.",
-          "away": "Lujan",
-          "played": false
+          "played": true,
+          "hs": 0,
+          "as": 54,
+          "bp_away": true
         }
       ]
     },
     "2": {
-      "date": "21/03/2026",
+      "date": "",
       "ms": [
+        {
+          "home": "Virreyes",
+          "away": "Ciudad de Bs.As.",
+          "played": true,
+          "hs": 5,
+          "as": 57,
+          "bp_away": true
+        },
+        {
+          "home": "San Carlos",
+          "away": "Lanus",
+          "played": true,
+          "hs": 17,
+          "as": 30
+        },
+        {
+          "home": "Daom",
+          "away": "St Brendan´s",
+          "played": true,
+          "hs": 21,
+          "as": 41,
+          "bp_away": true
+        },
+        {
+          "home": "Del Sur",
+          "away": "San Miguel",
+          "played": true,
+          "hs": 28,
+          "as": 12
+        },
+        {
+          "home": "CASA de Padua",
+          "away": "SITAS",
+          "played": true,
+          "hs": 5,
+          "as": 27,
+          "bp_away": true
+        },
+        {
+          "home": "Centro Naval",
+          "away": "Areco",
+          "played": true,
+          "hs": 15,
+          "as": 33,
+          "bp_away": true
+        },
+        {
+          "home": "Los Molinos",
+          "away": "Lujan",
+          "played": true,
+          "hs": 31,
+          "as": 14
+        }
+      ]
+    },
+    "3": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Ciudad de Bs.As.",
+          "away": "Los Molinos",
+          "played": false
+        },
         {
           "home": "Lujan",
           "away": "Centro Naval",
@@ -248,784 +372,859 @@
           "played": false
         },
         {
-          "home": "St Brendan\"s",
+          "home": "St Brendan´s",
           "away": "San Carlos",
           "played": false
         },
         {
           "home": "Lanus",
           "away": "Virreyes",
-          "played": false
-        },
-        {
-          "home": "Ciudad de Bs.As.",
-          "away": "Los Molinos",
-          "played": false
-        }
-      ]
-    },
-    "3": {
-      "date": "28/03/2026",
-      "ms": [
-        {
-          "home": "Los Molinos",
-          "away": "CASA de Padua",
-          "played": false
-        },
-        {
-          "home": "Lujan",
-          "away": "Del Sur",
-          "played": false
-        },
-        {
-          "home": "Areco",
-          "away": "Daom",
-          "played": false
-        },
-        {
-          "home": "SITAS",
-          "away": "San Carlos",
-          "played": false
-        },
-        {
-          "home": "San Miguel",
-          "away": "Virreyes",
-          "played": false
-        },
-        {
-          "home": "St Brendan\"s",
-          "away": "Lanus",
-          "played": false
-        },
-        {
-          "home": "Ciudad de Bs.As.",
-          "away": "Centro Naval",
           "played": false
         }
       ]
     },
     "4": {
-      "date": "11/04/2026",
+      "date": "",
       "ms": [
         {
+          "home": "Lanus",
+          "away": "Ciudad de Bs.As.",
+          "played": false
+        },
+        {
+          "home": "Virreyes",
+          "away": "St Brendan´s",
+          "played": false
+        },
+        {
+          "home": "San Carlos",
+          "away": "San Miguel",
+          "played": false
+        },
+        {
+          "home": "Daom",
+          "away": "SITAS",
+          "played": false
+        },
+        {
+          "home": "Del Sur",
+          "away": "Areco",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua",
+          "away": "Lujan",
+          "played": false
+        },
+        {
           "home": "Centro Naval",
-          "away": "Del Sur",
-          "played": false
-        },
-        {
-          "home": "Los Molinos",
-          "away": "Daom",
-          "played": false
-        },
-        {
-          "home": "Lujan",
-          "away": "San Carlos",
-          "played": false
-        },
-        {
-          "home": "Areco",
-          "away": "Virreyes",
-          "played": false
-        },
-        {
-          "home": "SITAS",
-          "away": "Lanus",
-          "played": false
-        },
-        {
-          "home": "San Miguel",
-          "away": "St Brendan\"s",
-          "played": false
-        },
-        {
-          "home": "Ciudad de Bs.As.",
-          "away": "CASA de Padua",
+          "away": "Los Molinos",
           "played": false
         }
       ]
     },
     "5": {
-      "date": "18/04/2026",
+      "date": "",
       "ms": [
         {
-          "home": "CASA de Padua",
-          "away": "Daom",
-          "played": false
-        },
-        {
-          "home": "Centro Naval",
-          "away": "San Carlos",
+          "home": "Ciudad de Bs.As.",
+          "away": "Centro Naval",
           "played": false
         },
         {
           "home": "Los Molinos",
-          "away": "Virreyes",
+          "away": "CASA de Padua",
           "played": false
         },
         {
           "home": "Lujan",
-          "away": "Lanus",
+          "away": "Del Sur",
           "played": false
         },
         {
           "home": "Areco",
-          "away": "St Brendan\"s",
+          "away": "Daom",
           "played": false
         },
         {
           "home": "SITAS",
-          "away": "San Miguel",
+          "away": "San Carlos",
           "played": false
         },
         {
-          "home": "Ciudad de Bs.As.",
-          "away": "Del Sur",
+          "home": "San Miguel",
+          "away": "Virreyes",
+          "played": false
+        },
+        {
+          "home": "St Brendan´s",
+          "away": "Lanus",
           "played": false
         }
       ]
     },
     "6": {
-      "date": "25/04/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Del Sur",
-          "away": "San Carlos",
+          "home": "St Brendan´s",
+          "away": "Ciudad de Bs.As.",
           "played": false
         },
         {
-          "home": "CASA de Padua",
-          "away": "Virreyes",
-          "played": false
-        },
-        {
-          "home": "Centro Naval",
-          "away": "Lanus",
-          "played": false
-        },
-        {
-          "home": "Los Molinos",
-          "away": "St Brendan\"s",
-          "played": false
-        },
-        {
-          "home": "Lujan",
+          "home": "Lanus",
           "away": "San Miguel",
           "played": false
         },
         {
-          "home": "Areco",
+          "home": "Virreyes",
           "away": "SITAS",
           "played": false
         },
         {
-          "home": "Ciudad de Bs.As.",
-          "away": "Daom",
+          "home": "San Carlos",
+          "away": "Areco",
+          "played": false
+        },
+        {
+          "home": "Daom",
+          "away": "Lujan",
+          "played": false
+        },
+        {
+          "home": "Del Sur",
+          "away": "Los Molinos",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua",
+          "away": "Centro Naval",
           "played": false
         }
       ]
     },
     "7": {
-      "date": "09/05/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Daom",
-          "away": "Virreyes",
-          "played": false
-        },
-        {
-          "home": "Del Sur",
-          "away": "Lanus",
-          "played": false
-        },
-        {
-          "home": "CASA de Padua",
-          "away": "St Brendan\"s",
+          "home": "Ciudad de Bs.As.",
+          "away": "CASA de Padua",
           "played": false
         },
         {
           "home": "Centro Naval",
-          "away": "San Miguel",
+          "away": "Del Sur",
           "played": false
         },
         {
           "home": "Los Molinos",
-          "away": "SITAS",
+          "away": "Daom",
           "played": false
         },
         {
           "home": "Lujan",
-          "away": "Areco",
+          "away": "San Carlos",
           "played": false
         },
         {
-          "home": "Ciudad de Bs.As.",
-          "away": "San Carlos",
+          "home": "Areco",
+          "away": "Virreyes",
+          "played": false
+        },
+        {
+          "home": "SITAS",
+          "away": "Lanus",
+          "played": false
+        },
+        {
+          "home": "San Miguel",
+          "away": "St Brendan´s",
           "played": false
         }
       ]
     },
     "8": {
-      "date": "16/05/2026",
+      "date": "",
       "ms": [
         {
-          "home": "San Carlos",
-          "away": "Lanus",
+          "home": "San Miguel",
+          "away": "Ciudad de Bs.As.",
           "played": false
         },
         {
-          "home": "Daom",
-          "away": "St Brendan\"s",
-          "played": false
-        },
-        {
-          "home": "Del Sur",
-          "away": "San Miguel",
-          "played": false
-        },
-        {
-          "home": "CASA de Padua",
+          "home": "St Brendan´s",
           "away": "SITAS",
           "played": false
         },
         {
-          "home": "Centro Naval",
+          "home": "Lanus",
           "away": "Areco",
           "played": false
         },
         {
-          "home": "Los Molinos",
+          "home": "Virreyes",
           "away": "Lujan",
           "played": false
         },
         {
-          "home": "Virreyes",
-          "away": "Ciudad de Bs.As.",
+          "home": "San Carlos",
+          "away": "Los Molinos",
+          "played": false
+        },
+        {
+          "home": "Daom",
+          "away": "Centro Naval",
+          "played": false
+        },
+        {
+          "home": "Del Sur",
+          "away": "CASA de Padua",
           "played": false
         }
       ]
     },
     "9": {
-      "date": "23/05/2026",
+      "date": "",
       "ms": [
         {
-          "home": "San Carlos",
-          "away": "San Miguel",
-          "played": false
-        },
-        {
-          "home": "Daom",
-          "away": "SITAS",
-          "played": false
-        },
-        {
-          "home": "Del Sur",
-          "away": "Areco",
+          "home": "Ciudad de Bs.As.",
+          "away": "Del Sur",
           "played": false
         },
         {
           "home": "CASA de Padua",
-          "away": "Lujan",
+          "away": "Daom",
           "played": false
         },
         {
           "home": "Centro Naval",
-          "away": "Los Molinos",
+          "away": "San Carlos",
           "played": false
         },
         {
-          "home": "Lanus",
-          "away": "Ciudad de Bs.As.",
+          "home": "Los Molinos",
+          "away": "Virreyes",
           "played": false
         },
         {
-          "home": "Virreyes",
-          "away": "St Brendan\"s",
+          "home": "Lujan",
+          "away": "Lanus",
+          "played": false
+        },
+        {
+          "home": "Areco",
+          "away": "St Brendan´s",
+          "played": false
+        },
+        {
+          "home": "SITAS",
+          "away": "San Miguel",
           "played": false
         }
       ]
     },
     "10": {
-      "date": "06/06/2026",
+      "date": "",
       "ms": [
         {
-          "home": "St Brendan\"s",
-          "away": "SITAS",
-          "played": false
-        },
-        {
-          "home": "Lanus",
-          "away": "Areco",
-          "played": false
-        },
-        {
-          "home": "Virreyes",
-          "away": "Lujan",
-          "played": false
-        },
-        {
-          "home": "San Carlos",
-          "away": "Los Molinos",
-          "played": false
-        },
-        {
-          "home": "Daom",
-          "away": "Centro Naval",
-          "played": false
-        },
-        {
-          "home": "Del Sur",
-          "away": "CASA de Padua",
+          "home": "SITAS",
+          "away": "Ciudad de Bs.As.",
           "played": false
         },
         {
           "home": "San Miguel",
-          "away": "Ciudad de Bs.As.",
+          "away": "Areco",
+          "played": false
+        },
+        {
+          "home": "St Brendan´s",
+          "away": "Lujan",
+          "played": false
+        },
+        {
+          "home": "Lanus",
+          "away": "Los Molinos",
+          "played": false
+        },
+        {
+          "home": "Virreyes",
+          "away": "Centro Naval",
+          "played": false
+        },
+        {
+          "home": "San Carlos",
+          "away": "CASA de Padua",
+          "played": false
+        },
+        {
+          "home": "Daom",
+          "away": "Del Sur",
           "played": false
         }
       ]
     },
     "11": {
-      "date": "13/06/2026",
+      "date": "",
       "ms": [
         {
-          "home": "SITAS",
-          "away": "Lujan",
-          "played": false
-        },
-        {
-          "home": "San Miguel",
-          "away": "Los Molinos",
-          "played": false
-        },
-        {
-          "home": "St Brendan\"s",
-          "away": "Centro Naval",
-          "played": false
-        },
-        {
-          "home": "Lanus",
-          "away": "CASA de Padua",
-          "played": false
-        },
-        {
-          "home": "Virreyes",
-          "away": "Del Sur",
-          "played": false
-        },
-        {
-          "home": "San Carlos",
+          "home": "Ciudad de Bs.As.",
           "away": "Daom",
           "played": false
         },
         {
+          "home": "Del Sur",
+          "away": "San Carlos",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua",
+          "away": "Virreyes",
+          "played": false
+        },
+        {
+          "home": "Centro Naval",
+          "away": "Lanus",
+          "played": false
+        },
+        {
+          "home": "Los Molinos",
+          "away": "St Brendan´s",
+          "played": false
+        },
+        {
+          "home": "Lujan",
+          "away": "San Miguel",
+          "played": false
+        },
+        {
           "home": "Areco",
-          "away": "Ciudad de Bs.As.",
+          "away": "SITAS",
           "played": false
         }
       ]
     },
     "12": {
-      "date": "20/06/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Lujan",
+          "home": "Areco",
           "away": "Ciudad de Bs.As.",
           "played": false
         },
         {
-          "home": "Lanus",
-          "away": "San Carlos",
-          "played": false
-        },
-        {
-          "home": "St Brendan\"s",
-          "away": "Daom",
+          "home": "SITAS",
+          "away": "Lujan",
           "played": false
         },
         {
           "home": "San Miguel",
-          "away": "Del Sur",
+          "away": "Los Molinos",
           "played": false
         },
         {
-          "home": "SITAS",
-          "away": "CASA de Padua",
-          "played": false
-        },
-        {
-          "home": "Areco",
+          "home": "St Brendan´s",
           "away": "Centro Naval",
           "played": false
         },
         {
-          "home": "Los Molinos",
-          "away": "Lujan",
+          "home": "Lanus",
+          "away": "CASA de Padua",
+          "played": false
+        },
+        {
+          "home": "Virreyes",
+          "away": "Del Sur",
+          "played": false
+        },
+        {
+          "home": "San Carlos",
+          "away": "Daom",
           "played": false
         }
       ]
     },
     "13": {
-      "date": "04/07/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Los Molinos",
-          "away": "Ciudad de Bs.As.",
-          "played": false
-        },
-        {
-          "home": "Centro Naval",
-          "away": "Lujan",
-          "played": false
-        },
-        {
-          "home": "CASA de Padua",
-          "away": "Areco",
-          "played": false
-        },
-        {
-          "home": "Del Sur",
-          "away": "SITAS",
+          "home": "Ciudad de Bs.As.",
+          "away": "San Carlos",
           "played": false
         },
         {
           "home": "Daom",
+          "away": "Virreyes",
+          "played": false
+        },
+        {
+          "home": "Del Sur",
+          "away": "Lanus",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua",
+          "away": "St Brendan´s",
+          "played": false
+        },
+        {
+          "home": "Centro Naval",
           "away": "San Miguel",
           "played": false
         },
         {
-          "home": "San Carlos",
-          "away": "St Brendan\"s",
+          "home": "Los Molinos",
+          "away": "SITAS",
           "played": false
         },
         {
-          "home": "Virreyes",
-          "away": "Lanus",
+          "home": "Lujan",
+          "away": "Areco",
           "played": false
         }
       ]
     },
     "14": {
-      "date": "11/07/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Ciudad de Bs.As.",
-          "away": "Lanus",
-          "played": false
-        },
-        {
-          "home": "St Brendan\"s",
-          "away": "Virreyes",
-          "played": false
-        },
-        {
-          "home": "San Miguel",
-          "away": "San Carlos",
-          "played": false
-        },
-        {
-          "home": "SITAS",
-          "away": "Daom",
-          "played": false
-        },
-        {
-          "home": "Areco",
-          "away": "Del Sur",
-          "played": false
-        },
-        {
           "home": "Lujan",
-          "away": "CASA de Padua",
+          "away": "Ciudad de Bs.As.",
           "played": false
         },
         {
           "home": "Los Molinos",
-          "away": "Centro Naval",
+          "away": "Areco",
+          "played": false
+        },
+        {
+          "home": "Centro Naval",
+          "away": "SITAS",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua",
+          "away": "San Miguel",
+          "played": false
+        },
+        {
+          "home": "Del Sur",
+          "away": "St Brendan´s",
+          "played": false
+        },
+        {
+          "home": "Daom",
+          "away": "Lanus",
+          "played": false
+        },
+        {
+          "home": "San Carlos",
+          "away": "Virreyes",
           "played": false
         }
       ]
     },
     "15": {
-      "date": "18/07/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Centro Naval",
-          "away": "Ciudad de Bs.As.",
-          "played": false
-        },
-        {
-          "home": "CASA de Padua",
-          "away": "Los Molinos",
-          "played": false
-        },
-        {
-          "home": "Del Sur",
-          "away": "Lujan",
-          "played": false
-        },
-        {
-          "home": "Daom",
-          "away": "Areco",
-          "played": false
-        },
-        {
-          "home": "San Carlos",
-          "away": "SITAS",
-          "played": false
-        },
-        {
-          "home": "Virreyes",
-          "away": "San Miguel",
+          "home": "Ciudad de Bs.As.",
+          "away": "Virreyes",
           "played": false
         },
         {
           "home": "Lanus",
-          "away": "St Brendan\"s",
+          "away": "San Carlos",
+          "played": false
+        },
+        {
+          "home": "St Brendan´s",
+          "away": "Daom",
+          "played": false
+        },
+        {
+          "home": "San Miguel",
+          "away": "Del Sur",
+          "played": false
+        },
+        {
+          "home": "SITAS",
+          "away": "CASA de Padua",
+          "played": false
+        },
+        {
+          "home": "Areco",
+          "away": "Centro Naval",
+          "played": false
+        },
+        {
+          "home": "Lujan",
+          "away": "Los Molinos",
           "played": false
         }
       ]
     },
     "16": {
-      "date": "01/08/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Ciudad de Bs.As.",
-          "away": "St Brendan\"s",
-          "played": false
-        },
-        {
-          "home": "San Miguel",
-          "away": "Lanus",
-          "played": false
-        },
-        {
-          "home": "SITAS",
-          "away": "Virreyes",
-          "played": false
-        },
-        {
-          "home": "Areco",
-          "away": "San Carlos",
-          "played": false
-        },
-        {
-          "home": "Lujan",
-          "away": "Daom",
-          "played": false
-        },
-        {
           "home": "Los Molinos",
-          "away": "Del Sur",
+          "away": "Ciudad de Bs.As.",
           "played": false
         },
         {
           "home": "Centro Naval",
-          "away": "CASA de Padua",
+          "away": "Lujan",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua",
+          "away": "Areco",
+          "played": false
+        },
+        {
+          "home": "Del Sur",
+          "away": "SITAS",
+          "played": false
+        },
+        {
+          "home": "Daom",
+          "away": "San Miguel",
+          "played": false
+        },
+        {
+          "home": "San Carlos",
+          "away": "St Brendan´s",
+          "played": false
+        },
+        {
+          "home": "Virreyes",
+          "away": "Lanus",
           "played": false
         }
       ]
     },
     "17": {
-      "date": "15/08/2026",
+      "date": "",
       "ms": [
         {
-          "home": "CASA de Padua",
-          "away": "Ciudad de Bs.As.",
+          "home": "Ciudad de Bs.As.",
+          "away": "Lanus",
           "played": false
         },
         {
-          "home": "Del Sur",
+          "home": "St Brendan´s",
+          "away": "Virreyes",
+          "played": false
+        },
+        {
+          "home": "San Miguel",
+          "away": "San Carlos",
+          "played": false
+        },
+        {
+          "home": "SITAS",
+          "away": "Daom",
+          "played": false
+        },
+        {
+          "home": "Areco",
+          "away": "Del Sur",
+          "played": false
+        },
+        {
+          "home": "Lujan",
+          "away": "CASA de Padua",
+          "played": false
+        },
+        {
+          "home": "Los Molinos",
           "away": "Centro Naval",
-          "played": false
-        },
-        {
-          "home": "Daom",
-          "away": "Los Molinos",
-          "played": false
-        },
-        {
-          "home": "San Carlos",
-          "away": "Lujan",
-          "played": false
-        },
-        {
-          "home": "Virreyes",
-          "away": "Areco",
-          "played": false
-        },
-        {
-          "home": "Lanus",
-          "away": "SITAS",
-          "played": false
-        },
-        {
-          "home": "St Brendan\"s",
-          "away": "San Miguel",
           "played": false
         }
       ]
     },
     "18": {
-      "date": "22/08/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Ciudad de Bs.As.",
-          "away": "San Miguel",
-          "played": false
-        },
-        {
-          "home": "SITAS",
-          "away": "St Brendan\"s",
-          "played": false
-        },
-        {
-          "home": "Areco",
-          "away": "Lanus",
-          "played": false
-        },
-        {
-          "home": "Lujan",
-          "away": "Virreyes",
-          "played": false
-        },
-        {
-          "home": "Los Molinos",
-          "away": "San Carlos",
-          "played": false
-        },
-        {
           "home": "Centro Naval",
-          "away": "Daom",
+          "away": "Ciudad de Bs.As.",
           "played": false
         },
         {
           "home": "CASA de Padua",
-          "away": "Del Sur",
+          "away": "Los Molinos",
+          "played": false
+        },
+        {
+          "home": "Del Sur",
+          "away": "Lujan",
+          "played": false
+        },
+        {
+          "home": "Daom",
+          "away": "Areco",
+          "played": false
+        },
+        {
+          "home": "San Carlos",
+          "away": "SITAS",
+          "played": false
+        },
+        {
+          "home": "Virreyes",
+          "away": "San Miguel",
+          "played": false
+        },
+        {
+          "home": "Lanus",
+          "away": "St Brendan´s",
           "played": false
         }
       ]
     },
     "19": {
-      "date": "29/08/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Del Sur",
-          "away": "Ciudad de Bs.As.",
-          "played": false
-        },
-        {
-          "home": "Daom",
-          "away": "CASA de Padua",
-          "played": false
-        },
-        {
-          "home": "San Carlos",
-          "away": "Centro Naval",
-          "played": false
-        },
-        {
-          "home": "Virreyes",
-          "away": "Los Molinos",
-          "played": false
-        },
-        {
-          "home": "Lanus",
-          "away": "Lujan",
-          "played": false
-        },
-        {
-          "home": "St Brendan\"s",
-          "away": "Areco",
+          "home": "Ciudad de Bs.As.",
+          "away": "St Brendan´s",
           "played": false
         },
         {
           "home": "San Miguel",
-          "away": "SITAS",
+          "away": "Lanus",
+          "played": false
+        },
+        {
+          "home": "SITAS",
+          "away": "Virreyes",
+          "played": false
+        },
+        {
+          "home": "Areco",
+          "away": "San Carlos",
+          "played": false
+        },
+        {
+          "home": "Lujan",
+          "away": "Daom",
+          "played": false
+        },
+        {
+          "home": "Los Molinos",
+          "away": "Del Sur",
+          "played": false
+        },
+        {
+          "home": "Centro Naval",
+          "away": "CASA de Padua",
           "played": false
         }
       ]
     },
     "20": {
-      "date": "05/09/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Ciudad de Bs.As.",
-          "away": "SITAS",
-          "played": false
-        },
-        {
-          "home": "Areco",
-          "away": "San Miguel",
-          "played": false
-        },
-        {
-          "home": "Lujan",
-          "away": "St Brendan\"s",
-          "played": false
-        },
-        {
-          "home": "Los Molinos",
-          "away": "Lanus",
-          "played": false
-        },
-        {
-          "home": "Centro Naval",
-          "away": "Virreyes",
-          "played": false
-        },
-        {
           "home": "CASA de Padua",
-          "away": "San Carlos",
+          "away": "Ciudad de Bs.As.",
           "played": false
         },
         {
           "home": "Del Sur",
-          "away": "Daom",
+          "away": "Centro Naval",
+          "played": false
+        },
+        {
+          "home": "Daom",
+          "away": "Los Molinos",
+          "played": false
+        },
+        {
+          "home": "San Carlos",
+          "away": "Lujan",
+          "played": false
+        },
+        {
+          "home": "Virreyes",
+          "away": "Areco",
+          "played": false
+        },
+        {
+          "home": "Lanus",
+          "away": "SITAS",
+          "played": false
+        },
+        {
+          "home": "St Brendan´s",
+          "away": "San Miguel",
           "played": false
         }
       ]
     },
     "21": {
-      "date": "12/09/2026",
+      "date": "",
       "ms": [
         {
-          "home": "Daom",
-          "away": "Ciudad de Bs.As.",
-          "played": false
-        },
-        {
-          "home": "San Carlos",
-          "away": "Del Sur",
-          "played": false
-        },
-        {
-          "home": "Virreyes",
-          "away": "CASA de Padua",
-          "played": false
-        },
-        {
-          "home": "Lanus",
-          "away": "Centro Naval",
-          "played": false
-        },
-        {
-          "home": "St Brendan\"s",
-          "away": "Los Molinos",
-          "played": false
-        },
-        {
-          "home": "San Miguel",
-          "away": "Lujan",
+          "home": "Ciudad de Bs.As.",
+          "away": "San Miguel",
           "played": false
         },
         {
           "home": "SITAS",
-          "away": "Areco",
+          "away": "St Brendan´s",
+          "played": false
+        },
+        {
+          "home": "Areco",
+          "away": "Lanus",
+          "played": false
+        },
+        {
+          "home": "Lujan",
+          "away": "Virreyes",
+          "played": false
+        },
+        {
+          "home": "Los Molinos",
+          "away": "San Carlos",
+          "played": false
+        },
+        {
+          "home": "Centro Naval",
+          "away": "Daom",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua",
+          "away": "Del Sur",
           "played": false
         }
       ]
     },
     "22": {
-      "date": "26/09/2026",
+      "date": "",
+      "ms": [
+        {
+          "home": "Del Sur",
+          "away": "Ciudad de Bs.As.",
+          "played": false
+        },
+        {
+          "home": "Daom",
+          "away": "CASA de Padua",
+          "played": false
+        },
+        {
+          "home": "San Carlos",
+          "away": "Centro Naval",
+          "played": false
+        },
+        {
+          "home": "Virreyes",
+          "away": "Los Molinos",
+          "played": false
+        },
+        {
+          "home": "Lanus",
+          "away": "Lujan",
+          "played": false
+        },
+        {
+          "home": "St Brendan´s",
+          "away": "Areco",
+          "played": false
+        },
+        {
+          "home": "San Miguel",
+          "away": "SITAS",
+          "played": false
+        }
+      ]
+    },
+    "23": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Ciudad de Bs.As.",
+          "away": "SITAS",
+          "played": false
+        },
+        {
+          "home": "Areco",
+          "away": "San Miguel",
+          "played": false
+        },
+        {
+          "home": "Lujan",
+          "away": "St Brendan´s",
+          "played": false
+        },
+        {
+          "home": "Los Molinos",
+          "away": "Lanus",
+          "played": false
+        },
+        {
+          "home": "Centro Naval",
+          "away": "Virreyes",
+          "played": false
+        },
+        {
+          "home": "CASA de Padua",
+          "away": "San Carlos",
+          "played": false
+        },
+        {
+          "home": "Del Sur",
+          "away": "Daom",
+          "played": false
+        }
+      ]
+    },
+    "24": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Daom",
+          "away": "Ciudad de Bs.As.",
+          "played": false
+        },
+        {
+          "home": "San Carlos",
+          "away": "Del Sur",
+          "played": false
+        },
+        {
+          "home": "Virreyes",
+          "away": "CASA de Padua",
+          "played": false
+        },
+        {
+          "home": "Lanus",
+          "away": "Centro Naval",
+          "played": false
+        },
+        {
+          "home": "St Brendan´s",
+          "away": "Los Molinos",
+          "played": false
+        },
+        {
+          "home": "San Miguel",
+          "away": "Lujan",
+          "played": false
+        },
+        {
+          "home": "SITAS",
+          "away": "Areco",
+          "played": false
+        }
+      ]
+    },
+    "25": {
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -1044,7 +1243,7 @@
         },
         {
           "home": "Centro Naval",
-          "away": "St Brendan\"s",
+          "away": "St Brendan´s",
           "played": false
         },
         {
@@ -1060,132 +1259,12 @@
         {
           "home": "Daom",
           "away": "San Carlos",
-          "played": false
-        }
-      ]
-    },
-    "23": {
-      "date": "03/10/2026",
-      "ms": [
-        {
-          "home": "San Carlos",
-          "away": "Ciudad de Bs.As.",
-          "played": false
-        },
-        {
-          "home": "Virreyes",
-          "away": "Daom",
-          "played": false
-        },
-        {
-          "home": "Lanus",
-          "away": "Del Sur",
-          "played": false
-        },
-        {
-          "home": "St Brendan\"s",
-          "away": "CASA de Padua",
-          "played": false
-        },
-        {
-          "home": "San Miguel",
-          "away": "Centro Naval",
-          "played": false
-        },
-        {
-          "home": "SITAS",
-          "away": "Los Molinos",
-          "played": false
-        },
-        {
-          "home": "Areco",
-          "away": "Lujan",
-          "played": false
-        }
-      ]
-    },
-    "24": {
-      "date": "10/10/2026",
-      "ms": [
-        {
-          "home": "Ciudad de Bs.As.",
-          "away": "Virreyes",
-          "played": false
-        },
-        {
-          "home": "San Carlos",
-          "away": "Los Molinos",
-          "played": false
-        },
-        {
-          "home": "Daom",
-          "away": "Centro Naval",
-          "played": false
-        },
-        {
-          "home": "Del Sur",
-          "away": "SITAS",
-          "played": false
-        },
-        {
-          "home": "CASA de Padua",
-          "away": "San Miguel",
-          "played": false
-        },
-        {
-          "home": "Areco",
-          "away": "Lanus",
-          "played": false
-        },
-        {
-          "home": "Lujan",
-          "away": "St Brendan\"s",
-          "played": false
-        }
-      ]
-    },
-    "25": {
-      "date": "17/10/2026",
-      "ms": [
-        {
-          "home": "Ciudad de Bs.As.",
-          "away": "Lanus",
-          "played": false
-        },
-        {
-          "home": "Daom",
-          "away": "Virreyes",
-          "played": false
-        },
-        {
-          "home": "Los Molinos",
-          "away": "San Carlos",
-          "played": false
-        },
-        {
-          "home": "Centro Naval",
-          "away": "San Miguel",
-          "played": false
-        },
-        {
-          "home": "St Brendan\"s",
-          "away": "CASA de Padua",
-          "played": false
-        },
-        {
-          "home": "SITAS",
-          "away": "Los Molinos",
-          "played": false
-        },
-        {
-          "home": "Areco",
-          "away": "Lujan",
           "played": false
         }
       ]
     },
     "26": {
-      "date": "24/10/2026",
+      "date": "",
       "ms": [
         {
           "home": "San Carlos",
@@ -1203,7 +1282,7 @@
           "played": false
         },
         {
-          "home": "St Brendan\"s",
+          "home": "St Brendan´s",
           "away": "CASA de Padua",
           "played": false
         },
@@ -1225,5 +1304,8 @@
       ]
     }
   },
-  "lastUpdate": "manual"
+  "lastUpdate": "2026-03-23T23:17:41.663313+00:00",
+  "matchesScraped": 14,
+  "championshipId": "2025195",
+  "nombre": "1C Pre-Inter A"
 }
