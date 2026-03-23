@@ -3,311 +3,351 @@
     {
       "name": "Areco",
       "pts": 4,
-      "pj": 1,
+      "pj": 2,
       "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 12,
-      "pc": 10,
+      "p": 1,
+      "pf": 45,
+      "pc": 55,
       "bp": 0,
       "bf": 0,
       "form": [
-        "w"
+        "w",
+        "l"
       ]
     },
     {
       "name": "SITAS",
-      "pts": 4,
-      "pj": 1,
-      "g": 1,
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 24,
-      "pc": 20,
-      "bp": 0,
+      "pf": 72,
+      "pc": 49,
+      "bp": 1,
       "bf": 0,
       "form": [
+        "w",
         "w"
       ]
     },
     {
       "name": "San Miguel",
       "pts": 1,
-      "pj": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 1,
-      "pf": 17,
-      "pc": 23,
+      "p": 2,
+      "pf": 34,
+      "pc": 72,
       "bp": 0,
       "bf": 1,
       "form": [
+        "l",
         "l"
       ]
     },
     {
       "name": "St Brendan´s",
       "pts": 1,
-      "pj": 1,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 1,
-      "pf": 27,
-      "pc": 32,
+      "p": 2,
+      "pf": 53,
+      "pc": 88,
       "bp": 0,
       "bf": 1,
       "form": [
+        "l",
         "l"
       ]
     },
     {
       "name": "Lanus",
       "pts": 5,
-      "pj": 1,
+      "pj": 2,
       "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 36,
-      "pc": 14,
+      "p": 1,
+      "pf": 62,
+      "pc": 54,
       "bp": 1,
       "bf": 0,
       "form": [
-        "w"
+        "w",
+        "l"
       ]
     },
     {
       "name": "Virreyes",
-      "pts": 1,
-      "pj": 1,
+      "pts": 2,
+      "pj": 2,
       "g": 0,
       "e": 0,
-      "p": 1,
-      "pf": 33,
-      "pc": 38,
+      "p": 2,
+      "pf": 52,
+      "pc": 58,
       "bp": 0,
-      "bf": 1,
+      "bf": 2,
       "form": [
+        "l",
         "l"
       ]
     },
     {
       "name": "San Carlos",
-      "pts": 4,
-      "pj": 1,
-      "g": 1,
+      "pts": 8,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 38,
-      "pc": 33,
+      "pf": 78,
+      "pc": 59,
       "bp": 0,
       "bf": 0,
       "form": [
+        "w",
         "w"
       ]
     },
     {
       "name": "Daom",
-      "pts": 0,
-      "pj": 1,
-      "g": 0,
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
       "e": 0,
       "p": 1,
-      "pf": 14,
-      "pc": 36,
-      "bp": 0,
+      "pf": 70,
+      "pc": 62,
+      "bp": 1,
       "bf": 0,
       "form": [
-        "l"
+        "l",
+        "w"
       ]
     },
     {
       "name": "Del Sur",
-      "pts": 4,
-      "pj": 1,
-      "g": 1,
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
       "e": 0,
       "p": 0,
-      "pf": 32,
-      "pc": 27,
-      "bp": 0,
+      "pf": 81,
+      "pc": 44,
+      "bp": 1,
       "bf": 0,
       "form": [
+        "w",
         "w"
       ]
     },
     {
       "name": "CASA de Padua",
       "pts": 4,
-      "pj": 1,
+      "pj": 2,
       "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 23,
-      "pc": 17,
+      "p": 1,
+      "pf": 52,
+      "pc": 65,
       "bp": 0,
       "bf": 0,
       "form": [
-        "w"
+        "w",
+        "l"
       ]
     },
     {
       "name": "Centro Naval",
-      "pts": 1,
-      "pj": 1,
-      "g": 0,
-      "e": 0,
-      "p": 1,
-      "pf": 20,
-      "pc": 24,
-      "bp": 0,
-      "bf": 1,
-      "form": [
-        "l"
-      ]
-    },
-    {
-      "name": "Los Molinos",
-      "pts": 1,
-      "pj": 1,
-      "g": 0,
-      "e": 0,
-      "p": 1,
-      "pf": 10,
-      "pc": 12,
-      "bp": 0,
-      "bf": 1,
-      "form": [
-        "l"
-      ]
-    },
-    {
-      "name": "Lujan",
-      "pts": 4,
-      "pj": 1,
+      "pts": 5,
+      "pj": 2,
       "g": 1,
       "e": 0,
-      "p": 0,
-      "pf": 22,
-      "pc": 19,
+      "p": 1,
+      "pf": 65,
+      "pc": 57,
       "bp": 0,
-      "bf": 0,
+      "bf": 1,
       "form": [
+        "l",
         "w"
       ]
     },
     {
-      "name": "Ciudad de Bs.As.",
-      "pts": 1,
-      "pj": 1,
-      "g": 0,
+      "name": "Los Molinos",
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
       "e": 0,
       "p": 1,
-      "pf": 19,
-      "pc": 22,
+      "pf": 40,
+      "pc": 39,
       "bp": 0,
       "bf": 1,
       "form": [
+        "l",
+        "w"
+      ]
+    },
+    {
+      "name": "Lujan",
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
+      "e": 0,
+      "p": 1,
+      "pf": 49,
+      "pc": 49,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "w",
         "l"
+      ]
+    },
+    {
+      "name": "Ciudad de Bs.As.",
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
+      "e": 0,
+      "p": 1,
+      "pf": 39,
+      "pc": 41,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l",
+        "w"
       ]
     }
   ],
   "matches": {
     "1": {
-      "date": "2026-03-14",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
           "away": "Lujan",
           "played": true,
           "hs": 19,
-          "as": 22
+          "as": 22,
+          "bf_home": true
         },
         {
           "home": "Areco",
           "away": "Los Molinos",
           "played": true,
           "hs": 12,
-          "as": 10
+          "as": 10,
+          "bf_away": true
         },
         {
           "home": "SITAS",
           "away": "Centro Naval",
           "played": true,
           "hs": 24,
-          "as": 20
+          "as": 20,
+          "bf_away": true
         },
         {
           "home": "San Miguel",
           "away": "CASA de Padua",
           "played": true,
           "hs": 17,
-          "as": 23
+          "as": 23,
+          "bf_home": true
         },
         {
           "home": "St Brendan´s",
           "away": "Del Sur",
           "played": true,
           "hs": 27,
-          "as": 32
+          "as": 32,
+          "bf_home": true
         },
         {
           "home": "Lanus",
           "away": "Daom",
           "played": true,
           "hs": 36,
-          "as": 14
+          "as": 14,
+          "bp_home": true
         },
         {
           "home": "Virreyes",
           "away": "San Carlos",
           "played": true,
           "hs": 33,
-          "as": 38
+          "as": 38,
+          "bf_home": true
         }
       ]
     },
     "2": {
-      "date": "2026-03-21",
+      "date": "",
       "ms": [
         {
           "home": "Virreyes",
           "away": "Ciudad de Bs.As.",
-          "played": false
+          "played": true,
+          "hs": 19,
+          "as": 20,
+          "bf_home": true
         },
         {
           "home": "San Carlos",
           "away": "Lanus",
-          "played": false
+          "played": true,
+          "hs": 40,
+          "as": 26
         },
         {
           "home": "Daom",
           "away": "St Brendan´s",
-          "played": false
+          "played": true,
+          "hs": 56,
+          "as": 26,
+          "bp_home": true
         },
         {
           "home": "Del Sur",
           "away": "San Miguel",
-          "played": false
+          "played": true,
+          "hs": 49,
+          "as": 17,
+          "bp_home": true
         },
         {
           "home": "CASA de Padua",
           "away": "SITAS",
-          "played": false
+          "played": true,
+          "hs": 29,
+          "as": 48,
+          "bp_away": true
         },
         {
           "home": "Centro Naval",
           "away": "Areco",
-          "played": false
+          "played": true,
+          "hs": 45,
+          "as": 33
         },
         {
           "home": "Los Molinos",
           "away": "Lujan",
-          "played": false
+          "played": true,
+          "hs": 30,
+          "as": 27,
+          "bf_away": true
         }
       ]
     },
     "3": {
-      "date": "2026-03-28",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -347,7 +387,7 @@
       ]
     },
     "4": {
-      "date": "2026-04-11",
+      "date": "",
       "ms": [
         {
           "home": "Lanus",
@@ -387,7 +427,7 @@
       ]
     },
     "5": {
-      "date": "2026-04-18",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -427,7 +467,7 @@
       ]
     },
     "6": {
-      "date": "2026-04-25",
+      "date": "",
       "ms": [
         {
           "home": "St Brendan´s",
@@ -467,7 +507,7 @@
       ]
     },
     "7": {
-      "date": "2026-05-09",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -507,7 +547,7 @@
       ]
     },
     "8": {
-      "date": "2026-05-16",
+      "date": "",
       "ms": [
         {
           "home": "San Miguel",
@@ -547,7 +587,7 @@
       ]
     },
     "9": {
-      "date": "2026-05-23",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -587,7 +627,7 @@
       ]
     },
     "10": {
-      "date": "2026-06-06",
+      "date": "",
       "ms": [
         {
           "home": "SITAS",
@@ -627,7 +667,7 @@
       ]
     },
     "11": {
-      "date": "2026-06-13",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -667,7 +707,7 @@
       ]
     },
     "12": {
-      "date": "2026-06-20",
+      "date": "",
       "ms": [
         {
           "home": "Areco",
@@ -707,7 +747,7 @@
       ]
     },
     "13": {
-      "date": "2026-07-04",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -747,7 +787,7 @@
       ]
     },
     "14": {
-      "date": "2026-07-11",
+      "date": "",
       "ms": [
         {
           "home": "Lujan",
@@ -787,7 +827,7 @@
       ]
     },
     "15": {
-      "date": "2026-07-18",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -827,7 +867,7 @@
       ]
     },
     "16": {
-      "date": "2026-08-01",
+      "date": "",
       "ms": [
         {
           "home": "Los Molinos",
@@ -867,7 +907,7 @@
       ]
     },
     "17": {
-      "date": "2026-08-15",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -907,7 +947,7 @@
       ]
     },
     "18": {
-      "date": "2026-08-22",
+      "date": "",
       "ms": [
         {
           "home": "Centro Naval",
@@ -947,7 +987,7 @@
       ]
     },
     "19": {
-      "date": "2026-08-29",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -987,7 +1027,7 @@
       ]
     },
     "20": {
-      "date": "2026-09-05",
+      "date": "",
       "ms": [
         {
           "home": "CASA de Padua",
@@ -1027,7 +1067,7 @@
       ]
     },
     "21": {
-      "date": "2026-09-12",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -1067,7 +1107,7 @@
       ]
     },
     "22": {
-      "date": "2026-09-26",
+      "date": "",
       "ms": [
         {
           "home": "Del Sur",
@@ -1107,7 +1147,7 @@
       ]
     },
     "23": {
-      "date": "2026-10-03",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -1147,7 +1187,7 @@
       ]
     },
     "24": {
-      "date": "2026-10-10",
+      "date": "",
       "ms": [
         {
           "home": "Daom",
@@ -1187,7 +1227,7 @@
       ]
     },
     "25": {
-      "date": "2026-10-17",
+      "date": "",
       "ms": [
         {
           "home": "Ciudad de Bs.As.",
@@ -1227,7 +1267,7 @@
       ]
     },
     "26": {
-      "date": "2026-10-24",
+      "date": "",
       "ms": [
         {
           "home": "San Carlos",
@@ -1267,8 +1307,8 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-16T15:48:44.661291+00:00",
-  "matchesScraped": 7,
+  "lastUpdate": "2026-03-23T23:17:39.493823+00:00",
+  "matchesScraped": 14,
   "championshipId": "2025179",
   "nombre": "Primera C"
 }
