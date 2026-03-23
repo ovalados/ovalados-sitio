@@ -1,0 +1,1231 @@
+{
+  "teams": [
+    {
+      "name": "Bye",
+      "pts": 24,
+      "pj": 12,
+      "g": 0,
+      "e": 12,
+      "p": 0,
+      "pf": 0,
+      "pc": 0,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "d",
+        "d",
+        "d",
+        "d",
+        "d"
+      ]
+    },
+    {
+      "name": "Argentino C",
+      "pts": 4,
+      "pj": 2,
+      "g": 1,
+      "e": 0,
+      "p": 1,
+      "pf": 40,
+      "pc": 37,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w",
+        "l"
+      ]
+    },
+    {
+      "name": "Don Bosco C",
+      "pts": 1,
+      "pj": 2,
+      "g": 0,
+      "e": 0,
+      "p": 2,
+      "pf": 27,
+      "pc": 78,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l",
+        "l"
+      ]
+    },
+    {
+      "name": "San Martin C",
+      "pts": 10,
+      "pj": 2,
+      "g": 2,
+      "e": 0,
+      "p": 0,
+      "pf": 70,
+      "pc": 36,
+      "bp": 2,
+      "bf": 0,
+      "form": [
+        "w",
+        "w"
+      ]
+    },
+    {
+      "name": "San Martin D",
+      "pts": 3,
+      "pj": 2,
+      "g": 0,
+      "e": 1,
+      "p": 1,
+      "pf": 21,
+      "pc": 28,
+      "bp": 0,
+      "bf": 1,
+      "form": [
+        "l",
+        "d"
+      ]
+    },
+    {
+      "name": "Mariano Moreno C",
+      "pts": 4,
+      "pj": 2,
+      "g": 1,
+      "e": 0,
+      "p": 1,
+      "pf": 42,
+      "pc": 43,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "w",
+        "l"
+      ]
+    },
+    {
+      "name": "Manuel Belgrano C",
+      "pts": 5,
+      "pj": 2,
+      "g": 1,
+      "e": 0,
+      "p": 1,
+      "pf": 81,
+      "pc": 63,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "l",
+        "w"
+      ]
+    },
+    {
+      "name": "Delta C",
+      "pts": 9,
+      "pj": 2,
+      "g": 2,
+      "e": 0,
+      "p": 0,
+      "pf": 41,
+      "pc": 21,
+      "bp": 1,
+      "bf": 0,
+      "form": [
+        "w",
+        "w"
+      ]
+    },
+    {
+      "name": "G y E de Ituzaingo",
+      "pts": 2,
+      "pj": 2,
+      "g": 0,
+      "e": 1,
+      "p": 1,
+      "pf": 15,
+      "pc": 31,
+      "bp": 0,
+      "bf": 0,
+      "form": [
+        "l",
+        "d"
+      ]
+    }
+  ],
+  "matches": {
+    "1": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Argentino C",
+          "away": "G y E de Ituzaingo",
+          "played": true,
+          "hs": 31,
+          "as": 15
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "Delta C",
+          "played": true,
+          "hs": 12,
+          "as": 19,
+          "bf_home": true
+        },
+        {
+          "home": "San Martin C",
+          "away": "Manuel Belgrano C",
+          "played": true,
+          "hs": 48,
+          "as": 22,
+          "bp_home": true
+        },
+        {
+          "home": "San Martin D",
+          "away": "Mariano Moreno C",
+          "played": true,
+          "hs": 21,
+          "as": 28,
+          "bf_home": true
+        }
+      ]
+    },
+    "2": {
+      "date": "",
+      "ms": [
+        {
+          "home": "San Martin D",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "San Martin C",
+          "played": true,
+          "hs": 14,
+          "as": 22,
+          "bp_away": true
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "Don Bosco C",
+          "played": true,
+          "hs": 59,
+          "as": 15,
+          "bp_home": true
+        },
+        {
+          "home": "Delta C",
+          "away": "Argentino C",
+          "played": true,
+          "hs": 22,
+          "as": 9,
+          "bp_home": true
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": true,
+          "hs": 0,
+          "as": 0
+        }
+      ]
+    },
+    "3": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Delta C",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "Manuel Belgrano C",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "San Martin D",
+          "played": false
+        }
+      ]
+    },
+    "4": {
+      "date": "",
+      "ms": [
+        {
+          "home": "San Martin C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "Don Bosco C",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "Argentino C",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "5": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Delta C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Manuel Belgrano C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "San Martin C",
+          "played": false
+        }
+      ]
+    },
+    "6": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Don Bosco C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "Argentino C",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "7": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Delta C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Manuel Belgrano C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Martin C",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "Don Bosco C",
+          "played": false
+        }
+      ]
+    },
+    "8": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Argentino C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        }
+      ]
+    },
+    "9": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Delta C",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Manuel Belgrano C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Martin C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Don Bosco C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Argentino C",
+          "played": false
+        }
+      ]
+    },
+    "10": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "Delta C",
+          "played": false
+        }
+      ]
+    },
+    "11": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Manuel Belgrano C",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Martin C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Don Bosco C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Argentino C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "12": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "Delta C",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "Manuel Belgrano C",
+          "played": false
+        }
+      ]
+    },
+    "13": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "San Martin C",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Don Bosco C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Argentino C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "14": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Argentino C",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "Don Bosco C",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "San Martin C",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "San Martin D",
+          "played": false
+        }
+      ]
+    },
+    "15": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "Manuel Belgrano C",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "Delta C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "16": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "Argentino C",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "Don Bosco C",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "San Martin C",
+          "played": false
+        }
+      ]
+    },
+    "17": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "San Martin C",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Manuel Belgrano C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Delta C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "18": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "Argentino C",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "Don Bosco C",
+          "played": false
+        }
+      ]
+    },
+    "19": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Don Bosco C",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "San Martin C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Manuel Belgrano C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Delta C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        }
+      ]
+    },
+    "20": {
+      "date": "",
+      "ms": [
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "Argentino C",
+          "played": false
+        }
+      ]
+    },
+    "21": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Argentino C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Don Bosco C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Martin C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Manuel Belgrano C",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Delta C",
+          "played": false
+        }
+      ]
+    },
+    "22": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Delta C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "23": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Argentino C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Don Bosco C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Martin C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "Mariano Moreno C",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "Manuel Belgrano C",
+          "played": false
+        }
+      ]
+    },
+    "24": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Manuel Belgrano C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Mariano Moreno C",
+          "away": "Delta C",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    },
+    "25": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Argentino C",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Don Bosco C",
+          "played": false
+        },
+        {
+          "home": "G y E de Ituzaingo",
+          "away": "San Martin C",
+          "played": false
+        },
+        {
+          "home": "Delta C",
+          "away": "San Martin D",
+          "played": false
+        },
+        {
+          "home": "Manuel Belgrano C",
+          "away": "Mariano Moreno C",
+          "played": false
+        }
+      ]
+    },
+    "26": {
+      "date": "",
+      "ms": [
+        {
+          "home": "Mariano Moreno C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "San Martin D",
+          "away": "Manuel Belgrano C",
+          "played": false
+        },
+        {
+          "home": "San Martin C",
+          "away": "Delta C",
+          "played": false
+        },
+        {
+          "home": "Don Bosco C",
+          "away": "G y E de Ituzaingo",
+          "played": false
+        },
+        {
+          "home": "Argentino C",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        },
+        {
+          "home": "Bye",
+          "away": "Bye",
+          "played": false
+        }
+      ]
+    }
+  },
+  "lastUpdate": "2026-03-23T23:17:38.441903+00:00",
+  "matchesScraped": 14,
+  "championshipId": "2025204",
+  "nombre": "1B Pre-Inter C"
+}
