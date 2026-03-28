@@ -59,18 +59,18 @@
     },
     {
       "name": "Pampas",
-      "pts": 32,
-      "pj": 10,
-      "g": 8,
+      "pts": 40,
+      "pj": 12,
+      "g": 10,
       "e": 0,
       "p": 2,
-      "pf": 362,
-      "pc": 228,
+      "pf": 430,
+      "pc": 290,
       "bp": 0,
       "bf": 0,
       "form": [
-        "w",
         "l",
+        "w",
         "w",
         "w",
         "w"
@@ -79,20 +79,20 @@
     {
       "name": "Selknam",
       "pts": 16,
-      "pj": 10,
+      "pj": 12,
       "g": 4,
       "e": 0,
-      "p": 6,
-      "pf": 202,
-      "pc": 396,
+      "p": 8,
+      "pf": 264,
+      "pc": 464,
       "bp": 0,
       "bf": 0,
       "form": [
-        "l",
         "w",
         "l",
         "l",
-        "w"
+        "w",
+        "l"
       ]
     },
     {
@@ -339,7 +339,9 @@
         {
           "home": "Selknam",
           "away": "Pampas",
-          "played": false
+          "played": true,
+          "hs": 31,
+          "as": 34
         },
         {
           "home": "Dogos XV",
@@ -549,7 +551,9 @@
         {
           "home": "Pampas",
           "away": "Selknam",
-          "played": false
+          "played": true,
+          "hs": 34,
+          "as": 31
         },
         {
           "home": "Cobras BR",
@@ -593,6 +597,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-28T19:47:04.115985+00:00",
-  "matchesScraped": 22
+  "lastUpdate": "2026-03-28T21:00:04.342645+00:00",
+  "matchesScraped": 23
 }
