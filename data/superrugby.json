@@ -21,20 +21,20 @@
     },
     {
       "name": "Tarucas",
-      "pts": 32,
-      "pj": 10,
-      "g": 8,
+      "pts": 40,
+      "pj": 12,
+      "g": 10,
       "e": 0,
       "p": 2,
-      "pf": 296,
-      "pc": 244,
+      "pf": 400,
+      "pc": 288,
       "bp": 0,
       "bf": 0,
       "form": [
         "w",
         "w",
-        "w",
         "l",
+        "w",
         "w"
       ]
     },
@@ -98,12 +98,12 @@
     {
       "name": "Yacare XV",
       "pts": 0,
-      "pj": 10,
+      "pj": 12,
       "g": 0,
       "e": 0,
-      "p": 10,
-      "pf": 204,
-      "pc": 252,
+      "p": 12,
+      "pf": 252,
+      "pc": 302,
       "bp": 0,
       "bf": 0,
       "form": [
@@ -117,39 +117,39 @@
     {
       "name": "Cobras BR",
       "pts": 8,
-      "pj": 10,
+      "pj": 12,
       "g": 2,
       "e": 0,
-      "p": 8,
-      "pf": 182,
-      "pc": 362,
+      "p": 10,
+      "pf": 226,
+      "pc": 466,
       "bp": 0,
       "bf": 0,
       "form": [
         "l",
-        "l",
         "w",
+        "l",
         "l",
         "l"
       ]
     },
     {
       "name": "Peñarol",
-      "pts": 16,
-      "pj": 10,
-      "g": 4,
+      "pts": 24,
+      "pj": 12,
+      "g": 6,
       "e": 0,
       "p": 6,
-      "pf": 250,
-      "pc": 282,
+      "pf": 300,
+      "pc": 330,
       "bp": 0,
       "bf": 0,
       "form": [
         "l",
+        "w",
+        "w",
         "l",
-        "w",
-        "w",
-        "l"
+        "w"
       ]
     }
   ],
@@ -325,12 +325,16 @@
         {
           "home": "Tarucas",
           "away": "Cobras BR",
-          "played": false
+          "played": true,
+          "hs": 52,
+          "as": 22
         },
         {
           "home": "Peñarol",
           "away": "Yacare XV",
-          "played": false
+          "played": true,
+          "hs": 25,
+          "as": 24
         },
         {
           "home": "Selknam",
@@ -550,12 +554,16 @@
         {
           "home": "Cobras BR",
           "away": "Tarucas",
-          "played": false
+          "played": true,
+          "hs": 22,
+          "as": 52
         },
         {
           "home": "Yacare XV",
           "away": "Peñarol",
-          "played": false
+          "played": true,
+          "hs": 24,
+          "as": 25
         }
       ]
     },
@@ -585,6 +593,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-27T23:46:50.973352+00:00",
-  "matchesScraped": 20
+  "lastUpdate": "2026-03-28T05:14:22.210363+00:00",
+  "matchesScraped": 22
 }
