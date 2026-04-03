@@ -3,19 +3,19 @@
     {
       "name": "Capibaras XV",
       "pts": 24,
-      "pj": 10,
+      "pj": 12,
       "g": 6,
       "e": 0,
-      "p": 4,
-      "pf": 276,
-      "pc": 166,
+      "p": 6,
+      "pf": 324,
+      "pc": 224,
       "bp": 0,
       "bf": 0,
       "form": [
         "w",
-        "w",
         "l",
         "w",
+        "l",
         "l"
       ]
     },
@@ -40,19 +40,19 @@
     },
     {
       "name": "Dogos XV",
-      "pts": 32,
-      "pj": 10,
-      "g": 8,
+      "pts": 40,
+      "pj": 12,
+      "g": 10,
       "e": 0,
       "p": 2,
-      "pf": 366,
-      "pc": 208,
+      "pf": 424,
+      "pc": 256,
       "bp": 0,
       "bf": 0,
       "form": [
         "w",
-        "w",
         "l",
+        "w",
         "w",
         "w"
       ]
@@ -346,7 +346,9 @@
         {
           "home": "Dogos XV",
           "away": "Capibaras XV",
-          "played": false
+          "played": true,
+          "hs": 29,
+          "as": 24
         }
       ]
     },
@@ -546,7 +548,9 @@
         {
           "home": "Capibaras XV",
           "away": "Dogos XV",
-          "played": false
+          "played": true,
+          "hs": 24,
+          "as": 29
         },
         {
           "home": "Pampas",
@@ -597,6 +601,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-03-29T23:51:08.512649+00:00",
-  "matchesScraped": 23
+  "lastUpdate": "2026-04-03T05:51:55.277477+00:00",
+  "matchesScraped": 24
 }
