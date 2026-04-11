@@ -59,17 +59,17 @@
     },
     {
       "name": "Pampas",
-      "pts": 40,
-      "pj": 12,
-      "g": 10,
+      "pts": 48,
+      "pj": 14,
+      "g": 12,
       "e": 0,
       "p": 2,
-      "pf": 430,
-      "pc": 290,
+      "pf": 498,
+      "pc": 296,
       "bp": 0,
       "bf": 0,
       "form": [
-        "l",
+        "w",
         "w",
         "w",
         "w",
@@ -136,20 +136,20 @@
     {
       "name": "Peñarol",
       "pts": 24,
-      "pj": 12,
+      "pj": 14,
       "g": 6,
       "e": 0,
-      "p": 6,
-      "pf": 300,
-      "pc": 330,
+      "p": 8,
+      "pf": 306,
+      "pc": 398,
       "bp": 0,
       "bf": 0,
       "form": [
-        "l",
         "w",
         "w",
         "l",
-        "w"
+        "w",
+        "l"
       ]
     }
   ],
@@ -358,7 +358,9 @@
         {
           "home": "Pampas",
           "away": "Peñarol",
-          "played": false
+          "played": true,
+          "hs": 34,
+          "as": 3
         },
         {
           "home": "Yacare XV",
@@ -581,7 +583,9 @@
         {
           "home": "Peñarol",
           "away": "Pampas",
-          "played": false
+          "played": true,
+          "hs": 3,
+          "as": 34
         },
         {
           "home": "Dogos XV",
@@ -601,6 +605,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-04-10T23:51:09.800969+00:00",
-  "matchesScraped": 24
+  "lastUpdate": "2026-04-11T02:47:22.867078+00:00",
+  "matchesScraped": 25
 }
