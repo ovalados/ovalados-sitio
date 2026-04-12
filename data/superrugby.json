@@ -78,21 +78,21 @@
     },
     {
       "name": "Selknam",
-      "pts": 16,
-      "pj": 12,
-      "g": 4,
+      "pts": 24,
+      "pj": 14,
+      "g": 6,
       "e": 0,
       "p": 8,
-      "pf": 264,
-      "pc": 464,
+      "pf": 318,
+      "pc": 516,
       "bp": 0,
       "bf": 0,
       "form": [
-        "w",
         "l",
         "l",
         "w",
-        "l"
+        "l",
+        "w"
       ]
     },
     {
@@ -117,17 +117,17 @@
     {
       "name": "Cobras BR",
       "pts": 8,
-      "pj": 12,
+      "pj": 14,
       "g": 2,
       "e": 0,
-      "p": 10,
-      "pf": 226,
-      "pc": 466,
+      "p": 12,
+      "pf": 278,
+      "pc": 520,
       "bp": 0,
       "bf": 0,
       "form": [
-        "l",
         "w",
+        "l",
         "l",
         "l",
         "l"
@@ -372,7 +372,9 @@
         {
           "home": "Cobras BR",
           "away": "Selknam",
-          "played": false
+          "played": true,
+          "hs": 26,
+          "as": 27
         },
         {
           "home": "Capibaras XV",
@@ -604,11 +606,13 @@
         {
           "home": "Selknam",
           "away": "Cobras BR",
-          "played": false
+          "played": true,
+          "hs": 27,
+          "as": 26
         }
       ]
     }
   },
-  "lastUpdate": "2026-04-12T19:52:08.049379+00:00",
-  "matchesScraped": 26
+  "lastUpdate": "2026-04-12T20:44:04.273197+00:00",
+  "matchesScraped": 27
 }
