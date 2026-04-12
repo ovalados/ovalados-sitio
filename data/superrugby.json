@@ -41,20 +41,20 @@
     {
       "name": "Dogos XV",
       "pts": 40,
-      "pj": 12,
+      "pj": 14,
       "g": 10,
       "e": 0,
-      "p": 2,
-      "pf": 424,
-      "pc": 256,
+      "p": 4,
+      "pf": 464,
+      "pc": 338,
       "bp": 0,
       "bf": 0,
       "form": [
-        "w",
         "l",
         "w",
         "w",
-        "w"
+        "w",
+        "l"
       ]
     },
     {
@@ -97,13 +97,13 @@
     },
     {
       "name": "Yacare XV",
-      "pts": 0,
-      "pj": 12,
-      "g": 0,
+      "pts": 8,
+      "pj": 14,
+      "g": 2,
       "e": 0,
       "p": 12,
-      "pf": 252,
-      "pc": 302,
+      "pf": 334,
+      "pc": 342,
       "bp": 0,
       "bf": 0,
       "form": [
@@ -111,7 +111,7 @@
         "l",
         "l",
         "l",
-        "l"
+        "w"
       ]
     },
     {
@@ -365,7 +365,9 @@
         {
           "home": "Yacare XV",
           "away": "Dogos XV",
-          "played": false
+          "played": true,
+          "hs": 41,
+          "as": 20
         },
         {
           "home": "Cobras BR",
@@ -590,7 +592,9 @@
         {
           "home": "Dogos XV",
           "away": "Yacare XV",
-          "played": false
+          "played": true,
+          "hs": 20,
+          "as": 41
         },
         {
           "home": "Tarucas",
@@ -605,6 +609,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-04-11T23:44:10.359025+00:00",
-  "matchesScraped": 25
+  "lastUpdate": "2026-04-12T01:08:59.908542+00:00",
+  "matchesScraped": 26
 }
