@@ -2,40 +2,40 @@
   "teams": [
     {
       "name": "Capibaras XV",
-      "pts": 24,
-      "pj": 12,
-      "g": 6,
+      "pts": 32,
+      "pj": 14,
+      "g": 8,
       "e": 0,
       "p": 6,
-      "pf": 324,
-      "pc": 224,
+      "pf": 402,
+      "pc": 280,
       "bp": 0,
       "bf": 0,
       "form": [
-        "w",
         "l",
         "w",
         "l",
-        "l"
+        "l",
+        "w"
       ]
     },
     {
       "name": "Tarucas",
       "pts": 40,
-      "pj": 12,
+      "pj": 14,
       "g": 10,
       "e": 0,
-      "p": 2,
-      "pf": 400,
-      "pc": 288,
+      "p": 4,
+      "pf": 456,
+      "pc": 366,
       "bp": 0,
       "bf": 0,
       "form": [
         "w",
-        "w",
         "l",
         "w",
-        "w"
+        "w",
+        "l"
       ]
     },
     {
@@ -379,7 +379,9 @@
         {
           "home": "Capibaras XV",
           "away": "Tarucas",
-          "played": false
+          "played": true,
+          "hs": 39,
+          "as": 28
         }
       ]
     },
@@ -601,7 +603,9 @@
         {
           "home": "Tarucas",
           "away": "Capibaras XV",
-          "played": false
+          "played": true,
+          "hs": 28,
+          "as": 39
         },
         {
           "home": "Selknam",
@@ -613,6 +617,6 @@
       ]
     }
   },
-  "lastUpdate": "2026-04-13T01:11:38.476416+00:00",
-  "matchesScraped": 27
+  "lastUpdate": "2026-04-17T03:24:14.157522+00:00",
+  "matchesScraped": 28
 }
